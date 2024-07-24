@@ -2,8 +2,9 @@
   "name": "proyectomongoii",
   "version": "1.0.0",
   "main": "main.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --watch --env-file=.env main.js"
   },
   "keywords": [],
   "author": "",
