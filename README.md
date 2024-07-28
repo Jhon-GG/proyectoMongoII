@@ -54,3 +54,113 @@ Desarrollar una serie de APIs para la aplicación web de CineCampus utilizando M
 - **Eficiencia:** Desempeño y tiempo de respuesta de las APIs.
 - **Seguridad:** Implementación adecuada de medidas de seguridad, autenticación y autorización de roles.
 - **Documentación:** Claridad y exhaustividad de la documentación proporcionada.
+
+
+# ___________________________________________________________________________________
+
+# 1. Selección de Películas:
+
+**API para Listar Películas:** Permitir la consulta de todas las películas disponibles en el catálogo, con detalles como título, género, duración y horarios de proyección.
+
+**API para Obtener Detalles de Película:** Permitir la consulta de información detallada sobre una película específica, incluyendo sinopsis.
+
+
+## Módulo de Gestión de Películas
+Este módulo proporciona funcionalidades para manejar y obtener información sobre películas disponibles en nuestro sistema. Debemos tener en cuenta que este caso de uso tiene dos partes, esta primera parte se encarga de traer todas las peliculas disponibles.
+### Uso:
+El siguiente ejemplo muestra cómo utilizar la clase pelicula para obtener la lista de películas disponibles:
+
+```js
+let objPelicula = new pelicula();
+console.log(`Peliculas disponibles: `, await objPelicula.getPeliculas());
+objPelicula.destructor();
+```
+
+## Funcionalidades
+### Clase pelicula
+
+getPeliculas(): Método asíncrono que devuelve un array con la información de todas las películas disponibles.
+destructor(): Método para liberar recursos cuando ya no se necesita la instancia.
+
+# Ejemplo de salida
+```js
+{
+    id: 1,
+    titulo: 'Bad Boys 4',
+    genero: 'Acción / Comedia',
+    duracion: '2h 15m',
+    estado: 'Próximo estreno',
+    estreno: '2024-08-15',
+    director: 'Adil & Bilall',
+    horarios_funcion: [ [Object] ]
+  },
+  {
+    id: 2,
+    titulo: 'Observados',
+    genero: 'Thriller / Suspenso',
+    duracion: '1h 50m',
+    estado: 'En cartelera',
+    estreno: '2024-07-10',
+    director: 'David F. Sandberg',
+    horarios_funcion: [ [Object], [Object] ]
+  },
+  {
+    id: 3,
+    titulo: 'Rescate imposible',
+    genero: 'Acción / Drama',
+    duracion: '2h 5m',
+    estado: 'Próximo estreno',
+    estreno: '2024-09-20',
+    director: 'Michael Bay',
+    horarios_funcion: [ [Object] ]
+  }
+  ```
+
+# Notas importantes
+
+- El método getPeliculas() es asíncrono, por lo que debe usarse con await o manejarse como una promesa.
+- Siempre llame al método destructor() cuando haya terminado de usar la instancia para liberar recursos.
+
+
+
+## Módulo de Gestión de Películas - Búsqueda por ID
+Este módulo permite obtener información detallada de una película específica utilizando su ID. Debemos tener en cuenta que este caso de uso tiene dos partes, esta segunda parte se encarga de traer la pelicula que elijamos segun su id, mostrando informacion específica de la misma.
+### Uso
+El siguiente ejemplo muestra cómo utilizar la clase pelicula para obtener información de una película por su ID:
+```js
+const idPeliculaById = 2; 
+let objPelicula = new pelicula();
+
+console.log(`Información de la película con ID ${idPeliculaById}: `, 
+            await objPelicula.getPeliculaById(idPeliculaById));
+
+objPelicula.destructor();
+```
+## Funcionalidades
+### Clase pelicula
+
+getPeliculaById(id): Método asíncrono que devuelve la información de una película específica basada en su ID.
+destructor(): Método para liberar recursos cuando ya no se necesita la instancia.
+
+# Ejemplo de salida
+
+```js
+Información de la película con ID 2:  [
+  {
+    id: 2,
+    titulo: 'Observados',
+    genero: 'Thriller / Suspenso',
+    duracion: '1h 50m',
+    estado: 'En cartelera',
+    sinopsis: 'Un grupo de amigos descubre que están siendo vigilados por una entidad desconocida.',
+    estreno: '2024-07-10',
+    director: 'David F. Sandberg',
+    horarios_funcion: [ [Object], [Object] ]
+  }
+]
+```
+# Notas importantes
+
+- El parámetro idPeliculaById debe ser un número entero válido correspondiente al ID de una película existente.
+- getPeliculaById() es un método asíncrono, por lo que debe usarse con await o manejarse como una promesa.
+- Asegúrese de llamar al método destructor() después de usar la instancia para liberar recursos.
