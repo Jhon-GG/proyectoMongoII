@@ -77,19 +77,30 @@ import { asiento } from './js/modules/asiento.js'
 
 // Permitir la selección y reserva de asientos para una proyección específica.
 
+    // let objAsiento = new asiento();
+
+    //     const nuevaReserva = {
+    //         id: 11,
+    //         id_usuario: 2,
+    //         fecha_reserva: '2024-07-20',
+    //         estado: 'activa',
+    //         expiracion: '2024-07-30',
+    //         asientos: [4, 7, 10, 13],
+    //         id_pelicula: 13,
+    //         id_horario_funcion: 9
+    //     };
+
+    //     const reservaCreada = await objAsiento.crearReserva(nuevaReserva);
+    //     console.log(`Reserva creada: `, reservaCreada)
+    //     objAsiento.destructor();
+
+
+// Permitir la cancelación de una reserva de asiento ya realizada.
+
     let objAsiento = new asiento();
 
-        const nuevaReserva = {
-            id: 11,
-            id_usuario: 2,
-            fecha_reserva: '2024-07-20',
-            estado: 'activa',
-            expiracion: '2024-07-30',
-            asientos: [4, 7, 10, 13],
-            id_pelicula: 13,
-            id_horario_funcion: 9
-        };
+    const idReserva = 11;
 
-        const reservaCreada = await objAsiento.crearReserva(nuevaReserva);
-        console.log(`Reserva creada: `, reservaCreada)
-        objAsiento.destructor();
+    const reservaCancelada = await objAsiento.cancelarReserva(idReserva);
+    console.log(`Reserva cancelada: `, reservaCancelada);
+    objAsiento.destructor();

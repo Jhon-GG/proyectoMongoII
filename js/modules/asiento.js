@@ -121,4 +121,40 @@ export class asiento extends connect {
         await this.conexion.close();
         return nuevaReserva;
     }
+
+    /**
+ * Cancela una reserva en la base de datos.
+ *
+ * @param {string} idReserva - El identificador único de la reserva que se va a cancelar.
+ *
+ * @returns {Promise<Object>} - Una promesa que se resuelve al objeto de reserva actualizado.
+ *
+ * @throws {Error} - Si la reserva no se encuentra.
+ * @throws {Error} - Si el estado de la reserva no se pudo actualizar.
+ */
+async cancelarReserva(idReserva) {
+    await this.conexion.connect();
+
+    const reservaExistente = await this.collection.findOne({ id: idReserva });
+
+    if (!reservaExistente) {
+        await this.conexion.close();
+        throw new Error("Reserva no encontrada.");
+    }
+
+    // Actualiza solo el estado de la reserva a "cancelada"
+    const resultado = await this.collection.updateOne(
+        { id: idReserva },
+        { $set: { estado: 'cancelada' } }
+    );
+
+    if (resultado.modifiedCount === 0) {
+        await this.conexion.close();
+        throw new Error("No se pudo actualizar el estado de la reserva.");
+    }
+
+    const reservaActualizada = await this.collection.findOne({ id: idReserva });
+    await this.conexion.close();
+    return reservaActualizada;
+}
 }
