@@ -164,3 +164,138 @@ Información de la película con ID 2:  [
 - El parámetro idPeliculaById debe ser un número entero válido correspondiente al ID de una película existente.
 - getPeliculaById() es un método asíncrono, por lo que debe usarse con await o manejarse como una promesa.
 - Asegúrese de llamar al método destructor() después de usar la instancia para liberar recursos.
+
+
+# ___________________________________________________________________________________
+
+
+# 2. Compra de Boletos:
+
+
+**API para Comprar Boletos:** Permitir la compra de boletos para una película específica, incluyendo la selección de la fecha y la hora de la proyección.
+
+**API para Verificar Disponibilidad de Asientos:** Permitir la consulta de la disponibilidad de asientos en una sala para una proyección específica.
+
+## Módulo de Gestión de Boletos - Creación de Boletos
+Este módulo permite la creación de nuevos boletos para funciones de cine utilizando la clase boleto. Debemos tener en cuenta que esta es la primer parte del caso 2, que se enfoca en la compra de un nuevo boleto.
+
+### Uso
+El siguiente ejemplo muestra cómo crear un nuevo boleto:
+```js
+const nuevoBoleto = {
+    id: 9,
+    id_pelicula: 2,
+    id_horario_funcion: 17,
+    id_usuario: 2,
+    id_reserva: null,
+    asiento: "A1",
+    tipo_compra: "virtual",
+    fecha_compra: "2024-07-21",
+    metodo_pago: "tarjeta de crédito",
+    estado_compra: "realizado",
+    total: 0 
+  };
+  
+      let objBoleto = new boleto();
+  
+          const boletoCreado = await objBoleto.crearBoleto1(nuevoBoleto);
+          console.log(`Boleto creado: `, boletoCreado);
+
+  
+      objBoleto.destructor();
+```
+
+## Funcionalidades
+### Clase boleto
+
+- crearBoleto1(nuevoBoleto): Método asíncrono que crea un nuevo boleto con la información proporcionada.
+- destructor(): Método para liberar recursos cuando ya no se necesita la instancia.
+
+## Ejemplo de salida
+
+```js
+Boleto creado:  {
+  id: 9,
+  id_pelicula: 2,
+  id_horario_funcion: 17,
+  id_usuario: 2,
+  id_reserva: null,
+  asiento: 'A1',
+  tipo_compra: 'virtual',
+  fecha_compra: '2024-07-21',
+  metodo_pago: 'tarjeta de crédito',
+  estado_compra: 'realizado',
+  total: 96,
+  fecha_funcion: '2024-08-07',
+  hora_funcion: '15:30',
+  _id: new ObjectId('66a743094989421734ea8e5f')
+}
+```
+
+# Notas importantes
+
+- Asegúrese de que todos los campos requeridos estén presentes en el objeto nuevoBoleto.
+- El método crearBoleto1() es asíncrono, por lo que debe usarse con await o manejarse como una promesa.
+- Llame al método destructor() después de usar la instancia para liberar recursos.
+
+
+## Módulo de Gestión de Boletos - Búsqueda de Asientos Disponibles
+
+Este módulo permite buscar asientos disponibles para una función específica utilizando la clase boleto. Debemos tener en cuenta que esta es la segunda parte del caso 2, que se enfoca en la busqueda de asientos disponibles segun una funcion en específico.
+
+## Uso
+El siguiente ejemplo muestra cómo buscar asientos disponibles para un horario de función específico:
+```js
+    let objBoleto = new boleto();
+
+    const idHorarioFuncion = 1;
+
+    const asientosDisponibles = await objBoleto.buscarAsientosDisponibles(idHorarioFuncion);
+    console.log(`Asientos disponibles: `, asientosDisponibles);
+
+    objBoleto.destructor()
+```
+
+## Funcionalidades
+### Clase boleto
+
+- buscarAsientosDisponibles(idHorarioFuncion): Método asíncrono que devuelve una lista de asientos disponibles para un horario de función específico.
+- destructor(): Método para liberar recursos cuando ya no se necesita la instancia.
+
+### Parámetros
+
+- idHorarioFuncion: Número entero que representa el ID único del horario de la función para la cual se buscan asientos disponibles.
+
+## Ejemplo de salida
+```js
+Asientos disponibles:  [
+  {
+    _id: new ObjectId('66a3dc26280e8d342dd4144e'),
+    id: 1,
+    numero: 'A1',
+    estado: 'disponible',
+    tipo: 'preferencial'
+  },
+  {
+    _id: new ObjectId('66a3dc26280e8d342dd41451'),
+    id: 4,
+    numero: 'A4',
+    estado: 'disponible',
+    tipo: 'preferencial'
+  },
+  {
+    _id: new ObjectId('66a3dc26280e8d342dd41454'),
+    id: 7,
+    numero: 'A7',
+    estado: 'disponible',
+    tipo: 'preferencial'
+  }
+]
+```
+
+# Notas importantes
+
+- El idHorarioFuncion debe ser un número entero válido correspondiente a una función existente.
+- El método buscarAsientosDisponibles() es asíncrono, por lo que debe usarse con await o manejarse como una promesa.
+- La lista de asientos disponibles puede variar dependiendo de las reservas y compras realizadas.
+- Asegúrese de llamar al método destructor() después de usar la instancia para liberar recursos.
