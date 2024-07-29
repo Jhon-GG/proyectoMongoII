@@ -299,3 +299,31 @@ Asientos disponibles:  [
 - El método buscarAsientosDisponibles() es asíncrono, por lo que debe usarse con await o manejarse como una promesa.
 - La lista de asientos disponibles puede variar dependiendo de las reservas y compras realizadas.
 - Asegúrese de llamar al método destructor() después de usar la instancia para liberar recursos.
+
+
+# ___________________________________________________________________________________
+
+
+# 3. Módulo de Gestión de Asientos - Creación de Reservas
+Este módulo permite crear nuevas reservas de asientos para funciones de cine utilizando la clase asiento. Debemos tener en cuenat que esta es la primer parte de la consulta tres, que va enfocada a la realizacion de una reserva
+
+## Uso
+El siguiente ejemplo muestra cómo crear una nueva reserva:
+```js
+  let objAsiento = new asiento();
+
+        const nuevaReserva = {
+            id: 11,
+            id_usuario: 2,
+            fecha_reserva: '2024-07-20',
+            estado: 'activa',
+            expiracion: '2024-07-30',
+            asientos: [4, 7, 10, 13],
+            id_pelicula: 13,
+            id_horario_funcion: 9
+        };
+
+        const reservaCreada = await objAsiento.crearReserva(nuevaReserva);
+        console.log(`Reserva creada: `, reservaCreada)
+        objAsiento.destructor();
+```
