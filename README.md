@@ -72,7 +72,7 @@ El siguiente ejemplo muestra cómo utilizar la clase pelicula para obtener la li
 
 ```js
 let objPelicula = new pelicula();
-console.log(`Peliculas disponibles: `, await objPelicula.getPeliculas());
+console.log(await objPelicula.getPeliculas());
 objPelicula.destructor();
 ```
 
@@ -217,7 +217,7 @@ const nuevoBoleto = {
       let objBoleto = new boleto();
   
           const boletoCreado = await objBoleto.crearBoleto1(nuevoBoleto);
-          console.log(`Boleto creado: `, boletoCreado);
+          console.log(boletoCreado);
 
   
       objBoleto.destructor();
@@ -269,7 +269,7 @@ El siguiente ejemplo muestra cómo buscar asientos disponibles para un horario d
     const idHorarioFuncion = 1;
 
     const asientosDisponibles = await objBoleto.buscarAsientosDisponibles(idHorarioFuncion);
-    console.log(`Asientos disponibles: `, asientosDisponibles);
+    console.log(asientosDisponibles);
 
     objBoleto.destructor()
 ```
@@ -341,7 +341,7 @@ El siguiente ejemplo muestra cómo crear una nueva reserva con múltiples asient
         };
 
         const reservaCreada = await objAsiento.crearReserva(nuevaReserva);
-        console.log(`Reserva creada: `, reservaCreada)
+        console.log(reservaCreada)
         objAsiento.destructor();
 ```
 
