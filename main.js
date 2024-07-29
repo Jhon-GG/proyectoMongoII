@@ -17,13 +17,13 @@ import { asiento } from './js/modules/asiento.js'
 
 // Permitir la consulta de información detallada sobre una película específica, incluyendo sinopsis.
 
-    // const idPeliculaById = 2; 
+    const idPeliculaById = 2; 
 
-    //     let objPelicula = new pelicula();
+        let objPelicula = new pelicula();
 
-    //     console.log(`Información de la película con ID ${idPeliculaById}: `, await objPelicula.getPeliculaById(idPeliculaById));
+        console.log(await objPelicula.getPeliculaById(idPeliculaById));
 
-    //     objPelicula.destructor();
+        objPelicula.destructor();
 
 
 
@@ -97,10 +97,10 @@ import { asiento } from './js/modules/asiento.js'
 
 // Permitir la cancelación de una reserva de asiento ya realizada.
 
-    let objAsiento = new asiento();
+    // let objAsiento = new asiento();
 
-    const idReserva = 11;
+    // const idReserva = 11;
 
-    const reservaCancelada = await objAsiento.cancelarReserva(idReserva);
-    console.log(`Reserva cancelada: `, reservaCancelada);
-    objAsiento.destructor();
+    // const reservaCancelada = await objAsiento.cancelarReserva(idReserva);
+    // console.log(`Reserva cancelada: `, reservaCancelada);
+    // objAsiento.destructor();

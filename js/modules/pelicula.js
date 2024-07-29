@@ -86,11 +86,14 @@ export class pelicula extends connect {
         return data;
     }
 
-        /**
-     * Obtiene la información detallada de una película específica, incluyendo sus horarios de funciones asociados.
+
+            /**
+     * Obtiene una película específica por su identificador desde la base de datos, incluyendo sus horarios de funciones asociados.
      * 
-     * @param {string} id - El identificador único de la película.
-     * @returns {Promise<Array>} Una promesa que se resuelve en un array de objetos de película. Cada objeto de película contiene las siguientes propiedades:
+     * @param {string} id - El identificador único de la película que se desea obtener.
+     * @returns {Promise<Object>} Una promesa que se resuelve en un objeto de película. Si no se encuentra la película, se resuelve en un objeto con un mensaje de error.
+     * 
+     * El objeto de película contiene las siguientes propiedades:
      * - id: El identificador único de la película.
      * - titulo: El título de la película.
      * - genero: El género de la película.
@@ -105,8 +108,8 @@ export class pelicula extends connect {
      *   - fecha_funcion: La fecha y hora del horario de función.
      *   - sala: La sala de cine donde se lleva a cabo el horario de función.
      * 
-     * Si una película no tiene horarios de función asociados, la propiedad 'horarios_funcion' contendrá un array con un solo objeto:
-     * - mensaje: Un mensaje que indica que la película no se encuentra actualmente en cartelera.
+     * Si no se encuentra la película con el identificador proporcionado, se resuelve en un objeto con la siguiente propiedad:
+     * - mensaje: Un mensaje que indica que no se encontró la película con el identificador proporcionado.
      */
     async getPeliculaById(id) {
         await this.conexion.connect();
@@ -151,6 +154,10 @@ export class pelicula extends connect {
         ]).toArray();
 
         await this.conexion.close();
-        return data;
+
+        if (data.length === 0) {
+            return { mensaje: "ID de película no encontrado" };
+        }
+        return data[0]; 
     }
 }
