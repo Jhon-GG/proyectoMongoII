@@ -33,24 +33,37 @@ import {boleto} from './js/modules/boleto.js'
 
 // Permitir la compra de boletos para una película específica, incluyendo la selección de la fecha y la hora de la proyección.
 
-const nuevoBoleto = {
-    id: 9,
-    id_pelicula: 2,
-    id_horario_funcion: 17,
-    id_usuario: 2,
-    id_reserva: null,
-    asiento: "A1",
-    tipo_compra: "virtual",
-    fecha_compra: "2024-07-21",
-    metodo_pago: "tarjeta de crédito",
-    estado_compra: "realizado",
-    total: 0 
-  };
+// const nuevoBoleto = {
+//     id: 9,
+//     id_pelicula: 2,
+//     id_horario_funcion: 17,
+//     id_usuario: 2,
+//     id_reserva: null,
+//     asiento: "A1",
+//     tipo_compra: "virtual",
+//     fecha_compra: "2024-07-21",
+//     metodo_pago: "tarjeta de crédito",
+//     estado_compra: "realizado",
+//     total: 0 
+//   };
   
-      let objBoleto = new boleto();
+//       let objBoleto = new boleto();
   
-          const boletoCreado = await objBoleto.crearBoleto1(nuevoBoleto);
-          console.log(`Boleto creado: `, boletoCreado);
+//           const boletoCreado = await objBoleto.crearBoleto1(nuevoBoleto);
+//           console.log(`Boleto creado: `, boletoCreado);
 
   
-      objBoleto.destructor();
+//       objBoleto.destructor();
+
+
+
+// Permitir la consulta de la disponibilidad de asientos en una sala para una proyección específica.
+
+    let objBoleto = new boleto();
+
+    const idHorarioFuncion = 1;
+
+    const asientosDisponibles = await objBoleto.buscarAsientosDisponibles(idHorarioFuncion);
+    console.log(`Asientos disponibles: `, asientosDisponibles);
+
+    objBoleto.destructor()

@@ -115,4 +115,49 @@ export class boleto extends connect {
         await this.conexion.close();
         return nuevoBoleto;
     }
+
+
+    
+        /**
+     * Esta función recupera los asientos disponibles para una función de cine determinada.
+     * Se conecta a la base de datos, recupera la función y la información de la sala asociada,
+     * y luego recupera los asientos disponibles de la base de datos.
+     *
+     * @param {string} idHorarioFuncion - El identificador único de la función de cine.
+     *
+     * @returns {Promise<Array>} - Una promesa que se resuelve con un array de asientos disponibles.
+     * Cada objeto de asiento contiene una propiedad 'id' y 'estado'.
+     *
+     * @throws {Error} - Lanza un error si la función de cine o la sala no se encuentran.
+     */
+    async buscarAsientosDisponibles(idHorarioFuncion) {
+        await this.conexion.connect();
+
+        const horarioColeccion = this.db.collection('horario_funcion');
+        const horario = await horarioColeccion.findOne({ id: idHorarioFuncion });
+
+        if (!horario) {
+            await this.conexion.close();
+            throw new Error("Horario de función no encontrado.");
+        }
+
+        const salaColeccion = this.db.collection('sala');
+        const sala = await salaColeccion.findOne({ id: horario.id_sala });
+
+        if (!sala) {
+            await this.conexion.close();
+            throw new Error("Sala no encontrada.");
+        }
+
+        const asientosDisponibles = sala.asientos;
+
+        const asientosColeccion = this.db.collection('asiento');
+        const asientos = await asientosColeccion.find({
+            id: { $in: asientosDisponibles },
+            estado: "disponible"
+        }).toArray();
+
+        await this.conexion.close();
+        return asientos;
+    }
 }
