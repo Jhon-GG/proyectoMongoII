@@ -17,13 +17,13 @@ import { asiento } from './js/modules/asiento.js'
 
 // Permitir la consulta de información detallada sobre una película específica, incluyendo sinopsis.
 
-    const idPeliculaById = 2; 
+    // const idPeliculaById = 2; 
 
-        let objPelicula = new pelicula();
+    //     let objPelicula = new pelicula();
 
-        console.log(await objPelicula.getPeliculaById(idPeliculaById));
+    //     console.log(await objPelicula.getPeliculaById(idPeliculaById));
 
-        objPelicula.destructor();
+    //     objPelicula.destructor();
 
 
 
@@ -34,27 +34,27 @@ import { asiento } from './js/modules/asiento.js'
 
 // Permitir la compra de boletos para una película específica, incluyendo la selección de la fecha y la hora de la proyección.
 
-// const nuevoBoleto = {
-//     id: 9,
-//     id_pelicula: 2,
-//     id_horario_funcion: 17,
-//     id_usuario: 2,
-//     id_reserva: null,
-//     asiento: "A1",
-//     tipo_compra: "virtual",
-//     fecha_compra: "2024-07-21",
-//     metodo_pago: "tarjeta de crédito",
-//     estado_compra: "realizado",
-//     total: 0 
-//   };
+const nuevoBoleto = {
+    id: 9,
+    id_pelicula: 2,
+    id_horario_funcion: 3,
+    id_usuario: 2,
+    id_reserva: null,
+    asiento: "A1",
+    tipo_compra: "virtual",
+    fecha_compra: "2024-07-21",
+    metodo_pago: "tarjeta de crédito",
+    estado_compra: "realizado",
+    total: 0 
+  };
   
-//       let objBoleto = new boleto();
-  
-//           const boletoCreado = await objBoleto.crearBoleto1(nuevoBoleto);
-//           console.log(`Boleto creado: `, boletoCreado);
+  let objBoleto = new boleto();
 
-  
-//       objBoleto.destructor();
+      const boletoCreado = await objBoleto.crearBoleto1(nuevoBoleto);
+      console.log(boletoCreado);
+
+
+  objBoleto.destructor();
 
 
 
