@@ -304,11 +304,10 @@ Asientos disponibles:  [
 # ___________________________________________________________________________________
 
 
-# 3. Módulo de Gestión de Asientos - Creación de Reservas
-Este módulo permite crear nuevas reservas de asientos para funciones de cine utilizando la clase asiento. Debemos tener en cuenat que esta es la primer parte de la consulta tres, que va enfocada a la realizacion de una reserva
-
+# 3. Módulo de Gestión de Reservas - Creación de Reservas
+Este módulo permite crear nuevas reservas de asientos para una función de cine específica utilizando la clase asiento. Este es un componente crucial del sistema de reservas que gestiona la creación de nuevas reservas con múltiples asientos. Debemos tener en cuenta que esta es la primer parte del tercer caso de uso, que seenfoca en la creacion de una reserva. 
 ## Uso
-El siguiente ejemplo muestra cómo crear una nueva reserva:
+El siguiente ejemplo muestra cómo crear una nueva reserva con múltiples asientos:
 ```js
   let objAsiento = new asiento();
 
@@ -327,3 +326,103 @@ El siguiente ejemplo muestra cómo crear una nueva reserva:
         console.log(`Reserva creada: `, reservaCreada)
         objAsiento.destructor();
 ```
+
+# Funcionalidades
+## Clase asiento
+
+- crearReserva(nuevaReserva): Método asíncrono que crea una nueva reserva con los detalles proporcionados.
+- destructor(): Método para liberar recursos cuando ya no se necesita la instancia.
+
+# Parámetros de nuevaReserva
+
+id: Número entero que representa el ID único de la reserva.
+id_usuario: Número entero que identifica al usuario que realiza la reserva.
+fecha_reserva: Cadena de texto que representa la fecha de la reserva (formato 'YYYY-MM-DD').
+estado: Cadena de texto que indica el estado actual de la reserva (ej. 'activa').
+expiracion: Cadena de texto que representa la fecha de expiración de la reserva (formato 'YYYY-MM-DD').
+asientos: Array de números enteros que representan los IDs de los asientos reservados.
+id_pelicula: Número entero que identifica la película para la cual se hace la reserva.
+id_horario_funcion: Número entero que identifica el horario específico de la función.
+
+
+# Ejemplo de salida
+
+```js
+Reserva creada:  {
+  id: 11,
+  id_usuario: 2,
+  fecha_reserva: '2024-07-20',
+  estado: 'activa',
+  expiracion: '2024-07-30',
+  asientos: [ 4, 7, 10, 13 ],
+  id_pelicula: 13,
+  id_horario_funcion: 9,
+  fecha_funcion: '2024-08-03',
+  hora_funcion: '16:30',
+  total: 88,
+  _id: new ObjectId('66a781bd6eee31b24660c092')
+}
+```
+
+# Notas importantes
+
+- Todos los campos en nuevaReserva son obligatorios y deben proporcionarse con los tipos de datos correctos.
+- El método crearReserva() es asíncrono, por lo que debe usarse con await o manejarse como una promesa.
+- Asegúrese de que los IDs de usuario, película, horario de función y asientos existan en el sistema antes de crear la reserva.
+- El estado de la reserva debe ser válido según las reglas del sistema ('activa', 'cancelada', 'expirada').
+- La fecha de expiración debe ser posterior a la fecha de reserva.
+- Asegúrese de llamar al método destructor() después de usar la instancia para liberar recursos.
+
+
+
+# Módulo de Gestión de Reservas - Cancelación de Reservas
+Este módulo permite cancelar reservas existentes utilizando la clase asiento. Esta funcionalidad es esencial para gestionar cambios en las reservas de los clientes y liberar asientos para otros usuarios. Debemos tener en cuenta que est aes la segunda parte del caso de uso 3, que se enfoca en la cancelacion de una reserva de asiento 
+## Uso
+El siguiente ejemplo muestra cómo cancelar una reserva existente:
+
+```js
+    let objAsiento = new asiento();
+
+    const idReserva = 11;
+
+    const reservaCancelada = await objAsiento.cancelarReserva(idReserva);
+    console.log(reservaCancelada);
+    objAsiento.destructor();
+```
+# Funcionalidades
+## Clase asiento
+
+cancelarReserva(idReserva): Método asíncrono que cancela una reserva existente basándose en su ID.
+destructor(): Método para liberar recursos cuando ya no se necesita la instancia.
+
+## Parámetros
+
+idReserva: Número entero que representa el ID único de la reserva que se desea cancelar.
+
+
+# Ejemplo de salida
+
+```js
+{
+  _id: new ObjectId('66a7839e8faace5095a50c33'),
+  id: 11,
+  id_usuario: 2,
+  fecha_reserva: '2024-07-20',
+  estado: 'cancelada',
+  expiracion: '2024-07-30',
+  asientos: [ 4, 7, 10, 13 ],
+  id_pelicula: 13,
+  id_horario_funcion: 9,
+  fecha_funcion: '2024-08-03',
+  hora_funcion: '16:30',
+  total: 88
+}
+```
+# Notas importantes
+
+- El idReserva debe ser un número entero válido correspondiente a una reserva existente en el sistema.
+- El método cancelarReserva() es asíncrono, por lo que debe usarse con await o manejarse como una promesa.
+- La cancelación de la reserva generalmente implica cambiar el estado de la reserva a 'cancelada' y liberar los asientos asociados.
+- La implementación debe considerar las políticas de cancelación del sistema, como posibles penalizaciones o reembolsos.
+- Asegúrese de llamar al método destructor() después de usar la instancia para liberar recursos.
+- Después de la cancelación, los asientos asociados con esta reserva deberían volver a estar disponibles para nuevas reservas.
