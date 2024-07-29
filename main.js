@@ -1,7 +1,7 @@
-import {test} from './js/modules/test.js'
+import {pelicula} from './js/modules/pelicula.js'
 
-let objTest = new test();
+let objPelicula = new pelicula();
 
-console.log(`Prueba de test`, await objTest.getTest());
+console.log(`Peliculas disponibles: `, await objPelicula.getPeliculas());
 
-objTest.destructor();
+objPelicula.destructor();
