@@ -23,10 +23,28 @@ export class boleto extends connect {
         connect.instanceConnect = undefined;
     }
 
-    async crearBoleto(nuevoBoleto) {
+        /**
+     * Este método crea un nuevo boleto (ticket) en la base de datos.
+     * Verifica varias condiciones y calcula el precio total según el rol del usuario y el estado de la tarjeta VIP.
+     *
+     * @param {Object} nuevoBoleto - El objeto de boleto nuevo que se insertará en la base de datos.
+     * @param {string} nuevoBoleto.id - El identificador único para el boleto.
+     * @param {string} nuevoBoleto.id_pelicula - El ID de la película asociada con el boleto.
+     * @param {string} nuevoBoleto.id_horario_funcion - El ID del horario de la función asociado con el boleto.
+     * @param {string} nuevoBoleto.id_usuario - El ID del usuario que está comprando el boleto.
+     * @param {string} nuevoBoleto.id_reserva - El ID de la reserva asociada con el boleto.
+     * @param {number} nuevoBoleto.asiento - El número de asiento para el boleto.
+     * @param {string} nuevoBoleto.tipo_compra - El tipo de compra (por ejemplo, "online", "offline").
+     * @param {Date} nuevoBoleto.fecha_compra - La fecha de la compra.
+     * @param {string} nuevoBoleto.metodo_pago - El método de pago utilizado para la compra.
+     * @param {string} nuevoBoleto.estado_compra - El estado de la compra (por ejemplo, "pendiente", "pagado").
+     *
+     * @returns {Promise<Object>} - Una promesa que se resuelve con el objeto de boleto nuevo.
+     * @throws {Error} - Lanza un error si alguna de las condiciones no se cumple o si se produce un error durante las operaciones de base de datos.
+     */
+    async crearBoleto1(nuevoBoleto) {
         await this.conexion.connect();
 
-        // Verificar si ya existe un boleto con el mismo id
         const boletoExistentePorId = await this.collection.findOne({ id: nuevoBoleto.id });
 
         if (boletoExistentePorId) {
@@ -34,7 +52,6 @@ export class boleto extends connect {
             throw new Error("Ya existe un boleto con el mismo ID.");
         }
 
-        // Verificar si ya existe un boleto con los mismos datos 
         const boletoExistente = await this.collection.findOne({
             id_pelicula: nuevoBoleto.id_pelicula,
             id_horario_funcion: nuevoBoleto.id_horario_funcion,
@@ -52,7 +69,14 @@ export class boleto extends connect {
             throw new Error("Ya existe un boleto con los mismos datos.");
         }
 
-        // Obtener detalles de la función
+        const peliculaColeccion = this.db.collection('pelicula');
+        const pelicula = await peliculaColeccion.findOne({ id: nuevoBoleto.id_pelicula });
+
+        if (!pelicula || pelicula.estado !== 'En cartelera') {
+            await this.conexion.close();
+            throw new Error("Película no disponible. No se encuentra en cartelera.");
+        }
+
         const horarioColeccion = this.db.collection('horario_funcion');
         const horario = await horarioColeccion.findOne({ id: nuevoBoleto.id_horario_funcion });
 
@@ -61,26 +85,34 @@ export class boleto extends connect {
             throw new Error("Horario de función no encontrado.");
         }
 
-        // Añadir fecha y hora de la función al boleto
         nuevoBoleto.fecha_funcion = horario.fecha_funcion;
         nuevoBoleto.hora_funcion = horario.hora_funcion;
 
-        // Verificar tipo de usuario
-        const usuarioColeccion = this.db.collection('tarjeta_vip');
-        const usuarioVIP = await usuarioColeccion.findOne({ id_usuario: nuevoBoleto.id_usuario });
+        const usuarioColeccion = this.db.collection('usuario');
+        const usuario = await usuarioColeccion.findOne({ id: nuevoBoleto.id_usuario });
 
-        if (usuarioVIP && usuarioVIP.estado === 'activa') {
-            const descuento = usuarioVIP.descuento / 100;
-            nuevoBoleto.total = horario.precio * (1 - descuento);
+        if (!usuario) {
+            await this.conexion.close();
+            throw new Error("Usuario no encontrado.");
+        }
+
+        if (usuario.rol === 'VIP') {
+            const tarjetaColeccion = this.db.collection('tarjeta_vip');
+            const tarjeta = await tarjetaColeccion.findOne({ id_usuario: nuevoBoleto.id_usuario, estado: 'activa' });
+
+            if (tarjeta && new Date(tarjeta.fecha_expiracion) > new Date()) {
+                const descuento = tarjeta.descuento / 100;
+                nuevoBoleto.total = horario.precio * (1 - descuento);
+            } else {
+                nuevoBoleto.total = horario.precio;
+            }
         } else {
             nuevoBoleto.total = horario.precio;
         }
 
-        // Insertar el boleto en la colección
         await this.collection.insertOne(nuevoBoleto);
 
         await this.conexion.close();
         return nuevoBoleto;
     }
-
 }

@@ -31,9 +31,11 @@ import {boleto} from './js/modules/boleto.js'
 
 // 2. Compra de boletos
 
+// Permitir la compra de boletos para una película específica, incluyendo la selección de la fecha y la hora de la proyección.
+
 const nuevoBoleto = {
     id: 9,
-    id_pelicula: 14,
+    id_pelicula: 2,
     id_horario_funcion: 17,
     id_usuario: 2,
     id_reserva: null,
@@ -47,7 +49,7 @@ const nuevoBoleto = {
   
       let objBoleto = new boleto();
   
-          const boletoCreado = await objBoleto.crearBoleto(nuevoBoleto);
+          const boletoCreado = await objBoleto.crearBoleto1(nuevoBoleto);
           console.log(`Boleto creado: `, boletoCreado);
 
   
