@@ -129,12 +129,13 @@ Este módulo permite obtener información detallada de una película específica
 El siguiente ejemplo muestra cómo utilizar la clase pelicula para obtener información de una película por su ID:
 ```js
 const idPeliculaById = 2; 
-let objPelicula = new pelicula();
 
-console.log(`Información de la película con ID ${idPeliculaById}: `, 
-            await objPelicula.getPeliculaById(idPeliculaById));
+    let objPelicula = new pelicula();
 
-objPelicula.destructor();
+    console.log(await objPelicula.getPeliculaById(idPeliculaById));
+
+    objPelicula.destructor();
+
 ```
 ## Funcionalidades
 ### Clase pelicula
@@ -145,19 +146,36 @@ destructor(): Método para liberar recursos cuando ya no se necesita la instanci
 # Ejemplo de salida
 
 ```js
-Información de la película con ID 2:  [
-  {
-    id: 2,
-    titulo: 'Observados',
-    genero: 'Thriller / Suspenso',
-    duracion: '1h 50m',
-    estado: 'En cartelera',
-    sinopsis: 'Un grupo de amigos descubre que están siendo vigilados por una entidad desconocida.',
-    estreno: '2024-07-10',
-    director: 'David F. Sandberg',
-    horarios_funcion: [ [Object], [Object] ]
-  }
-]
+{
+  id: 2,
+  titulo: 'Observados',
+  genero: 'Thriller / Suspenso',
+  duracion: '1h 50m',
+  estado: 'En cartelera',
+  sinopsis: 'Un grupo de amigos descubre que están siendo vigilados por una entidad desconocida.',
+  estreno: '2024-07-10',
+  director: 'David F. Sandberg',
+  horarios_funcion: [
+    {
+      _id: new ObjectId('66a3e31b280e8d342dd414bd'),
+      id: 3,
+      id_pelicula: 2,
+      id_sala: 3,
+      fecha_funcion: '2024-07-31',
+      hora_funcion: '16:00',
+      precio: 120
+    },
+    {
+      _id: new ObjectId('66a3e31b280e8d342dd414be'),
+      id: 4,
+      id_pelicula: 2,
+      id_sala: 4,
+      fecha_funcion: '2024-07-31',
+      hora_funcion: '19:00',
+      precio: 160
+    }
+  ]
+}
 ```
 # Notas importantes
 
