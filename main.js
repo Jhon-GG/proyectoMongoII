@@ -48,7 +48,7 @@ import {pago} from './js/modules/pago.js'
 //     fecha_compra: "2024-07-21",
 //     metodo_pago: "tarjeta de crédito",
 //     estado_compra: "realizado",
-//     total: 0 (El valor total se calculará automáticamente)
+//     total: 0
 //   };
 
 //   let objBoleto = new boleto();
@@ -265,23 +265,23 @@ import {pago} from './js/modules/pago.js'
 // Enviar confirmación de la compra y los detalles del boleto al usuario.
 
 
-const nuevoBoleto = {
-    id: 13,
-    id_pelicula: 6,
-    id_horario_funcion: 11,
-    id_usuario: 9,
-    id_reserva: null,
-    asiento: "E3",
-    tipo_compra: "presencial",
-    fecha_compra: "2024-07-30",
-    metodo_pago: "Efectivo",
-    estado_compra: "realizado",
-    total: 0 
-};
+// const nuevoBoleto = {
+//     id: 13,
+//     id_pelicula: 6,
+//     id_horario_funcion: 11,
+//     id_usuario: 9,
+//     id_reserva: null,
+//     asiento: "E3",
+//     tipo_compra: "presencial",
+//     fecha_compra: "2024-07-30",
+//     metodo_pago: "Efectivo",
+//     estado_compra: "realizado",
+//     total: 0 
+// };
 
-let objPago = new pago();
+// let objPago = new pago();
 
-    const boletoCreado = await objPago.compraBoletoDetalle(nuevoBoleto);
-    console.log(boletoCreado);
+//     const boletoCreado = await objPago.compraBoletoDetalle(nuevoBoleto);
+//     console.log(boletoCreado);
 
-objPago.destructor();
+// objPago.destructor();
