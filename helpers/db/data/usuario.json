@@ -1,0 +1,211 @@
+[{
+    "_id": {
+      "$oid": "66a46a3e280e8d342dd414d0"
+    },
+    "id": 1,
+    "nombre": "Carlos",
+    "apellido": "González",
+    "cc": 123456789,
+    "alias": "carlitos",
+    "rol": "estandar",
+    "email": "carlos.gonzalez@example.com",
+    "celular": {
+      "$numberLong": "3111234567"
+    }
+  },{
+    "_id": {
+      "$oid": "66a46a3e280e8d342dd414d1"
+    },
+    "id": 2,
+    "nombre": "María",
+    "apellido": "Martínez",
+    "cc": 987654321,
+    "alias": "mari",
+    "rol": "VIP",
+    "email": "maria.martinez@example.com",
+    "celular": {
+      "$numberLong": "3109876543"
+    }
+  },{
+    "_id": {
+      "$oid": "66a46a3e280e8d342dd414d2"
+    },
+    "id": 3,
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "cc": 112233445,
+    "alias": "juancho",
+    "rol": "estandar",
+    "email": "juan.perez@example.com",
+    "celular": {
+      "$numberLong": "3201122334"
+    }
+  },{
+    "_id": {
+      "$oid": "66a46a3e280e8d342dd414d3"
+    },
+    "id": 4,
+    "nombre": "Ana",
+    "apellido": "López",
+    "cc": 556677889,
+    "alias": "anita",
+    "rol": "VIP",
+    "email": "ana.lopez@example.com",
+    "celular": {
+      "$numberLong": "3115566778"
+    }
+  },{
+    "_id": {
+      "$oid": "66a46a3e280e8d342dd414d4"
+    },
+    "id": 5,
+    "nombre": "Luis",
+    "apellido": "Rodríguez",
+    "cc": 223344556,
+    "alias": "luisito",
+    "rol": "estandar",
+    "email": "luis.rodriguez@example.com",
+    "celular": {
+      "$numberLong": "3152233445"
+    }
+  },{
+    "_id": {
+      "$oid": "66a46a3e280e8d342dd414d5"
+    },
+    "id": 6,
+    "nombre": "Sofía",
+    "apellido": "Hernández",
+    "cc": 667788990,
+    "alias": "sofi",
+    "rol": "VIP",
+    "email": "sofia.hernandez@example.com",
+    "celular": {
+      "$numberLong": "3106677889"
+    }
+  },{
+    "_id": {
+      "$oid": "66a46a3e280e8d342dd414d6"
+    },
+    "id": 7,
+    "nombre": "Miguel",
+    "apellido": "Torres",
+    "cc": 334455667,
+    "alias": "mike",
+    "rol": "estandar",
+    "email": "miguel.torres@example.com",
+    "celular": {
+      "$numberLong": "3123344556"
+    }
+  },{
+    "_id": {
+      "$oid": "66a46a3e280e8d342dd414d7"
+    },
+    "id": 8,
+    "nombre": "Laura",
+    "apellido": "Ramírez",
+    "cc": 778899001,
+    "alias": "lau",
+    "rol": "VIP",
+    "email": "laura.ramirez@example.com",
+    "celular": {
+      "$numberLong": "3137788990"
+    }
+  },{
+    "_id": {
+      "$oid": "66a46a3e280e8d342dd414d8"
+    },
+    "id": 9,
+    "nombre": "David",
+    "apellido": "Flores",
+    "cc": 445566778,
+    "alias": "dave",
+    "rol": "estandar",
+    "email": "david.flores@example.com",
+    "celular": {
+      "$numberLong": "3204455667"
+    }
+  },{
+    "_id": {
+      "$oid": "66a46a3e280e8d342dd414d9"
+    },
+    "id": 10,
+    "nombre": "Isabel",
+    "apellido": "Ríos",
+    "cc": 889900112,
+    "alias": "isa",
+    "rol": "VIP",
+    "email": "isabel.rios@example.com",
+    "celular": {
+      "$numberLong": "3108899001"
+    }
+  },{
+    "_id": {
+      "$oid": "66a46a3e280e8d342dd414da"
+    },
+    "id": 11,
+    "nombre": "José",
+    "apellido": "Morales",
+    "cc": 556677889,
+    "alias": "josem",
+    "rol": "estandar",
+    "email": "jose.morales@example.com",
+    "celular": {
+      "$numberLong": "3115566778"
+    }
+  },{
+    "_id": {
+      "$oid": "66a46a3e280e8d342dd414db"
+    },
+    "id": 12,
+    "nombre": "Patricia",
+    "apellido": "Gómez",
+    "cc": 667788990,
+    "alias": "pati",
+    "rol": "VIP",
+    "email": "patricia.gomez@example.com",
+    "celular": {
+      "$numberLong": "3126677889"
+    }
+  },{
+    "_id": {
+      "$oid": "66a46a3e280e8d342dd414dc"
+    },
+    "id": 13,
+    "nombre": "Andrés",
+    "apellido": "Vargas",
+    "cc": 778899001,
+    "alias": "andy",
+    "rol": "estandar",
+    "email": "andres.vargas@example.com",
+    "celular": {
+      "$numberLong": "3137788990"
+    }
+  },{
+    "_id": {
+      "$oid": "66a46a3e280e8d342dd414dd"
+    },
+    "id": 14,
+    "nombre": "Fernanda",
+    "apellido": "Suárez",
+    "cc": 889900112,
+    "alias": "fer",
+    "rol": "VIP",
+    "email": "fernanda.suarez@example.com",
+    "celular": {
+      "$numberLong": "3148899001"
+    }
+  },{
+    "_id": {
+      "$oid": "66a537ce280e8d342dd414e9"
+    },
+    "id": 15,
+    "nombre": "Ricardo",
+    "apellido": "Díaz",
+    "cc": 112233445,
+    "alias": "richy",
+    "rol": "estandar",
+    "email": "ricardo.diaz@example.com",
+    "celular": {
+      "$numberLong": "3151122334"
+    }
+  }]

@@ -1,0 +1,156 @@
+[{
+    "_id": {
+      "$oid": "66a5b9da280e8d342dd414f8"
+    },
+    "id": 1,
+    "id_usuario": 2,
+    "fecha_reserva": "2024-07-20",
+    "estado": "activa",
+    "expiracion": "2024-07-30",
+    "asientos": [
+      1,
+      2,
+      3
+    ],
+    "id_pelicula": 1,
+    "id_horario_funcion": 1
+  },{
+    "_id": {
+      "$oid": "66a5b9da280e8d342dd414f9"
+    },
+    "id": 2,
+    "id_usuario": 4,
+    "fecha_reserva": "2024-07-22",
+    "estado": "cancelada",
+    "expiracion": "2024-07-25",
+    "asientos": [
+      4,
+      5
+    ],
+    "id_pelicula": 2,
+    "id_horario_funcion": 2
+  },{
+    "_id": {
+      "$oid": "66a5b9da280e8d342dd414fa"
+    },
+    "id": 3,
+    "id_usuario": 6,
+    "fecha_reserva": "2024-07-25",
+    "estado": "expirada",
+    "expiracion": "2024-07-27",
+    "asientos": [
+      6,
+      7,
+      8
+    ],
+    "id_pelicula": 3,
+    "id_horario_funcion": 3
+  },{
+    "_id": {
+      "$oid": "66a5b9da280e8d342dd414fb"
+    },
+    "id": 4,
+    "id_usuario": 8,
+    "fecha_reserva": "2024-07-26",
+    "estado": "activa",
+    "expiracion": "2024-08-01",
+    "asientos": [
+      9,
+      10
+    ],
+    "id_pelicula": 4,
+    "id_horario_funcion": 4
+  },{
+    "_id": {
+      "$oid": "66a5b9da280e8d342dd414fc"
+    },
+    "id": 5,
+    "id_usuario": 10,
+    "fecha_reserva": "2024-07-27",
+    "estado": "activa",
+    "expiracion": "2024-08-02",
+    "asientos": [
+      11,
+      12,
+      13
+    ],
+    "id_pelicula": 5,
+    "id_horario_funcion": 5
+  },{
+    "_id": {
+      "$oid": "66a5b9da280e8d342dd414fd"
+    },
+    "id": 6,
+    "id_usuario": 12,
+    "fecha_reserva": "2024-07-28",
+    "estado": "cancelada",
+    "expiracion": "2024-08-03",
+    "asientos": [
+      14,
+      15
+    ],
+    "id_pelicula": 6,
+    "id_horario_funcion": 6
+  },{
+    "_id": {
+      "$oid": "66a5b9da280e8d342dd414fe"
+    },
+    "id": 7,
+    "id_usuario": 14,
+    "fecha_reserva": "2024-07-29",
+    "estado": "expirada",
+    "expiracion": "2024-08-05",
+    "asientos": [
+      16,
+      17,
+      18
+    ],
+    "id_pelicula": 7,
+    "id_horario_funcion": 7
+  },{
+    "_id": {
+      "$oid": "66a5b9da280e8d342dd414ff"
+    },
+    "id": 8,
+    "id_usuario": 15,
+    "fecha_reserva": "2024-07-30",
+    "estado": "activa",
+    "expiracion": "2024-08-07",
+    "asientos": [
+      19,
+      20
+    ],
+    "id_pelicula": 8,
+    "id_horario_funcion": 8
+  },{
+    "_id": {
+      "$oid": "66a5b9da280e8d342dd41500"
+    },
+    "id": 9,
+    "id_usuario": 1,
+    "fecha_reserva": "2024-08-01",
+    "estado": "activa",
+    "expiracion": "2024-08-10",
+    "asientos": [
+      21,
+      22,
+      23
+    ],
+    "id_pelicula": 9,
+    "id_horario_funcion": 9
+  },{
+    "_id": {
+      "$oid": "66a5ba96280e8d342dd41502"
+    },
+    "id": 10,
+    "id_usuario": 3,
+    "fecha_reserva": "2024-08-02",
+    "estado": "cancelada",
+    "expiracion": "2024-08-12",
+    "asientos": [
+      24,
+      25
+    ],
+    "id_pelicula": 10,
+    "id_horario_funcion": 10
+  }]
