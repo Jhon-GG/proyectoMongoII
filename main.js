@@ -172,19 +172,33 @@ import {rol} from './js/modules/rol.js'
 
 // 5. Roles definidos
 
-let objRol = new rol();
-    
-    const nuevoUsuario = {
-        id: 19,
-        nombre: "Neil",
-        apellido: "Gutierrez",
-        cc: 1247263459,
-        alias: "NeilGG",
-        rol: "VIP",
-        email: "neil.guti@example.com",
-        celular: 314569721
-    };
+// Permitir la creación de nuevos usuarios en el sistema, asignando roles y privilegios específicos (usuario estándar, usuario VIP o administrador).
 
-const respuesta = await objRol.agregarUsuario(nuevoUsuario);
-console.log(respuesta);
+// let objRol = new rol();
+    
+//     const nuevoUsuario = {
+//         id: 19,
+//         nombre: "Neil",
+//         apellido: "Gutierrez",
+//         cc: 1247263459,
+//         alias: "NeilGG",
+//         rol: "VIP",
+//         email: "neil.guti@example.com",
+//         celular: 314569721
+//     };
+
+// const respuesta = await objRol.agregarUsuario(nuevoUsuario);
+// console.log(respuesta);
+// objRol.destructor();
+
+
+
+// Permitir la consulta de información detallada sobre un usuario, incluyendo su rol y estado de tarjeta VIP.
+
+let objRol = new rol();
+
+const idUsuario = 2; 
+const usuarioEncontrado = await objRol.buscarUsuarioPorId(idUsuario);
+console.log(usuarioEncontrado);
+
 objRol.destructor();
