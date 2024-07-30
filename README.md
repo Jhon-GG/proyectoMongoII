@@ -65,7 +65,7 @@ Desarrollar una serie de APIs para la aplicación web de CineCampus utilizando M
 **API para Obtener Detalles de Película:** Permitir la consulta de información detallada sobre una película específica, incluyendo sinopsis.
 
 
-## Módulo de Gestión de Películas
+# 1.1 Módulo de Gestión de Películas
 Este módulo proporciona funcionalidades para manejar y obtener información sobre películas disponibles en nuestro sistema. Debemos tener en cuenta que este caso de uso tiene dos partes, esta primera parte se encarga de traer todas las peliculas disponibles.
 ### Uso:
 El siguiente ejemplo muestra cómo utilizar la clase pelicula para obtener la lista de películas disponibles:
@@ -123,7 +123,7 @@ destructor(): Método para liberar recursos cuando ya no se necesita la instanci
 
 
 
-## Módulo de Gestión de Películas - Búsqueda por ID
+# 1.2 Módulo de Gestión de Películas - Búsqueda por ID
 Este módulo permite obtener información detallada de una película específica utilizando su ID. Debemos tener en cuenta que este caso de uso tiene dos partes, esta segunda parte se encarga de traer la pelicula que elijamos segun su id, mostrando informacion específica de la misma.
 ### Uso
 El siguiente ejemplo muestra cómo utilizar la clase pelicula para obtener información de una película por su ID:
@@ -194,7 +194,7 @@ destructor(): Método para liberar recursos cuando ya no se necesita la instanci
 
 **API para Verificar Disponibilidad de Asientos:** Permitir la consulta de la disponibilidad de asientos en una sala para una proyección específica.
 
-## Módulo de Gestión de Boletos - Creación de Boletos
+# 2.1 Módulo de Gestión de Boletos - Creación de Boletos
 Este módulo permite la creación de nuevos boletos para funciones de cine utilizando la clase boleto. Debemos tener en cuenta que esta es la primer parte del caso 2, que se enfoca en la compra de un nuevo boleto.
 
 ### Uso
@@ -257,7 +257,7 @@ Boleto creado:  {
 - Llame al método destructor() después de usar la instancia para liberar recursos.
 
 
-## Módulo de Gestión de Boletos - Búsqueda de Asientos Disponibles
+# 2.2 Módulo de Gestión de Boletos - Búsqueda de Asientos Disponibles
 
 Este módulo permite buscar asientos disponibles para una función específica utilizando la clase boleto. Debemos tener en cuenta que esta es la segunda parte del caso 2, que se enfoca en la busqueda de asientos disponibles segun una funcion en específico.
 
@@ -322,7 +322,9 @@ Asientos disponibles:  [
 # ___________________________________________________________________________________
 
 
-# 3. Módulo de Gestión de Reservas - Creación de Reservas
+# 3. Módulo de Gestión de Reservas 
+
+# 3.1Creación de Reservas
 Este módulo permite crear nuevas reservas de asientos para una función de cine específica utilizando la clase asiento. Este es un componente crucial del sistema de reservas que gestiona la creación de nuevas reservas con múltiples asientos. Debemos tener en cuenta que esta es la primer parte del tercer caso de uso, que seenfoca en la creacion de una reserva. 
 ## Uso
 El siguiente ejemplo muestra cómo crear una nueva reserva con múltiples asientos:
@@ -393,7 +395,7 @@ Reserva creada:  {
 
 
 
-# Módulo de Gestión de Reservas - Cancelación de Reservas
+# 3.2 Módulo de Gestión de Reservas - Cancelación de Reservas
 Este módulo permite cancelar reservas existentes utilizando la clase asiento. Esta funcionalidad es esencial para gestionar cambios en las reservas de los clientes y liberar asientos para otros usuarios. Debemos tener en cuenta que est aes la segunda parte del caso de uso 3, que se enfoca en la cancelacion de una reserva de asiento 
 ## Uso
 El siguiente ejemplo muestra cómo cancelar una reserva existente:
@@ -451,7 +453,7 @@ idReserva: Número entero que representa el ID único de la reserva que se desea
 
 # 4. Descuentos y tarjetas VIP
 
-## Módulo de Descuentos y Creación de Boletos
+# 4.1 Módulo de Descuentos y Creación de Boletos
 
 Este módulo permite crear nuevos boletos para funciones de cine, aplicando descuentos si el usuario tiene una tarjeta VIP activa. Debemos tener en cuenta que es la primer parte del caso de uso 4, que se enfoca en la creacion de la boleta y aplicar su respectivo descuento.
 
@@ -545,7 +547,7 @@ nuevoBoleto (Object): Un objeto con la siguiente estructura:
 
 
 
-## Módulo de Validación de Descuentos en Tarjeta VIP
+# 4.2 Módulo de Validación de Descuentos en Tarjeta VIP
 
 Este módulo permite validar y aplicar descuentos para boletos de cine basados en la tarjeta VIP del usuario, si está disponible y activa. Debemos tener en cuenta que esta es la segunda parte del caso de uso 4, que se enfoca en la validacion de la tarjeta VIP.
 
@@ -641,3 +643,352 @@ Limpia las instancias y conexiones después de usar la clase.
 - El campo total del boleto se calcula automáticamente basándose en el precio de la función y los descuentos aplicables.
 - Es importante llamar al método destructor() después de utilizar la clase para liberar recursos.
 - Este método no solo valida el descuento, sino que también crea el boleto en la base de datos.
+
+
+# ___________________________________________________________________________________
+
+
+# 5. Roles definidos
+
+# 5.1 Módulo de Administración de Roles y Usuarios
+
+Este módulo permite agregar nuevos usuarios al sistema, asignándoles roles específicos. Debemos tener en cuenta que esta es la primer parte del caso de uso 5, el cual hace enfasis en la creacion de nuevos usuarios
+
+### Uso
+
+```js
+let objRol = new rol();
+    
+    const nuevoUsuario = {
+        id: 19,
+        nombre: "Neil",
+        apellido: "Gutierrez",
+        cc: 1247263459,
+        alias: "NeilGG",
+        rol: "VIP",
+        email: "neil.guti@example.com",
+        celular: 314569721
+    };
+
+const respuesta = await objRol.agregarUsuario(nuevoUsuario);
+console.log(respuesta);
+objRol.destructor();
+```
+
+## Clase rol
+#### Método agregarUsuario(nuevoUsuario)
+Este método agrega un nuevo usuario al sistema, validando sus datos y asignando el rol especificado.
+
+## Parámetros
+
+nuevoUsuario (Object): Un objeto con la siguiente estructura:
+
+- id (Number): Identificador único del usuario.
+- nombre (String): Nombre del usuario.
+- apellido (String): Apellido del usuario.
+- cc (Number): Número de identificación o cédula del usuario.
+- alias (String): Alias o nombre de usuario.
+- rol (String): Rol asignado al usuario (ej. "VIP").
+- email (String): Correo electrónico del usuario.
+- celular (Number): Número de teléfono celular del usuario.
+
+
+## Retorno
+
+```js
+{
+  id: 19,
+  nombre: 'Neil',
+  apellido: 'Gutierrez',
+  cc: 1247263459,
+  alias: 'NeilGG',
+  rol: 'VIP',
+  email: 'neil.guti@example.com',
+  celular: 314569721,
+  _id: new ObjectId('66a882b9ca61a2e681bb322f')
+}
+```
+
+
+## Comportamiento
+
+- Valida que todos los campos requeridos del usuario estén presentes y sean válidos.
+- Verifica si ya existe un usuario con el mismo ID, correo electrónico o número de cédula.
+- Asigna el rol especificado al usuario.
+- Agrega el nuevo usuario a la base de datos.
+- Retorna un mensaje de confirmación junto con los detalles del usuario agregado.
+
+## Método destructor()
+Limpia las instancias y conexiones después de usar la clase.
+
+
+# Notas Importantes
+
+- El rol especificado debe ser válido según los roles definidos en el sistema.
+- Es importante llamar al método destructor() después de utilizar la clase para liberar recursos.
+
+
+
+# 5.2 Módulo de Búsqueda de Usuarios
+
+Este módulo permite buscar usuarios en el sistema por su ID. Debemos tener en cuenta que esta es la segunda parte del caso de uso 5, que se enfoca en la busqueda de un usuari por su id, teniendo een cuenta el estado de su tarjeta.
+
+### Uso
+
+```js
+let objRol = new rol();
+
+const idUsuario = 2; 
+const usuarioEncontrado = await objRol.buscarUsuarioPorId(idUsuario);
+console.log(usuarioEncontrado);
+
+objRol.destructor();
+```
+
+## Clase rol
+### Método buscarUsuarioPorId(idUsuario)
+Este método busca y retorna la información de un usuario específico basado en su ID.
+
+## Parámetros
+
+idUsuario (Number): El identificador único del usuario que se desea buscar.
+
+# Retorno
+
+```js
+{
+  _id: new ObjectId('66a46a3e280e8d342dd414d1'),
+  id: 2,
+  nombre: 'María',
+  apellido: 'Martínez',
+  cc: 987654321,
+  alias: 'mari',
+  rol: 'VIP',
+  email: 'maria.martinez@example.com',
+  celular: 3109876543,
+  tarjeta_vip: {
+    numero_tarjeta: 1002003001,
+    descuento: 20,
+    fecha_expiracion: '2025-12-31',
+    estado: 'activa'
+  }
+}
+```
+
+## Comportamiento
+
+- Busca en la base de datos un usuario que coincida con el ID proporcionado.
+- Si se encuentra el usuario, retorna toda su información.
+- Si no se encuentra el usuario, retorna null o un mensaje indicando que no se encontró.
+- Si ocurre algún error durante la búsqueda, retorna un mensaje de error.
+
+### Método destructor()
+Limpia las instancias y conexiones después de usar la clase.
+
+
+# Notas Importantes
+
+- El ID del usuario debe ser un número válido.
+- Es importante llamar al método destructor() después de utilizar la clase para liberar recursos.
+
+
+
+# 5.3 Módulo de Actualización de Roles de Usuario
+
+Este módulo permite cambiar el rol de un usuario existente en el sistema. Debemos tener en cuenta que esta es la tercer parte del caso de uso 5, que se enfoca en la actualizacion del rol de un usuario
+
+### Uso
+
+```js
+    let objRol = new rol();
+
+        const idUsuario = 3;
+        const nuevoRol = 'VIP'; 
+        const usuarioActualizado = await objRol.cambiarRolUsuario(idUsuario, nuevoRol);
+        console.log(usuarioActualizado);
+
+    objRol.destructor();
+```
+
+## Rol.destructor();
+
+# Clase rol
+### Método cambiarRolUsuario(idUsuario, nuevoRol)
+Este método actualiza el rol de un usuario específico basado en su ID.
+
+## Parámetros
+
+- idUsuario (Number): El identificador único del usuario cuyo rol se desea cambiar.
+- nuevoRol (String): El nuevo rol que se asignará al usuario.
+
+# Retorno
+
+```js
+{
+  _id: new ObjectId('66a46a3e280e8d342dd414d2'),
+  id: 3,
+  nombre: 'Juan',
+  apellido: 'Pérez',
+  cc: 112233445,
+  alias: 'juancho',
+  rol: 'VIP',
+  email: 'juan.perez@example.com',
+  celular: 3201122334
+}
+```
+
+
+## Comportamiento
+
+- Busca en la base de datos un usuario que coincida con el ID proporcionado.
+- Si se encuentra el usuario, actualiza su rol con el nuevo valor proporcionado.
+- Retorna la información actualizada del usuario.
+- Si no se encuentra el usuario, retorna un mensaje indicando que no se encontró.
+- Si ocurre algún error durante la actualización, retorna un mensaje de error.
+
+## Método destructor()
+Limpia las instancias y conexiones después de usar la clase.
+
+
+# Notas Importantes
+
+- El ID del usuario debe ser un número válido.
+- El nuevo rol debe ser una cadena de texto válida y corresponder a uno de los roles permitidos en el sistema.
+- Es importante llamar al método destructor() después de utilizar la clase para liberar recursos.
+
+
+# 5.4 Módulo de Búsqueda de Usuarios por Rol
+
+Este módulo permite buscar y listar todos los usuarios que tienen un rol específico en el sistema. Debemos tener en cuenta que esta es la parte 4 del caso de uso 5, que se enfoca en filtrar los usuarios por su rol
+
+### Uso
+
+```js
+    let objRol = new rol();
+
+        const rolBuscado = 'VIP'; 
+        const usuariosPorRol = await objRol.buscarUsuariosPorRol(rolBuscado);
+        console.log(usuariosPorRol);
+    objRol.destructor();
+```
+
+## Clase rol
+### Método buscarUsuariosPorRol(rolBuscado)
+Este método busca y retorna una lista de todos los usuarios que tienen el rol especificado.
+
+## Parámetros
+
+- rolBuscado (String): El rol por el cual se desea filtrar los usuarios.
+
+# Retorno
+
+```js
+[
+  {
+    _id: new ObjectId('66a46a3e280e8d342dd414d1'),
+    id: 2,
+    nombre: 'María',
+    apellido: 'Martínez',
+    cc: 987654321,
+    alias: 'mari',
+    rol: 'VIP',
+    email: 'maria.martinez@example.com',
+    celular: 3109876543
+  },
+  {
+    _id: new ObjectId('66a46a3e280e8d342dd414d3'),
+    id: 4,
+    nombre: 'Ana',
+    apellido: 'López',
+    cc: 556677889,
+    alias: 'anita',
+    rol: 'VIP',
+    email: 'ana.lopez@example.com',
+    celular: 3115566778
+  },
+  {
+    _id: new ObjectId('66a46a3e280e8d342dd414d5'),
+    id: 6,
+    nombre: 'Sofía',
+    apellido: 'Hernández',
+    cc: 667788990,
+    alias: 'sofi',
+    rol: 'VIP',
+    email: 'sofia.hernandez@example.com',
+    celular: 3106677889
+  },
+  {
+    _id: new ObjectId('66a46a3e280e8d342dd414d7'),
+    id: 8,
+    nombre: 'Laura',
+    apellido: 'Ramírez',
+    cc: 778899001,
+    alias: 'lau',
+    rol: 'VIP',
+    email: 'laura.ramirez@example.com',
+    celular: 3137788990
+  },
+  {
+    _id: new ObjectId('66a46a3e280e8d342dd414d8'),
+    id: 9,
+    nombre: 'David',
+    apellido: 'Flores',
+    cc: 445566778,
+    alias: 'dave',
+    rol: 'VIP',
+    email: 'david.flores@example.com',
+    celular: 3204455667
+  },
+  {
+    _id: new ObjectId('66a46a3e280e8d342dd414d9'),
+    id: 10,
+    nombre: 'Isabel',
+    apellido: 'Ríos',
+    cc: 889900112,
+    alias: 'isa',
+    rol: 'VIP',
+    email: 'isabel.rios@example.com',
+    celular: 3108899001
+  },
+  {
+    _id: new ObjectId('66a46a3e280e8d342dd414db'),
+    id: 12,
+    nombre: 'Patricia',
+    apellido: 'Gómez',
+    cc: 667788990,
+    alias: 'pati',
+    rol: 'VIP',
+    email: 'patricia.gomez@example.com',
+    celular: 3126677889
+  },
+  {
+    _id: new ObjectId('66a46a3e280e8d342dd414dd'),
+    id: 14,
+    nombre: 'Fernanda',
+    apellido: 'Suárez',
+    cc: 889900112,
+    alias: 'fer',
+    rol: 'VIP',
+    email: 'fernanda.suarez@example.com',
+    celular: 3148899001
+  }
+]
+```
+
+
+### Comportamiento
+
+- Busca en la base de datos todos los usuarios que tienen el rol especificado.
+- Retorna un array con la información de todos los usuarios encontrados.
+- Si no se encuentran usuarios con ese rol, retorna un array vacío.
+- Si ocurre algún error durante la búsqueda, retorna un mensaje de error.
+
+## Método destructor()
+Limpia las instancias y conexiones después de usar la clase.
+
+
+# Notas Importantes
+
+- El rol buscado debe ser una cadena de texto válida y corresponder a uno de los roles existentes en el sistema.
+- Es importante llamar al método destructor() después de utilizar la clase para liberar recursos.
+- Este método puede retornar un gran número de resultados si hay muchos usuarios con el rol especificado.

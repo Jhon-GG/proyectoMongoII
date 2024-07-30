@@ -2,6 +2,7 @@ import {pelicula} from './js/modules/pelicula.js'
 import {boleto} from './js/modules/boleto.js'
 import { asiento } from './js/modules/asiento.js'
 import { descuento } from './js/modules/descuento.js';
+import {rol} from './js/modules/rol.js'
 
 
 // 1. Seleccion de peliculas
@@ -142,26 +143,89 @@ import { descuento } from './js/modules/descuento.js';
 // Permitir la verificación de la validez de una tarjeta VIP durante el proceso de compra.
 
 
-  const nuevoBoleto = {
-    id: 11,
-    id_pelicula: 10,
-    id_horario_funcion: 1,
-    id_usuario: 2,
-    id_reserva: null,
-    asiento: "B4",
-    tipo_compra: "virtual",
-    fecha_compra: "2024-07-29",
-    metodo_pago: "tarjeta de crédito",
-    estado_compra: "realizado",
-    total: 0 // (El valor total se calculará automáticamente)
-  };
+//   const nuevoBoleto = {
+//     id: 11,
+//     id_pelicula: 10,
+//     id_horario_funcion: 1,
+//     id_usuario: 2,
+//     id_reserva: null,
+//     asiento: "B4",
+//     tipo_compra: "virtual",
+//     fecha_compra: "2024-07-29",
+//     metodo_pago: "tarjeta de crédito",
+//     estado_compra: "realizado",
+//     total: 0 // (El valor total se calculará automáticamente)
+//   };
 
-  let objDescuento = new descuento();
+//   let objDescuento = new descuento();
 
-      const descuentoCreado = await objDescuento.validacionDescuentoEnTarjeta(nuevoBoleto);
-      console.log(descuentoCreado);
-
-
-  objDescuento.destructor();
+//       const descuentoCreado = await objDescuento.validacionDescuentoEnTarjeta(nuevoBoleto);
+//       console.log(descuentoCreado);
 
 
+//   objDescuento.destructor();
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+
+// 5. Roles definidos
+
+// Permitir la creación de nuevos usuarios en el sistema, asignando roles y privilegios específicos (usuario estándar, usuario VIP o administrador).
+
+// let objRol = new rol();
+    
+//     const nuevoUsuario = {
+//         id: 19,
+//         nombre: "Neil",
+//         apellido: "Gutierrez",
+//         cc: 1247263459,
+//         alias: "NeilGG",
+//         rol: "VIP",
+//         email: "neil.guti@example.com",
+//         celular: 314569721
+//     };
+
+// const respuesta = await objRol.agregarUsuario(nuevoUsuario);
+// console.log(respuesta);
+// objRol.destructor();
+
+
+
+// Permitir la consulta de información detallada sobre un usuario, incluyendo su rol y estado de tarjeta VIP.
+
+
+// let objRol = new rol();
+
+// const idUsuario = 2; 
+// const usuarioEncontrado = await objRol.buscarUsuarioPorId(idUsuario);
+// console.log(usuarioEncontrado);
+
+// objRol.destructor();
+
+
+
+// Permitir la actualización del rol de un usuario (por ejemplo, cambiar de usuario estándar a VIP, o viceversa).
+
+
+    // let objRol = new rol();
+
+    //     const idUsuario = 3;
+    //     const nuevoRol = 'VIP'; 
+    //     const usuarioActualizado = await objRol.cambiarRolUsuario(idUsuario, nuevoRol);
+    //     console.log(usuarioActualizado);
+
+    // objRol.destructor();
+
+
+
+// Permitir la consulta de todos los usuarios del sistema, con la posibilidad de filtrar por rol (VIP, estándar o administrador).
+
+
+    let objRol = new rol();
+
+        const rolBuscado = 'VIP'; 
+        const usuariosPorRol = await objRol.buscarUsuariosPorRol(rolBuscado);
+        console.log(usuariosPorRol);
+    objRol.destructor();
