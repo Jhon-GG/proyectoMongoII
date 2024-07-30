@@ -110,27 +110,67 @@ export class rol extends connect {
         }
     }
 
-    async cambiarRolUsuario(id, nuevoRol) {
-        try {
-            await this.conexion.connect();
+    /**
+ * Actualiza el rol de un usuario en la base de datos.
+ *
+ * @param {string} id - El identificador único del usuario a actualizar.
+ * @param {string} nuevoRol - El nuevo rol a asignar al usuario.
+ *
+ * @returns {Promise<Object|null>} - Si la actualización es exitosa, devuelve el objeto de usuario actualizado.
+ * Si la actualización falla debido a que el usuario ya tiene el rol especificado, devuelve un objeto de error.
+ * Si se produce un error durante el proceso de actualización, devuelve un objeto de error con el mensaje de error.
+ *
+ * @throws {Error} - Lanza un error si el usuario no existe o si la actualización falla.
+ */
+async cambiarRolUsuario(id, nuevoRol) {
+    try {
+        await this.conexion.connect();
 
-            const resultado = await this.collection.updateOne(
-                { id },
-                { $set: { rol: nuevoRol } }
-            );
+        const resultado = await this.collection.updateOne(
+            { id },
+            { $set: { rol: nuevoRol } }
+        );
 
-            if (resultado.modifiedCount === 0) {
-                throw new Error("No se pudo actualizar el rol del usuario, ya tiene este rol");
-            }
-
-            const usuarioActualizado = await this.collection.findOne({ id });
-            await this.conexion.close();
-            return usuarioActualizado;
-        } catch (error) {
-            await this.conexion.close();
-            return { mensaje: `Error: ${error.message}` };
+        if (resultado.modifiedCount === 0) {
+            throw new Error("No se pudo actualizar el rol del usuario, ya tiene este rol");
         }
+
+        const usuarioActualizado = await this.collection.findOne({ id });
+        await this.conexion.close();
+        return usuarioActualizado;
+    } catch (error) {
+        await this.conexion.close();
+        return { mensaje: `Error: ${error.message}` };
     }
+}
+
+    /**
+ * Busca y devuelve todos los usuarios con un rol específico en la base de datos.
+ *
+ * @param {string} rol - El rol a buscar en la base de datos.
+ *
+ * @returns {Promise<Object[]|Object>} - Si se encuentran usuarios con el rol especificado,
+ * devuelve un array de objetos de usuario. Si no se encuentran usuarios, devuelve un objeto con un mensaje de error.
+ * Si se produce un error durante la búsqueda, también devuelve un objeto con un mensaje de error.
+ */
+async buscarUsuariosPorRol(rol) {
+    try {
+        await this.conexion.connect();
+
+        const usuarios = await this.collection.find({ rol }).toArray();
+
+        if (usuarios.length === 0) {
+            await this.conexion.close();
+            return { mensaje: "No se encontraron usuarios con el rol especificado." };
+        }
+
+        await this.conexion.close();
+        return usuarios;
+    } catch (error) {
+        await this.conexion.close();
+        return { mensaje: `Error: ${error.message}` };
+    }
+}
 
     destructor() {
         rol.instanceRol = undefined;
