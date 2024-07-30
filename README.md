@@ -342,7 +342,7 @@ El siguiente ejemplo muestra cómo crear una nueva reserva con múltiples asient
 
         const reservaCreada = await objAsiento.crearReserva(nuevaReserva);
         console.log(reservaCreada)
-        objAsiento.destructor();
+    objAsiento.destructor();
 ```
 
 # Funcionalidades

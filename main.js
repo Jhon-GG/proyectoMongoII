@@ -17,7 +17,7 @@ import { asiento } from './js/modules/asiento.js'
 
 // Permitir la consulta de información detallada sobre una película específica, incluyendo sinopsis.
 
-    // const idPeliculaById = 2; 
+    // const idPeliculaById = 2;
 
     //     let objPelicula = new pelicula();
 
@@ -47,7 +47,7 @@ import { asiento } from './js/modules/asiento.js'
 //     estado_compra: "realizado",
 //     total: 0 (El valor total se calculará automáticamente)
 //   };
-  
+
 //   let objBoleto = new boleto();
 
 //       const boletoCreado = await objBoleto.crearBoleto1(nuevoBoleto);
@@ -60,14 +60,14 @@ import { asiento } from './js/modules/asiento.js'
 
 // Permitir la consulta de la disponibilidad de asientos en una sala para una proyección específica.
 
-    let objBoleto = new boleto();
+    // let objBoleto = new boleto();
 
-    const idHorarioFuncion = 1;
+    // const idHorarioFuncion = 1;
 
-    const asientosDisponibles = await objBoleto.buscarAsientosDisponibles(idHorarioFuncion);
-    console.log(asientosDisponibles);
+    // const asientosDisponibles = await objBoleto.buscarAsientosDisponibles(idHorarioFuncion);
+    // console.log(asientosDisponibles);
 
-    objBoleto.destructor()
+    // objBoleto.destructor()
 
 
 
@@ -91,16 +91,16 @@ import { asiento } from './js/modules/asiento.js'
     //     };
 
     //     const reservaCreada = await objAsiento.crearReserva(nuevaReserva);
-    //     console.log(`Reserva creada: `, reservaCreada)
-    //     objAsiento.destructor();
+    //     console.log(reservaCreada)
+    // objAsiento.destructor();
 
 
 // Permitir la cancelación de una reserva de asiento ya realizada.
 
-    // let objAsiento = new asiento();
+    let objAsiento = new asiento();
 
-    // const idReserva = 11;
+    const idReserva = 11;
 
-    // const reservaCancelada = await objAsiento.cancelarReserva(idReserva);
-    // console.log(`Reserva cancelada: `, reservaCancelada);
-    // objAsiento.destructor();
+    const reservaCancelada = await objAsiento.cancelarReserva(idReserva);
+    console.log(reservaCancelada);
+    objAsiento.destructor();
