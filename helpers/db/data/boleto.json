@@ -1,0 +1,121 @@
+[{
+    "_id": {
+      "$oid": "66a5bba0280e8d342dd41503"
+    },
+    "id": 1,
+    "id_pelicula": 1,
+    "id_horario_funcion": 1,
+    "id_usuario": 2,
+    "id_reserva": 1,
+    "asiento": "A1",
+    "tipo_compra": "virtual",
+    "fecha_compra": "2024-07-21",
+    "metodo_pago": "tarjeta de crédito",
+    "estado_compra": "realizado",
+    "total": 150
+  },{
+    "_id": {
+      "$oid": "66a5bba0280e8d342dd41504"
+    },
+    "id": 2,
+    "id_pelicula": 2,
+    "id_horario_funcion": 2,
+    "id_usuario": 4,
+    "id_reserva": 2,
+    "asiento": "B2",
+    "tipo_compra": "presencial",
+    "fecha_compra": "2024-07-22",
+    "metodo_pago": "efectivo",
+    "estado_compra": "realizado",
+    "total": 140
+  },{
+    "_id": {
+      "$oid": "66a5bba0280e8d342dd41505"
+    },
+    "id": 3,
+    "id_pelicula": 3,
+    "id_horario_funcion": 3,
+    "id_usuario": 6,
+    "id_reserva": 3,
+    "asiento": "C3",
+    "tipo_compra": "virtual",
+    "fecha_compra": "2024-07-23",
+    "metodo_pago": "tarjeta de débito",
+    "estado_compra": "pendiente",
+    "total": 130
+  },{
+    "_id": {
+      "$oid": "66a5bba0280e8d342dd41506"
+    },
+    "id": 4,
+    "id_pelicula": 4,
+    "id_horario_funcion": 4,
+    "id_usuario": 8,
+    "id_reserva": 4,
+    "asiento": "D4",
+    "tipo_compra": "presencial",
+    "fecha_compra": "2024-07-24",
+    "metodo_pago": "tarjeta de crédito",
+    "estado_compra": "no realizado",
+    "total": 120
+  },{
+    "_id": {
+      "$oid": "66a5bba0280e8d342dd41507"
+    },
+    "id": 5,
+    "id_pelicula": 5,
+    "id_horario_funcion": 5,
+    "id_usuario": 10,
+    "id_reserva": 5,
+    "asiento": "E5",
+    "tipo_compra": "virtual",
+    "fecha_compra": "2024-07-25",
+    "metodo_pago": "paypal",
+    "estado_compra": "realizado",
+    "total": 110
+  },{
+    "_id": {
+      "$oid": "66a5bba0280e8d342dd41508"
+    },
+    "id": 6,
+    "id_pelicula": 6,
+    "id_horario_funcion": 6,
+    "id_usuario": 12,
+    "id_reserva": 6,
+    "asiento": "F6",
+    "tipo_compra": "presencial",
+    "fecha_compra": "2024-07-26",
+    "metodo_pago": "efectivo",
+    "estado_compra": "pendiente",
+    "total": 100
+  },{
+    "_id": {
+      "$oid": "66a5bba0280e8d342dd41509"
+    },
+    "id": 7,
+    "id_pelicula": 7,
+    "id_horario_funcion": 7,
+    "id_usuario": 14,
+    "id_reserva": 7,
+    "asiento": "G7",
+    "tipo_compra": "virtual",
+    "fecha_compra": "2024-07-27",
+    "metodo_pago": "tarjeta de débito",
+    "estado_compra": "realizado",
+    "total": 90
+  },{
+    "_id": {
+      "$oid": "66a5bc30280e8d342dd4150b"
+    },
+    "id": 8,
+    "id_pelicula": 8,
+    "id_horario_funcion": 8,
+    "id_usuario": 15,
+    "id_reserva": 8,
+    "asiento": "H8",
+    "tipo_compra": "presencial",
+    "fecha_compra": "2024-07-28",
+    "metodo_pago": "tarjeta de crédito",
+    "estado_compra": "no realizado",
+    "total": 80
+  }]

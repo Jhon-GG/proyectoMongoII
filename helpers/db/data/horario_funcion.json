@@ -1,0 +1,181 @@
+[{
+    "_id": {
+      "$oid": "66a3e31b280e8d342dd414bb"
+    },
+    "id": 1,
+    "id_pelicula": 1,
+    "id_sala": 1,
+    "fecha_funcion": "2024-07-30",
+    "hora_funcion": "18:00",
+    "precio": 150
+  },{
+    "_id": {
+      "$oid": "66a3e31b280e8d342dd414bc"
+    },
+    "id": 2,
+    "id_pelicula": 1,
+    "id_sala": 2,
+    "fecha_funcion": "2024-07-30",
+    "hora_funcion": "20:30",
+    "precio": 180
+  },{
+    "_id": {
+      "$oid": "66a3e31b280e8d342dd414bd"
+    },
+    "id": 3,
+    "id_pelicula": 2,
+    "id_sala": 3,
+    "fecha_funcion": "2024-07-31",
+    "hora_funcion": "16:00",
+    "precio": 120
+  },{
+    "_id": {
+      "$oid": "66a3e31b280e8d342dd414be"
+    },
+    "id": 4,
+    "id_pelicula": 2,
+    "id_sala": 4,
+    "fecha_funcion": "2024-07-31",
+    "hora_funcion": "19:00",
+    "precio": 160
+  },{
+    "_id": {
+      "$oid": "66a3e31b280e8d342dd414bf"
+    },
+    "id": 5,
+    "id_pelicula": 3,
+    "id_sala": 5,
+    "fecha_funcion": "2024-08-01",
+    "hora_funcion": "17:30",
+    "precio": 140
+  },{
+    "_id": {
+      "$oid": "66a3e31b280e8d342dd414c0"
+    },
+    "id": 6,
+    "id_pelicula": 3,
+    "id_sala": 6,
+    "fecha_funcion": "2024-08-01",
+    "hora_funcion": "21:00",
+    "precio": 170
+  },{
+    "_id": {
+      "$oid": "66a3e31b280e8d342dd414c1"
+    },
+    "id": 7,
+    "id_pelicula": 4,
+    "id_sala": 1,
+    "fecha_funcion": "2024-08-02",
+    "hora_funcion": "15:00",
+    "precio": 130
+  },{
+    "_id": {
+      "$oid": "66a3e31b280e8d342dd414c2"
+    },
+    "id": 8,
+    "id_pelicula": 4,
+    "id_sala": 2,
+    "fecha_funcion": "2024-08-02",
+    "hora_funcion": "18:30",
+    "precio": 150
+  },{
+    "_id": {
+      "$oid": "66a3e31b280e8d342dd414c3"
+    },
+    "id": 9,
+    "id_pelicula": 5,
+    "id_sala": 3,
+    "fecha_funcion": "2024-08-03",
+    "hora_funcion": "16:30",
+    "precio": 110
+  },{
+    "_id": {
+      "$oid": "66a3e31b280e8d342dd414c4"
+    },
+    "id": 10,
+    "id_pelicula": 5,
+    "id_sala": 4,
+    "fecha_funcion": "2024-08-03",
+    "hora_funcion": "20:00",
+    "precio": 155
+  },{
+    "_id": {
+      "$oid": "66a3e31b280e8d342dd414c5"
+    },
+    "id": 11,
+    "id_pelicula": 6,
+    "id_sala": 5,
+    "fecha_funcion": "2024-08-04",
+    "hora_funcion": "14:00",
+    "precio": 125
+  },{
+    "_id": {
+      "$oid": "66a3e31b280e8d342dd414c6"
+    },
+    "id": 12,
+    "id_pelicula": 6,
+    "id_sala": 6,
+    "fecha_funcion": "2024-08-04",
+    "hora_funcion": "19:00",
+    "precio": 165
+  },{
+    "_id": {
+      "$oid": "66a3e31b280e8d342dd414c7"
+    },
+    "id": 13,
+    "id_pelicula": 7,
+    "id_sala": 1,
+    "fecha_funcion": "2024-08-05",
+    "hora_funcion": "18:30",
+    "precio": 140
+  },{
+    "_id": {
+      "$oid": "66a3e31b280e8d342dd414c8"
+    },
+    "id": 14,
+    "id_pelicula": 7,
+    "id_sala": 2,
+    "fecha_funcion": "2024-08-05",
+    "hora_funcion": "21:00",
+    "precio": 170
+  },{
+    "_id": {
+      "$oid": "66a3e31b280e8d342dd414c9"
+    },
+    "id": 15,
+    "id_pelicula": 8,
+    "id_sala": 3,
+    "fecha_funcion": "2024-08-06",
+    "hora_funcion": "17:00",
+    "precio": 135
+  },{
+    "_id": {
+      "$oid": "66a3e31b280e8d342dd414ca"
+    },
+    "id": 16,
+    "id_pelicula": 8,
+    "id_sala": 4,
+    "fecha_funcion": "2024-08-06",
+    "hora_funcion": "19:30",
+    "precio": 160
+  },{
+    "_id": {
+      "$oid": "66a3e31b280e8d342dd414cb"
+    },
+    "id": 17,
+    "id_pelicula": 9,
+    "id_sala": 5,
+    "fecha_funcion": "2024-08-07",
+    "hora_funcion": "15:30",
+    "precio": 120
+  },{
+    "_id": {
+      "$oid": "66a3e3a8280e8d342dd414cf"
+    },
+    "id": 18,
+    "id_pelicula": 9,
+    "id_sala": 6,
+    "fecha_funcion": "2024-08-07",
+    "hora_funcion": "20:00",
+    "precio": 150
+  }]

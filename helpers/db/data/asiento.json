@@ -1,0 +1,801 @@
+[{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4144e"
+    },
+    "id": 1,
+    "numero": "A1",
+    "estado": "disponible",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4144f"
+    },
+    "id": 2,
+    "numero": "A2",
+    "estado": "reservado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41450"
+    },
+    "id": 3,
+    "numero": "A3",
+    "estado": "comprado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41451"
+    },
+    "id": 4,
+    "numero": "A4",
+    "estado": "disponible",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41452"
+    },
+    "id": 5,
+    "numero": "A5",
+    "estado": "reservado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41453"
+    },
+    "id": 6,
+    "numero": "A6",
+    "estado": "comprado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41454"
+    },
+    "id": 7,
+    "numero": "A7",
+    "estado": "disponible",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41455"
+    },
+    "id": 8,
+    "numero": "A8",
+    "estado": "reservado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41456"
+    },
+    "id": 9,
+    "numero": "A9",
+    "estado": "comprado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41457"
+    },
+    "id": 10,
+    "numero": "A10",
+    "estado": "disponible",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41458"
+    },
+    "id": 11,
+    "numero": "B1",
+    "estado": "reservado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41459"
+    },
+    "id": 12,
+    "numero": "B2",
+    "estado": "comprado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4145a"
+    },
+    "id": 13,
+    "numero": "B3",
+    "estado": "disponible",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4145b"
+    },
+    "id": 14,
+    "numero": "B4",
+    "estado": "reservado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4145c"
+    },
+    "id": 15,
+    "numero": "B5",
+    "estado": "comprado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4145d"
+    },
+    "id": 16,
+    "numero": "B6",
+    "estado": "disponible",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4145e"
+    },
+    "id": 17,
+    "numero": "B7",
+    "estado": "reservado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4145f"
+    },
+    "id": 18,
+    "numero": "B8",
+    "estado": "comprado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41460"
+    },
+    "id": 19,
+    "numero": "B9",
+    "estado": "disponible",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41461"
+    },
+    "id": 20,
+    "numero": "B10",
+    "estado": "reservado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41462"
+    },
+    "id": 21,
+    "numero": "C1",
+    "estado": "disponible",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41463"
+    },
+    "id": 22,
+    "numero": "C2",
+    "estado": "reservado",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41464"
+    },
+    "id": 23,
+    "numero": "C3",
+    "estado": "comprado",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41465"
+    },
+    "id": 24,
+    "numero": "C4",
+    "estado": "disponible",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41466"
+    },
+    "id": 25,
+    "numero": "C5",
+    "estado": "reservado",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41467"
+    },
+    "id": 26,
+    "numero": "C6",
+    "estado": "comprado",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41468"
+    },
+    "id": 27,
+    "numero": "C7",
+    "estado": "disponible",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41469"
+    },
+    "id": 28,
+    "numero": "C8",
+    "estado": "reservado",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4146a"
+    },
+    "id": 29,
+    "numero": "C9",
+    "estado": "comprado",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4146b"
+    },
+    "id": 30,
+    "numero": "C10",
+    "estado": "disponible",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4146c"
+    },
+    "id": 31,
+    "numero": "D1",
+    "estado": "disponible",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4146d"
+    },
+    "id": 32,
+    "numero": "D2",
+    "estado": "reservado",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4146e"
+    },
+    "id": 33,
+    "numero": "D3",
+    "estado": "comprado",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4146f"
+    },
+    "id": 34,
+    "numero": "D4",
+    "estado": "disponible",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41470"
+    },
+    "id": 35,
+    "numero": "D5",
+    "estado": "reservado",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41471"
+    },
+    "id": 36,
+    "numero": "D6",
+    "estado": "comprado",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41472"
+    },
+    "id": 37,
+    "numero": "D7",
+    "estado": "disponible",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41473"
+    },
+    "id": 38,
+    "numero": "D8",
+    "estado": "reservado",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41474"
+    },
+    "id": 39,
+    "numero": "D9",
+    "estado": "comprado",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41475"
+    },
+    "id": 40,
+    "numero": "D10",
+    "estado": "disponible",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41476"
+    },
+    "id": 41,
+    "numero": "E1",
+    "estado": "reservado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41477"
+    },
+    "id": 42,
+    "numero": "E2",
+    "estado": "comprado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41478"
+    },
+    "id": 43,
+    "numero": "E3",
+    "estado": "disponible",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41479"
+    },
+    "id": 44,
+    "numero": "E4",
+    "estado": "reservado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4147a"
+    },
+    "id": 45,
+    "numero": "E5",
+    "estado": "comprado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4147b"
+    },
+    "id": 46,
+    "numero": "E6",
+    "estado": "disponible",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4147c"
+    },
+    "id": 47,
+    "numero": "E7",
+    "estado": "reservado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4147d"
+    },
+    "id": 48,
+    "numero": "E8",
+    "estado": "comprado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4147e"
+    },
+    "id": 49,
+    "numero": "E9",
+    "estado": "disponible",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4147f"
+    },
+    "id": 50,
+    "numero": "E10",
+    "estado": "reservado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41480"
+    },
+    "id": 51,
+    "numero": "F1",
+    "estado": "comprado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41481"
+    },
+    "id": 52,
+    "numero": "F2",
+    "estado": "disponible",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41482"
+    },
+    "id": 53,
+    "numero": "F3",
+    "estado": "reservado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41483"
+    },
+    "id": 54,
+    "numero": "F4",
+    "estado": "comprado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41484"
+    },
+    "id": 55,
+    "numero": "F5",
+    "estado": "disponible",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41485"
+    },
+    "id": 56,
+    "numero": "F6",
+    "estado": "reservado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41486"
+    },
+    "id": 57,
+    "numero": "F7",
+    "estado": "comprado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41487"
+    },
+    "id": 58,
+    "numero": "F8",
+    "estado": "disponible",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41488"
+    },
+    "id": 59,
+    "numero": "F9",
+    "estado": "reservado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41489"
+    },
+    "id": 60,
+    "numero": "F10",
+    "estado": "comprado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4148a"
+    },
+    "id": 61,
+    "numero": "G1",
+    "estado": "disponible",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4148b"
+    },
+    "id": 62,
+    "numero": "G2",
+    "estado": "reservado",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4148c"
+    },
+    "id": 63,
+    "numero": "G3",
+    "estado": "comprado",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4148d"
+    },
+    "id": 64,
+    "numero": "G4",
+    "estado": "disponible",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4148e"
+    },
+    "id": 65,
+    "numero": "G5",
+    "estado": "reservado",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4148f"
+    },
+    "id": 66,
+    "numero": "G6",
+    "estado": "comprado",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41490"
+    },
+    "id": 67,
+    "numero": "G7",
+    "estado": "disponible",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41491"
+    },
+    "id": 68,
+    "numero": "G8",
+    "estado": "reservado",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41492"
+    },
+    "id": 69,
+    "numero": "G9",
+    "estado": "comprado",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41493"
+    },
+    "id": 70,
+    "numero": "G10",
+    "estado": "disponible",
+    "tipo": "VIP"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41494"
+    },
+    "id": 71,
+    "numero": "H1",
+    "estado": "disponible",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41495"
+    },
+    "id": 72,
+    "numero": "H2",
+    "estado": "reservado",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41496"
+    },
+    "id": 73,
+    "numero": "H3",
+    "estado": "comprado",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41497"
+    },
+    "id": 74,
+    "numero": "H4",
+    "estado": "disponible",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41498"
+    },
+    "id": 75,
+    "numero": "H5",
+    "estado": "reservado",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd41499"
+    },
+    "id": 76,
+    "numero": "H6",
+    "estado": "comprado",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4149a"
+    },
+    "id": 77,
+    "numero": "H7",
+    "estado": "disponible",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4149b"
+    },
+    "id": 78,
+    "numero": "H8",
+    "estado": "reservado",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4149c"
+    },
+    "id": 79,
+    "numero": "H9",
+    "estado": "comprado",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4149d"
+    },
+    "id": 80,
+    "numero": "H10",
+    "estado": "disponible",
+    "tipo": "discapacitado"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4149e"
+    },
+    "id": 81,
+    "numero": "I1",
+    "estado": "reservado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd4149f"
+    },
+    "id": 82,
+    "numero": "I2",
+    "estado": "comprado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414a0"
+    },
+    "id": 83,
+    "numero": "I3",
+    "estado": "disponible",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414a1"
+    },
+    "id": 84,
+    "numero": "I4",
+    "estado": "reservado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414a2"
+    },
+    "id": 85,
+    "numero": "I5",
+    "estado": "comprado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414a3"
+    },
+    "id": 86,
+    "numero": "I6",
+    "estado": "disponible",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414a4"
+    },
+    "id": 87,
+    "numero": "I7",
+    "estado": "reservado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414a5"
+    },
+    "id": 88,
+    "numero": "I8",
+    "estado": "comprado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414a6"
+    },
+    "id": 89,
+    "numero": "I9",
+    "estado": "disponible",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414a7"
+    },
+    "id": 90,
+    "numero": "I10",
+    "estado": "reservado",
+    "tipo": "preferencial"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414a8"
+    },
+    "id": 91,
+    "numero": "J1",
+    "estado": "comprado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414a9"
+    },
+    "id": 92,
+    "numero": "J2",
+    "estado": "disponible",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414aa"
+    },
+    "id": 93,
+    "numero": "J3",
+    "estado": "reservado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414ab"
+    },
+    "id": 94,
+    "numero": "J4",
+    "estado": "comprado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414ac"
+    },
+    "id": 95,
+    "numero": "J5",
+    "estado": "disponible",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414ad"
+    },
+    "id": 96,
+    "numero": "J6",
+    "estado": "reservado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414ae"
+    },
+    "id": 97,
+    "numero": "J7",
+    "estado": "comprado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414af"
+    },
+    "id": 98,
+    "numero": "J8",
+    "estado": "disponible",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414b0"
+    },
+    "id": 99,
+    "numero": "J9",
+    "estado": "reservado",
+    "tipo": "standar"
+  },{
+    "_id": {
+      "$oid": "66a3dc26280e8d342dd414b1"
+    },
+    "id": 100,
+    "numero": "J10",
+    "estado": "comprado",
+    "tipo": "standar"
+  }]
