@@ -992,3 +992,204 @@ Limpia las instancias y conexiones después de usar la clase.
 - El rol buscado debe ser una cadena de texto válida y corresponder a uno de los roles existentes en el sistema.
 - Es importante llamar al método destructor() después de utilizar la clase para liberar recursos.
 - Este método puede retornar un gran número de resultados si hay muchos usuarios con el rol especificado.
+
+
+# ___________________________________________________________________________________
+
+# 6. Compras en Linea
+
+#  6.1 Módulo de Compra de Boletos
+
+Este módulo permite realizar la compra de boletos para funciones de cine, procesando el pago y registrando la transacción en el sistema. Debemos tener en cuenta que esta es la primer pate del caso de uso 6
+
+### Uso
+
+```js
+const nuevoBoleto = {
+    id: 12,
+    id_pelicula: 16,
+    id_horario_funcion: 6,
+    id_usuario: 7,
+    id_reserva: null,
+    asiento: "C9",
+    tipo_compra: "virtual",
+    fecha_compra: "2024-07-30",
+    metodo_pago: "tarjeta de crédito",
+    estado_compra: "realizado",
+    total: 0 
+};
+
+let objPago = new pago();
+
+    const boletoCreado = await objPago.compraBoleto(nuevoBoleto);
+    console.log(boletoCreado);
+
+objPago.destructor();
+```
+
+## Clase pago
+
+### Método compraBoleto(nuevoBoleto)
+Este método procesa la compra de un boleto, realiza las validaciones necesarias, calcula el total a pagar y registra la transacción en el sistema.
+
+## Parámetros
+
+nuevoBoleto (Object): Un objeto con la siguiente estructura:
+
+- id (Number): Identificador único del boleto.
+- id_pelicula (Number): Identificador de la película.
+- id_horario_funcion (Number): Identificador del horario de la función.
+- id_usuario (Number): Identificador del usuario que compra el boleto.
+- id_reserva (Number|null): Identificador de la reserva (si existe).
+- asiento (String): Número o código del asiento.
+- tipo_compra (String): Tipo de compra (ej. "virtual").
+- fecha_compra (String): Fecha de compra en formato "YYYY-MM-DD".
+- metodo_pago (String): Método de pago utilizado.
+- estado_compra (String): Estado de la compra.
+- total (Number): Precio total (se calculará automáticamente).
+
+
+
+Retorno
+
+```js
+{
+  mensaje: 'COMPRA DE BOLETO REALIZADA CON ÉXITO',
+  boleto: {
+    id: 12,
+    id_pelicula: 16,
+    id_horario_funcion: 6,
+    id_usuario: 7,
+    id_reserva: null,
+    asiento: 'C9',
+    tipo_compra: 'virtual',
+    fecha_compra: '2024-07-30',
+    metodo_pago: 'tarjeta de crédito',
+    estado_compra: 'realizado',
+    total: 170,
+    fecha_funcion: '2024-08-01',
+    hora_funcion: '21:00',
+    _id: new ObjectId('66a88eeca2a06494a5003c81')
+  }
+}
+```
+
+
+## Comportamiento
+
+- Valida la existencia de la película, horario de función y usuario en la base de datos.
+- Verifica la disponibilidad del asiento seleccionado.
+- Calcula el precio total del boleto, aplicando descuentos si corresponde (ej. usuario VIP).
+- Procesa el pago utilizando el método de pago especificado.
+- Registra la compra del boleto en la base de datos.
+- Actualiza la disponibilidad del asiento.
+- Retorna el boleto creado con toda la información actualizada.
+
+## Método destructor()
+Limpia las instancias y conexiones después de usar la clase.
+
+
+# Notas Importantes
+
+- El campo total del boleto se calcula automáticamente basándose en el precio de la función y los descuentos aplicables.
+- Es importante llamar al método destructor() después de utilizar la clase para liberar recursos.
+- Este método realiza múltiples operaciones en la base de datos, por lo que es crucial manejar correctamente las transacciones para asegurar la integridad de los datos.
+
+
+
+#  6.2 Módulo de Compra de Boletos con detalles del boleto
+
+Este módulo permite realizar la compra de boletos para funciones de cine, procesando el pago y registrando la transacción en el sistema. Debemos tener en cuenta que esta es la segunda pate del caso de uso 6
+
+### Uso
+
+```js
+const nuevoBoleto = {
+    id: 13,
+    id_pelicula: 6,
+    id_horario_funcion: 11,
+    id_usuario: 9,
+    id_reserva: null,
+    asiento: "E3",
+    tipo_compra: "presencial",
+    fecha_compra: "2024-07-30",
+    metodo_pago: "Efectivo",
+    estado_compra: "realizado",
+    total: 0 
+};
+
+let objPago = new pago();
+
+    const boletoCreado = await objPago.compraBoletoDetalle(nuevoBoleto);
+    console.log(boletoCreado);
+
+objPago.destructor();
+```
+
+## Clase pago
+
+### Método compraBoletoDetalle(nuevoBoleto)
+Este método procesa la compra de un boleto, realiza las validaciones necesarias, calcula el total a pagar y registra la transacción en el sistema.
+
+## Parámetros
+
+nuevoBoleto (Object): Un objeto con la siguiente estructura:
+
+- id (Number): Identificador único del boleto.
+- id_pelicula (Number): Identificador de la película.
+- id_horario_funcion (Number): Identificador del horario de la función.
+- id_usuario (Number): Identificador del usuario que compra el boleto.
+- id_reserva (Number|null): Identificador de la reserva (si existe).
+- asiento (String): Número o código del asiento.
+- tipo_compra (String): Tipo de compra (ej. "virtual").
+- fecha_compra (String): Fecha de compra en formato "YYYY-MM-DD".
+- metodo_pago (String): Método de pago utilizado.
+- estado_compra (String): Estado de la compra.
+- total (Number): Precio total (se calculará automáticamente).
+
+
+
+Retorno
+
+```js
+{
+  mensaje: 'Compra realizada exitosamente, Estos son los detalles de su boleto: ',
+  boleto: {
+    id: 13,
+    id_pelicula: 6,
+    id_horario_funcion: 11,
+    id_usuario: 9,
+    id_reserva: null,
+    asiento: 'E3',
+    tipo_compra: 'presencial',
+    fecha_compra: '2024-07-30',
+    metodo_pago: 'Efectivo',
+    estado_compra: 'realizado',
+    total: 125,
+    fecha_funcion: '2024-08-04',
+    hora_funcion: '14:00',
+    _id: new ObjectId('66a88ea6bba796276c31f616')
+  }
+}
+```
+
+
+## Comportamiento
+
+- Valida la existencia de la película, horario de función y usuario en la base de datos.
+- Verifica la disponibilidad del asiento seleccionado.
+- Calcula el precio total del boleto, aplicando descuentos si corresponde (ej. usuario VIP).
+- Procesa el pago utilizando el método de pago especificado.
+- Registra la compra del boleto en la base de datos.
+- Actualiza la disponibilidad del asiento.
+- Retorna el boleto creado con toda la información actualizada.
+
+## Método destructor()
+Limpia las instancias y conexiones después de usar la clase.
+
+
+# Notas Importantes
+
+- El campo total del boleto se calcula automáticamente basándose en el precio de la función y los descuentos aplicables.
+- Es importante llamar al método destructor() después de utilizar la clase para liberar recursos.
+- Este método realiza múltiples operaciones en la base de datos, por lo que es crucial manejar correctamente las transacciones para asegurar la integridad de los datos.
