@@ -444,3 +444,200 @@ idReserva: Número entero que representa el ID único de la reserva que se desea
 - La implementación debe considerar las políticas de cancelación del sistema, como posibles penalizaciones o reembolsos.
 - Asegúrese de llamar al método destructor() después de usar la instancia para liberar recursos.
 - Después de la cancelación, los asientos asociados con esta reserva deberían volver a estar disponibles para nuevas reservas.
+
+
+
+# ___________________________________________________________________________________
+
+# 4. Descuentos y tarjetas VIP
+
+## Módulo de Descuentos y Creación de Boletos
+
+Este módulo permite crear nuevos boletos para funciones de cine, aplicando descuentos si el usuario tiene una tarjeta VIP activa. Debemos tener en cuenta que es la primer parte del caso de uso 4, que se enfoca en la creacion de la boleta y aplicar su respectivo descuento.
+
+### Uso
+
+```js
+const nuevoBoleto = {
+        id: 10,
+        id_pelicula: 10,
+        id_horario_funcion: 1,
+        id_usuario: 3,
+        id_reserva: null,
+        asiento: "B4",
+        tipo_compra: "virtual",
+        fecha_compra: "2024-07-29",
+        metodo_pago: "tarjeta de crédito",
+        estado_compra: "realizado",
+        total: 0 // (El valor total se calculará automáticamente)
+      };
+
+      let objDescuento = new descuento();
+
+          const descuentoCreado = await objDescuento.descuentoBoleto(nuevoBoleto);
+          console.log(descuentoCreado);
+
+
+      objDescuento.destructor();
+```
+
+## Clase descuento
+### Método descuentoBoleto(nuevoBoleto)
+Este método crea un nuevo boleto, aplicando descuentos si corresponde.
+
+## Parámetros
+
+nuevoBoleto (Object): Un objeto con la siguiente estructura:
+
+- id (Number): Identificador único del boleto.
+- id_pelicula (Number): Identificador de la película.
+- id_horario_funcion (Number): Identificador del horario de la función.
+- id_usuario (Number): Identificador del usuario que compra el boleto.
+- id_reserva (Number|null): Identificador de la reserva (si existe).
+- asiento (String): Número o código del asiento.
+- tipo_compra (String): Tipo de compra (ej. "virtual").
+- fecha_compra (String): Fecha de compra en formato "YYYY-MM-DD".
+- metodo_pago (String): Método de pago utilizado.
+- estado_compra (String): Estado de la compra.
+- total (Number): Precio total (se calculará automáticamente).
+
+
+
+## Retorno
+
+```js
+{
+  id: 10,
+  id_pelicula: 10,
+  id_horario_funcion: 1,
+  id_usuario: 3,
+  id_reserva: null,
+  asiento: 'B4',
+  tipo_compra: 'virtual',
+  fecha_compra: '2024-07-29',
+  metodo_pago: 'tarjeta de crédito',
+  estado_compra: 'realizado',
+  total: 150,
+  fecha_funcion: '2024-07-30',
+  hora_funcion: '18:00',
+  _id: new ObjectId('66a868ef04d537599afcb2b5')
+}
+```
+
+
+
+
+## Comportamiento
+
+- Valida la existencia de la película, usuario y horario en la base de datos.
+- Verifica si ya existe un boleto con los mismos datos.
+- Calcula el precio del boleto, aplicando descuentos si el usuario tiene una tarjeta VIP activa.
+- Guarda el nuevo boleto en la base de datos.
+
+## Método destructor()
+- Limpia las instancias y conexiones después de usar la clase.
+
+# Notas Importantes
+
+- El campo total del boleto se calcula automáticamente basándose en el precio de la función y los descuentos aplicables.
+- Es importante llamar al método destructor() después de utilizar la clase para liberar recursos.
+
+
+
+
+## Módulo de Validación de Descuentos en Tarjeta VIP
+
+Este módulo permite validar y aplicar descuentos para boletos de cine basados en la tarjeta VIP del usuario, si está disponible y activa. Debemos tener en cuenta que esta es la segunda parte del caso de uso 4, que se enfoca en la validacion de la tarjeta VIP.
+
+### Uso
+
+```js
+  const nuevoBoleto = {
+    id: 11,
+    id_pelicula: 10,
+    id_horario_funcion: 1,
+    id_usuario: 2,
+    id_reserva: null,
+    asiento: "B4",
+    tipo_compra: "virtual",
+    fecha_compra: "2024-07-29",
+    metodo_pago: "tarjeta de crédito",
+    estado_compra: "realizado",
+    total: 0 // (El valor total se calculará automáticamente)
+  };
+
+  let objDescuento = new descuento();
+
+      const descuentoCreado = await objDescuento.validacionDescuentoEnTarjeta(nuevoBoleto);
+      console.log(descuentoCreado);
+
+
+  objDescuento.destructor();
+```
+
+## Clase descuento
+### Método validacionDescuentoEnTarjeta(nuevoBoleto)
+Este método valida la elegibilidad para un descuento basado en la tarjeta VIP del usuario, aplica el descuento si corresponde, y crea un nuevo boleto en la base de datos.
+
+### Parámetros
+
+nuevoBoleto (Object): Un objeto con la siguiente estructura:
+
+- id (Number): Identificador único del boleto.
+- id_pelicula (Number): Identificador de la película.
+- id_horario_funcion (Number): Identificador del horario de la función.
+- id_usuario (Number): Identificador del usuario que compra el boleto.
+- id_reserva (Number|null): Identificador de la reserva (si existe).
+- asiento (String): Número o código del asiento.
+- tipo_compra (String): Tipo de compra (ej. "virtual").
+- fecha_compra (String): Fecha de compra en formato "YYYY-MM-DD".
+- metodo_pago (String): Método de pago utilizado.
+- estado_compra (String): Estado de la compra.
+- total (Number): Precio total (se calculará automáticamente).
+
+
+
+## Retorno
+
+```js
+{
+  mensaje: 'Se aplicó el descuento y se guardó el boleto',
+  boleto: {
+    id: 11,
+    id_pelicula: 10,
+    id_horario_funcion: 1,
+    id_usuario: 2,
+    id_reserva: null,
+    asiento: 'B4',
+    tipo_compra: 'virtual',
+    fecha_compra: '2024-07-29',
+    metodo_pago: 'tarjeta de crédito',
+    estado_compra: 'realizado',
+    total: 120,
+    fecha_funcion: '2024-07-30',
+    hora_funcion: '18:00',
+    _id: new ObjectId('66a86b7aecf3902443fc3d78')
+  }
+}
+```
+
+
+
+## Comportamiento
+
+- Valida la existencia de la película, usuario y horario en la base de datos.
+- Verifica si ya existe un boleto con los mismos datos.
+- Comprueba si el usuario tiene una tarjeta VIP activa.
+- Calcula el precio del boleto, aplicando descuentos si corresponde.
+- Guarda el nuevo boleto en la base de datos.
+- Retorna un mensaje indicando si se aplicó un descuento y los detalles del boleto creado.
+
+### Método destructor()
+Limpia las instancias y conexiones después de usar la clase.
+
+
+# Notas Importantes
+
+- El campo total del boleto se calcula automáticamente basándose en el precio de la función y los descuentos aplicables.
+- Es importante llamar al método destructor() después de utilizar la clase para liberar recursos.
+- Este método no solo valida el descuento, sino que también crea el boleto en la base de datos.
