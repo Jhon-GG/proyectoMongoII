@@ -240,25 +240,48 @@ import {pago} from './js/modules/pago.js'
 
 // Permitir el procesamiento de pagos en línea para la compra de boletos.
 
+// const nuevoBoleto = {
+//     id: 12,
+//     id_pelicula: 16,
+//     id_horario_funcion: 6,
+//     id_usuario: 7,
+//     id_reserva: null,
+//     asiento: "C9",
+//     tipo_compra: "virtual",
+//     fecha_compra: "2024-07-30",
+//     metodo_pago: "tarjeta de crédito",
+//     estado_compra: "realizado",
+//     total: 0 
+// };
+
+// let objPago = new pago();
+
+//     const boletoCreado = await objPago.compraBoleto(nuevoBoleto);
+//     console.log(boletoCreado);
+
+// objPago.destructor();
+
+
+// Enviar confirmación de la compra y los detalles del boleto al usuario.
+
+
 const nuevoBoleto = {
-    id: 12,
-    id_pelicula: 16,
-    id_horario_funcion: 6,
-    id_usuario: 7,
+    id: 13,
+    id_pelicula: 6,
+    id_horario_funcion: 11,
+    id_usuario: 9,
     id_reserva: null,
-    asiento: "C9",
-    tipo_compra: "virtual",
+    asiento: "E3",
+    tipo_compra: "presencial",
     fecha_compra: "2024-07-30",
-    metodo_pago: "tarjeta de crédito",
+    metodo_pago: "Efectivo",
     estado_compra: "realizado",
     total: 0 
 };
 
 let objPago = new pago();
 
-    const boletoCreado = await objPago.compraBoleto(nuevoBoleto);
+    const boletoCreado = await objPago.compraBoletoDetalle(nuevoBoleto);
     console.log(boletoCreado);
 
 objPago.destructor();
-
-
