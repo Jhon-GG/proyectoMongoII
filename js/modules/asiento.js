@@ -134,29 +134,35 @@ export class asiento extends connect {
  * @throws {Error} - Si la reserva no se encuentra.
  * @throws {Error} - Si el estado de la reserva no se pudo actualizar.
  */
-async cancelarReserva(idReserva) {
-    await this.conexion.connect();
-
-    const reservaExistente = await this.collection.findOne({ id: idReserva });
-
-    if (!reservaExistente) {
-        await this.conexion.close();
-        throw new Error("Reserva no encontrada.");
+    async cancelarReserva(idReserva) {
+        try {
+            await this.conexion.connect();
+    
+            const reservaExistente = await this.collection.findOne({ id: idReserva });
+    
+            if (!reservaExistente) {
+                throw new Error("Reserva no encontrada");
+            }
+    
+            // Actualiza solo el estado de la reserva a "cancelada"
+            const resultado = await this.collection.updateOne(
+                { id: idReserva },
+                { $set: { estado: 'cancelada' } }
+            );
+    
+            if (resultado.modifiedCount === 0) {
+                throw new Error("No se pudo actualizar el estado de la reserva.");
+            }
+    
+            const reservaActualizada = await this.collection.findOne({ id: idReserva });
+            return reservaActualizada;
+    
+        } catch (error) {
+            console.log(`{Error ${error.message}}`);
+            return [`Ha ocurrido un error durante la reserva`]; 
+        } finally {
+            await this.conexion.close();
+        }
     }
-
-    // Actualiza solo el estado de la reserva a "cancelada"
-    const resultado = await this.collection.updateOne(
-        { id: idReserva },
-        { $set: { estado: 'cancelada' } }
-    );
-
-    if (resultado.modifiedCount === 0) {
-        await this.conexion.close();
-        throw new Error("No se pudo actualizar el estado de la reserva.");
-    }
-
-    const reservaActualizada = await this.collection.findOne({ id: idReserva });
-    await this.conexion.close();
-    return reservaActualizada;
-}
+    
 }

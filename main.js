@@ -97,10 +97,10 @@ import { asiento } from './js/modules/asiento.js'
 
 // Permitir la cancelación de una reserva de asiento ya realizada.
 
-    // let objAsiento = new asiento();
+    let objAsiento = new asiento();
 
-    // const idReserva = 11;
+    const idReserva = 11;
 
-    // const reservaCancelada = await objAsiento.cancelarReserva(idReserva);
-    // console.log(`Reserva cancelada: `, reservaCancelada);
-    // objAsiento.destructor();
+    const reservaCancelada = await objAsiento.cancelarReserva(idReserva);
+    console.log(reservaCancelada);
+    objAsiento.destructor();
