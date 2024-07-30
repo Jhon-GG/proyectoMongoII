@@ -1,6 +1,18 @@
+# Instalaciones necesarias
+
+```js
+npm i mongodb
+```
+
+# Comando de ejecucion del archivo main.js
+
+```js
+npm run dev
+```
+
 ### Proyecto: CineCampus
 
-#### Problemtica
+#### Problematica
 
 CineCampus es una empresa de entretenimiento que se especializa en ofrecer una experiencia de cine completa y personalizada. La empresa desea desarrollar una aplicación web que permita a los usuarios seleccionar películas, comprar boletos y asignar asientos de manera eficiente y cómoda. La aplicación también ofrecerá opciones de descuento para usuarios con tarjeta VIP y permitirá realizar compras en línea.
 
@@ -67,6 +79,39 @@ Desarrollar una serie de APIs para la aplicación web de CineCampus utilizando M
 
 # 1.1 Módulo de Gestión de Películas
 Este módulo proporciona funcionalidades para manejar y obtener información sobre películas disponibles en nuestro sistema. Debemos tener en cuenta que este caso de uso tiene dos partes, esta primera parte se encarga de traer todas las peliculas disponibles.
+
+Este caso de uso es aplicable a diversos tipos de usuarios, incluyendo Administradores, Usuarios Estándar y VIP. Aunque los ejemplos que se presentan a continuación se centran en un usuario con un rol específico, es importante destacar que esta funcionalidad no está limitada a ese único rol.
+
+# Usuarios de prueba:
+
+## USUARIO ADMINISTRADOR
+
+user: "mariiangel",  pwd: "345678901"
+
+```javascript
+mongodb://mariiangel:345678901@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO VIP
+
+user: "pati",  pwd: "667788990"
+
+```javascript
+mongodb://pati:667788990@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO ESTANDAR
+
+user: "dave",  pwd: "445566778"
+
+```javascript
+mongodb://dave:445566778@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
 ### Uso:
 El siguiente ejemplo muestra cómo utilizar la clase pelicula para obtener la lista de películas disponibles:
 
@@ -125,6 +170,39 @@ destructor(): Método para liberar recursos cuando ya no se necesita la instanci
 
 # 1.2 Módulo de Gestión de Películas - Búsqueda por ID
 Este módulo permite obtener información detallada de una película específica utilizando su ID. Debemos tener en cuenta que este caso de uso tiene dos partes, esta segunda parte se encarga de traer la pelicula que elijamos segun su id, mostrando informacion específica de la misma.
+
+Este caso de uso es aplicable a diversos tipos de usuarios, incluyendo Administradores, Usuarios Estándar y VIP. Aunque los ejemplos que se presentan a continuación se centran en un usuario con un rol específico, es importante destacar que esta funcionalidad no está limitada a ese único rol.
+
+# Usuarios de prueba:
+
+## USUARIO ADMINISTRADOR
+
+user: "mariiangel",  pwd: "345678901"
+
+```javascript
+mongodb://mariiangel:345678901@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO VIP
+
+user: "pati",  pwd: "667788990"
+
+```javascript
+mongodb://pati:667788990@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO ESTANDAR
+
+user: "dave",  pwd: "445566778"
+
+```javascript
+mongodb://dave:445566778@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
 ### Uso
 El siguiente ejemplo muestra cómo utilizar la clase pelicula para obtener información de una película por su ID:
 ```js
@@ -194,8 +272,72 @@ destructor(): Método para liberar recursos cuando ya no se necesita la instanci
 
 **API para Verificar Disponibilidad de Asientos:** Permitir la consulta de la disponibilidad de asientos en una sala para una proyección específica.
 
+Este caso de uso es aplicable a diversos tipos de usuarios, incluyendo Administradores, Usuarios Estándar y VIP. Aunque los ejemplos que se presentan a continuación se centran en un usuario con un rol específico, es importante destacar que esta funcionalidad no está limitada a ese único rol.
+
+# Usuarios de prueba:
+
+## USUARIO ADMINISTRADOR
+
+user: "mariiangel",  pwd: "345678901"
+
+```javascript
+mongodb://mariiangel:345678901@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO VIP
+
+user: "pati",  pwd: "667788990"
+
+```javascript
+mongodb://pati:667788990@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO ESTANDAR
+
+user: "dave",  pwd: "445566778"
+
+```javascript
+mongodb://dave:445566778@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
 # 2.1 Módulo de Gestión de Boletos - Creación de Boletos
 Este módulo permite la creación de nuevos boletos para funciones de cine utilizando la clase boleto. Debemos tener en cuenta que esta es la primer parte del caso 2, que se enfoca en la compra de un nuevo boleto.
+
+Este caso de uso es aplicable a diversos tipos de usuarios, incluyendo Administradores, Usuarios Estándar y VIP. Aunque los ejemplos que se presentan a continuación se centran en un usuario con un rol específico, es importante destacar que esta funcionalidad no está limitada a ese único rol.
+
+# Usuarios de prueba:
+
+## USUARIO ADMINISTRADOR
+
+user: "mariiangel",  pwd: "345678901"
+
+```javascript
+mongodb://mariiangel:345678901@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO VIP
+
+user: "pati",  pwd: "667788990"
+
+```javascript
+mongodb://pati:667788990@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO ESTANDAR
+
+user: "dave",  pwd: "445566778"
+
+```javascript
+mongodb://dave:445566778@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
 
 ### Uso
 El siguiente ejemplo muestra cómo crear un nuevo boleto:
@@ -260,6 +402,38 @@ Boleto creado:  {
 # 2.2 Módulo de Gestión de Boletos - Búsqueda de Asientos Disponibles
 
 Este módulo permite buscar asientos disponibles para una función específica utilizando la clase boleto. Debemos tener en cuenta que esta es la segunda parte del caso 2, que se enfoca en la busqueda de asientos disponibles segun una funcion en específico.
+
+Este caso de uso es aplicable a diversos tipos de usuarios, incluyendo Administradores, Usuarios Estándar y VIP. Aunque los ejemplos que se presentan a continuación se centran en un usuario con un rol específico, es importante destacar que esta funcionalidad no está limitada a ese único rol.
+
+# Usuarios de prueba:
+
+## USUARIO ADMINISTRADOR
+
+user: "mariiangel",  pwd: "345678901"
+
+```javascript
+mongodb://mariiangel:345678901@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO VIP
+
+user: "pati",  pwd: "667788990"
+
+```javascript
+mongodb://pati:667788990@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO ESTANDAR
+
+user: "dave",  pwd: "445566778"
+
+```javascript
+mongodb://dave:445566778@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
 
 ## Uso
 El siguiente ejemplo muestra cómo buscar asientos disponibles para un horario de función específico:
@@ -326,6 +500,39 @@ Asientos disponibles:  [
 
 # 3.1Creación de Reservas
 Este módulo permite crear nuevas reservas de asientos para una función de cine específica utilizando la clase asiento. Este es un componente crucial del sistema de reservas que gestiona la creación de nuevas reservas con múltiples asientos. Debemos tener en cuenta que esta es la primer parte del tercer caso de uso, que seenfoca en la creacion de una reserva. 
+
+Este caso de uso es aplicable a diversos tipos de usuarios, incluyendo Administradores, Usuarios Estándar y VIP. Aunque los ejemplos que se presentan a continuación se centran en un usuario con un rol específico, es importante destacar que esta funcionalidad no está limitada a ese único rol.
+
+# Usuarios de prueba:
+
+## USUARIO ADMINISTRADOR
+
+user: "mariiangel",  pwd: "345678901"
+
+```javascript
+mongodb://mariiangel:345678901@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO VIP
+
+user: "pati",  pwd: "667788990"
+
+```javascript
+mongodb://pati:667788990@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO ESTANDAR
+
+user: "dave",  pwd: "445566778"
+
+```javascript
+mongodb://dave:445566778@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
 ## Uso
 El siguiente ejemplo muestra cómo crear una nueva reserva con múltiples asientos:
 ```js
@@ -397,6 +604,39 @@ Reserva creada:  {
 
 # 3.2 Módulo de Gestión de Reservas - Cancelación de Reservas
 Este módulo permite cancelar reservas existentes utilizando la clase asiento. Esta funcionalidad es esencial para gestionar cambios en las reservas de los clientes y liberar asientos para otros usuarios. Debemos tener en cuenta que est aes la segunda parte del caso de uso 3, que se enfoca en la cancelacion de una reserva de asiento 
+
+Este caso de uso es aplicable a diversos tipos de usuarios, incluyendo Administradores, Usuarios Estándar y VIP. Aunque los ejemplos que se presentan a continuación se centran en un usuario con un rol específico, es importante destacar que esta funcionalidad no está limitada a ese único rol.
+
+# Usuarios de prueba:
+
+## USUARIO ADMINISTRADOR
+
+user: "mariiangel",  pwd: "345678901"
+
+```javascript
+mongodb://mariiangel:345678901@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO VIP
+
+user: "pati",  pwd: "667788990"
+
+```javascript
+mongodb://pati:667788990@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO ESTANDAR
+
+user: "dave",  pwd: "445566778"
+
+```javascript
+mongodb://dave:445566778@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
 ## Uso
 El siguiente ejemplo muestra cómo cancelar una reserva existente:
 
@@ -456,6 +696,39 @@ idReserva: Número entero que representa el ID único de la reserva que se desea
 # 4.1 Módulo de Descuentos y Creación de Boletos
 
 Este módulo permite crear nuevos boletos para funciones de cine, aplicando descuentos si el usuario tiene una tarjeta VIP activa. Debemos tener en cuenta que es la primer parte del caso de uso 4, que se enfoca en la creacion de la boleta y aplicar su respectivo descuento.
+
+
+Este caso de uso es aplicable a diversos tipos de usuarios, incluyendo Administradores, Usuarios Estándar y VIP. Aunque los ejemplos que se presentan a continuación se centran en un usuario con un rol específico, es importante destacar que esta funcionalidad no está limitada a ese único rol.
+
+# Usuarios de prueba:
+
+## USUARIO ADMINISTRADOR
+
+user: "mariiangel",  pwd: "345678901"
+
+```javascript
+mongodb://mariiangel:345678901@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO VIP
+
+user: "pati",  pwd: "667788990"
+
+```javascript
+mongodb://pati:667788990@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO ESTANDAR
+
+user: "dave",  pwd: "445566778"
+
+```javascript
+mongodb://dave:445566778@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
 
 ### Uso
 
@@ -550,6 +823,39 @@ nuevoBoleto (Object): Un objeto con la siguiente estructura:
 # 4.2 Módulo de Validación de Descuentos en Tarjeta VIP
 
 Este módulo permite validar y aplicar descuentos para boletos de cine basados en la tarjeta VIP del usuario, si está disponible y activa. Debemos tener en cuenta que esta es la segunda parte del caso de uso 4, que se enfoca en la validacion de la tarjeta VIP.
+
+
+Este caso de uso es aplicable a diversos tipos de usuarios, incluyendo Administradores, Usuarios Estándar y VIP. Aunque los ejemplos que se presentan a continuación se centran en un usuario con un rol específico, es importante destacar que esta funcionalidad no está limitada a ese único rol.
+
+# Usuarios de prueba:
+
+## USUARIO ADMINISTRADOR
+
+user: "mariiangel",  pwd: "345678901"
+
+```javascript
+mongodb://mariiangel:345678901@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO VIP
+
+user: "pati",  pwd: "667788990"
+
+```javascript
+mongodb://pati:667788990@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO ESTANDAR
+
+user: "dave",  pwd: "445566778"
+
+```javascript
+mongodb://dave:445566778@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
 
 ### Uso
 
@@ -654,6 +960,38 @@ Limpia las instancias y conexiones después de usar la clase.
 
 Este módulo permite agregar nuevos usuarios al sistema, asignándoles roles específicos. Debemos tener en cuenta que esta es la primer parte del caso de uso 5, el cual hace enfasis en la creacion de nuevos usuarios
 
+Este caso de uso es aplicable a diversos tipos de usuarios, incluyendo Administradores, Usuarios Estándar y VIP. Aunque los ejemplos que se presentan a continuación se centran en un usuario con un rol específico, es importante destacar que esta funcionalidad no está limitada a ese único rol.
+
+# Usuarios de prueba:
+
+## USUARIO ADMINISTRADOR
+
+user: "mariiangel",  pwd: "345678901"
+
+```javascript
+mongodb://mariiangel:345678901@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO VIP
+
+user: "pati",  pwd: "667788990"
+
+```javascript
+mongodb://pati:667788990@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO ESTANDAR
+
+user: "dave",  pwd: "445566778"
+
+```javascript
+mongodb://dave:445566778@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
 ### Uso
 
 ```js
@@ -733,6 +1071,20 @@ Limpia las instancias y conexiones después de usar la clase.
 
 Este módulo permite buscar usuarios en el sistema por su ID. Debemos tener en cuenta que esta es la segunda parte del caso de uso 5, que se enfoca en la busqueda de un usuari por su id, teniendo een cuenta el estado de su tarjeta.
 
+Este caso de uso es aplicable a un solo tipo de usuarios, incluyendo Administradores. Aunque los ejemplos que se presentan a continuación se centran en un usuario con un usuario específico, es importante destacar que esta funcionalidad no está limitada a ese único usuario.
+
+
+# Usuarios de prueba:
+
+## USUARIO ADMINISTRADOR
+
+user: "mariiangel",  pwd: "345678901"
+
+```javascript
+mongodb://mariiangel:345678901@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
 ### Uso
 
 ```js
@@ -797,6 +1149,20 @@ Limpia las instancias y conexiones después de usar la clase.
 
 Este módulo permite cambiar el rol de un usuario existente en el sistema. Debemos tener en cuenta que esta es la tercer parte del caso de uso 5, que se enfoca en la actualizacion del rol de un usuario
 
+Este caso de uso es aplicable a un solo tipo de usuarios, incluyendo Administradores. Aunque los ejemplos que se presentan a continuación se centran en un usuario con un usuario específico, es importante destacar que esta funcionalidad no está limitada a ese único usuario.
+
+
+# Usuarios de prueba:
+
+## USUARIO ADMINISTRADOR
+
+user: "mariiangel",  pwd: "345678901"
+
+```javascript
+mongodb://mariiangel:345678901@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
 ### Uso
 
 ```js
@@ -860,6 +1226,20 @@ Limpia las instancias y conexiones después de usar la clase.
 # 5.4 Módulo de Búsqueda de Usuarios por Rol
 
 Este módulo permite buscar y listar todos los usuarios que tienen un rol específico en el sistema. Debemos tener en cuenta que esta es la parte 4 del caso de uso 5, que se enfoca en filtrar los usuarios por su rol
+
+Este caso de uso es aplicable a un solo tipo de usuarios, incluyendo Administradores. Aunque los ejemplos que se presentan a continuación se centran en un usuario con un usuario específico, es importante destacar que esta funcionalidad no está limitada a ese único usuario.
+
+
+# Usuarios de prueba:
+
+## USUARIO ADMINISTRADOR
+
+user: "mariiangel",  pwd: "345678901"
+
+```javascript
+mongodb://mariiangel:345678901@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
 
 ### Uso
 
@@ -1002,6 +1382,38 @@ Limpia las instancias y conexiones después de usar la clase.
 
 Este módulo permite realizar la compra de boletos para funciones de cine, procesando el pago y registrando la transacción en el sistema. Debemos tener en cuenta que esta es la primer pate del caso de uso 6
 
+Este caso de uso es aplicable a diversos tipos de usuarios, incluyendo Administradores, Usuarios Estándar y VIP. Aunque los ejemplos que se presentan a continuación se centran en un usuario con un rol específico, es importante destacar que esta funcionalidad no está limitada a ese único rol.
+
+# Usuarios de prueba:
+
+## USUARIO ADMINISTRADOR
+
+user: "mariiangel",  pwd: "345678901"
+
+```javascript
+mongodb://mariiangel:345678901@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO VIP
+
+user: "pati",  pwd: "667788990"
+
+```javascript
+mongodb://pati:667788990@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO ESTANDAR
+
+user: "dave",  pwd: "445566778"
+
+```javascript
+mongodb://dave:445566778@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
 ### Uso
 
 ```js
@@ -1100,6 +1512,38 @@ Limpia las instancias y conexiones después de usar la clase.
 #  6.2 Módulo de Compra de Boletos con detalles del boleto
 
 Este módulo permite realizar la compra de boletos para funciones de cine, procesando el pago y registrando la transacción en el sistema. Debemos tener en cuenta que esta es la segunda pate del caso de uso 6
+
+Este caso de uso es aplicable a diversos tipos de usuarios, incluyendo Administradores, Usuarios Estándar y VIP. Aunque los ejemplos que se presentan a continuación se centran en un usuario con un rol específico, es importante destacar que esta funcionalidad no está limitada a ese único rol.
+
+# Usuarios de prueba:
+
+## USUARIO ADMINISTRADOR
+
+user: "mariiangel",  pwd: "345678901"
+
+```javascript
+mongodb://mariiangel:345678901@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO VIP
+
+user: "pati",  pwd: "667788990"
+
+```javascript
+mongodb://pati:667788990@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
+
+
+
+# USUARIO ESTANDAR
+
+user: "dave",  pwd: "445566778"
+
+```javascript
+mongodb://dave:445566778@roundhouse.proxy.rlwy.net:48985/cineCampus
+```
 
 ### Uso
 
