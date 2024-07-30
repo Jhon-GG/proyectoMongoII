@@ -195,10 +195,24 @@ import {rol} from './js/modules/rol.js'
 
 // Permitir la consulta de información detallada sobre un usuario, incluyendo su rol y estado de tarjeta VIP.
 
-let objRol = new rol();
+// let objRol = new rol();
 
-const idUsuario = 2; 
-const usuarioEncontrado = await objRol.buscarUsuarioPorId(idUsuario);
-console.log(usuarioEncontrado);
+// const idUsuario = 2; 
+// const usuarioEncontrado = await objRol.buscarUsuarioPorId(idUsuario);
+// console.log(usuarioEncontrado);
 
-objRol.destructor();
+// objRol.destructor();
+
+
+
+// Permitir la actualización del rol de un usuario (por ejemplo, cambiar de usuario estándar a VIP, o viceversa).
+
+
+    let objRol = new rol();
+
+        const idUsuario = 9;
+        const nuevoRol = 'VIP'; 
+        const usuarioActualizado = await objRol.cambiarRolUsuario(idUsuario, nuevoRol);
+        console.log(usuarioActualizado);
+
+    objRol.destructor();

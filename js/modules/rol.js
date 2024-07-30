@@ -110,6 +110,28 @@ export class rol extends connect {
         }
     }
 
+    async cambiarRolUsuario(id, nuevoRol) {
+        try {
+            await this.conexion.connect();
+
+            const resultado = await this.collection.updateOne(
+                { id },
+                { $set: { rol: nuevoRol } }
+            );
+
+            if (resultado.modifiedCount === 0) {
+                throw new Error("No se pudo actualizar el rol del usuario, ya tiene este rol");
+            }
+
+            const usuarioActualizado = await this.collection.findOne({ id });
+            await this.conexion.close();
+            return usuarioActualizado;
+        } catch (error) {
+            await this.conexion.close();
+            return { mensaje: `Error: ${error.message}` };
+        }
+    }
+
     destructor() {
         rol.instanceRol = undefined;
         connect.instanceConnect = undefined;
