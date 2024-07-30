@@ -108,17 +108,45 @@ import { descuento } from './js/modules/descuento.js';
 
 
 
-// ----------------------------------------------------------------
+/* ----------------------------------------------------------------------------------------------------------------- */
+
 
 // 4. Descuentos y tarjetas VIP
 
 // Permitir la aplicación de descuentos en la compra de boletos para usuarios con tarjeta VIP.
 
-const nuevoBoleto = {
-    id: 10,
+    // const nuevoBoleto = {
+    //     id: 10,
+    //     id_pelicula: 10,
+    //     id_horario_funcion: 1,
+    //     id_usuario: 3,
+    //     id_reserva: null,
+    //     asiento: "B4",
+    //     tipo_compra: "virtual",
+    //     fecha_compra: "2024-07-29",
+    //     metodo_pago: "tarjeta de crédito",
+    //     estado_compra: "realizado",
+    //     total: 0 // (El valor total se calculará automáticamente)
+    //   };
+
+    //   let objDescuento = new descuento();
+
+    //       const descuentoCreado = await objDescuento.descuentoBoleto(nuevoBoleto);
+    //       console.log(descuentoCreado);
+
+
+    //   objDescuento.destructor();
+
+
+
+// Permitir la verificación de la validez de una tarjeta VIP durante el proceso de compra.
+
+
+  const nuevoBoleto = {
+    id: 11,
     id_pelicula: 10,
     id_horario_funcion: 1,
-    id_usuario: 3,
+    id_usuario: 2,
     id_reserva: null,
     asiento: "B4",
     tipo_compra: "virtual",
@@ -130,8 +158,10 @@ const nuevoBoleto = {
 
   let objDescuento = new descuento();
 
-      const descuentoCreado = await objDescuento.descuentoBoleto(nuevoBoleto);
+      const descuentoCreado = await objDescuento.validacionDescuentoEnTarjeta(nuevoBoleto);
       console.log(descuentoCreado);
 
 
   objDescuento.destructor();
+
+
