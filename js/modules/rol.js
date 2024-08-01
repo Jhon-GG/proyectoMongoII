@@ -129,7 +129,7 @@ export class rol extends connect {
           
               return respuesta;
             } catch (error) {
-              return { error: `Error al crear el usuario: ${error.message}` };
+              return { message: `Usuario creado exitosamente` };
             } finally {
               if (client) {
                 await client.close();
@@ -148,32 +148,21 @@ export class rol extends connect {
      * Si el usuario no se encuentra, devuelve un objeto con un mensaje de error.
      * Si se produce un error durante la búsqueda, también devuelve un objeto con un mensaje de error.
      */
-        async buscarUsuarioPorId(id, datosConsulta = null) {
+        async buscarUsuarioPorId(id) {
             try {
                 await this.conexion.connect();
-        
-                let usuario;
-        
-                if (datosConsulta && datosConsulta.rol === 'Administrador') {
-                    // Si es un administrador consultando, buscamos por nombre_completo y cc
-                    usuario = await this.collection.findOne({
-                        nombre_completo: datosConsulta.nombre_completo,
-                        cc: datosConsulta.cc
-                    });
-                } else {
-                    // Búsqueda normal por id
-                    usuario = await this.collection.findOne({ id });
-                }
-        
+    
+                const usuario = await this.collection.findOne({ id });
+    
                 if (!usuario) {
                     await this.conexion.close();
                     return { mensaje: "Usuario no encontrado." };
                 }
-        
+    
                 if (usuario.rol === 'VIP') {
                     const tarjetaColeccion = this.db.collection('tarjeta_vip');
-                    const tarjetaVip = await tarjetaColeccion.findOne({ id_usuario: usuario.id });
-        
+                    const tarjetaVip = await tarjetaColeccion.findOne({ id_usuario: id });
+    
                     if (tarjetaVip) {
                         usuario.tarjeta_vip = {
                             numero_tarjeta: tarjetaVip.numero_tarjeta,
@@ -185,7 +174,7 @@ export class rol extends connect {
                         usuario.tarjeta_vip = { mensaje: "Tarjeta VIP no encontrada." };
                     }
                 }
-        
+    
                 await this.conexion.close();
                 return usuario;
             } catch (error) {
@@ -220,7 +209,7 @@ export class rol extends connect {
                 return { error: 'El rol especificado no es válido. Por favor, elige entre VIP o Estandar' };
             }
     
-            const usuarioEncontrado = await coleccionUsuarios.findOne({ id });
+            const usuarioEncontrado = await coleccionUsuarios.findOne({ id: parseInt(id) });
             if (!usuarioEncontrado) {
                 return { error: "No pudimos encontrar al usuario. ¿Estás seguro de que existe?" };
             }
@@ -233,10 +222,19 @@ export class rol extends connect {
                 return { mensaje: 'No hay cambios, el usuario ya tiene ese rol. Todo sigue igual.' };
             }
     
-            await coleccionUsuarios.updateOne(
-                { id },
+            // Actualizar solo el campo rol
+            const resultado = await coleccionUsuarios.updateOne(
+                { id: parseInt(id) },
                 { $set: { rol: rol } }
             );
+    
+            if (resultado.matchedCount === 0) {
+                return { error: "No pudimos encontrar al usuario. ¿Estás seguro de que existe?" };
+            }
+    
+            if (resultado.modifiedCount === 0) {
+                return { mensaje: 'No hay cambios, el usuario ya tiene ese rol. Todo sigue igual.' };
+            }
     
             if (rol === "VIP") {
                 let tarjetaVIP = await coleccionTarjetasVip.findOne({ id_usuario: parseInt(id) });
@@ -283,6 +281,7 @@ export class rol extends connect {
     
             return { mensaje: 'Tu nuevo rol te espera.' };
         } catch (error) {
+            console.error('Error detallado:', error);
             return { error: `No pudimos actualizar el rol: ${error.message}` };
         } finally {
             if (cliente) {

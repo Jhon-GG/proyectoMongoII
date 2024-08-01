@@ -178,14 +178,14 @@ import {pago} from './js/modules/pago.js'
 // let objRol = new rol();
     
 // const datosUsuarioEstandar = {
-//     id: 51,
-//     nombre_completo: "Camilo DiazH",
-//     cc: "12999952567",
-//     alias: "camiloH",
-//     celular: "313236786)",
-//     email: "camiloH@email.com",
-//     telefono: "6983972699",
-//     rol: "Estandar"
+//     id: 60,
+//     nombre_completo: "Carlita Perez",
+//     cc: "1295645892",
+//     alias: "Carlita",
+//     celular: "3132390783",
+//     email: "carlitajijii@email.com",
+//     telefono: "6983129123",
+//     rol: "VIP"
 // };
 
 // console.log(await objRol.crearUsuario(datosUsuarioEstandar));
@@ -212,12 +212,14 @@ import {pago} from './js/modules/pago.js'
 // let objRol = new rol();
 
 // const datosActualizados1 = {
-//     id: 48,
+//     id: 60,
 //     rol: 'VIP'
 // };
 // console.log(await objRol.cambiarRolUsuario(datosActualizados1));
 
 // objRol.destructor();
+
+
 
 
 
