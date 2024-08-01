@@ -102,6 +102,17 @@ export class descuento extends connect {
             return { mensaje: "La película no tiene ese horario asignado." };
         }
 
+        const boletoConMismoAsiento = await this.collection.findOne({
+            id_pelicula: nuevoBoleto.id_pelicula,
+            id_horario_funcion: nuevoBoleto.id_horario_funcion,
+            asiento: nuevoBoleto.asiento
+        });
+    
+        if (boletoConMismoAsiento) {
+            await this.conexion.close();
+            return { mensaje: "Error, asiento ocupado en ese horario." };
+        }
+
         const fechaActual = new Date();
         const dia = String(fechaActual.getDate()).padStart(2, '0');
         const mes = String(fechaActual.getMonth() + 1).padStart(2, '0');
@@ -219,6 +230,17 @@ export class descuento extends connect {
         if (horario.id_pelicula !== nuevoBoleto.id_pelicula) {
             await this.conexion.close();
             return { mensaje: "La película no tiene ese horario asignado." };
+        }
+
+        const boletoConMismoAsiento = await this.collection.findOne({
+            id_pelicula: nuevoBoleto.id_pelicula,
+            id_horario_funcion: nuevoBoleto.id_horario_funcion,
+            asiento: nuevoBoleto.asiento
+        });
+    
+        if (boletoConMismoAsiento) {
+            await this.conexion.close();
+            return { mensaje: "Error, asiento ocupado en ese horario." };
         }
     
         const fechaActual = new Date();

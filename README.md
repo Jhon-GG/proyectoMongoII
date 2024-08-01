@@ -997,19 +997,19 @@ mongodb://dave:445566778@roundhouse.proxy.rlwy.net:48985/cineCampus
 ```js
 let objRol = new rol();
     
-    const nuevoUsuario = {
-        id: 19,
-        nombre: "Neil",
-        apellido: "Gutierrez",
-        cc: 1247263459,
-        alias: "NeilGG",
-        rol: "VIP",
-        email: "neil.guti@example.com",
-        celular: 314569721
-    };
+const datosUsuarioEstandar = {
+    id: 51,
+    nombre_completo: "Camilo DiazH",
+    cc: "12999952567",
+    alias: "camiloH",
+    celular: "313236786)",
+    email: "camiloH@email.com",
+    telefono: "6983972699",
+    rol: "Estandar"
+};
 
-const respuesta = await objRol.agregarUsuario(nuevoUsuario);
-console.log(respuesta);
+console.log(await objRol.crearUsuario(datosUsuarioEstandar));
+
 objRol.destructor();
 ```
 
@@ -1166,14 +1166,15 @@ mongodb://mariiangel:345678901@roundhouse.proxy.rlwy.net:48985/cineCampus
 ### Uso
 
 ```js
-    let objRol = new rol();
+let objRol = new rol();
 
-        const idUsuario = 3;
-        const nuevoRol = 'VIP'; 
-        const usuarioActualizado = await objRol.cambiarRolUsuario(idUsuario, nuevoRol);
-        console.log(usuarioActualizado);
+    const datosActualizados1 = {
+        id: 48,
+        rol: 'Estandar'
+    };
+    console.log(await objRol.cambiarRolUsuario(datosActualizados1));
 
-    objRol.destructor();
+objRol.destructor();
 ```
 
 ## Rol.destructor();

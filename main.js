@@ -177,19 +177,19 @@ import {pago} from './js/modules/pago.js'
 
 // let objRol = new rol();
     
-//     const nuevoUsuario = {
-//         id: 19,
-//         nombre: "Neil",
-//         apellido: "Gutierrez",
-//         cc: 1247263459,
-//         alias: "NeilGG",
-//         rol: "VIP",
-//         email: "neil.guti@example.com",
-//         celular: 314569721
-//     };
+// const datosUsuarioEstandar = {
+//     id: 60,
+//     nombre_completo: "Carlita Perez",
+//     cc: "1295645892",
+//     alias: "Carlita",
+//     celular: "3132390783",
+//     email: "carlitajijii@email.com",
+//     telefono: "6983129123",
+//     rol: "VIP"
+// };
 
-// const respuesta = await objRol.agregarUsuario(nuevoUsuario);
-// console.log(respuesta);
+// console.log(await objRol.crearUsuario(datosUsuarioEstandar));
+
 // objRol.destructor();
 
 
@@ -209,15 +209,17 @@ import {pago} from './js/modules/pago.js'
 
 // Permitir la actualización del rol de un usuario (por ejemplo, cambiar de usuario estándar a VIP, o viceversa).
 
+// let objRol = new rol();
 
-    // let objRol = new rol();
+// const datosActualizados1 = {
+//     id: 60,
+//     rol: 'VIP'
+// };
+// console.log(await objRol.cambiarRolUsuario(datosActualizados1));
 
-    //     const idUsuario = 3;
-    //     const nuevoRol = 'VIP'; 
-    //     const usuarioActualizado = await objRol.cambiarRolUsuario(idUsuario, nuevoRol);
-    //     console.log(usuarioActualizado);
+// objRol.destructor();
 
-    // objRol.destructor();
+
 
 
 

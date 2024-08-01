@@ -78,6 +78,7 @@ export class boleto extends connect {
             return { mensaje: "Ya existe un boleto con el mismo ID." };
         }
 
+
         const boletoExistente = await this.collection.findOne({
             id_pelicula: nuevoBoleto.id_pelicula,
             id_horario_funcion: nuevoBoleto.id_horario_funcion,
@@ -110,6 +111,17 @@ export class boleto extends connect {
         if (horario.id_pelicula !== nuevoBoleto.id_pelicula) {
             await this.conexion.close();
             return { mensaje: "La película no tiene ese horario asignado." };
+        }
+
+        const boletoConMismoAsiento = await this.collection.findOne({
+            id_pelicula: nuevoBoleto.id_pelicula,
+            id_horario_funcion: nuevoBoleto.id_horario_funcion,
+            asiento: nuevoBoleto.asiento
+        });
+    
+        if (boletoConMismoAsiento) {
+            await this.conexion.close();
+            return { mensaje: "Error, asiento ocupado en ese horario." };
         }
 
         const fechaActual = new Date();
