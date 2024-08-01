@@ -175,22 +175,22 @@ import {pago} from './js/modules/pago.js'
 
 // Permitir la creación de nuevos usuarios en el sistema, asignando roles y privilegios específicos (usuario estándar, usuario VIP o administrador).
 
-// let objRol = new rol();
+let objRol = new rol();
     
-//     const nuevoUsuario = {
-//         id: 19,
-//         nombre: "Neil",
-//         apellido: "Gutierrez",
-//         cc: 1247263459,
-//         alias: "NeilGG",
-//         rol: "VIP",
-//         email: "neil.guti@example.com",
-//         celular: 314569721
-//     };
+const datosUsuarioEstandar = {
+    id: 49,
+    nombre_completo: "Andrea Pabon",
+    cc: "1295437873",
+    alias: "andre",
+    celular: "3132349666",
+    email: "andre.pabon@email.com",
+    telefono: "6983988592",
+    rol: "VIP"
+};
 
-// const respuesta = await objRol.agregarUsuario(nuevoUsuario);
-// console.log(respuesta);
-// objRol.destructor();
+console.log(await objRol.crearUsuario(datosUsuarioEstandar));
+
+objRol.destructor();
 
 
 

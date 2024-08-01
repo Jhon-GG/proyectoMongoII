@@ -42,27 +42,100 @@ export class rol extends connect {
      * @throws {Error} - Lanza un error si ya existe un usuario con el mismo ID.
      * @throws {Error} - Lanza un error si el usuario no se pudo añadir.
      */
-    async agregarUsuario(nuevoUsuario) {
-        try {
-            await this.conexion.connect();
-
-            const usuarioExistente = await this.collection.findOne({ id: nuevoUsuario.id });
-            if (usuarioExistente) {
-                throw new Error("Ya existe un usuario con el mismo ID.");
+    
+    
+        async crearUsuario(datosUsuario) {
+            let client;
+            try {
+              client = await this.conexion.connect();
+              const db = client.db('cineCampus');
+              const usuarios = db.collection('usuario');
+              const tarjetasVIP = db.collection('tarjeta_vip');
+          
+              const camposUnicos = ['id', 'alias', 'email', 'celular', 'cc'];
+              for (let campo of camposUnicos) {
+                const usuarioExistente = await usuarios.findOne({ [campo]: datosUsuario[campo] });
+                if (usuarioExistente) {
+                  return { error: `Error al crear el usuario: Ya existe un usuario con el mismo ${campo}.` };
+                }
+              }
+          
+              const usuarioNombreExistente = await usuarios.findOne({
+                nombre_completo: { $regex: new RegExp('^' + datosUsuario.nombre_completo + '$', 'i') }
+              });
+              if (usuarioNombreExistente) {
+                return { error: 'Error al crear el usuario: Ya existe un usuario con el mismo nombre completo.' };
+              }
+          
+              if (!['VIP', 'Estandar', 'Administrador'].includes(datosUsuario.rol)) {
+                return { error: 'Error al crear el usuario: Rol de usuario no válido' };
+              }
+          
+              const resultado = await usuarios.insertOne(datosUsuario);
+              const nuevoUsuarioId = resultado.insertedId;
+          
+              let tarjetaVIP = null;
+          
+              if (datosUsuario.rol === 'Administrador') {
+                await db.command({
+                  createUser: datosUsuario.alias,
+                  pwd: datosUsuario.cc,
+                  roles: [{ role: "dbOwner", db: "cineCampus" }]
+                });
+              } else {
+                let rolDB = datosUsuario.rol === 'VIP' ? 'usuarioVip' : 'usuarioEstandar';
+                await db.command({
+                  createUser: datosUsuario.alias,
+                  pwd: datosUsuario.cc,
+                  roles: [{ role: rolDB, db: 'cineCampus' }]
+                });
+          
+                if (datosUsuario.rol === 'VIP') {
+                  const ultimaTarjeta = await tarjetasVIP.findOne({}, { sort: { id: -1 } });
+                  const nuevoIdTarjeta = (ultimaTarjeta ? ultimaTarjeta.id : 0) + 1;
+                  
+                  tarjetaVIP = {
+                    id: nuevoIdTarjeta,
+                    id_usuario: datosUsuario.id,
+                    numero_tarjeta: Math.floor(1000000000 + Math.random() * 9000000000), // Genera un número de 10 dígitos
+                    descuento: 20,
+                    fecha_expiracion: new Date(new Date().getFullYear() + 1, 11, 31).toISOString().split('T')[0],
+                    estado: "activa"
+                  };
+          
+                  
+                  tarjetaVIP.id = parseInt(tarjetaVIP.id);
+                  tarjetaVIP.id_usuario = parseInt(tarjetaVIP.id_usuario);
+                  tarjetaVIP.numero_tarjeta = parseInt(tarjetaVIP.numero_tarjeta);
+                  tarjetaVIP.descuento = parseInt(tarjetaVIP.descuento);
+          
+                  await tarjetasVIP.insertOne(tarjetaVIP);
+                }
+              }
+          
+              const respuesta = {
+                mensaje: 'Usuario creado con éxito',
+                usuario: {
+                  id: datosUsuario.id,
+                  nombre_completo: datosUsuario.nombre_completo,
+                  alias: datosUsuario.alias,
+                  rol: datosUsuario.rol
+                }
+              };
+          
+              if (tarjetaVIP) {
+                respuesta.tarjeta_vip = tarjetaVIP;
+              }
+          
+              return respuesta;
+            } catch (error) {
+              return { error: `Error al crear el usuario: ${error.message}` };
+            } finally {
+              if (client) {
+                await client.close();
+              }
             }
-
-            const resultado = await this.collection.insertOne(nuevoUsuario);
-            await this.conexion.close();
-
-            if (resultado.acknowledged) {
-                return nuevoUsuario; 
-                throw new Error("No se pudo agregar el usuario.");
-            }
-        } catch (error) {
-            await this.conexion.close();
-            return { mensaje: `Error: ${error.message}` };
-        }
-    }
+          }
 
         /**
      * Busca un usuario en la base de datos por su identificador único.
