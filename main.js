@@ -175,22 +175,22 @@ import {pago} from './js/modules/pago.js'
 
 // Permitir la creación de nuevos usuarios en el sistema, asignando roles y privilegios específicos (usuario estándar, usuario VIP o administrador).
 
-let objRol = new rol();
+// let objRol = new rol();
     
-const datosUsuarioEstandar = {
-    id: 49,
-    nombre_completo: "Andrea Pabon",
-    cc: "1295437873",
-    alias: "andre",
-    celular: "3132349666",
-    email: "andre.pabon@email.com",
-    telefono: "6983988592",
-    rol: "VIP"
-};
+// const datosUsuarioEstandar = {
+//     id: 51,
+//     nombre_completo: "Camilo DiazH",
+//     cc: "12999952567",
+//     alias: "camiloH",
+//     celular: "313236786)",
+//     email: "camiloH@email.com",
+//     telefono: "6983972699",
+//     rol: "Estandar"
+// };
 
-console.log(await objRol.crearUsuario(datosUsuarioEstandar));
+// console.log(await objRol.crearUsuario(datosUsuarioEstandar));
 
-objRol.destructor();
+// objRol.destructor();
 
 
 
@@ -209,15 +209,15 @@ objRol.destructor();
 
 // Permitir la actualización del rol de un usuario (por ejemplo, cambiar de usuario estándar a VIP, o viceversa).
 
+// let objRol = new rol();
 
-    // let objRol = new rol();
+// const datosActualizados1 = {
+//     id: 48,
+//     rol: 'VIP'
+// };
+// console.log(await objRol.cambiarRolUsuario(datosActualizados1));
 
-    //     const idUsuario = 3;
-    //     const nuevoRol = 'VIP'; 
-    //     const usuarioActualizado = await objRol.cambiarRolUsuario(idUsuario, nuevoRol);
-    //     console.log(usuarioActualizado);
-
-    // objRol.destructor();
+// objRol.destructor();
 
 
 
