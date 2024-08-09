@@ -1,10 +1,10 @@
-import { connect } from "../../helpers/db/connect.js"
-import { ObjectId } from "mongodb";
+const  connect  = require ('../../server/db/connect.js')
+const { ObjectId } = require ("mongodb")
 
 // 5. Roles definidos
 
 
-export class rol extends connect {
+class Rol extends connect {
     static instanceRol;
     db;
     collection;
@@ -152,7 +152,7 @@ export class rol extends connect {
             try {
                 await this.conexion.connect();
     
-                const usuario = await this.collection.findOne({ id });
+                const usuario = await this.collection.findOne({ id: parseInt(id) });
     
                 if (!usuario) {
                     await this.conexion.close();
@@ -161,7 +161,7 @@ export class rol extends connect {
     
                 if (usuario.rol === 'VIP') {
                     const tarjetaColeccion = this.db.collection('tarjeta_vip');
-                    const tarjetaVip = await tarjetaColeccion.findOne({ id_usuario: id });
+                    const tarjetaVip = await tarjetaColeccion.findOne({ id_usuario: parseInt(id) });
     
                     if (tarjetaVip) {
                         usuario.tarjeta_vip = {
@@ -324,3 +324,5 @@ async buscarUsuariosPorRol(rol) {
         connect.instanceConnect = undefined;
     }
 }
+
+module.exports = Rol;

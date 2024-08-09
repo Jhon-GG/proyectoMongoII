@@ -2,15 +2,19 @@
   "name": "proyectomongoii",
   "version": "1.0.0",
   "main": "main.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "dev": "node --watch --env-file=.env main.js"
+    "dev": "node --watch --env-file=.env app.js",
+    "test": "node --watch --env-file=.env main.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "```js npm i mongodb ```",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.2.0",
     "mongodb": "^6.8.0"
   }
 }
