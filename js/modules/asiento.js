@@ -1,11 +1,11 @@
 
-import { connect } from "../../helpers/db/connect.js"
-import { ObjectId } from "mongodb";
+const { connect } = require ("../../helpers/db/connect.js")
+const { ObjectId } = require ("mongodb")
 
 
 // 3. Asignación de asientos
 
-export class asiento extends connect {
+module.exports = class asiento extends connect {
     static instanceAsiento;
     db;
     collection;

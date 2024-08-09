@@ -1,9 +1,9 @@
 
-import { connect } from "../../helpers/db/connect.js"
-import { ObjectId } from "mongodb";
+const { connect } = require  ("../../helpers/db/connect.js")
+const { ObjectId } = require ("mongodb")
 
 
-export class test extends connect {
+module.exports =  class test extends connect {
     static instanceTest;
     db;
     collection;

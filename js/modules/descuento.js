@@ -1,10 +1,10 @@
 
-import { connect } from "../../helpers/db/connect.js"
-import { ObjectId } from "mongodb";
+const { connect } = require  ("../../helpers/db/connect.js")
+const { ObjectId } = require ("mongodb")
 
 // 4. Descuentos y tarjetas VIP
 
-export class descuento extends connect {
+module.exports = class descuento extends connect {
     static instanceDescuento;
     db;
     collection;

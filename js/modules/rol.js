@@ -1,10 +1,10 @@
-import { connect } from "../../helpers/db/connect.js"
-import { ObjectId } from "mongodb";
+const { connect } = require  ("../../helpers/db/connect.js")
+const { ObjectId } = require  ("mongodb")
 
 // 5. Roles definidos
 
 
-export class rol extends connect {
+module.exports = class rol extends connect {
     static instanceRol;
     db;
     collection;
