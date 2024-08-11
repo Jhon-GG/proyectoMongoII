@@ -9,7 +9,40 @@
     "estado": "Próximo estreno",
     "sinopsis": "Los detectives Mike y Marcus regresan para una nueva misión llena de acción y comedia.",
     "estreno": "2024-08-15",
-    "director": "Adil & Bilall"
+    "director": "Adil & Bilall",
+    "imagen_pelicula": "https://freeimage.host/i/dlAzU5G",
+    "actores": [
+      {
+        "nombre": "Will Smith",
+        "personaje": "Detective Mike",
+        "imagen_actor": "https://freeimage.host/i/d022fNR"
+      },
+      {
+        "nombre": "Jacob Scipio",
+        "personaje": "Armando Aretas",
+        "imagen_actor": "https://freeimage.host/i/d0R8hOJ"
+      },
+      {
+        "nombre": "Martin Lawrence",
+        "personaje": "Marcus Burnett",
+        "imagen_actor": "https://freeimage.host/i/d0RUjGp"
+      },
+      {
+        "nombre": "Vanessa Hudgens",
+        "personaje": "Kelly",
+        "imagen_actor": "https://freeimage.host/i/d05eSYg"
+      },
+      {
+        "nombre": "Paola nuñez",
+        "personaje": "Rita secada",
+        "imagen_actor": "https://freeimage.host/i/d05S9wJ"
+      },
+      {
+        "nombre": "Ioan Gruffudd",
+        "personaje": "Adam Lockwood",
+        "imagen_actor": "https://freeimage.host/i/d05iz5N"
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd41405"
@@ -21,7 +54,40 @@
     "estado": "En cartelera",
     "sinopsis": "Un grupo de amigos descubre que están siendo vigilados por una entidad desconocida.",
     "estreno": "2024-07-10",
-    "director": "David F. Sandberg"
+    "director": "David F. Sandberg",
+    "imagen_pelicula": "https://freeimage.host/i/d05S9wJ",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd41406"
@@ -33,7 +99,40 @@
     "estado": "Próximo estreno",
     "sinopsis": "Un equipo de élite debe llevar a cabo una misión de rescate en una zona de conflicto.",
     "estreno": "2024-09-20",
-    "director": "Michael Bay"
+    "director": "Michael Bay",
+    "imagen_pelicula": "https://freeimage.host/i/dlAuniN",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd41407"
@@ -45,7 +144,40 @@
     "estado": "En cartelera",
     "sinopsis": "Una misión científica en el océano se convierte en una carrera contra el tiempo para sobrevivir.",
     "estreno": "2024-06-25",
-    "director": "James Cameron"
+    "director": "James Cameron",
+    "imagen_pelicula": "https://freeimage.host/i/dlA5iLx",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd41408"
@@ -57,7 +189,40 @@
     "estado": "Próximo estreno",
     "sinopsis": "Un antiguo mazo de tarot desata una serie de eventos sobrenaturales mortales.",
     "estreno": "2024-10-10",
-    "director": "Ari Aster"
+    "director": "Ari Aster",
+    "imagen_pelicula": "https://freeimage.host/i/dlAYvR9",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd41409"
@@ -69,7 +234,40 @@
     "estado": "En cartelera",
     "sinopsis": "Godzilla y King Kong se enfrentan a una amenaza aún mayor que pone en peligro el mundo.",
     "estreno": "2024-07-05",
-    "director": "Adam Wingard"
+    "director": "Adam Wingard",
+    "imagen_pelicula": "https://freeimage.host/i/dlAGvrG",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd4140a"
@@ -81,7 +279,40 @@
     "estado": "Próximo estreno",
     "sinopsis": "La historia de una unidad secreta durante la Segunda Guerra Mundial que lleva a cabo operaciones clandestinas.",
     "estreno": "2024-11-01",
-    "director": "Guy Ritchie"
+    "director": "Guy Ritchie",
+    "imagen_pelicula": "https://freeimage.host/i/dlAXDMP",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd4140b"
@@ -93,7 +324,40 @@
     "estado": "En cartelera",
     "sinopsis": "Un drama épico sobre las consecuencias de una guerra civil que divide a una nación.",
     "estreno": "2024-07-18",
-    "director": "Steven Spielberg"
+    "director": "Steven Spielberg",
+    "imagen_pelicula": "https://freeimage.host/i/dlAjV7s",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd4140c"
@@ -105,7 +369,40 @@
     "estado": "Próximo estreno",
     "sinopsis": "Las emociones de Riley enfrentan nuevos desafíos cuando se muda a una nueva ciudad.",
     "estreno": "2024-12-15",
-    "director": "Pete Docter"
+    "director": "Pete Docter",
+    "imagen_pelicula": "https://freeimage.host/i/dluilx1",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd4140d"
@@ -117,19 +414,85 @@
     "estado": "En cartelera",
     "sinopsis": "Un hombre se convierte en un héroe inusual cuando debe enfrentar a una criatura mítica para salvar su hogar.",
     "estreno": "2024-06-30",
-    "director": "Joe Carnahan"
+    "director": "Joe Carnahan",
+    "imagen_pelicula": "https://freeimage.host/i/dlANZ5g",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd4140e"
     },
     "id": 11,
-    "titulo": "Garfield: Fuera de cada",
+    "titulo": "Garfield: Fuera de casa",
     "genero": "Animación / Comedia",
     "duracion": "1h 30m",
     "estado": "Próximo estreno",
     "sinopsis": "Garfield se embarca en una nueva aventura llena de humor y caos.",
     "estreno": "2024-08-25",
-    "director": "Mark Dindal"
+    "director": "Mark Dindal",
+    "imagen_pelicula": "https://freeimage.host/i/dlAgtxn",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd4140f"
@@ -141,7 +504,40 @@
     "estado": "Próximo estreno",
     "sinopsis": "Po regresa para una nueva misión para proteger el Valle de la Paz.",
     "estreno": "2024-09-12",
-    "director": "Jennifer Yuh Nelson"
+    "director": "Jennifer Yuh Nelson",
+    "imagen_pelicula": "https://freeimage.host/i/dlRCq0u",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd41410"
@@ -153,7 +549,40 @@
     "estado": "En cartelera",
     "sinopsis": "Megamente enfrenta a una nueva amenaza cuando el Sindicato de la Perdición planea tomar el control de la ciudad.",
     "estreno": "2024-07-22",
-    "director": "Tom McGrath"
+    "director": "Tom McGrath",
+    "imagen_pelicula": "https://freeimage.host/i/dlR0Ia4",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd41411"
@@ -165,7 +594,40 @@
     "estado": "En cartelera",
     "sinopsis": "Una joven descubre sus habilidades mágicas mientras busca a su madre desaparecida.",
     "estreno": "2024-07-25",
-    "director": "Alexander Boguslavsky"
+    "director": "Alexander Boguslavsky",
+    "imagen_pelicula": "https://freeimage.host/i/dlRMweR",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd41412"
@@ -177,7 +639,40 @@
     "estado": "Próximo estreno",
     "sinopsis": "Una familia enfrenta terror y misterio en una casa construida sobre un antiguo pantano.",
     "estreno": "2024-10-05",
-    "director": "Scott Derrickson"
+    "director": "Scott Derrickson",
+    "imagen_pelicula": "https://freeimage.host/i/dlRVpnI",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd41413"
@@ -189,7 +684,40 @@
     "estado": "En cartelera",
     "sinopsis": "La historia de un astronauta que debe enfrentarse a sus propios demonios mientras explora el espacio profundo.",
     "estreno": "2024-06-20",
-    "director": "Denis Villeneuve"
+    "director": "Denis Villeneuve",
+    "imagen_pelicula": "https://freeimage.host/i/dlRNrnR",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd41414"
@@ -201,7 +729,40 @@
     "estado": "Próximo estreno",
     "sinopsis": "Un grupo de hombres arriesga sus vidas para transportar un cargamento peligroso a través de un terreno inhóspito.",
     "estreno": "2024-09-30",
-    "director": "Henri-Georges Clouzot"
+    "director": "Henri-Georges Clouzot",
+    "imagen_pelicula": "https://freeimage.host/i/dlRkHv9",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd41415"
@@ -213,7 +774,40 @@
     "estado": "En cartelera",
     "sinopsis": "Una joven princesa se embarca en una misión para rescatar a su reino y encontrar su propio destino.",
     "estreno": "2024-07-12",
-    "director": "Matt Stone & Trey Parker"
+    "director": "Matt Stone & Trey Parker",
+    "imagen_pelicula": "https://freeimage.host/i/dlRvPxs",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd41416"
@@ -225,7 +819,40 @@
     "estado": "Próximo estreno",
     "sinopsis": "Un equipo de rescatistas enfrentan desafíos extremos para salvar a un grupo atrapado en una montaña.",
     "estreno": "2024-11-20",
-    "director": "J.J. Abrams"
+    "director": "J.J. Abrams",
+    "imagen_pelicula": "https://freeimage.host/i/dlRUdcQ",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d56a280e8d342dd41417"
@@ -237,7 +864,40 @@
     "estado": "En cartelera",
     "sinopsis": "La vida de un hombre cambia drásticamente cuando descubre un secreto familiar oscuro.",
     "estreno": "2024-06-15",
-    "director": "Bong Joon-ho"
+    "director": "Bong Joon-ho",
+    "imagen_pelicula": "https://freeimage.host/i/dlRrMw7",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   },{
     "_id": {
       "$oid": "66a3d82c280e8d342dd4141a"
@@ -249,5 +909,38 @@
     "estado": "Próximo estreno",
     "sinopsis": "Gru y sus minions enfrentan una nueva amenaza mientras buscan redención en un mundo en constante cambio.",
     "estreno": "2024-08-30",
-    "director": "Chris Renaud"
+    "director": "Chris Renaud",
+    "imagen_pelicula": "https://freeimage.host/i/dlugMLG",
+    "actores": [
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      },
+      {
+        "nombre": "",
+        "personaje": "",
+        "imagen_actor": ""
+      }
+    ]
   }]
