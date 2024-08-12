@@ -1,30 +1,47 @@
-
-
 const express = require('express');
-const router = express.Router();
+const { body, validationResult } = require('express-validator');
 const Pago = require('../modules/pago');
 
-// Instancia de la clase Pago
-const pagoInstance = new Pago();
+const router = express.Router();
 
-// Ruta para comprar un boleto
-router.post('/comprar-boleto', async (req, res) => {
-    try {
-        const resultado = await pagoInstance.compraBoleto(req.body);
-        res.json(resultado);
-    } catch (error) {
-        res.status(400).json({ error: error.message });
+router.post('/comprar-boleto', [
+    body('id').notEmpty().isString(),
+    body('id_pelicula').notEmpty().isString(),
+    body('id_horario_funcion').notEmpty().isString(),
+    body('id_usuario').notEmpty().isString(),
+    body('asiento').notEmpty().isString(),
+    body('tipo_compra').notEmpty().isString(),
+    body('metodo_pago').notEmpty().isString(),
+    body('estado_compra').notEmpty().isString(),
+    body('id_reserva').optional().isString()
+], async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
     }
+    
+    let obj = new Pago();
+    res.send(await obj.compraBoleto(req.body));
 });
 
-// Ruta para comprar un boleto y obtener detalles
-router.post('/comprar-boleto-detalle', async (req, res) => {
-    try {
-        const resultado = await pagoInstance.compraBoletoDetalle(req.body);
-        res.json(resultado);
-    } catch (error) {
-        res.status(400).json({ error: error.message });
+router.post('/comprar-boleto-detalle', [
+    body('id').notEmpty().isString(),
+    body('id_pelicula').notEmpty().isString(),
+    body('id_horario_funcion').notEmpty().isString(),
+    body('id_usuario').notEmpty().isString(),
+    body('asiento').notEmpty().isString(),
+    body('tipo_compra').notEmpty().isString(),
+    body('metodo_pago').notEmpty().isString(),
+    body('estado_compra').notEmpty().isString(),
+    body('id_reserva').optional().isString()
+], async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
     }
+    
+    let obj = new Pago();
+    res.send(await obj.compraBoletoDetalle(req.body));
 });
 
 module.exports = router;
