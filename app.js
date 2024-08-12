@@ -1,10 +1,9 @@
+// app.js
+
 const express = require('express');
 const cors = require('cors');
-const peliculaRoutes = require('./server/router/pelicula.routes');
-const boletoRoutes = require('./server/router/boleto.routes');
-const reservaRoutes = require('./server/router/reserva.routes');
-const tarjetaVipRoutes = require('./server/router/tarjetaVip.routes');
-const usuarioRoutes = require('./server/router/usuario.routes');
+const peliculaRoutes = require('./server/router/pelicula.routes.js');
+// ... otros requires para tus demás rutas
 
 const app = express();
 
@@ -16,14 +15,11 @@ app.use(express.json());
 
 // Rutas
 app.use('/pelicula', peliculaRoutes);
-app.use('/boleto', boletoRoutes);
-app.use('/reserva', reservaRoutes);
-app.use('/tarjeta-vip', tarjetaVipRoutes);
-app.use('/usuario', usuarioRoutes);
+// ... otras rutas que ya tengas configuradas
 
 // Configuración del servidor
 const host = process.env.EXPRESS_HOST || 'localhost';
-const port = parseInt(process.env.EXPRESS_PORT) || 5001; // Cambiado a 5001 para coincidir con tu frontend
+const port = parseInt(process.env.EXPRESS_PORT) || 5001;
 
 // Iniciar el servidor
 app.listen(port, host, () => {

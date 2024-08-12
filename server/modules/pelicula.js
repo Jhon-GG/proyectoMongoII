@@ -115,9 +115,11 @@ module.exports = class pelicula extends connect {
     async getPeliculaById(id) {
         await this.conexion.connect();
         
+        const numericId = parseInt(id);
+    
         const data = await this.collection.aggregate([
             {
-                $match: { id: id } 
+                $match: { id: numericId } // Usamos el id numérico
             },
             {
                 $lookup: {
@@ -160,14 +162,14 @@ module.exports = class pelicula extends connect {
         if (data.length === 0) {
             return { mensaje: "ID de película no encontrado" };
         }
-        return data[0]; 
+        return data[0];  
     }
     
     
-    async obtenerPeliculasPorEstado({ estado }) {
+    async getPeliculaByEstado({ estado }) {
         try {
             await this.conexion.connect();
-    
+
             const peliculas = await this.collection.aggregate([
                 {
                     $match: { estado: estado }

@@ -1,30 +1,48 @@
-const { ObjectId } = require('mongodb');
-const { query, body, param, validationResult } = require('express-validator');
-const pelicula = require('../module/pelicula');
+// server/router/pelicula.routes.js
+
 const express = require('express');
-const appPelicula = express.Router();
+const { ObjectId } = require("mongodb");
+const Pelicula = require('../modules/pelicula');
 
+const router = express.Router();
 
-appPelicula.get('/', async (req, res) => {
-    let obj = new pelicula();
-    res.send(await obj.getPeliculas());
+// Obtener todas las películas
+router.get('/v1', async (req, res) => {
+    try {
+        const peliculaInstance = new Pelicula();
+        const peliculas = await peliculaInstance.getPeliculas();
+        res.json(peliculas);
+    } catch (error) {
+        res.status(500).json({ message: "Error al obtener las películas", error: error.message });
+    }
 });
 
-
-appPelicula.get('/details', [query('id').notEmpty()], async (req, res) => {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) return res.status(400).json({ message: "Envíe el ID de a pelicula que desea buscar" });
-    
-    let obj = new pelicula();
-    res.send(await obj.obtenerDetallesPelicula(req.query.id_titulo));
+// Obtener película por ID
+router.get('/v2/:id', async (req, res) => {
+    try {
+        const peliculaInstance = new Pelicula();
+        const pelicula = await peliculaInstance.getPeliculaById(req.params.id);
+        if (pelicula.mensaje) {
+            return res.status(404).json(pelicula);
+        }
+        res.json(pelicula);
+    } catch (error) {
+        res.status(500).json({ message: "Error al obtener la película", error: error.message });
+    }
 });
 
-appPelicula.get('/por-estado', [query('estado').notEmpty()], async (req, res) => {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) return res.status(400).json({ message: "Envíe el estado de la película" });
-    
-    let obj = new pelicula();
-    res.send(await obj.obtenerPeliculasPorEstado({ estado: req.query.estado }));
+// Obtener películas por estado
+router.get('/v3/:estado', async (req, res) => {
+    try {
+        const peliculaInstance = new Pelicula();
+        const peliculas = await peliculaInstance.getPeliculaByEstado(req.params.estado);
+        if (peliculas.error) {
+            return res.status(404).json(peliculas);
+        }
+        res.json(peliculas);
+    } catch (error) {
+        res.status(500).json({ message: "Error al obtener las películas por estado", error: error.message });
+    }
 });
 
-module.exports = appPelicula;
+module.exports = router;
