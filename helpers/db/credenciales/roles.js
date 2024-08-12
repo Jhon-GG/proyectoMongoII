@@ -1,46 +1,14 @@
 
 // Administrador
 
-db.createRole({
-    role: "administrador",
-    privileges: [
-      {
-          resource: { db: "cineCampus", collection: "asiento" },
-          actions: ["find", "remove", "update", "insert", "createCollection", "dropCollection"]
-        },
-        {
-          resource: { db: "cineCampus", collection: "boleto" },
-          actions: ["find", "remove", "update", "insert", "createCollection", "dropCollection"]
-        },
-        {
-          resource: { db: "cineCampus", collection: "horario_funcion" },
-          actions: ["find", "remove", "update", "insert", "createCollection", "dropCollection"]
-        },
-        {
-          resource: { db: "cineCampus", collection: "pelicula" },
-          actions: ["find", "remove", "update", "insert", "createCollection", "dropCollection"]
-        },
-        {
-          resource: { db: "cineCampus", collection: "reserva" },
-          actions: ["find", "remove", "update", "insert", "createCollection", "dropCollection"]
-        },
-        {
-          resource: { db: "cineCampus", collection: "sala" },
-          actions: ["find", "remove", "update", "insert", "createCollection", "dropCollection"]
-        },
-        {
-          resource: { db: "cineCampus", collection: "tarjeta_vip" },
-          actions: ["find", "remove", "update", "insert", "createCollection", "dropCollection"]
-        },
-        {
-          resource: { db: "cineCampus", collection: "usuario" },
-          actions: ["find", "remove", "update", "insert", "createCollection", "dropCollection"]
-        }
-    ],
-    roles: []
-  })
+db.createUser({
+  user: "Administrador",
+  pwd: "admin123",
+  roles: [
+      { role: "dbOwner", db: "cineCampus" }
+  ]
+})
 
-  
 
 // Usuario Estandar
 
@@ -48,7 +16,7 @@ db.createRole(
 	{
 		role: "usuarioEstandar",
         privileges: [
-      {
+        	{
             resource: {db: "cineCampus", collection: "pelicula"},
             actions: ["find"]
             },
@@ -68,13 +36,9 @@ db.createRole(
             resource: {db: "cineCampus", collection: "asiento"},
             actions: ["find", "insert", "update"]
             },
-              {
-            resource: { db: "cineCampus", collection: "", command: { aggregate: "pelicula" } },
-            actions: ["find"]
-              },
             {
-            resource: {db: "cineCampus", collection: "usuario"},
-            actions: ["insert", "update"]
+            resource: { db: "cineCampus", collection: "", command: { aggregate: "pelicula" } },
+            actions: ["find"]  
             }
         ],
             roles: []
@@ -82,13 +46,13 @@ db.createRole(
 )
 
 
-// Usuarui Vip
+// Usuario Vip
 
 db.createRole(
 	{
 		role: "usuarioVip",
         privileges: [
-      {
+            {
             resource: {db: "cineCampus", collection: "pelicula"},
             actions: ["find"]
             },
@@ -108,14 +72,14 @@ db.createRole(
             resource: {db: "cineCampus", collection: "asiento"},
             actions: ["find", "insert", "update"]
             },
-              {
-            resource: { db: "cineCampus", collection: "", command: { aggregate: "pelicula" } },
-            actions: ["find"]
-              },
             {
-            resource: {db: "cineCampus", collection: "usuario"},
-            actions: ["insert", "update"]
-            }
+              resource: {db: "cineCampus", collection: "tarjeta_vip"},
+              actions: ["find", "insert"]
+            },
+            {
+            resource: { db: "cineCampus", collection: "", command: { aggregate: "pelicula" } },
+            actions: ["find"]  
+            },
         ],
             roles: []
 	}
