@@ -1,5 +1,5 @@
 
-const { connect } = require ("../../helpers/db/connect.js")
+const { connect } = require ("../../server/db/connect.js")
 const { ObjectId } = require ("mongodb")
 
 
@@ -46,11 +46,10 @@ module.exports = class asiento extends connect {
         async crearReserva(nuevaReserva) {
             try {
                 await this.conexion.connect();
-        
                 // Validar que las fechas sigan el formato YYYY-MM-DD
                 const fechaReservaRegex = /^\d{4}-\d{2}-\d{2}$/;
                 if (!fechaReservaRegex.test(nuevaReserva.fecha_reserva) || !fechaReservaRegex.test(nuevaReserva.expiracion)) {
-                    throw new Error[`Las fechas deben seguir el formato YYYY-MM-DD`];
+                    throw new Error(`Las fechas deben seguir el formato YYYY-MM-DD`);
                 }
         
                 const reservaExistentePorId = await this.collection.findOne({ id: nuevaReserva.id });
@@ -59,32 +58,24 @@ module.exports = class asiento extends connect {
                     throw new Error(`Ya existe una reserva con el mismo ID`);
                 }
         
-                const reservaExistente = await this.collection.findOne({
-                    id_pelicula: nuevaReserva.id_pelicula,
-                    id_horario_funcion: nuevaReserva.id_horario_funcion,
-                    id_usuario: nuevaReserva.id_usuario,
-                    asientos: { $all: nuevaReserva.asientos },
-                    fecha_reserva: nuevaReserva.fecha_reserva,
-                    estado: nuevaReserva.estado,
-                    expiracion: nuevaReserva.expiracion
+                const peliculaColeccion = this.db.collection('pelicula');
+                const pelicula = await peliculaColeccion.findOne({ 
+                    id: nuevaReserva.id_pelicula, 
+                    estado: { $in: ["En cartelera", "Próximo estreno"] } 
                 });
         
-                if (reservaExistente) {
-                    throw new Error(`Ya existe una reserva con los mismos datos`);
-                }
-        
-                const peliculaColeccion = this.db.collection('pelicula');
-                const pelicula = await peliculaColeccion.findOne({ id: nuevaReserva.id_pelicula });
-        
-                if (!pelicula || pelicula.estado !== 'En cartelera') {
-                    throw new Error(`Película no disponible. No se encuentra en cartelera`);
+                if (!pelicula) {
+                    throw new Error(`Película no disponible o no se encuentra en cartelera`);
                 }
         
                 const horarioColeccion = this.db.collection('horario_funcion');
-                const horario = await horarioColeccion.findOne({ id: nuevaReserva.id_horario_funcion });
+                const horario = await horarioColeccion.findOne({ 
+                    id: nuevaReserva.id_horario_funcion,
+                    id_pelicula: nuevaReserva.id_pelicula
+                });
         
                 if (!horario) {
-                    throw new Error(`Horario de función no encontrado`);
+                    throw new Error(`Horario de función no encontrado o no es válido para esta película`);
                 }
         
                 nuevaReserva.fecha_funcion = horario.fecha_funcion;
@@ -95,6 +86,24 @@ module.exports = class asiento extends connect {
         
                 if (!usuario) {
                     throw new Error(`Usuario no encontrado`);
+                }
+        
+                const sala = await this.db.collection('sala').findOne({ id: horario.id_sala });
+                if (!sala) {
+                    throw new Error('No se encontró la sala asociada a este horario de proyección.');
+                }
+        
+                const asientosValidos = nuevaReserva.asientos.every(asientoId => sala.asientos.includes(asientoId));
+                if (!asientosValidos) {
+                    throw new Error('Uno o más asientos seleccionados no pertenecen a la sala de esta proyección.');
+                }
+        
+                const asientosDisponibles = await this.db.collection('asiento').countDocuments({ 
+                    id: { $in: nuevaReserva.asientos }, 
+                    estado: 'disponible' 
+                });
+                if (asientosDisponibles !== nuevaReserva.asientos.length) {
+                    throw new Error('Uno o más asientos seleccionados no están disponibles.');
                 }
         
                 if (usuario.rol === 'VIP') {
@@ -111,16 +120,39 @@ module.exports = class asiento extends connect {
                     nuevaReserva.total = horario.precio;
                 }
         
+                nuevaReserva.fecha_reserva = nuevaReserva.fecha_reserva || this.getFechaActual();
+                nuevaReserva.estado = nuevaReserva.estado || 'activa';
+                nuevaReserva.expiracion = nuevaReserva.expiracion || this.getFechaExpiracion();
+        
                 await this.collection.insertOne(nuevaReserva);
         
-                return nuevaReserva;
+                await this.db.collection('asiento').updateMany(
+                    { id: { $in: nuevaReserva.asientos } },
+                    { $set: { estado: 'reservado' } }
+                );
+        
+                return {
+                    mensaje: 'Reserva realizada con éxito',
+                    detallesReserva: nuevaReserva
+                };
         
             } catch (error) {
                 console.log(`{${error.message}}`);
-                return [`Ha ocurrido un error`] ; 
+                return { error: `Error al realizar la reserva: ${error.message}` };
             } finally {
                 await this.conexion.close();
             }
+        }
+        
+        getFechaActual() {
+            const fecha = new Date();
+            return `${fecha.getFullYear()}-${(fecha.getMonth() + 1).toString().padStart(2, '0')}-${fecha.getDate().toString().padStart(2, '0')}`;
+        }
+        
+        getFechaExpiracion() {
+            const fecha = new Date();
+            fecha.setDate(fecha.getDate() + 3);
+            return `${fecha.getFullYear()}-${(fecha.getMonth() + 1).toString().padStart(2, '0')}-${fecha.getDate().toString().padStart(2, '0')}`;
         }
         
 

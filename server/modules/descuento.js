@@ -1,5 +1,5 @@
 
-const { connect } = require  ("../../helpers/db/connect.js")
+const { connect } = require  ("../../server/db/connect.js")
 const { ObjectId } = require ("mongodb")
 
 // 4. Descuentos y tarjetas VIP

@@ -1,4 +1,4 @@
-const  connect  = require ('../../helpers/db/connect.js')
+const  connect  = require ('../../server/db/connect.js')
 const { ObjectId } = require ("mongodb")
 
 
@@ -77,7 +77,8 @@ module.exports = class pelicula extends connect {
                     estado: 1,
                     estreno: 1,
                     director: 1,
-                    horarios_funcion: 1 
+                    horarios_funcion: 1,
+                    actores: 1 
                 }
             }
         ]).toArray();
@@ -148,7 +149,8 @@ module.exports = class pelicula extends connect {
                     sinopsis: 1,
                     estreno: 1,
                     director: 1,
-                    horarios_funcion: 1 
+                    horarios_funcion: 1,
+                    actores: 1 
                 }
             }
         ]).toArray();
@@ -160,4 +162,66 @@ module.exports = class pelicula extends connect {
         }
         return data[0]; 
     }
+    
+    
+    async obtenerPeliculasPorEstado({ estado }) {
+        try {
+            await this.conexion.connect();
+    
+            const peliculas = await this.collection.aggregate([
+                {
+                    $match: { estado: estado }
+                },
+                {
+                    $lookup: {
+                        from: 'horario_funcion',
+                        localField: 'id',
+                        foreignField: 'id_pelicula',
+                        as: 'horarios_funcion'
+                    }
+                },
+                {
+                    $addFields: {
+                        horarios_funcion: {
+                            $cond: {
+                                if: { $eq: [{ $size: "$horarios_funcion" }, 0] },
+                                then: [{ mensaje: "Esta película no se encuentra en cartelera todavía" }],
+                                else: "$horarios_funcion"
+                            }
+                        }
+                    }
+                },
+                {
+                    $project: {
+                        _id: 0,
+                        id: 1,
+                        titulo: 1,
+                        sinopsis: 1,
+                        fecha_estreno: 1,
+                        genero: 1,
+                        duracion: 1,
+                        estado: 1,
+                        pais_origen: 1,
+                        imagen_pelicula: 1,
+                        reparto: 1,
+                        trailer: 1,
+                        director: 1,
+                        horarios_funcion: 1
+                    }
+                }
+            ]).toArray();
+    
+            if (peliculas.length === 0) {
+                return { error: `No se encontraron películas con el estado: ${estado}` };
+            }
+    
+            return peliculas;
+    
+        } catch (error) {
+            return { error: `Error al obtener las películas: ${error.message}` };
+        } finally {
+            await this.conexion.close();
+        }
+    }
 }
+
