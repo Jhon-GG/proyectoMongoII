@@ -1,29 +1,39 @@
-
 const express = require('express');
-const router = express.Router();
+const { query, body, validationResult } = require('express-validator');
 const Boleto = require('../modules/boleto');
 
-// Instancia de la clase Boleto
-const boletoInstance = new Boleto();
+const router = express.Router();
 
-// Ruta para crear un nuevo boleto
-router.post('/crear', async (req, res) => {
-    try {
-        const resultado = await boletoInstance.crearBoleto1(req.body);
-        res.json(resultado);
-    } catch (error) {
-        res.status(400).json({ error: error.message });
+router.get('/disponibilidad', [
+    query('idHorarioFuncion').notEmpty().isNumeric()
+], async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
     }
+    
+    let obj = new Boleto();
+    res.send(await obj.buscarAsientosDisponibles(parseInt(req.query.idHorarioFuncion)));
 });
 
-// Ruta para buscar asientos disponibles
-router.get('/asientos-disponibles/:idHorarioFuncion', async (req, res) => {
-    try {
-        const asientos = await boletoInstance.buscarAsientosDisponibles(req.params.idHorarioFuncion);
-        res.json(asientos);
-    } catch (error) {
-        res.status(400).json({ error: error.message });
+router.post('/crear', [
+    body('id').notEmpty().isString(),
+    body('id_pelicula').notEmpty().isString(),
+    body('id_horario_funcion').notEmpty().isString(),
+    body('id_usuario').notEmpty().isString(),
+    body('id_reserva').optional().isString(),
+    body('asiento').notEmpty().isString(),
+    body('tipo_compra').notEmpty().isIn(['online', 'offline']),
+    body('metodo_pago').notEmpty(),
+    body('estado_compra').notEmpty()
+], async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
     }
+    
+    let obj = new Boleto();
+    res.send(await obj.crearBoleto1(req.body));
 });
 
 module.exports = router;
