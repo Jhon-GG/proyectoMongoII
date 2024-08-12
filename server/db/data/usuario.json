@@ -9,6 +9,7 @@
     "alias": "carlitos",
     "rol": "estandar",
     "email": "carlos.gonzalez@example.com",
+    "imagen_usuario": "https://freeimage.host/i/d0UbmEg",
     "celular": {
       "$numberLong": "3111234567"
     }
@@ -23,6 +24,7 @@
     "alias": "mari",
     "rol": "VIP",
     "email": "maria.martinez@example.com",
+    "imagen_usuario": "https://freeimage.host/i/d0UplVt",
     "celular": {
       "$numberLong": "3109876543"
     }
@@ -37,6 +39,7 @@
     "alias": "juancho",
     "rol": "estandar",
     "email": "juan.perez@example.com",
+    "imagen_usuario": "https://freeimage.host/i/d0UyzI2",
     "celular": {
       "$numberLong": "3201122334"
     }
@@ -51,6 +54,7 @@
     "alias": "anita",
     "rol": "VIP",
     "email": "ana.lopez@example.com",
+    "imagen_usuario": "https://freeimage.host/i/d0UpNxS",
     "celular": {
       "$numberLong": "3115566778"
     }
@@ -65,6 +69,7 @@
     "alias": "luisito",
     "rol": "estandar",
     "email": "luis.rodriguez@example.com",
+    "imagen_usuario": "https://freeimage.host/i/d0g9Lcg",
     "celular": {
       "$numberLong": "3152233445"
     }
@@ -79,6 +84,7 @@
     "alias": "sofi",
     "rol": "VIP",
     "email": "sofia.hernandez@example.com",
+    "imagen_usuario": "https://freeimage.host/i/d0gH4ef",
     "celular": {
       "$numberLong": "3106677889"
     }
@@ -93,6 +99,7 @@
     "alias": "mike",
     "rol": "estandar",
     "email": "miguel.torres@example.com",
+    "imagen_usuario": "https://freeimage.host/i/d0gdwPI",
     "celular": {
       "$numberLong": "3123344556"
     }
@@ -107,6 +114,7 @@
     "alias": "lau",
     "rol": "VIP",
     "email": "laura.ramirez@example.com",
+    "imagen_usuario": "https://freeimage.host/i/d0gdDAb",
     "celular": {
       "$numberLong": "3137788990"
     }
@@ -121,6 +129,7 @@
     "alias": "dave",
     "rol": "estandar",
     "email": "david.flores@example.com",
+    "imagen_usuario": "https://freeimage.host/i/d0g280P",
     "celular": {
       "$numberLong": "3204455667"
     }
@@ -135,6 +144,7 @@
     "alias": "isa",
     "rol": "VIP",
     "email": "isabel.rios@example.com",
+    "imagen_usuario": "https://freeimage.host/i/d0g2yes",
     "celular": {
       "$numberLong": "3108899001"
     }
@@ -149,6 +159,7 @@
     "alias": "josem",
     "rol": "estandar",
     "email": "jose.morales@example.com",
+    "imagen_usuario": "https://freeimage.host/i/d0g32Ll",
     "celular": {
       "$numberLong": "3115566778"
     }
@@ -163,6 +174,7 @@
     "alias": "pati",
     "rol": "VIP",
     "email": "patricia.gomez@example.com",
+    "imagen_usuario": "https://freeimage.host/i/d0g3zIj",
     "celular": {
       "$numberLong": "3126677889"
     }
@@ -177,6 +189,7 @@
     "alias": "andy",
     "rol": "estandar",
     "email": "andres.vargas@example.com",
+    "imagen_usuario": "https://freeimage.host/i/d0g3ckg",
     "celular": {
       "$numberLong": "3137788990"
     }
@@ -191,6 +204,7 @@
     "alias": "fer",
     "rol": "VIP",
     "email": "fernanda.suarez@example.com",
+    "imagen_usuario": "https://freeimage.host/i/d0gFdyg",
     "celular": {
       "$numberLong": "3148899001"
     }
@@ -205,6 +219,7 @@
     "alias": "richy",
     "rol": "estandar",
     "email": "ricardo.diaz@example.com",
+    "imagen_usuario": "https://freeimage.host/i/d0g3637",
     "celular": {
       "$numberLong": "3151122334"
     }
