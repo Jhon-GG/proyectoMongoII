@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fondo negro */
+    color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #000;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.header-text {
+    flex-grow: 1;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.notification-icon {
+    font-size: 24px;
+    margin-left: auto;
+}
+
+.search-bar {
+    width: 75%; /* Ahora ocupa solo el 75% del ancho */
+    padding: 10px;
+    background-color: #444;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 0 auto; /* Centrar la barra en la página */
+    display: block;
+}
+
+/* Estilos para la sección "Now Playing" */
+.now-playing {
+    padding: 20px 15px;
+}
+
+.now-playing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.now-playing-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.now-playing-header a {
+    color: #f00;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.movies-container {
+    display: flex;
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    padding-bottom: 10px;
+    gap: 15px; /* Espacio entre las tarjetas */
+}
+
+.movie-card {
+    background-color: #111;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0; /* Evita que las tarjetas se reduzcan */
+    width: 380px; /* Incrementa el ancho de las tarjetas un 50% */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho */
+}
+
+.movie-card img {
+    width: 100%; /* Mantener la imagen dentro de la tarjeta */
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto; /* Centrar la imagen */
+}
+
+.movie-info {
+    margin-top: 10px;
+    text-align: center; /* Centra el texto debajo de la imagen */
+}
+
+.movie-info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.movie-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.movie-info span {
+    font-size: 14px;
+    color: #aaa;
+}
