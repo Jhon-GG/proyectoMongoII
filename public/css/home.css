@@ -120,3 +120,44 @@ body {
     font-size: 14px;
     color: #aaa;
 }
+
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between; /* Distribuye los botones con el mismo espacio */
+    padding: 10px 20px; /* Ajusta el padding para dar más espacio a los lados */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #f00; /* Letras en rojo */
+    flex: 1; /* Asegura que cada botón ocupe el mismo espacio */
+}
+
+.nav-item img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+.nav-item span {
+    font-size: 12px;
+    color: #f00; /* Letras en rojo */
+}
+
+.nav-item.active span {
+    color: #f00; /* Letras en rojo para el botón activo */
+}
+
+.nav-item.active img {
+    filter: invert(28%) sepia(95%) saturate(7317%) hue-rotate(353deg) brightness(101%) contrast(110%);
+}
