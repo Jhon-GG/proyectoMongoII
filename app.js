@@ -1,9 +1,13 @@
-// app.js
+
 
 const express = require('express');
 const cors = require('cors');
 const peliculaRoutes = require('./server/router/pelicula.routes.js');
-// ... otros requires para tus demás rutas
+// const asientoRoutes = require('./server/router/asiento.routes.js');
+// const boletoRoutes = require('./server/router/boleto.routes.js');
+// const descuentoRoutes = require('./server/router/descuento.routes.js');
+// const pagoRoutes = require('./server/router/pago.routes.js');
+// const rolRoutes = require('./server/router/rol.routes.js');
 
 const app = express();
 
@@ -15,7 +19,12 @@ app.use(express.json());
 
 // Rutas
 app.use('/pelicula', peliculaRoutes);
-// ... otras rutas que ya tengas configuradas
+// app.use('/asiento', asientoRoutes);
+// app.use('/boleto', boletoRoutes);
+// app.use('/descuento', descuentoRoutes);
+// app.use('/pago', pagoRoutes);
+// app.use('/rol', rolRoutes);
+
 
 // Configuración del servidor
 const host = process.env.EXPRESS_HOST || 'localhost';
@@ -25,3 +34,4 @@ const port = parseInt(process.env.EXPRESS_PORT) || 5001;
 app.listen(port, host, () => {
     console.log(`Server running at http://${host}:${port}`);
 });
+

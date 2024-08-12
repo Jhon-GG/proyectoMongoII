@@ -1,5 +1,5 @@
 
-const { connect } = require ("../../server/db/connect.js")
+const  connect  = require ("../../server/db/connect.js")
 const { ObjectId } = require ("mongodb")
 
 
