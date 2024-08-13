@@ -1,163 +1,106 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #000; /* Fondo negro */
-    color: white;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    padding: 15px;
     background-color: #000;
+    color: white;
+    width: 100vw;
+    height: 100vh;
 }
 
-.header img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
-.header-text {
-    flex-grow: 1;
-}
-
-.header-text h1 {
-    margin: 0;
-    font-size: 18px;
-}
-
-.header-text p {
-    margin: 0;
-    font-size: 14px;
-    color: #aaa;
-}
-
-.notification-icon {
-    font-size: 24px;
-    margin-left: auto;
-}
-
-.search-bar {
-    width: 75%; /* Ahora ocupa solo el 75% del ancho */
-    padding: 10px;
-    background-color: #444;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    margin-top: 10px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    margin: 0 auto; /* Centrar la barra en la página */
-    display: block;
-}
-
-/* Estilos para la sección "Now Playing" */
-.now-playing {
-    padding: 20px 15px;
-}
-
-.now-playing-header {
+.header{
     display: flex;
+    border: 1px solid green;
+    margin-top: 12px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+
+}
+
+.header_section{
+    display: flex;
+    border: 1px solid white;
+    margin: 12px 0px;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    width: 85vw;
+    height: 8vh;
 }
 
-.now-playing-header h2 {
-    margin: 0;
-    font-size: 18px;
-}
-
-.now-playing-header a {
-    color: #f00;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.movies-container {
+.header_perfil{
     display: flex;
-    overflow-x: auto; /* Permite el desplazamiento horizontal */
-    padding-bottom: 10px;
-    gap: 15px; /* Espacio entre las tarjetas */
+    width: 16vw;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    background-color: black;
 }
 
-.movie-card {
-    background-color: #111;
-    padding: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-    flex-shrink: 0; /* Evita que las tarjetas se reduzcan */
-    width: 380px; /* Incrementa el ancho de las tarjetas un 50% */
-    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho */
-}
-
-.movie-card img {
-    width: 100%; /* Mantener la imagen dentro de la tarjeta */
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto; /* Centrar la imagen */
-}
-
-.movie-info {
-    margin-top: 10px;
-    text-align: center; /* Centra el texto debajo de la imagen */
-}
-
-.movie-info h3 {
-    margin: 0;
-    font-size: 16px;
-}
-
-.movie-info p {
-    margin: 5px 0;
-    font-size: 14px;
-    color: #ccc;
-}
-
-.movie-info span {
-    font-size: 14px;
-    color: #aaa;
-}
-
-
-.bottom-nav {
-    position: fixed;
-    bottom: 0;
+.header_perfil img{
+    display: flex;
     width: 100%;
-    background-color: #000;
-    display: flex;
-    justify-content: space-between; /* Distribuye los botones con el mismo espacio */
-    padding: 10px 20px; /* Ajusta el padding para dar más espacio a los lados */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.7);
-    z-index: 1000;
+    height: 100%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
 }
 
-.nav-item {
+.header_content{
     display: flex;
     flex-direction: column;
+    /* border: 1px solid yellow; */
+    width:55vw;
+    height: 5vh;
+    font-size: 10px;
     align-items: center;
-    font-size: 12px;
-    color: #f00; /* Letras en rojo */
-    flex: 1; /* Asegura que cada botón ocupe el mismo espacio */
+    justify-content: space-around;
 }
 
-.nav-item img {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 5px;
+.header_content_p{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid red; */
+    align-items: center;
+    font-size: 130%;
 }
 
-.nav-item span {
-    font-size: 12px;
-    color: #f00; /* Letras en rojo */
+.header_content_h2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid red; */
+    align-items: center;
 }
 
-.nav-item.active span {
-    color: #f00; /* Letras en rojo para el botón activo */
+.header_noti{
+    display: flex;
+    padding: 1.5%; 
+    border: 1px solid rgb(128, 127, 127);
+    width: 5.5vw;
+    height: 3vh;
+    border-radius: 17%;
 }
 
-.nav-item.active img {
-    filter: invert(28%) sepia(95%) saturate(7317%) hue-rotate(353deg) brightness(101%) contrast(110%);
+.header_noti img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.section{
+    display: flex;
+    width: 100vw;
+    border: 1px solid yellow;
 }
