@@ -135,8 +135,8 @@ body {
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    width: 20px; /* Ajusta según el tamaño de tu imagen */
-    height: 20px; /* Ajusta según el tamaño de tu imagen */
+    width: 20px; 
+    height: 20px; 
 }
 
 .search_input{
@@ -149,21 +149,22 @@ body {
     align-items: center;
     width: 100%;
     height: 5vh;
-    padding-left: 40px; /* Espacio para el icono */
+    padding-left: 40px; 
     box-sizing: border-box;
+    color: #ffff;
 }
 
 .search_input:placeholder {
-    color: #888; /* Cambia esto al color que desees para el placeholder */
+    color: #888; 
 }
 
 .search_input focus {
-    outline: none; /* Quita el contorno al enfocar */
-    /* Puedes añadir otros estilos para el estado de foco si lo deseas */
+    outline: none; 
+
 }
 
 .search_input -ms-clear {
-    display: none; /* Oculta el botón de borrar en IE */
+    display: none; 
 }
 
 .section{
@@ -191,7 +192,7 @@ body {
     height: 8vh;
     justify-content: center;
     align-items: center;
-    font-size: 120%;
+    font-size: 105%;
 }
 
 .section_title h2{
@@ -200,82 +201,90 @@ body {
     height: 8vh;
     justify-content: center;
     align-items: center;
-    font-size: 100%;
+    font-size: 90%;
     color: #FE0000;
 }
 
 .cards {
-    width: 99vw; /* Cambiado de 99.5vw */
-    height: 55vh; /* Cambiado de 55vh */
+    width: 100vw; 
+    height: 49vh; 
     overflow-x: none; 
     padding: 0;
     margin-top: 10px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .cards_container {
     display: flex;
     flex-direction: row;
-    border: 1px solid yellow;
-    width: 99vw; /* Cambiado de 99.5vw */
+    /* border: 1px solid yellow; */
+    width: 100vw; 
     height: 55vh;
-    overflow-x: auto; /* Cambiado de scroll */
+    overflow-x: auto; 
     scroll-snap-type: x mandatory;
     gap: 1rem;
     scrollbar-width: none;
 }
 
 .cards_eachOne {
+    display: flex;
+    flex-direction: column;
     flex: 0 0 auto;
-    width: 60vw;
-    border: 1px solid red;
-    height: 55vh; /* Cambiado de 55vh */
+    width: 55vw;
+    /* border: 1px solid red; */
+    height: 49vh; 
+    padding: 0;
 }
 
 .cards_img {
-    height: 45vh;
+    display: flex;
+    /* border: 1px solid green; */
+    width: 55vw;
+    height: 40vh;
 }
 
 .cards_img img {
     border-radius: 20px;
-    width: 100%;
-    height: 100%;
+    width: 54vw;
+    height: 40vh;
     object-fit: cover;
     padding: 0;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
 }
 
 .cards_content {
     display: flex;
     flex-direction: column;
+    /* border: 1px solid palevioletred; */
     align-items: center;
     width: 100%;
     height: 9vh;
     padding: 0;
+    margin: 0;
 }
 
 .cards_content h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     font-size: 110%;
     width: 100%;
     padding: 0;
-    margin: 5% 0 0 0;
+    margin: 9% 0 0 0;
 }
 
 .cards_content p {
     display: flex;
     color: #888888;
     justify-content: center;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     font-size: 80%;
     font-weight: bold;
     align-items: center;
     width: 100%;
     padding: 0;
-    margin: 5% 0 0 0;
+    margin: 4% 0 0 0;
 }
 
 <div class="cards_eachOne">
@@ -295,7 +304,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 6px;
+    /* border: 1px solid white; */
 }
 
 .carousel-indicators button {
@@ -313,6 +323,47 @@ body {
     width: 24px;
     border-radius: 10px;
 }
+
+.section2{
+    display: flex;
+    flex-direction: row;
+    width: 99.5vw;
+    /* border: 1px solid yellow; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.section2_title{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid white;  */
+    justify-content: space-between;
+    align-items: center;
+    width: 85vw;
+    height: 5vh;
+}
+
+.section2_title h1{
+    display: flex;
+    /* border: 1px solid pink; */
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 105%;
+}
+
+.section2_title h2{
+    display: flex;
+    /* border: 1px solid pink; */
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 90%;
+    color: #FE0000;
+}
+
+
 
 
 .footer{
