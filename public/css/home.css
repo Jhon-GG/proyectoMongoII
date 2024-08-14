@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -88,8 +94,8 @@ body {
     display: flex;
     padding: 1.5%; 
     border: 1px solid rgb(128, 127, 127);
-    width: 5.5vw;
-    height: 3vh;
+    width: 8vw;
+    height: 4vh;
     border-radius: 17%;
 }
 
@@ -102,7 +108,7 @@ body {
 .search{
     display: flex;
     /* border: 1px solid red; */
-    margin-top: 10px;
+    margin-top: 0;
     width: 99.5vw;
     height: 8vh;
     justify-content: center;
@@ -199,51 +205,35 @@ body {
 }
 
 .cards {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid orange;
-    margin-top: 10px;
-    width: 99.5vw;
-    height: 55vh;
-    overflow-x: scroll;
+    width: 99vw; /* Cambiado de 99.5vw */
+    height: 55vh; /* Cambiado de 55vh */
+    overflow-x: none; 
     padding: 0;
-    justify-content: center;
-    scroll-behavior: smooth;
+    margin-top: 10px;
+    border: 1px solid blue;
 }
 
-.cards_container{
+.cards_container {
     display: flex;
     flex-direction: row;
-    border: 1px solid red;
-    width: 99.5vw;
+    border: 1px solid yellow;
+    width: 99vw; /* Cambiado de 99.5vw */
     height: 55vh;
-    overflow-x: scroll;
-    padding: 0;
-    justify-content: center;
-    scroll-behavior: smooth;
-    padding: 20px;
+    overflow-x: auto; /* Cambiado de scroll */
+    scroll-snap-type: x mandatory;
     gap: 1rem;
+    scrollbar-width: none;
 }
 
 .cards_eachOne {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 72vw;
-    height: 55vh;
-    padding: 0;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    flex: 0 0 auto;
+    width: 60vw;
+    border: 1px solid red;
+    height: 55vh; /* Cambiado de 55vh */
 }
 
-
 .cards_img {
-    display: flex;
-    width: 100%;
-    border-radius: 20px;
     height: 45vh;
-    padding: 0;
 }
 
 .cards_img img {
@@ -252,6 +242,7 @@ body {
     height: 100%;
     object-fit: cover;
     padding: 0;
+    border: 1px solid orange;
 }
 
 .cards_content {
@@ -264,50 +255,70 @@ body {
 }
 
 .cards_content h1 {
+    display: flex;
     justify-content: center;
-    font-size: 140%;
+    align-items: center;
+    border: 1px solid yellow;
+    font-size: 110%;
     width: 100%;
     padding: 0;
     margin: 5% 0 0 0;
 }
 
 .cards_content p {
+    display: flex;
     color: #888888;
     justify-content: center;
-    font-size: 100%;
+    border: 1px solid blue;
+    font-size: 80%;
     font-weight: bold;
     align-items: center;
     width: 100%;
     padding: 0;
-    margin: 3% 0 0 0;
+    margin: 5% 0 0 0;
+}
+
+<div class="cards_eachOne">
+                <div class="cards_img">
+                    <img src="../storage/pussInBoots.jpg" alt="movie">
+                </div>
+                <div class="cards_content">
+                    <h1> Puss In Boots The Last</h1>
+                    <p>Adventure</p>
+                </div>
+            </div>
+.cards_container::-webkit-scrollbar {
+    display: none;  /* Para Chrome, Safari y Opera */
 }
 
 .carousel-indicators {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
 }
 
 .carousel-indicators button {
-    background-color: #ccc;
+    background-color: #ffffff;
     border: none;
-    border-radius: 50%;
-    height: 10px;
-    width: 10px;
+    border-radius: 100%;
+    height: 8px;
     margin: 0 5px;
     cursor: pointer;
-    display: inline-block;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .carousel-indicators button.active {
-    background-color: #333;
+    background-color: #ff0000;
+    width: 24px;
+    border-radius: 10px;
 }
 
 
 .footer{
     display: flex;
     border: 1px solid #ff0000;
-    width: 99.5vw;
+    width: 100vw;
     height: 7vh;
     position: fixed;
     bottom: 0;

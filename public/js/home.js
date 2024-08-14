@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const cardsContainer = document.querySelector('.cards');
+    const cardsContainer = document.querySelector('.cards_container');
     const indicatorsContainer = document.querySelector('.carousel-indicators');
     const cards = document.querySelectorAll('.cards_eachOne');
     
@@ -14,10 +14,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateActiveIndicator() {
         const scrollPosition = cardsContainer.scrollLeft;
-        const cardWidth = cardsContainer.offsetWidth;
+        const cardWidth = cards[0].offsetWidth;
         const index = Math.round(scrollPosition / cardWidth);
         indicators.forEach((indicator, i) => {
-            indicator.classList.toggle('active', i === index);
+            if (i === index) {
+                indicator.classList.add('active');
+                indicator.style.width = '24px';
+            } else {
+                indicator.classList.remove('active');
+                indicator.style.width = '8px';
+            }
         });
     }
 
@@ -30,9 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Navegar al hacer clic en un punto
     indicators.forEach(button => {
         button.addEventListener('click', () => {
-            const index = button.dataset.index;
+            const index = parseInt(button.dataset.index);
+            const scrollPosition = cards[0].offsetWidth * index;
             cardsContainer.scrollTo({
-                left: cardsContainer.offsetWidth * index,
+                left: scrollPosition,
                 behavior: 'smooth'
             });
         });
