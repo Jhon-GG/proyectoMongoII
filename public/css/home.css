@@ -364,6 +364,24 @@ body {
 }
 
 
+.section_movies{
+    display: flex;
+    border: 1px solid burlywood;
+    width: 100vw;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_box{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid blue;
+    width: 85vw;
+    height: 25vh;
+    border-radius: 20px;
+}
+
 
 
 .footer{
