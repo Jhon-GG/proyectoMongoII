@@ -4,13 +4,23 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+}
+
+body {
     font-family: Arial, sans-serif;
     background-color: #000;
     color: white;
-    width: 100vw;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header{
@@ -366,27 +376,82 @@ body {
 
 .section_movies{
     display: flex;
+    flex-direction: column;
     border: 1px solid burlywood;
-    width: 100vw;
-    height: 25vh;
+    width: 99.5vw;
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
 .section_box{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border: 1px solid blue;
     width: 85vw;
-    height: 25vh;
+    height: 100vh;
+    border-radius: 20px;
+    gap: 15px;
+}
+
+.card2{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid green;
+    background-color: #363636;
+    width: 85vw;
+    height: 12.5vh;  
+    border-radius: 20px;
+    align-items: center;
+    gap: 4.5%;
+}
+
+.card2_img{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    margin-left: 2%;
+    width:22vw;
+    height: 10vh;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2_img img{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 22vw;
+    height: 10vh;
     border-radius: 20px;
 }
 
+.card2_title{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid orange; */
+    width: 55vw;
+    height: 10vh;
+    justify-content: center;
+    gap: 15%;
+}
 
+.card2_title p{
+    display: flex;
+    /* border: 1px solid white; */
+}
+
+.card2_title p1{
+    display: flex;
+    /* border: 1px solid white; */
+    font-size: 80%;
+    color: #9e9e9e;
+}
 
 .footer{
     display: flex;
-    border: 1px solid #ff0000;
+    /* border: 1px solid #ff0000; */
     width: 100vw;
     height: 7vh;
     position: fixed;
