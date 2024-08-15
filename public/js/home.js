@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const indicatorsContainer = document.querySelector('.carousel-indicators');
     const cards = document.querySelectorAll('.cards_eachOne');
     
-    // Crear puntos de navegación
     cards.forEach((_, index) => {
         const button = document.createElement('button');
         button.dataset.index = index;
@@ -27,13 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Inicializar puntos activos
+
     updateActiveIndicator();
 
-    // Actualizar puntos al hacer scroll
+
     cardsContainer.addEventListener('scroll', updateActiveIndicator);
 
-    // Navegar al hacer clic en un punto
+
     indicators.forEach(button => {
         button.addEventListener('click', () => {
             const index = parseInt(button.dataset.index);
@@ -45,3 +44,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+const cardsContainer = document.querySelector('.cards_container');
+const cards = document.querySelectorAll('.cards_eachOne');
+
+function updateCardScale() {
+    const containerWidth = cardsContainer.offsetWidth;
+    const cardWidth = cards[0].offsetWidth;
+    const scrollPosition = cardsContainer.scrollLeft;
+    
+    cards.forEach((card, index) => {
+        const cardCenter = (index * cardWidth) - scrollPosition + (cardWidth / 2);
+        const distanceFromCenter = Math.abs(containerWidth / 2 - cardCenter);
+        const scale = Math.max(1, 1 - (distanceFromCenter / containerWidth) * 0.2);
+        
+        card.style.transform = `scale(${scale})`;
+    });
+}
+
+cardsContainer.addEventListener('scroll', updateCardScale);
+updateCardScale(); // Llamar inicialmente para configurar las escalas
