@@ -281,7 +281,7 @@ body {
     font-size: 110%;
     width: 100%;
     padding: 0;
-    margin: 9% 0 0 0;
+    margin: 12% 0 0 0;
 }
 
 .cards_content p {
@@ -294,7 +294,7 @@ body {
     align-items: center;
     width: 100%;
     padding: 0;
-    margin: 4% 0 0 0;
+    margin: 6% 0 0 0;
 }
 
 <div class="cards_eachOne">
@@ -323,7 +323,7 @@ body {
     border: none;
     border-radius: 100%;
     height: 8px;
-    margin: 0 5px;
+    margin: 5% 5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -377,9 +377,9 @@ body {
 .section_movies{
     display: flex;
     flex-direction: column;
-    border: 1px solid burlywood;
+    /* border: 1px solid burlywood; */
     width: 99.5vw;
-    height: 100vh;
+    height: 150vh;
     justify-content: center;
     align-items: center;
 }
@@ -387,9 +387,9 @@ body {
 .section_box{
     display: flex;
     flex-direction: column;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 85vw;
-    height: 100vh;
+    height: 150vh;
     border-radius: 20px;
     gap: 15px;
 }
@@ -397,10 +397,10 @@ body {
 .card2{
     display: flex;
     flex-direction: row;
-    border: 1px solid green;
-    background-color: #363636;
+    /* border: 1px solid green; */
+    background-color: #272727;
     width: 85vw;
-    height: 12.5vh;  
+    height: 19vh;  
     border-radius: 20px;
     align-items: center;
     gap: 4.5%;
@@ -409,8 +409,8 @@ body {
 .card2_img{
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
-    margin-left: 2%;
+    /* border: 1px solid red; */
+    margin-left: 5%;
     width:22vw;
     height: 10vh;
     border-radius: 20px;
@@ -451,9 +451,10 @@ body {
 
 .footer{
     display: flex;
-    /* border: 1px solid #ff0000; */
+    border: 1px solid #484848;
+    border-radius: 12px;
     width: 100vw;
-    height: 7vh;
+    height: 8vh;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -462,4 +463,32 @@ body {
     justify-content: space-around;
     padding: 10px 0;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0;
 }
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #888;
+    font-size: 12px;
+}
+  
+.nav-item img{
+    display: flex;
+    width: 5vw;
+    height: 3vh;
+}
+
+.nav-item.active {
+    color: #ff0000;
+}
+  
+.nav-item i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+
