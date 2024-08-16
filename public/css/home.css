@@ -303,15 +303,6 @@ body {
     margin: 6% 0 0 0;
 }
 
-<div class="cards_eachOne">
-                <div class="cards_img">
-                    <img src="../storage/pussInBoots.jpg" alt="movie">
-                </div>
-                <div class="cards_content">
-                    <h1> Puss In Boots The Last</h1>
-                    <p>Adventure</p>
-                </div>
-            </div>
 .cards_container::-webkit-scrollbar {
     display: none;  /* Para Chrome, Safari y Opera */
 }
