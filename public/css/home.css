@@ -214,6 +214,9 @@ body {
     color: #FE0000;
 }
 
+.section_title a{ 
+    text-decoration: none;
+} 
 .cards {
     width: 100vw; 
     height: 49vh;  
@@ -360,6 +363,10 @@ body {
     font-size: 90%;
     color: #FE0000;
 }
+
+.section2_title a{ 
+    text-decoration: none;
+} 
 
 .section_movies {
     display: flex;
