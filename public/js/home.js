@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardsContainer = document.querySelector('.cards_container');
     const indicatorsContainer = document.querySelector('.carousel-indicators');
     const cards = document.querySelectorAll('.cards_eachOne');
-    
+
     // Clonar las cards múltiples veces para crear un efecto infinito
-    const cloneCount = 3; // Número de veces que clonamos el set completo
+    const cloneCount = 3;
     for (let i = 0; i < cloneCount; i++) {
         cards.forEach(card => {
             const clone = card.cloneNode(true);
@@ -15,25 +15,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const allCards = document.querySelectorAll('.cards_eachOne');
     const totalWidth = allCards[0].offsetWidth * cards.length;
 
-    // Posicionar el scroll en el medio del contenedor
-    cardsContainer.scrollLeft = totalWidth;
+    // Posicionar el scroll en la tercera tarjeta (índice 2) del contenedor
+    const initialIndex = 2;
+    cardsContainer.scrollLeft = (totalWidth / cards.length) * initialIndex;
 
-    // Crear indicadores
-    cards.forEach((_, index) => {
+    // Crear 5 indicadores fijos
+    for (let i = 0; i < 5; i++) {
         const button = document.createElement('button');
-        button.dataset.index = index;
+        button.dataset.index = i;
         indicatorsContainer.appendChild(button);
-    });
-    
+    }
+
     const indicators = document.querySelectorAll('.carousel-indicators button');
 
     function updateActiveIndicator() {
         const scrollPosition = cardsContainer.scrollLeft;
         const cardWidth = allCards[0].offsetWidth;
         const adjustedScrollPosition = scrollPosition % totalWidth;
-        const index = Math.round(adjustedScrollPosition / cardWidth) % cards.length;
+        const activeIndex = Math.round(adjustedScrollPosition / cardWidth) % cards.length;
+        
+        // Calcular qué indicador debe estar activo
+        const indicatorIndex = Math.floor((activeIndex / cards.length) * 7);
+                            
         indicators.forEach((indicator, i) => {
-            if (i === index) {
+            if (i === indicatorIndex) {
                 indicator.classList.add('active');
                 indicator.style.width = '24px';
             } else {
@@ -63,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     indicators.forEach(button => {
         button.addEventListener('click', () => {
             const index = parseInt(button.dataset.index);
-            const scrollPosition = allCards[0].offsetWidth * index + totalWidth;
+            const scrollPosition = (totalWidth / 5) * index + totalWidth;
             cardsContainer.scrollTo({
                 left: scrollPosition,
                 behavior: 'smooth'
@@ -71,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    function updateCardScale() {
+    function updateCardScale() {    
         const containerWidth = cardsContainer.offsetWidth;
         const cardWidth = allCards[0].offsetWidth;
         const scrollPosition = cardsContainer.scrollLeft;
@@ -86,4 +91,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     updateCardScale();
+    updateActiveIndicator();
 });
+
+
+function updateActiveIndicator() {
+    const scrollPosition = cardsContainer.scrollLeft;
+    const cardWidth = allCards[0].offsetWidth;
+    const adjustedScrollPosition = scrollPosition % totalWidth;
+    const activeIndex = Math.round(adjustedScrollPosition / cardWidth) % cards.length;
+    
+    // Calcular qué indicador debe estar activo
+    const indicatorIndex = Math.floor((activeIndex / cards.length) * 7);
+                        
+    indicators.forEach((indicator, i) => {
+        if (i === indicatorIndex) {
+            indicator.classList.add('active');
+            indicator.style.width = '24px';
+        } else {
+            indicator.classList.remove('active');
+            indicator.style.width = '8px';
+        }
+    });
+}
