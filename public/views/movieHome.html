@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="../js/home.js"></script>
-    <title>Home</title>
+    <script defer src="../js/principal.js"></script>
+    <title>Movie Home</title>
     <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
     <header class="header">
         <section class="header_section">
             <div class="header_perfil">
-                <img src="../storage/profile.jpg" alt="icono">
+                <img id="user-avatar" src="../storage/profile.jpg" alt="icono">
             </div>
             <div class="header_content">
                 <div class="header_content_p">
-                    <p>Hi, Jack!!</p>
+                    <p id="user-greeting">Hi, Jack!!</p>
                 </div>
                 <div class="header_content_h2">
                     <h2>Let's watch movie together!</h2>
@@ -45,61 +45,8 @@
         </div>
     </section>
     <section class="cards">
-        <div class="cards_container">
-            <div class="cards_eachOne">
-                <div class="cards_img">
-                    <img src="../storage/pussInBoots2.jpg" alt="movie">
-                </div>
-                <div class="cards_content">
-                    <h1> Puss In Boots The Last</h1>
-                    <p>Adventure</p>
-                </div>
-            </div>
-            <div class="cards_eachOne">
-                <div class="cards_img">
-                    <img src="../storage/pussInBoots.jpg" alt="movie">
-                </div>
-                <div class="cards_content">
-                    <h1> Puss In Boots The Last</h1>
-                    <p>Adventure</p>
-                </div>
-            </div>
-            <div class="cards_eachOne">
-                <div class="cards_img">
-                    <img src="../storage/pussInBoots2.jpg" alt="movie">
-                </div>
-                <div class="cards_content">
-                    <h1> Puss In Boots The Last</h1>
-                    <p>Adventure</p>
-                </div>
-            </div>
-            <div class="cards_eachOne">
-                <div class="cards_img">
-                    <img src="../storage/pussInBoots.jpg" alt="movie">
-                </div>
-                <div class="cards_content">
-                    <h1> Puss In Boots The Last</h1>
-                    <p>Adventure</p>
-                </div>
-            </div>
-            <div class="cards_eachOne">
-                <div class="cards_img">
-                    <img src="../storage/pussInBoots2.jpg" alt="movie">
-                </div>
-                <div class="cards_content">
-                    <h1> Puss In Boots The Last</h1>
-                    <p>Adventure</p>
-                </div>
-            </div>
-            <div class="cards_eachOne">
-                <div class="cards_img">
-                    <img src="../storage/pussInBoots.jpg" alt="movie">
-                </div>
-                <div class="cards_content">
-                    <h1> Puss In Boots The Last</h1>
-                    <p>Adventure</p>
-                </div>
-            </div>
+        <div id="now-playing-container" class="cards_container">
+            <!-- Las películas en cartelera se insertarán aquí dinámicamente -->
         </div>
     </section>
     <div class="carousel-indicators"></div>
@@ -112,71 +59,8 @@
         </div>
     </section>
     <section class="section_movies">
-        <div class="section_box">
-            <div class="card2">
-                <div class="card2_img">
-                    <img src="../storage/test.jpg" alt="test">
-                </div>
-                <div class="card2_title">
-                    <p> Furious 10 (2023)</p>
-                    <p1>Action</p1>
-                </div>
-            </div>
-            <div class="card2">
-                <div class="card2_img">
-                    <img src="../storage/test.jpg" alt="test">
-                </div>
-                <div class="card2_title">
-                    <p> Furious 10 (2023)</p>
-                    <p1>Action</p1>
-                </div>
-            </div>
-            <div class="card2">
-                <div class="card2_img">
-                    <img src="../storage/test.jpg" alt="test">
-                </div>
-                <div class="card2_title">
-                    <p> Furious 10 (2023)</p>
-                    <p1>Action</p1>
-                </div>
-            </div>
-            <div class="card2">
-                <div class="card2_img">
-                    <img src="../storage/test.jpg" alt="test">
-                </div>
-                <div class="card2_title">
-                    <p> Furious 10 (2023)</p>
-                    <p1>Action</p1>
-                </div>
-            </div>
-            <div class="card2">
-                <div class="card2_img">
-                    <img src="../storage/test.jpg" alt="test">
-                </div>
-                <div class="card2_title">
-                    <p> Furious 10 (2023)</p>
-                    <p1>Action</p1>
-                </div>
-            </div>
-            <div class="card2">
-                <div class="card2_img">
-                    <img src="../storage/test.jpg" alt="test">
-                </div>
-                <div class="card2_title">
-                    <p> Furious 10 (2023)</p>
-                    <p1>Action</p1>
-                </div>
-            </div>
-            <div class="card2">
-                <div class="card2_img">
-                    <img src="../storage/test.jpg" alt="test">
-                </div>
-                <div class="card2_title">
-                    <p> Furious 10 (2023)</p>
-                    <p1>Action</p1>
-                </div>
-            </div>
-            
+        <div id="coming-soon-container" class="section_box">
+            <!-- Las películas próximas se insertarán aquí dinámicamente -->
         </div>
     </section>
     <footer class="footer">
@@ -184,22 +68,22 @@
             <i class="icon-home"></i>
             <img src="../storage/Home.svg" alt="">
             <span>Home</span>
-          </a>
-          <a href="#" class="nav-item">
+        </a>
+        <a href="#" class="nav-item">
             <i class="icon-browse"></i>
             <img src="../storage/search.svg" alt="">
             <span>Browse</span>
-          </a>
-          <a href="#" class="nav-item">
+        </a>
+        <a href="#" class="nav-item">
             <i class="icon-tickets"></i>
             <img src="../storage/EpTicket.svg" alt="">
             <span>Tickets</span>
-          </a>
-          <a href="#" class="nav-item">
+        </a>
+        <a href="#" class="nav-item">
             <i class="icon-profile"></i>
             <img src="../storage/profile.svg" alt="">
             <span>Profile</span>
-          </a>
+        </a>
     </footer>
 </body>
 </html>

@@ -17,11 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (response.ok && result && result.length > 0) {
                 const usuarioEncontrado = result.find(u => u.alias === alias && u.cc.toString() === password);
                 if (usuarioEncontrado) {
-                    // Guardar la información del usuario en localStorage
-                    localStorage.setItem('usuarioActual', JSON.stringify({
-                        nombre: usuarioEncontrado.nombre,
-                        imagen: usuarioEncontrado.imagen_usuario
-                    }));
+                    // Guardar la información completa del usuario en localStorage
+                    localStorage.setItem('usuarioActual', JSON.stringify(usuarioEncontrado));
+                    console.log('Usuario guardado:', usuarioEncontrado); // Para depuración
                     window.location.href = './views/movieHome.html';
                 } else {
                     mostrarError('Usuario o contraseña incorrectos');
@@ -48,7 +46,7 @@ if (window.location.pathname.includes('movieHome.html')) {
 
         const avatarImg = document.querySelector('.avatar');
         if (avatarImg) {
-            avatarImg.src = userInfo.imagen;
+            avatarImg.src = userInfo.imagen_usuario;
             avatarImg.alt = `${userInfo.nombre}'s Avatar`;
         }
 
