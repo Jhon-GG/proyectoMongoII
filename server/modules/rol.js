@@ -1,28 +1,26 @@
-const  connect  = require ('../../server/db/connect.js')
-const { ObjectId } = require ("mongodb")
-
-// 5. Roles definidos
-
+const connect = require('../../server/db/connect.js');
+const { ObjectId } = require("mongodb");
 
 class Rol extends connect {
-    static instanceRol;
-    db;
-    collection;
+  static instanceRol;
+  db;
+  collectionUsuario;
+  collectionTarjetaVip;
 
-    constructor() {
-        if (rol.instanceRol) {
-            return rol.instanceRol;
-        }
-        super();
-        this.db = this.conexion.db(this.getDbName);
-        this.collection = this.db.collection('usuario');
-        rol.instanceRol = this;
+  constructor() {
+    if (Rol.instanceRol) {
+      return Rol.instanceRol;
     }
+    super();
+    this.db = this.conexion.db(process.env.MONGO_DB);
+    this.collectionRol = this.db.collection('usuario');
+    this.collectionTarjetaVip = this.db.collection('tarjeta_vip');
+    Rol.instanceRol = this;
+  }
 
-    destructor() {
-        rol.instanceRol = undefined;
-        connect.instanceConnect = undefined;
-    }
+  destructor() {
+    Rol.instanceRol = undefined;
+  }
 
     
         /**
@@ -300,29 +298,30 @@ class Rol extends connect {
  * devuelve un array de objetos de usuario. Si no se encuentran usuarios, devuelve un objeto con un mensaje de error.
  * Si se produce un error durante la búsqueda, también devuelve un objeto con un mensaje de error.
  */
-async buscarUsuariosPorRol(rol) {
-    try {
-        await this.conexion.connect();
-
-        const usuarios = await this.collection.find({ rol }).toArray();
-
-        if (usuarios.length === 0) {
-            await this.conexion.close();
-            return { mensaje: "No se encontraron usuarios con el rol especificado." };
+    async buscarUsuariosPorRol(rol) {
+        try {
+          if (!this.collectionRol) {
+            throw new Error('La colección de usuarios no está definida');
+          }
+          
+          console.log('Buscando usuarios con rol:', rol);
+          const usuarios = await this.collectionRol.find({ rol: rol }).toArray();
+          console.log('Usuarios encontrados:', usuarios.length);
+          return usuarios;
+        } catch (error) {
+          console.error('Error al buscar usuarios por rol:', error);
+          throw error;
         }
+      }
 
-        await this.conexion.close();
-        return usuarios;
-    } catch (error) {
-        await this.conexion.close();
-        return { mensaje: `Error: ${error.message}` };
+      async getAllUsers() {
+        const allUsers = await this.collectionRol.find({}).toArray();
+        console.log('Todos los usuarios:', allUsers);
+        return allUsers;
+      }
+      
     }
-}
 
-    destructor() {
-        rol.instanceRol = undefined;
-        connect.instanceConnect = undefined;
-    }
-}
+    
 
 module.exports = Rol;

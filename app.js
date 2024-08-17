@@ -1,23 +1,27 @@
 const express = require('express');
-const cors = require('cors');
-const peliculaRoutes = require('./server/router/pelicula.routes.js');
-const asientoRoutes = require('./server/router/asiento.routes.js');
-const boletoRoutes = require('./server/router/boleto.routes.js');
-const pagoRoutes = require('./server/router/pago.routes.js');
-
+const path = require('path');
 const app = express();
+const peliculaRoutes = require("./server/router/pelicula.routes");
+const rolRoutes = require('./server/router/rol.routes');
+require('dotenv').config();
 
-app.use(cors());
+
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-app.use('/pelicula', peliculaRoutes);
-app.use('/asiento', asientoRoutes);
-app.use('/boleto', boletoRoutes);
-app.use('/pago', pagoRoutes);
+app.get("/", function (req, res) {
+    res.sendFile(path.join(__dirname, 'public', 'views', 'index.html'));
+});
 
-const host = process.env.EXPRESS_HOST || 'localhost';
-const port = parseInt(process.env.EXPRESS_PORT) || 5001;
+app.use('/api', peliculaRoutes);
+app.use('/api', rolRoutes);
 
-app.listen(port, host, () => {
-    console.log(`Server running at http://${host}:${port}`);
+
+app.listen({
+    host: process.env.EXPRESS_HOST,
+    port: parseInt(process.env.EXPRESS_PORT)
+}, () => {
+    console.log(`Servidor corriendo en: http://${process.env.EXPRESS_HOST}:${process.env.EXPRESS_PORT}`);
 });

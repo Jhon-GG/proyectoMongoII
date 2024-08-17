@@ -11,8 +11,7 @@ module.exports = class connect {
     #pass;
     #dbName;
 
-
-
+    //    mongodb://mongo:ujslroLxcoFBlLCNvrAKXKBnknxJuCZH@roundhouse.proxy.rlwy.net:58497
     
     constructor() {
         if (connect.instanceConnect) {
@@ -27,7 +26,7 @@ module.exports = class connect {
         this.#open();
         connect.instanceConnect = this;
     }
-    destructor(){
+    destructor() {
         connect.instanceConnect = undefined;
     }
     set setHost(host) {
@@ -56,3 +55,5 @@ module.exports = class connect {
         console.log("Conexion realizada correctamente");
     }
 }
+
+// /${this.getDbName}
