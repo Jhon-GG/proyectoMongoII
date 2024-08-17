@@ -1,7 +1,7 @@
-const connect = require('../../server/db/connect.js');
+const connect = require('../db/connect');
 const { ObjectId } = require("mongodb");
 
-class Rol extends connect {
+module.exports = class Rol extends connect {
   static instanceRol;
   db;
   collectionUsuario;
@@ -323,5 +323,3 @@ class Rol extends connect {
     }
 
     
-
-module.exports = Rol;

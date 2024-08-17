@@ -5,7 +5,6 @@ const peliculaRoutes = require("./server/router/pelicula.routes");
 const rolRoutes = require('./server/router/rol.routes');
 require('dotenv').config();
 
-
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.json());
@@ -18,6 +17,11 @@ app.get("/", function (req, res) {
 app.use('/api', peliculaRoutes);
 app.use('/api', rolRoutes);
 
+// Manejador de errores global
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Algo salió mal!');
+});
 
 app.listen({
     host: process.env.EXPRESS_HOST,
