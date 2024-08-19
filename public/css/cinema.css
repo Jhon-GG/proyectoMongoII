@@ -24,7 +24,7 @@ body {
 
 .header{
     display: flex;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     flex-direction: row;
     width: 100vw;
     height: 6vh;
@@ -35,16 +35,16 @@ body {
 
 .header_box{
     display: flex;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     flex-direction: row;
-    width: 85vw;
+    width: 86vw;
     height: 6vh;    
 }
 
 .header_content{
     display: flex;
-    border: 1px solid red;
-    width: 85vw;
+    /* border: 1px solid red; */
+    width: 86vw;
     height: 6vh;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +52,9 @@ body {
 
 .header_content img{
     display: flex;
-    border: 1px solid rgb(255, 230, 0);
+    /* border: 1px solid rgb(255, 230, 0); */
+    width: 7vw;
+    height: 6vh;
 }
 
 .header_content a{
@@ -61,6 +63,101 @@ body {
 
 .header_content h1{
     display: flex;
-    border: 1px solid rgb(0, 255, 128);
-    font-size: 100%;
+    /* border: 1px solid rgb(0, 255, 128); */
+    font-size: 140%;
 } 
+
+.first_box{
+    display: flex;
+    /* border: 1px solid pink; */
+    margin-top: 4%;
+    width: 100vw;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_box_movie{
+    display: flex;
+    /* border: 1px solid blue; */
+    width: 95vw;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.first_box_movie img{
+    display: flex;
+    width: 95vw;
+    height: 25vh;
+    border-radius: 20px;
+}
+
+.second_box{
+    display: flex;
+    /* border: 1px solid yellow; */
+    flex-direction: row;
+    margin-top: 4%;
+    width: 100vw;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.second_box_content{
+    display: flex;
+    /* border: 1px solid blue; */
+    width: 86vw;
+    height: 6vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.second_box_left{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 50vw;
+    height: 6vh;
+}
+
+.second_box_left h1{
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.second_box_left p{
+    font-size: 85%;
+}
+
+.second_box_right{
+    display: flex;
+    /* border: 1px solid purple; */
+    width: 29vw;
+    height: 3vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.second_box_right button{
+    display: flex;
+    width:100%;
+    height:100%;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 70%;
+    font-weight: bold;
+}
+
+.button_icon {
+    margin-right: 10%; /* Ajusta el valor para el espaciado deseado */
+    font-size: 100%; /* Ajusta el tamaño del símbolo si es necesario */
+}
