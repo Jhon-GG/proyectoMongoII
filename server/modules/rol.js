@@ -18,9 +18,10 @@ module.exports = class Rol extends connect {
     Rol.instanceRol = this;
   }
 
-  destructor() {
-    Rol.instanceRol = undefined;
-  }
+    destructor() {
+      Rol.instancerol = undefined;
+      connect.instanceConnect = undefined;
+    }
 
     
         /**
