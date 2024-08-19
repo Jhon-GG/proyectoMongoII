@@ -1,967 +1,967 @@
 [{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd41404"
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd41404"
+  },
+  "id": 1,
+  "titulo": "Bad Boys 4",
+  "genero": "Acción / Comedia",
+  "duracion": "2h 15m",
+  "estado": "Próximo estreno",
+  "sinopsis": "La película sigue a estos dos intrépidos policías de Miami mientras se enfrentan a una nueva amenaza en la ciudad. Una peligrosa red de narcotraficantes se está infiltrando el mercado con una letal droga de diseño, desatando una ola de crímenes violentos.",
+  "estreno": "2024-08-15",
+  "director": "Adil & Bilall",
+  "imagen_pelicula": "https://i.pinimg.com/736x/86/cb/d1/86cbd12bba8baca4891be08549a9f4e0.jpg",
+  "trailer": "https://www.youtube.com/watch?v=ULlFzofpV6w",
+  "actores": [
+    {
+      "nombre": "Will Smith",
+      "personaje": "Detective Mike",
+      "imagen_actor": "https://i.pinimg.com/564x/f6/87/db/f687db92da16b5b28afb64aaff4b49b2.jpg"
     },
-    "id": 1,
-    "titulo": "Bad Boys 4",
-    "genero": "Acción / Comedia",
-    "duracion": "2h 15m",
-    "estado": "Próximo estreno",
-    "sinopsis": "Los detectives Mike y Marcus regresan para una nueva misión llena de acción y comedia.",
-    "estreno": "2024-08-15",
-    "director": "Adil & Bilall",
-    "imagen_pelicula": "https://i.pinimg.com/736x/86/cb/d1/86cbd12bba8baca4891be08549a9f4e0.jpg",
-    "trailer": "https://www.youtube.com/watch?v=ULlFzofpV6w",
-    "actores": [
-      {
-        "nombre": "Will Smith",
-        "personaje": "Detective Mike",
-        "imagen_actor": "https://freeimage.host/i/d022fNR"
-      },
-      {
-        "nombre": "Jacob Scipio",
-        "personaje": "Armando Aretas",
-        "imagen_actor": "https://freeimage.host/i/d0R8hOJ"
-      },
-      {
-        "nombre": "Martin Lawrence",
-        "personaje": "Marcus Burnett",
-        "imagen_actor": "https://freeimage.host/i/d0RUjGp"
-      },
-      {
-        "nombre": "Vanessa Hudgens",
-        "personaje": "Kelly",
-        "imagen_actor": "https://freeimage.host/i/d05eSYg"
-      },
-      {
-        "nombre": "Paola nuñez",
-        "personaje": "Rita secada",
-        "imagen_actor": "https://freeimage.host/i/d05S9wJ"
-      },
-      {
-        "nombre": "Ioan Gruffudd",
-        "personaje": "Adam Lockwood",
-        "imagen_actor": "https://freeimage.host/i/d05iz5N"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd41405"
+    {
+      "nombre": "Jacob Scipio",
+      "personaje": "Armando Aretas",
+      "imagen_actor": "https://i.pinimg.com/736x/2a/44/5a/2a445a53cab0b10f59e53d57d219192d.jpg"
     },
-    "id": 2,
-    "titulo": "Observados",
-    "genero": "Thriller / Suspenso",
-    "duracion": "1h 50m",
-    "estado": "En cartelera",
-    "sinopsis": "Un grupo de amigos descubre que están siendo vigilados por una entidad desconocida.",
-    "estreno": "2024-07-10",
-    "director": "David F. Sandberg",
-    "imagen_pelicula": "https://i.pinimg.com/564x/f7/cf/bf/f7cfbfcf00f6145b63e230eeb59db5b1.jpg",
-    "trailer": "https://www.youtube.com/watch?v=05vDpEnuLWI",
-    "actores": [
-      {
-        "nombre": "Dakota Fanning",
-        "personaje": "Lucy",
-        "imagen_actor": "https://freeimage.host/i/d05pkYu"
-      },
-      {
-        "nombre": "Georgina Campbell",
-        "personaje": "Ciara",
-        "imagen_actor": "https://freeimage.host/i/d079i5g"
-      },
-      {
-        "nombre": "Olwen Fouere",
-        "personaje": "Madeline",
-        "imagen_actor": "https://freeimage.host/i/d07dGWv"
-      },
-      {
-        "nombre": "Oliver Finnegan",
-        "personaje": "Daniel",
-        "imagen_actor": "https://freeimage.host/i/d073pHP"
-      },
-      {
-        "nombre": "Hannah Howland",
-        "personaje": "Chloe",
-        "imagen_actor": "https://freeimage.host/i/d07qGXn"
-      },
-      {
-        "nombre": "Alistair Brammer",
-        "personaje": "John",
-        "imagen_actor": "https://freeimage.host/i/d07nhrJ"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd41406"
+    {
+      "nombre": "Martin Lawrence",
+      "personaje": "Marcus Burnett",
+      "imagen_actor": "https://i.pinimg.com/564x/3d/11/39/3d1139c0cb77a22cc9bef89b65ecc0f2.jpg"
     },
-    "id": 3,
-    "titulo": "Rescate imposible",
-    "genero": "Acción / Drama",
-    "duracion": "2h 5m",
-    "estado": "Próximo estreno",
-    "sinopsis": "Un equipo de élite debe llevar a cabo una misión de rescate en una zona de conflicto.",
-    "estreno": "2024-09-20",
-    "director": "Michael Bay",
-    "imagen_pelicula": "https://i.pinimg.com/564x/8e/94/50/8e9450f22f09f1b443490fdea867d14b.jpg",
-    "trailer": "https://www.youtube.com/watch?v=n4roL2Iqyl8",
-    "actores": [
-      {
-        "nombre": "Russell Crowe",
-        "personaje": "Captain Eddie Grimm",
-        "imagen_actor": "https://freeimage.host/i/d07L7Yx"
-      },
-      {
-        "nombre": "Luke Hemsworth",
-        "personaje": "Sgt.Abell",
-        "imagen_actor": "https://freeimage.host/i/d07D7P1"
-      },
-      {
-        "nombre": "Liam Hemsworth",
-        "personaje": "Kinney",
-        "imagen_actor": "https://freeimage.host/i/d07moTx"
-      },
-      {
-        "nombre": "Milo Ventimiglia",
-        "personaje": "Sugar",
-        "imagen_actor": "https://freeimage.host/i/d0YJU7t"
-      },
-      {
-        "nombre": "Ricky Whittle",
-        "personaje": "Bishop",
-        "imagen_actor": "https://freeimage.host/i/d0YfV7p"
-      },
-      {
-        "nombre": "Chika Ikogwe",
-        "personaje": "Sgt.Nia Branson ",
-        "imagen_actor": "https://freeimage.host/i/d0YxNQS"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd41407"
+    {
+      "nombre": "Vanessa Hudgens",
+      "personaje": "Kelly",
+      "imagen_actor": "https://i.pinimg.com/736x/3e/1f/71/3e1f712a57ad10a3a8d32d633fa8cc23.jpg"
     },
-    "id": 4,
-    "titulo": "En las profundidades",
-    "genero": "Ciencia Ficción / Suspenso",
-    "duracion": "2h 30m",
-    "estado": "En cartelera",
-    "sinopsis": "Una misión científica en el océano se convierte en una carrera contra el tiempo para sobrevivir.",
-    "estreno": "2024-06-25",
-    "director": "James Cameron",
-    "imagen_pelicula": "https://i.pinimg.com/564x/84/08/96/840896c81b7a009d87523e2c9742ca59.jpg",
-    "trailer": "https://www.youtube.com/watch?v=PoTdomOgHkI",
-    "actores": [
-      {
-        "nombre": "Nassim Si Ahmed",
-        "personaje": "Adil",
-        "imagen_actor": "https://freeimage.host/i/d0YsPnt"
-      },
-      {
-        "nombre": "Berenice Bejo",
-        "personaje": "Sophia",
-        "imagen_actor": "https://freeimage.host/i/d0YZanI"
-      },
-      {
-        "nombre": "Lea Leviant",
-        "personaje": "Mika",
-        "imagen_actor": "https://freeimage.host/i/d0YDi3F"
-      },
-      {
-        "nombre": "Anne Marivin",
-        "personaje": "Mayor of Paris",
-        "imagen_actor": "https://freeimage.host/i/d0Ypi37"
-      },
-      {
-        "nombre": "Anais Parello",
-        "personaje": "Jade",
-        "imagen_actor": "https://freeimage.host/i/d0aJqZb"
-      },
-      {
-        "nombre": "Nagisa Morimoto",
-        "personaje": "Ben",
-        "imagen_actor": "https://freeimage.host/i/d0a2N3l"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd41408"
+    {
+      "nombre": "Paola nuñez",
+      "personaje": "Rita secada",
+      "imagen_actor": "https://i.pinimg.com/564x/c4/51/e2/c451e22d839044547f606d357405e5ac.jpg"
     },
-    "id": 5,
-    "titulo": "Tarot de la muerte",
-    "genero": "Horror / Misterio",
-    "duracion": "1h 40m",
-    "estado": "Próximo estreno",
-    "sinopsis": "Un antiguo mazo de tarot desata una serie de eventos sobrenaturales mortales.",
-    "estreno": "2024-10-10",
-    "director": "Ari Aster",
-    "imagen_pelicula": "https://i.pinimg.com/564x/21/9a/44/219a4471ae0732c6ee0716784346511d.jpg",
-    "trailer": "https://www.youtube.com/watch?v=A9ALPU8CPr0",
-    "actores": [
-      {
-        "nombre": "Avantika Vandanapu",
-        "personaje": "Paige",
-        "imagen_actor": "https://freeimage.host/i/d0aqhdv"
-      },
-      {
-        "nombre": "Jacob Batalon",
-        "personaje": "Paxton",
-        "imagen_actor": "https://freeimage.host/i/d0aooYb"
-      },
-      {
-        "nombre": "Larsen Thompson",
-        "personaje": "Elise",
-        "imagen_actor": "https://freeimage.host/i/d0azqdu"
-      },
-      {
-        "nombre": "Harriet Slater",
-        "personaje": "Haley",
-        "imagen_actor": "https://freeimage.host/i/d0aI4MN"
-      },
-      {
-        "nombre": "Humberly Gonzalez",
-        "personaje": "Madeline",
-        "imagen_actor": "https://freeimage.host/i/d0a50Is"
-      },
-      {
-        "nombre": "Wolfgang Novogratz",
-        "personaje": "Lucas",
-        "imagen_actor": "https://freeimage.host/i/d0a0W4j"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd41409"
+    {
+      "nombre": "Ioan Gruffudd",
+      "personaje": "Adam Lockwood",
+      "imagen_actor": "https://i.pinimg.com/564x/b1/1b/9a/b11b9a8e0e40d8065cf930db5f4cfd47.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd41405"
+  },
+  "id": 2,
+  "titulo": "Observados",
+  "genero": "Thriller / Suspenso",
+  "duracion": "1h 50m",
+  "estado": "En cartelera",
+  "sinopsis": "El bosque no aparece en ningún mapa. Todos los coches que llegan hasta allí se averían y el de Mina no es una excepción. En medio de ese percance, se ve obligada a adentrarse en la oscuridad de la arboleda, donde encuentra a una mujer que le advierte de que corra hacia un búnker. Cuando cierra la puerta, los gritos invaden el lugar. Mina se encuentra en una habitación con una pared de cristal y una luz que se activa al anochecer, cuando los vigilantes salen a la superficie.",
+  "estreno": "2024-07-10",
+  "director": "David F. Sandberg",
+  "imagen_pelicula": "https://i.pinimg.com/564x/f7/cf/bf/f7cfbfcf00f6145b63e230eeb59db5b1.jpg",
+  "trailer": "https://www.youtube.com/watch?v=05vDpEnuLWI",
+  "actores": [
+    {
+      "nombre": "Dakota Fanning",
+      "personaje": "Lucy",
+      "imagen_actor": "https://i.pinimg.com/736x/52/07/42/520742d9cd428ff3381342289a5a4020.jpg"
     },
-    "id": 6,
-    "titulo": "Godzilla y Kong: El nuevo Imperio",
-    "genero": "Acción / Fantasía",
-    "duracion": "2h 45m",
-    "estado": "En cartelera",
-    "sinopsis": "Godzilla y King Kong se enfrentan a una amenaza aún mayor que pone en peligro el mundo.",
-    "estreno": "2024-07-05",
-    "director": "Adam Wingard",
-    "imagen_pelicula": "https://i.pinimg.com/564x/6f/69/00/6f690089947a98659643e2ce8f5f0200.jpg",
-    "trailer": "https://www.youtube.com/watch?v=rmoneJ_797s",
-    "actores": [
-      {
-        "nombre": "Kaylee Hottle",
-        "personaje": "Jia",
-        "imagen_actor": "https://freeimage.host/i/d0lZbTJ"
-      },
-      {
-        "nombre": "Rebecca Hall",
-        "personaje": "Ilene Andrews",
-        "imagen_actor": "https://freeimage.host/i/d0lyJ5P"
-      },
-      {
-        "nombre": "Dan Stevens",
-        "personaje": "Trapper",
-        "imagen_actor": "https://freeimage.host/i/d009z6x"
-      },
-      {
-        "nombre": "Nicola Crisa",
-        "personaje": "Student",
-        "imagen_actor": "https://freeimage.host/i/d00JYBa"
-      },
-      {
-        "nombre": "Brian Tyree Henry",
-        "personaje": "Bernie Hayes",
-        "imagen_actor": "https://freeimage.host/i/d0035Q9"
-      },
-      {
-        "nombre": "Fala Chen",
-        "personaje": "Iwi Queen",
-        "imagen_actor": "https://freeimage.host/i/d01vWSR"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd4140a"
+    {
+      "nombre": "Georgina Campbell",
+      "personaje": "Ciara",
+      "imagen_actor": "https://i.pinimg.com/564x/76/27/00/7627008cca863eb7b377ccdb18df2580.jpg"
     },
-    "id": 7,
-    "titulo": "The Ministry of Ungentlemanly Warfare",
-    "genero": "Acción / Histórico",
-    "duracion": "2h 10m",
-    "estado": "Próximo estreno",
-    "sinopsis": "La historia de una unidad secreta durante la Segunda Guerra Mundial que lleva a cabo operaciones clandestinas.",
-    "estreno": "2024-11-01",
-    "director": "Guy Ritchie",
-    "imagen_pelicula": "https://i.pinimg.com/736x/d6/88/3f/d6883fedf1adff8fbe48e8ea7d9c6a01.jpg",
-    "trailer": "https://www.youtube.com/watch?v=vUssD0r4Z3M",
-    "actores": [
-      {
-        "nombre": "Henry Cavill",
-        "personaje": "Gus March-Phillipps",
-        "imagen_actor": "https://freeimage.host/i/d018Vse"
-      },
-      {
-        "nombre": "Alan Ritchson",
-        "personaje": "Anders Lassen",
-        "imagen_actor": "https://freeimage.host/i/d01bMhu"
-      },
-      {
-        "nombre": "Alex Pettyfer",
-        "personaje": "Geoffrey Appleyard",
-        "imagen_actor": "https://freeimage.host/i/d01bpCG"
-      },
-      {
-        "nombre": "Hero Fiennes-Tiffin",
-        "personaje": "Henry Hayes",
-        "imagen_actor": "https://freeimage.host/i/d01mZcQ"
-      },
-      {
-        "nombre": "Til Schweiger",
-        "personaje": "Heinrich Luhr",
-        "imagen_actor": "https://freeimage.host/i/d01pezF"
-      },
-      {
-        "nombre": "Henry Golding",
-        "personaje": "Freddy Alvarez",
-        "imagen_actor": "https://freeimage.host/i/d0E9qZX"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd4140b"
+    {
+      "nombre": "Olwen Fouere",
+      "personaje": "Madeline",
+      "imagen_actor": "https://i.pinimg.com/736x/7a/56/b5/7a56b5615e3a23124fa564e72f5e4712.jpg"
     },
-    "id": 8,
-    "titulo": "Guerra civil",
-    "genero": "Drama / Bélico",
-    "duracion": "2h 20m",
-    "estado": "En cartelera",
-    "sinopsis": "Un drama épico sobre las consecuencias de una guerra civil que divide a una nación.",
-    "estreno": "2024-07-18",
-    "director": "Steven Spielberg",
-    "imagen_pelicula": "https://i.pinimg.com/564x/10/3f/e9/103fe93ccaba46975b8f6ab9fad2cbd5.jpg",
-    "trailer": "https://www.youtube.com/watch?v=O7J6bzeQiaA",
-    "actores": [
-      {
-        "nombre": "Cailee Spaeny",
-        "personaje": "Jessie",
-        "imagen_actor": "https://freeimage.host/i/d0EKy2n"
-      },
-      {
-        "nombre": "Kirsten Dunst",
-        "personaje": "Lee Smith",
-        "imagen_actor": "https://freeimage.host/i/d0EqdcF"
-      },
-      {
-        "nombre": "Wagner Moura",
-        "personaje": "Joel",
-        "imagen_actor": "https://freeimage.host/i/d0EqEl9"
-      },
-      {
-        "nombre": "Stephen McKinley Henderson",
-        "personaje": "Sammy",
-        "imagen_actor": "https://freeimage.host/i/d0EqPxR"
-      },
-      {
-        "nombre": "Sonoya Mizuno",
-        "personaje": "Anya",
-        "imagen_actor": "https://freeimage.host/i/d0EBqJe"
-      },
-      {
-        "nombre": "Nick Offerman",
-        "personaje": "President",
-        "imagen_actor": "https://freeimage.host/i/d0ECxvn"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd4140c"
+    {
+      "nombre": "Oliver Finnegan",
+      "personaje": "Daniel",
+      "imagen_actor": "https://i.pinimg.com/736x/b7/04/8d/b7048d9f565dc4ee08d269391da76523.jpg"
     },
-    "id": 9,
-    "titulo": "Intensamente 2",
-    "genero": "Animación / Aventura",
-    "duracion": "1h 45m",
-    "estado": "Próximo estreno",
-    "sinopsis": "Las emociones de Riley enfrentan nuevos desafíos cuando se muda a una nueva ciudad.",
-    "estreno": "2024-12-15",
-    "director": "Pete Docter",
-    "imagen_pelicula": "https://i.pinimg.com/564x/c1/3a/d4/c13ad43d3f1117a55a1b017763b047d0.jpg",
-    "trailer": "https://www.youtube.com/watch?v=xiC2iXTXHxw",
-    "actores": [
-      {
-        "nombre": "Maya Hawke",
-        "personaje": "Ansiedad",
-        "imagen_actor": "https://freeimage.host/i/d0XPC8B"
-      },
-      {
-        "nombre": "Adèle Exarchopoulos",
-        "personaje": "Ennui",
-        "imagen_actor": "https://freeimage.host/i/d0XszBa"
-      },
-      {
-        "nombre": "Ayo Edebiri",
-        "personaje": "Envy",
-        "imagen_actor": "https://freeimage.host/i/d0XLjcv"
-      },
-      {
-        "nombre": "Amy Poehler",
-        "personaje": "Alegría",
-        "imagen_actor": "https://freeimage.host/i/d0XQ2RV"
-      },
-      {
-        "nombre": "Tony Hale",
-        "personaje": "Fear",
-        "imagen_actor": "https://freeimage.host/i/d0XQLrJ"
-      },
-      {
-        "nombre": "Phyllis Smith",
-        "personaje": "Tristeza",
-        "imagen_actor": "https://freeimage.host/i/d0Xm1NR"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd4140d"
+    {
+      "nombre": "Hannah Howland",
+      "personaje": "Chloe",
+      "imagen_actor": "https://i.pinimg.com/736x/eb/4d/6e/eb4d6ec8ca003388a4233f854a8a9aa8.jpg"
     },
-    "id": 10,
-    "titulo": "Monkey Man: El despertar de la bestia",
-    "genero": "Acción / Aventura",
-    "duracion": "2h 0m",
-    "estado": "En cartelera",
-    "sinopsis": "Un hombre se convierte en un héroe inusual cuando debe enfrentar a una criatura mítica para salvar su hogar.",
-    "estreno": "2024-06-30",
-    "director": "Joe Carnahan",
-    "imagen_pelicula": "https://i.pinimg.com/736x/bc/fe/da/bcfedaeee217cf1ddeb9a63387525c3f.jpg",
-    "trailer": "https://www.youtube.com/watch?v=BOSn67w68Ks",
-    "actores": [
-      {
-        "nombre": "Dev Patel",
-        "personaje": "Kid",
-        "imagen_actor": "https://freeimage.host/i/d0Xp5zl"
-      },
-      {
-        "nombre": "Sobhita Dhulipala",
-        "personaje": "Sita",
-        "imagen_actor": "https://freeimage.host/i/d0Xy7yJ"
-      },
-      {
-        "nombre": "Sikandar Kher",
-        "personaje": "Rana",
-        "imagen_actor": "https://freeimage.host/i/d0h9EDx"
-      },
-      {
-        "nombre": "Sharlto Copley",
-        "personaje": "Tiger",
-        "imagen_actor": "https://freeimage.host/i/d0hHFbj"
-      },
-      {
-        "nombre": "Adithi Kalkunte",
-        "personaje": "Neela",
-        "imagen_actor": "https://freeimage.host/i/d0hHO1S"
-      },
-      {
-        "nombre": "Makarand Deshpande",
-        "personaje": "Baba Shakti",
-        "imagen_actor": "https://freeimage.host/i/d0hJaTb"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd4140e"
+    {
+      "nombre": "Alistair Brammer",
+      "personaje": "John",
+      "imagen_actor": "blob:https://co.pinterest.com/f2624f43-81c2-4ffd-81ef-46b5ac838f76"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd41406"
+  },
+  "id": 3,
+  "titulo": "Rescate imposible",
+  "genero": "Acción / Drama",
+  "duracion": "2h 5m",
+  "estado": "Próximo estreno",
+  "sinopsis": "Protagonizada por Russell Crowe y Liam Hemsworth. Una operación encubierta de las Fuerzas Especiales al sur de Filipinas se torna en una brutal lucha de supervivencia de 48 horas. Cuando a un grupo élite de rescate lo emboscan en territorio enemigo, el oficial novato Kinney (Hemsworth) intentará proteger a sus hombres. Habrá un ataque aéreo y la esperanza de Kinney es el piloto de drones de la Fuerza Aérea Reaper (Crowe), mientras atraviesan peligros desconocidos: cada paso puede ser el último.",
+  "estreno": "2024-09-20",
+  "director": "Michael Bay",
+  "imagen_pelicula": "https://i.pinimg.com/564x/8e/94/50/8e9450f22f09f1b443490fdea867d14b.jpg",
+  "trailer": "https://www.youtube.com/watch?v=n4roL2Iqyl8",
+  "actores": [
+    {
+      "nombre": "Russell Crowe",
+      "personaje": "Captain Eddie Grimm",
+      "imagen_actor": "https://i.pinimg.com/564x/0f/8b/fc/0f8bfc84fd00346deeb51e7848f2ef0e.jpg"
     },
-    "id": 11,
-    "titulo": "Garfield: Fuera de casa",
-    "genero": "Animación / Comedia",
-    "duracion": "1h 30m",
-    "estado": "Próximo estreno",
-    "sinopsis": "Garfield se embarca en una nueva aventura llena de humor y caos.",
-    "estreno": "2024-08-25",
-    "director": "Mark Dindal",
-    "imagen_pelicula": "https://i.pinimg.com/736x/fa/b1/fb/fab1fb0239f306b0475dccd0496f6bb5.jpg",
-    "trailer": "https://www.youtube.com/watch?v=GeR3YxTv_zU",
-    "actores": [
-      {
-        "nombre": "Chris Pratt",
-        "personaje": "Garfield",
-        "imagen_actor": "https://freeimage.host/i/d0hJ69n"
-      },
-      {
-        "nombre": "Snoop Dogg",
-        "personaje": "Maurice",
-        "imagen_actor": "https://freeimage.host/i/d0h2Upn"
-      },
-      {
-        "nombre": "Hannah Waddingham",
-        "personaje": "Jinx",
-        "imagen_actor": "https://freeimage.host/i/d0h3F3B"
-      },
-      {
-        "nombre": "Nicholas Hoult",
-        "personaje": "Jon Arbuckle",
-        "imagen_actor": "https://freeimage.host/i/d0h3G6l"
-      },
-      {
-        "nombre": "Angus Cloud",
-        "personaje": "Snickers",
-        "imagen_actor": "https://freeimage.host/i/d0hFWiv"
-      },
-      {
-        "nombre": "Ving Rhames",
-        "personaje": "Otto",
-        "imagen_actor": "https://freeimage.host/i/d0hKnqv"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd4140f"
+    {
+      "nombre": "Luke Hemsworth",
+      "personaje": "Sgt.Abell",
+      "imagen_actor": "https://i.pinimg.com/736x/db/b1/23/dbb123f8f3e1d1784c7e88cc1b7828a9.jpg"
     },
-    "id": 12,
-    "titulo": "Kung Fu Panda 4",
-    "genero": "Animación / Acción",
-    "duracion": "1h 50m",
-    "estado": "Próximo estreno",
-    "sinopsis": "Po regresa para una nueva misión para proteger el Valle de la Paz.",
-    "estreno": "2024-09-12",
-    "director": "Jennifer Yuh Nelson",
-    "imagen_pelicula": "https://i.pinimg.com/564x/45/a8/11/45a8116b603df5fea328e8c4279eb431.jpg",
-    "trailer": "https://www.youtube.com/watch?v=kg3Q63gzF6I",
-    "actores": [
-      {
-        "nombre": "Awkwafina",
-        "personaje": "Zhen",
-        "imagen_actor": "https://freeimage.host/i/d0hf58B"
-      },
-      {
-        "nombre": "MrBeast",
-        "personaje": "Panda Pig",
-        "imagen_actor": "https://freeimage.host/i/d0hqyqG"
-      },
-      {
-        "nombre": "Bryan Cranston",
-        "personaje": "Li Shan",
-        "imagen_actor": "https://freeimage.host/i/d0hBjQn"
-      },
-      {
-        "nombre": "Jack Black",
-        "personaje": "Po",
-        "imagen_actor": "https://freeimage.host/i/d0hCAFf"
-      },
-      {
-        "nombre": "Ke Huy Quan",
-        "personaje": "Han",
-        "imagen_actor": "https://freeimage.host/i/d0hnUX9"
-      },
-      {
-        "nombre": "Ian McShane",
-        "personaje": "Tai Lung",
-        "imagen_actor": "https://freeimage.host/i/d0hoMkQ"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd41410"
+    {
+      "nombre": "Liam Hemsworth",
+      "personaje": "Kinney",
+      "imagen_actor": "https://i.pinimg.com/564x/e8/6e/6b/e86e6b754bafe7970e972f532dfb6212.jpg"
     },
-    "id": 13,
-    "titulo": "Megamente contra el Sindicato de la Perdición",
-    "genero": "Animación / Comedia",
-    "duracion": "1h 45m",
-    "estado": "En cartelera",
-    "sinopsis": "Megamente enfrenta a una nueva amenaza cuando el Sindicato de la Perdición planea tomar el control de la ciudad.",
-    "estreno": "2024-07-22",
-    "director": "Tom McGrath",
-    "imagen_pelicula": "https://i.pinimg.com/736x/60/68/52/606852c9cb69dd16152fe849105bc97f.jpg",
-    "trailer": "https://www.youtube.com/watch?v=MSyoyi1ls80",
-    "actores": [
-      {
-        "nombre": "Eric Fogel",
-        "personaje": "Polly 227",
-        "imagen_actor": "https://freeimage.host/i/d0hxdGe"
-      },
-      {
-        "nombre": "Keith Ferguson",
-        "personaje": "Megamind",
-        "imagen_actor": "https://freeimage.host/i/d0hxVFs"
-      },
-      {
-        "nombre": "Adam Lambert",
-        "personaje": "Machiavillain",
-        "imagen_actor": "https://freeimage.host/i/d0hzEbV"
-      },
-      {
-        "nombre": "Jeanine Mason",
-        "personaje": "Christina Christo",
-        "imagen_actor": "https://freeimage.host/i/d0hI91e"
-      },
-      {
-        "nombre": "Roger Craig Smith",
-        "personaje": "Jody Smelt",
-        "imagen_actor": "https://freeimage.host/i/d0hTgln"
-      },
-      {
-        "nombre": "Josh Brener",
-        "personaje": "Ol' Chum",
-        "imagen_actor": "https://freeimage.host/i/d0hukej"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd41411"
+    {
+      "nombre": "Milo Ventimiglia",
+      "personaje": "Sugar",
+      "imagen_actor": "https://i.pinimg.com/564x/d0/0c/d8/d00cd800177fa70c80e99ce69a486440.jpg"
     },
-    "id": 14,
-    "titulo": "Abigail",
-    "genero": "Fantástico / Aventura",
-    "duracion": "2h 10m",
-    "estado": "En cartelera",
-    "sinopsis": "Una joven descubre sus habilidades mágicas mientras busca a su madre desaparecida.",
-    "estreno": "2024-07-25",
-    "director": "Alexander Boguslavsky",
-    "imagen_pelicula": "https://i.pinimg.com/564x/7e/4d/bc/7e4dbc009e4bfcb9a400578e75439f74.jpg",
-    "trailer": "https://www.youtube.com/watch?v=E8KysONydqc",
-    "actores": [
-      {
-        "nombre": "Angus Cloud",
-        "personaje": "Dean",
-        "imagen_actor": "https://freeimage.host/i/d0hFWiv"
-      },
-      {
-        "nombre": "Melissa Barrera",
-        "personaje": "Joey",
-        "imagen_actor": "https://freeimage.host/i/d0hRXSe"
-      },
-      {
-        "nombre": "Alisha Weir",
-        "personaje": "Abigail",
-        "imagen_actor": "https://freeimage.host/i/d0h5Ks2"
-      },
-      {
-        "nombre": "Kathryn Newton",
-        "personaje": "Sammy",
-        "imagen_actor": "https://freeimage.host/i/d0h5vmG"
-      },
-      {
-        "nombre": "Kevin Durand",
-        "personaje": "Peter",
-        "imagen_actor": "https://freeimage.host/i/d0h7e6B"
-      },
-      {
-        "nombre": "Dan Stevens",
-        "personaje": "Frank",
-        "imagen_actor": "https://freeimage.host/i/d009z6x"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd41412"
+    {
+      "nombre": "Ricky Whittle",
+      "personaje": "Bishop",
+      "imagen_actor": "https://i.pinimg.com/736x/86/d1/1f/86d11f6db840f934bd670dc1805c0311.jpg"
     },
-    "id": 15,
-    "titulo": "Aguas Siniestras",
-    "genero": "Horror / Suspenso",
-    "duracion": "1h 55m",
-    "estado": "Próximo estreno",
-    "sinopsis": "Una familia enfrenta terror y misterio en una casa construida sobre un antiguo pantano.",
-    "estreno": "2024-10-05",
-    "director": "Scott Derrickson",
-    "imagen_pelicula": "https://i.pinimg.com/736x/d3/0a/35/d30a357c6b2229ac6e9a4639d6ec14fb.jpg",
-    "trailer": "https://www.youtube.com/watch?v=f8iu9VUc_lo",
-    "actores": [
-      {
-        "nombre": "Wyatt Russell",
-        "personaje": "Ray Weller",
-        "imagen_actor": "https://freeimage.host/i/d0hagLv"
-      },
-      {
-        "nombre": "Amélie Hoeferle",
-        "personaje": "Izzy Waller",
-        "imagen_actor": "https://freeimage.host/i/d0hcMvt"
-      },
-      {
-        "nombre": "Kerry Condon",
-        "personaje": "Eve Waller",
-        "imagen_actor": "https://freeimage.host/i/d0hlfSI"
-      },
-      {
-        "nombre": "Gavin Warren",
-        "personaje": "Elliot Waller",
-        "imagen_actor": "https://freeimage.host/i/d0hltsf"
-      },
-      {
-        "nombre": "Nancy Lenehan",
-        "personaje": "Kay",
-        "imagen_actor": "https://freeimage.host/i/d0h0uzg"
-      },
-      {
-        "nombre": "Jodi Long",
-        "personaje": "Lucy Summers",
-        "imagen_actor": "https://freeimage.host/i/d0h1H4R"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd41413"
+    {
+      "nombre": "Chika Ikogwe",
+      "personaje": "Sgt.Nia Branson ",
+      "imagen_actor": "https://i.pinimg.com/564x/f0/a7/a1/f0a7a10a810b384fc87c3f6ad5abda83.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd41407"
+  },
+  "id": 4,
+  "titulo": "En las profundidades del rio Sena  ",
+  "genero": "Ciencia Ficción / Suspenso",
+  "duracion": "2h 30m",
+  "estado": "En cartelera",
+  "sinopsis": "La científica Sophie se ve obligada a enfrentarse a su trágico pasado para salvar París de un baño de sangre cuando un tiburón gigante aparece en el Sena.",
+  "estreno": "2024-06-25",
+  "director": "James Cameron",
+  "imagen_pelicula": "https://i.pinimg.com/564x/84/08/96/840896c81b7a009d87523e2c9742ca59.jpg",
+  "trailer": "https://www.youtube.com/watch?v=PoTdomOgHkI",
+  "actores": [
+    {
+      "nombre": "Nassim Si Ahmed",
+      "personaje": "Adil",
+      "imagen_actor": "https://i.pinimg.com/736x/d4/10/8a/d4108a19fd1c7aa61108a7d1fee63d00.jpg"
     },
-    "id": 16,
-    "titulo": "El astronauta",
-    "genero": "Ciencia Ficción / Drama",
-    "duracion": "2h 20m",
-    "estado": "En cartelera",
-    "sinopsis": "La historia de un astronauta que debe enfrentarse a sus propios demonios mientras explora el espacio profundo.",
-    "estreno": "2024-06-20",
-    "director": "Denis Villeneuve",
-    "imagen_pelicula": "https://i.pinimg.com/564x/63/db/97/63db9748eb1ba5d0835dd28cdd0f0e21.jpg",
-    "trailer": "https://www.youtube.com/watch?v=9Mo3FL6GmxE",
-    "actores": [
-      {
-        "nombre": "Adam Sandler",
-        "personaje": "Jakub Prochazka",
-        "imagen_actor": "https://freeimage.host/i/d0hEg0x"
-      },
-      {
-        "nombre": "Paul Dano",
-        "personaje": "Hanus",
-        "imagen_actor": "https://freeimage.host/i/d0hGLYl"
-      },
-      {
-        "nombre": "Carey Mulligan",
-        "personaje": "Lenka",
-        "imagen_actor": "https://freeimage.host/i/d0hMe6b"
-      },
-      {
-        "nombre": "Kunal Nayyar",
-        "personaje": "Peter",
-        "imagen_actor": "https://freeimage.host/i/d0hVcOB"
-      },
-      {
-        "nombre": "Isabella Rossellini",
-        "personaje": "Comissioner Tuma",
-        "imagen_actor": "https://freeimage.host/i/d0hWFX1"
-      },
-      {
-        "nombre": "Lena Olin",
-        "personaje": "Zdena",
-        "imagen_actor": "https://freeimage.host/i/d0hW6Eg"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd41414"
+    {
+      "nombre": "Berenice Bejo",
+      "personaje": "Sophia",
+      "imagen_actor": "https://i.pinimg.com/736x/bc/ae/af/bcaeafc58759fcf745ed26aeee753c1d.jpg"
     },
-    "id": 17,
-    "titulo": "El salario del miedo",
-    "genero": "Thriller / Drama",
-    "duracion": "2h 5m",
-    "estado": "Próximo estreno",
-    "sinopsis": "Un grupo de hombres arriesga sus vidas para transportar un cargamento peligroso a través de un terreno inhóspito.",
-    "estreno": "2024-09-30",
-    "director": "Henri-Georges Clouzot",
-    "imagen_pelicula": "https://i.pinimg.com/736x/57/4f/84/574f84f051963933ab20609ef7f0e750.jpg",
-    "trailer": "https://www.youtube.com/watch?v=cjwiOdApx_E",
-    "actores": [
-      {
-        "nombre": "Ana Girardot",
-        "personaje": "Clara",
-        "imagen_actor": "https://freeimage.host/i/d0hhcOl"
-      },
-      {
-        "nombre": "Franck Gastambide",
-        "personaje": "Fred",
-        "imagen_actor": "https://freeimage.host/i/d0hhObV"
-      },
-      {
-        "nombre": "Alban Lenoir",
-        "personaje": "Alex",
-        "imagen_actor": "https://freeimage.host/i/d0hjodb"
-      },
-      {
-        "nombre": "Sofiane Zermani",
-        "personaje": "Gauthier",
-        "imagen_actor": "https://freeimage.host/i/d0hjSTl"
-      },
-      {
-        "nombre": "Bakary Diombera",
-        "personaje": "Djibril",
-        "imagen_actor": "https://freeimage.host/i/d0hwYt2"
-      },
-      {
-        "nombre": "Sarah Afchain",
-        "personaje": "Assia",
-        "imagen_actor": "https://freeimage.host/i/d0hN2i7"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd41415"
+    {
+      "nombre": "Lea Leviant",
+      "personaje": "Mika",
+      "imagen_actor": "blob:https://co.pinterest.com/437abfba-f242-4d37-aa4a-26101865e1a7"
     },
-    "id": 18,
-    "titulo": "Damsel",
-    "genero": "Aventura / Fantasía",
-    "duracion": "2h 0m",
-    "estado": "En cartelera",
-    "sinopsis": "Una joven princesa se embarca en una misión para rescatar a su reino y encontrar su propio destino.",
-    "estreno": "2024-07-12",
-    "director": "Matt Stone & Trey Parker",
-    "imagen_pelicula": "https://i.pinimg.com/564x/b0/ac/b9/b0acb9dc4a10922d8510673560cfbcf2.jpg",
-    "trailer": "https://www.youtube.com/watch?v=tzRisTkuLWA",
-    "actores": [
-      {
-        "nombre": "Millie Bobby Brown",
-        "personaje": "Princess Elodie",
-        "imagen_actor": "https://freeimage.host/i/d0hOkva"
-      },
-      {
-        "nombre": "Nick Robinson",
-        "personaje": "Prince Henry",
-        "imagen_actor": "https://freeimage.host/i/d0heMSn"
-      },
-      {
-        "nombre": "Shohreh Aghdashloo",
-        "personaje": "Dragon",
-        "imagen_actor": "https://freeimage.host/i/d0hknOG"
-      },
-      {
-        "nombre": "Angela Bassett",
-        "personaje": "Lady Batford",
-        "imagen_actor": "https://freeimage.host/i/d0hkUqN"
-      },
-      {
-        "nombre": "Robin Wright",
-        "personaje": "Queen Isabelle",
-        "imagen_actor": "https://freeimage.host/i/d0hvAhv"
-      },
-      {
-        "nombre": "Brooke Carter",
-        "personaje": "Floria",
-        "imagen_actor": "https://freeimage.host/i/d0hvQ8F"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd41416"
+    {
+      "nombre": "Anne Marivin",
+      "personaje": "Mayor of Paris",
+      "imagen_actor": "https://i.pinimg.com/564x/75/9a/5f/759a5f5bfe568944daed96d2a0910404.jpg"
     },
-    "id": 19,
-    "titulo": "Ascenso",
-    "genero": "Acción / Drama",
-    "duracion": "2h 15m",
-    "estado": "Próximo estreno",
-    "sinopsis": "Un equipo de rescatistas enfrentan desafíos extremos para salvar a un grupo atrapado en una montaña.",
-    "estreno": "2024-11-20",
-    "director": "J.J. Abrams",
-    "imagen_pelicula": "https://i.pinimg.com/736x/95/87/78/9587786bf1e294dddcbe5115cdc2b2f2.jpg",
-    "trailer": "https://www.youtube.com/watch?v=diWyWDSsyDs",
-    "actores": [
-      {
-        "nombre": "Camila Mendes",
-        "personaje": "Ana",
-        "imagen_actor": "https://freeimage.host/i/d0hUIpe"
-      },
-      {
-        "nombre": "Archie Renaux",
-        "personaje": "William",
-        "imagen_actor": "https://freeimage.host/i/d0hgdFV"
-      },
-      {
-        "nombre": "Marisa Tomei",
-        "personaje": "Claire Dupont",
-        "imagen_actor": "https://freeimage.host/i/d0hgeix"
-      },
-      {
-        "nombre": "Lena Olin",
-        "personaje": "Catherine Laroche",
-        "imagen_actor": "https://freeimage.host/i/d0hW6Eg"
-      },
-      {
-        "nombre": "Rachel Matthews",
-        "personaje": "Suzette",
-        "imagen_actor": "https://freeimage.host/i/d0h4a44"
-      },
-      {
-        "nombre": "Aimee Carrero",
-        "personaje": "Vivian",
-        "imagen_actor": "https://freeimage.host/i/d0h6uSV"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d56a280e8d342dd41417"
+    {
+      "nombre": "Anais Parello",
+      "personaje": "Jade",
+      "imagen_actor": "https://i.pinimg.com/564x/72/ab/eb/72abebe91e8efb6d50856299261ce43b.jpg"
     },
-    "id": 20,
-    "titulo": "Fabricante de lágrimas",
-    "genero": "Drama / Thriller",
-    "duracion": "1h 50m",
-    "estado": "En cartelera",
-    "sinopsis": "La vida de un hombre cambia drásticamente cuando descubre un secreto familiar oscuro.",
-    "estreno": "2024-06-15",
-    "director": "Bong Joon-ho",
-    "imagen_pelicula": "https://i.pinimg.com/736x/88/8d/67/888d673959d91763d128e183aca681d3.jpg",
-    "trailer": "https://www.youtube.com/watch?v=IsyN8eTyTcI",
-    "actores": [
-      {
-        "nombre": "Biondo",
-        "personaje": "Rigel Wilde",
-        "imagen_actor": " https://freeimage.host/i/d0hia6J"
-      },
-      {
-        "nombre": "Caterina Ferioli",
-        "personaje": "Nica",
-        "imagen_actor": "https://freeimage.host/i/d0hs80J"
-      },
-      {
-        "nombre": "Eco Andriolo Ranzi",
-        "personaje": "Adeline",
-        "imagen_actor": "https://freeimage.host/i/d0hLcep"
-      },
-      {
-        "nombre": "Sabrina Paravicini",
-        "personaje": "Margaret Stoker",
-        "imagen_actor": "https://freeimage.host/i/d0hLp4a"
-      },
-      {
-        "nombre": "Juju Di Domenico",
-        "personaje": "Asia",
-        "imagen_actor": "https://freeimage.host/i/d0hQQSf"
-      },
-      {
-        "nombre": "Simone Baldasseroni",
-        "personaje": "Rigel Wilde",
-        "imagen_actor": "https://freeimage.host/i/d0htGLP"
-      }
-    ]
-  },{
-    "_id": {
-      "$oid": "66a3d82c280e8d342dd4141a"
+    {
+      "nombre": "Nagisa Morimoto",
+      "personaje": "Ben",
+      "imagen_actor": "https://i.pinimg.com/736x/93/58/83/9358838c111095251fd632f263268f3e.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd41408"
+  },
+  "id": 5,
+  "titulo": "Tarot de la muerte",
+  "genero": "Horror / Misterio",
+  "duracion": "1h 40m",
+  "estado": "Próximo estreno",
+  "sinopsis": "Un grupo de amigos infringe de manera imprudente la regla sagrada de la lectura de las cartas del tarot. Se tendrán que enfrentar a la muerte para escapar del futuro que las cartas predicen.",
+  "estreno": "2024-10-10",
+  "director": "Ari Aster",
+  "imagen_pelicula": "https://i.pinimg.com/564x/21/9a/44/219a4471ae0732c6ee0716784346511d.jpg",
+  "trailer": "https://www.youtube.com/watch?v=A9ALPU8CPr0",
+  "actores": [
+    {
+      "nombre": "Avantika Vandanapu",
+      "personaje": "Paige",
+      "imagen_actor": "https://i.pinimg.com/564x/2e/3b/61/2e3b6177aa0ebda11c27a7f04a0fd33c.jpg"
     },
-    "id": 21,
-    "titulo": "Mi villano favorito 4",
-    "genero": "Animación / Comedia",
-    "duracion": "1h 40m",
-    "estado": "Próximo estreno",
-    "sinopsis": "Gru y sus minions enfrentan una nueva amenaza mientras buscan redención en un mundo en constante cambio.",
-    "estreno": "2024-08-30",
-    "director": "Chris Renaud",
-    "imagen_pelicula": "https://i.pinimg.com/564x/b7/2e/87/b72e87cf45c1ee343ec21616537bac89.jpg",
-    "trailer": "https://www.youtube.com/watch?v=I0_qFoptZ4Y",
-    "actores": [
-      {
-        "nombre": "Joey King",
-        "personaje": "Poppy Prescott",
-        "imagen_actor": "https://freeimage.host/i/d0hDgtV"
-      },
-      {
-        "nombre": "Will Ferrell",
-        "personaje": "Maxime Le Mal",
-        "imagen_actor": "https://freeimage.host/i/d0hbnx2"
-      },
-      {
-        "nombre": "Sofía Vergara",
-        "personaje": "Valentina",
-        "imagen_actor": "https://freeimage.host/i/d0hbr5G"
-      },
-      {
-        "nombre": "Steve Carell",
-        "personaje": "Gru",
-        "imagen_actor": "https://freeimage.host/i/d0hmfrF"
-      },
-      {
-        "nombre": "Madison Polan",
-        "personaje": "Agnes",
-        "imagen_actor": "https://freeimage.host/i/d0hmbCN"
-      },
-      {
-        "nombre": "Miranda Cosgrove",
-        "personaje": "Margo",
-        "imagen_actor": "https://freeimage.host/i/d0hp89s"
-      }
-    ]
-  }]
+    {
+      "nombre": "Jacob Batalon",
+      "personaje": "Paxton",
+      "imagen_actor": "https://i.pinimg.com/736x/81/79/07/8179072c8cc0c6fdb4bd40eee3a42efd.jpg"
+    },
+    {
+      "nombre": "Larsen Thompson",
+      "personaje": "Elise",
+      "imagen_actor": "https://i.pinimg.com/564x/b3/a0/10/b3a010251cb193b09ed401f5ea1a2189.jpg"
+    },
+    {
+      "nombre": "Harriet Slater",
+      "personaje": "Haley",
+      "imagen_actor": "https://i.pinimg.com/736x/32/fe/fe/32fefef9775f4f0475f384d59926035c.jpg"
+    },
+    {
+      "nombre": "Humberly Gonzalez",
+      "personaje": "Madeline",
+      "imagen_actor": "https://i.pinimg.com/564x/95/81/2b/95812b8b7d89a106aa1b47f575f98e99.jpg"
+    },
+    {
+      "nombre": "Wolfgang Novogratz",
+      "personaje": "Lucas",
+      "imagen_actor": "https://i.pinimg.com/564x/35/dc/c7/35dcc78dedc209692694f1bad3cb3537.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd41409"
+  },
+  "id": 6,
+  "titulo": "Godzilla y Kong: El nuevo Imperio",
+  "genero": "Acción / Fantasía",
+  "duracion": "2h 45m",
+  "estado": "En cartelera",
+  "sinopsis": "Godzilla y Kong se enfrentan a una amenaza colosal escondida en lo profundo del planeta, desafiando su propia existencia y la supervivencia de la raza humana.",
+  "estreno": "2024-07-05",
+  "director": "Adam Wingard",
+  "imagen_pelicula": "https://i.pinimg.com/564x/6f/69/00/6f690089947a98659643e2ce8f5f0200.jpg",
+  "trailer": "https://www.youtube.com/watch?v=rmoneJ_797s",
+  "actores": [
+    {
+      "nombre": "Kaylee Hottle",
+      "personaje": "Jia",
+      "imagen_actor": "blob:https://co.pinterest.com/1a812044-fd86-4cb9-9457-e4ec307a867b"
+    },
+    {
+      "nombre": "Rebecca Hall",
+      "personaje": "Ilene Andrews",
+      "imagen_actor": "https://i.pinimg.com/564x/1b/09/16/1b0916c1657c06a9a02ed3706269eb80.jpg"
+    },
+    {
+      "nombre": "Dan Stevens",
+      "personaje": "Trapper",
+      "imagen_actor": "https://i.pinimg.com/736x/84/58/67/84586759c9abc1fdd4fa30e8a650a7be.jpg"
+    },
+    {
+      "nombre": "Nicola Crisa",
+      "personaje": "Student",
+      "imagen_actor": "https://i.pinimg.com/564x/96/36/b2/9636b27bfa034a242d3977851ef4f2cf.jpg"
+    },
+    {
+      "nombre": "Brian Tyree Henry",
+      "personaje": "Bernie Hayes",
+      "imagen_actor": "https://i.pinimg.com/736x/17/42/ae/1742aec994abd8698b8d3497e3322dd4.jpg"
+    },
+    {
+      "nombre": "Fala Chen",
+      "personaje": "Iwi Queen",
+      "imagen_actor": "https://i.pinimg.com/564x/92/f1/43/92f143a10b6814a58986c20727b607aa.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd4140a"
+  },
+  "id": 7,
+  "titulo": "El ministerio de la guerra sucia",
+  "genero": "Acción / Histórico",
+  "duracion": "2h 10m",
+  "estado": "Próximo estreno",
+  "sinopsis": "Formada por un variopinto grupo de pícaros e inconformistas, una unidad de combate ultrasecreta utiliza técnicas poco convencionales para neutralizar la flota de submarinos alemanes de Hitler durante la Segunda Guerra Mundial.",
+  "estreno": "2024-11-01",
+  "director": "Guy Ritchie",
+  "imagen_pelicula": "https://i.pinimg.com/736x/d6/88/3f/d6883fedf1adff8fbe48e8ea7d9c6a01.jpg",
+  "trailer": "https://www.youtube.com/watch?v=vUssD0r4Z3M",
+  "actores": [
+    {
+      "nombre": "Henry Cavill",
+      "personaje": "Gus March-Phillipps",
+      "imagen_actor": "https://i.pinimg.com/564x/52/19/dd/5219dd1355aecc13fa6060cc9a42156c.jpg"
+    },
+    {
+      "nombre": "Alan Ritchson",
+      "personaje": "Anders Lassen",
+      "imagen_actor": "https://i.pinimg.com/564x/d8/da/18/d8da18c3f3dd0e8464bb53c54ed11446.jpg"
+    },
+    {
+      "nombre": "Alex Pettyfer",
+      "personaje": "Geoffrey Appleyard",
+      "imagen_actor": "https://i.pinimg.com/564x/2a/3f/87/2a3f8701c39a831765cf7d50fc5ca7cd.jpg"
+    },
+    {
+      "nombre": "Hero Fiennes-Tiffin",
+      "personaje": "Henry Hayes",
+      "imagen_actor": "https://i.pinimg.com/736x/67/d3/0a/67d30a0c164a8d9d9fc4c9f61946b61d.jpg"
+    },
+    {
+      "nombre": "Til Schweiger",
+      "personaje": "Heinrich Luhr",
+      "imagen_actor": "https://i.pinimg.com/564x/ae/79/e2/ae79e230107f750be8f287244f4e43a0.jpg"
+    },
+    {
+      "nombre": "Henry Golding",
+      "personaje": "Freddy Alvarez",
+      "imagen_actor": "https://i.pinimg.com/564x/9b/3c/dd/9b3cdd0f31bee6fcba7b64851042abb8.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd4140b"
+  },
+  "id": 8,
+  "titulo": "Guerra civil",
+  "genero": "Drama / Bélico",
+  "duracion": "2h 20m",
+  "estado": "En cartelera",
+  "sinopsis": "En un futuro próximo, un equipo de periodistas viajará por los Estados Unidos durante una guerra civil que se intensifica rápidamente y que se ha apoderado de toda la nación.",
+  "estreno": "2024-07-18",
+  "director": "Steven Spielberg",
+  "imagen_pelicula": "https://i.pinimg.com/564x/10/3f/e9/103fe93ccaba46975b8f6ab9fad2cbd5.jpg",
+  "trailer": "https://www.youtube.com/watch?v=O7J6bzeQiaA",
+  "actores": [
+    {
+      "nombre": "Cailee Spaeny",
+      "personaje": "Jessie",
+      "imagen_actor": "https://i.pinimg.com/736x/a9/a8/66/a9a8665c43af25444871ca68619681f3.jpg"
+    },
+    {
+      "nombre": "Kirsten Dunst",
+      "personaje": "Lee Smith",
+      "imagen_actor": "https://i.pinimg.com/564x/d6/16/79/d616791ee617968c57f11f2539d73be5.jpg"
+    },
+    {
+      "nombre": "Wagner Moura",
+      "personaje": "Joel",
+      "imagen_actor": "https://i.pinimg.com/736x/f4/98/31/f49831918cee937e7755635b7c96d750.jpg"
+    },
+    {
+      "nombre": "Stephen McKinley Henderson",
+      "personaje": "Sammy",
+      "imagen_actor": "https://i.pinimg.com/564x/14/af/3a/14af3aa82bbc8f579940f6ef89f1cd99.jpg"
+    },
+    {
+      "nombre": "Sonoya Mizuno",
+      "personaje": "Anya",
+      "imagen_actor": "https://i.pinimg.com/564x/4b/00/6c/4b006c06762fa2953f78b81608dd96cb.jpg"
+    },
+    {
+      "nombre": "Nick Offerman",
+      "personaje": "President",
+      "imagen_actor": "https://i.pinimg.com/564x/dd/13/63/dd1363331e5bc12b2770483bfa1d3e9b.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd4140c"
+  },
+  "id": 9,
+  "titulo": "Intensamente 2",
+  "genero": "Animación / Aventura",
+  "duracion": "1h 45m",
+  "estado": "Próximo estreno",
+  "sinopsis": "Intensamente 2, de Disney y Pixar, regresa a la mente de una Riley recién entrada en la adolescencia justo en el momento en que el Cuartel General está sufriendo una repentina reforma para hacerle hueco a algo totalmente inesperado: ¡Nuevas emociones! Alegría, Tristeza, Ira, Miedo y Asco, con años de impecable gestión a sus espaldas (según ellos...) no saben muy bien qué sentir cuando aparece Ansiedad.",
+  "estreno": "2024-12-15",
+  "director": "Pete Docter",
+  "imagen_pelicula": "https://i.pinimg.com/564x/c1/3a/d4/c13ad43d3f1117a55a1b017763b047d0.jpg",
+  "trailer": "https://www.youtube.com/watch?v=xiC2iXTXHxw",
+  "actores": [
+    {
+      "nombre": "Maya Hawke",
+      "personaje": "Ansiedad",
+      "imagen_actor": "https://i.pinimg.com/564x/59/5b/f4/595bf4349818a2be7dedd565d297d0a2.jpg"
+    },
+    {
+      "nombre": "Adèle Exarchopoulos",
+      "personaje": "Ennui",
+      "imagen_actor": "https://i.pinimg.com/736x/54/e0/f8/54e0f89c4c5f20a32ebba39e051d566e.jpg"
+    },
+    {
+      "nombre": "Ayo Edebiri",
+      "personaje": "Envy",
+      "imagen_actor": "https://i.pinimg.com/736x/44/1e/45/441e456e78eef392593a40c9a1e1f63c.jpg"
+    },
+    {
+      "nombre": "Amy Poehler",
+      "personaje": "Alegría",
+      "imagen_actor": "https://i.pinimg.com/736x/0e/93/e3/0e93e36bd624e157744d3a379ed91d7c.jpg"
+    },
+    {
+      "nombre": "Tony Hale",
+      "personaje": "Fear",
+      "imagen_actor": "https://i.pinimg.com/736x/80/35/0c/80350cb8df857a8e8b42a1811b92db9d.jpg"
+    },
+    {
+      "nombre": "Phyllis Smith",
+      "personaje": "Tristeza",
+      "imagen_actor": "https://i.pinimg.com/564x/a7/78/9e/a7789ec619a58a264c3bf1a2aa7084e1.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd4140d"
+  },
+  "id": 10,
+  "titulo": "Monkey Man: El despertar de la bestia",
+  "genero": "Acción / Aventura",
+  "duracion": "2h 0m",
+  "estado": "En cartelera",
+  "sinopsis": "Tras años de rabia reprimida, un luchador clandestino descubre una forma de infiltrarse en el enclave de la siniestra élite de la ciudad. Pronto se embarca en una campaña de venganza para ajustar cuentas con los hombres que se lo arrebataron todo.",
+  "estreno": "2024-06-30",
+  "director": "Joe Carnahan",
+  "imagen_pelicula": "https://i.pinimg.com/736x/bc/fe/da/bcfedaeee217cf1ddeb9a63387525c3f.jpg",
+  "trailer": "https://www.youtube.com/watch?v=BOSn67w68Ks",
+  "actores": [
+    {
+      "nombre": "Dev Patel",
+      "personaje": "Kid",
+      "imagen_actor": "https://i.pinimg.com/564x/ff/95/5b/ff955bba025b34d2fa3daa5f478bfbd2.jpg"
+    },
+    {
+      "nombre": "Sobhita Dhulipala",
+      "personaje": "Sita",
+      "imagen_actor": "https://i.pinimg.com/564x/f5/b9/88/f5b98827f1fd14b619c173414735dd13.jpg"
+    },
+    {
+      "nombre": "Sikandar Kher",
+      "personaje": "Rana",
+      "imagen_actor": "https://i.pinimg.com/564x/cb/9b/da/cb9bda7ae929dc5a17a563662e97a270.jpg"
+    },
+    {
+      "nombre": "Sharlto Copley",
+      "personaje": "Tiger",
+      "imagen_actor": "https://i.pinimg.com/564x/5d/19/07/5d190764c1494e2c365158df0758c545.jpg"
+    },
+    {
+      "nombre": "Adithi Kalkunte",
+      "personaje": "Neela",
+      "imagen_actor": "https://i.pinimg.com/736x/13/fb/ab/13fbabbb3adfa34c8055ddf6bcfce347.jpg"
+    },
+    {
+      "nombre": "Makarand Deshpande",
+      "personaje": "Baba Shakti",
+      "imagen_actor": "https://i.pinimg.com/564x/56/9d/e2/569de240694329ee6b309b222a200d4e.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd4140e"
+  },
+  "id": 11,
+  "titulo": "Garfield: Fuera de casa",
+  "genero": "Animación / Comedia",
+  "duracion": "1h 30m",
+  "estado": "Próximo estreno",
+  "sinopsis": "El mundialmente famoso Garfield, el gato casero que odia los lunes y adora la lasaña, está a punto de vivir una aventura ¡en el salvaje mundo exterior! Tras una inesperada reunión con su largamente perdido padre - el desaliñado gato callejero Vic - Garfield y su amigo canino Odie se ven forzados a abandonar sus perfectas y consentidas vidas al unirse a Vic en un hilarante y muy arriesgado atraco.",
+  "estreno": "2024-08-25",
+  "director": "Mark Dindal",
+  "imagen_pelicula": "https://i.pinimg.com/736x/fa/b1/fb/fab1fb0239f306b0475dccd0496f6bb5.jpg",
+  "trailer": "https://www.youtube.com/watch?v=GeR3YxTv_zU",
+  "actores": [
+    {
+      "nombre": "Chris Pratt",
+      "personaje": "Garfield",
+      "imagen_actor": "https://i.pinimg.com/564x/fa/67/ec/fa67ec503de00641fce8f3834aa52b45.jpg"
+    },
+    {
+      "nombre": "Snoop Dogg",
+      "personaje": "Maurice",
+      "imagen_actor": "https://i.pinimg.com/564x/21/b7/73/21b773164cdc9cac89da8fa394fed136.jpg"
+    },
+    {
+      "nombre": "Hannah Waddingham",
+      "personaje": "Jinx",
+      "imagen_actor": "https://i.pinimg.com/564x/41/f2/71/41f271c8194228c336febad20782686a.jpg"
+    },
+    {
+      "nombre": "Nicholas Hoult",
+      "personaje": "Jon Arbuckle",
+      "imagen_actor": "https://i.pinimg.com/736x/68/2a/7c/682a7c43563b319cbdd8bd9540cbfb8a.jpg"
+    },
+    {
+      "nombre": "Angus Cloud",
+      "personaje": "Snickers",
+      "imagen_actor": "https://i.pinimg.com/564x/d5/66/99/d56699aaf6c24fe2b9066e8d88d79c02.jpg"
+    },
+    {
+      "nombre": "Ving Rhames",
+      "personaje": "Otto",
+      "imagen_actor": "https://i.pinimg.com/736x/57/c1/af/57c1afdd69cb0a9bd19b4a45e6fc2311.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd4140f"
+  },
+  "id": 12,
+  "titulo": "Kung Fu Panda 4",
+  "genero": "Animación / Acción",
+  "duracion": "1h 50m",
+  "estado": "Próximo estreno",
+  "sinopsis": "Tras varias aventuras desafiando a la muerte, Po, el Guerrero del Dragón, recibe una llamada del destino para tomarse un respiro. En concreto, para convertirse en el Líder Espiritual del Valle de la Paz.",
+  "estreno": "2024-09-12",
+  "director": "Jennifer Yuh Nelson",
+  "imagen_pelicula": "https://i.pinimg.com/564x/45/a8/11/45a8116b603df5fea328e8c4279eb431.jpg",
+  "trailer": "https://www.youtube.com/watch?v=kg3Q63gzF6I",
+  "actores": [
+    {
+      "nombre": "Awkwafina",
+      "personaje": "Zhen",
+      "imagen_actor": "https://i.pinimg.com/564x/40/b3/eb/40b3ebc32e3f15cca264b3eab22ac9ea.jpg"
+    },
+    {
+      "nombre": "MrBeast",
+      "personaje": "Panda Pig",
+      "imagen_actor": "https://i.pinimg.com/564x/87/67/62/8767623ced0908c3dc251f67ff80e81c.jpg"
+    },
+    {
+      "nombre": "Bryan Cranston",
+      "personaje": "Li Shan",
+      "imagen_actor": "https://i.pinimg.com/564x/c0/c6/47/c0c647b2dcf7d21c3a1521344e21e616.jpg"
+    },
+    {
+      "nombre": "Jack Black",
+      "personaje": "Po",
+      "imagen_actor": "https://i.pinimg.com/564x/05/4d/93/054d93aac8109247e1afd89caf8c6e16.jpg"
+    },
+    {
+      "nombre": "Ke Huy Quan",
+      "personaje": "Han",
+      "imagen_actor": "https://i.pinimg.com/564x/a4/4f/07/a44f076e67d4c17d8f5e2b87d41d09c6.jpg"
+    },
+    {
+      "nombre": "Ian McShane",
+      "personaje": "Tai Lung",
+      "imagen_actor": "https://i.pinimg.com/564x/c9/99/69/c99969640d571365cd4445ce3d56e4a3.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd41410"
+  },
+  "id": 13,
+  "titulo": "Megamente contra el Sindicato de la Perdición",
+  "genero": "Animación / Comedia",
+  "duracion": "1h 45m",
+  "estado": "En cartelera",
+  "sinopsis": "El antiguo equipo de villanos de Megamind, El sindicato del mal, han regresado. Nuestro héroe cabezon azul recién coronado, ahora debe mantener apariencias malvadas hasta que pueda reunir a sus amigos para evitar que sus antiguos compañeros malvados lancen Metro City a la Luna.",
+  "estreno": "2024-07-22",
+  "director": "Tom McGrath",
+  "imagen_pelicula": "https://i.pinimg.com/736x/60/68/52/606852c9cb69dd16152fe849105bc97f.jpg",
+  "trailer": "https://www.youtube.com/watch?v=MSyoyi1ls80",
+  "actores": [
+    {
+      "nombre": "Eric Fogel",
+      "personaje": "Polly 227",
+      "imagen_actor": "https://i.pinimg.com/736x/9d/ff/1c/9dff1cbb1946788c2daf64b0034bc664.jpg"
+    },
+    {
+      "nombre": "Keith Ferguson",
+      "personaje": "Megamind",
+      "imagen_actor": "blob:https://co.pinterest.com/b8dcaf41-6d93-423b-bc02-e2954c8db91d"
+    },
+    {
+      "nombre": "Adam Lambert",
+      "personaje": "Machiavillain",
+      "imagen_actor": "https://i.pinimg.com/564x/a6/70/a7/a670a76551059ce8237778011382f6e6.jpg"
+    },
+    {
+      "nombre": "Jeanine Mason",
+      "personaje": "Christina Christo",
+      "imagen_actor": "https://i.pinimg.com/564x/1c/c5/b9/1cc5b97ce8bd619fac109062837dbaf4.jpg"
+    },
+    {
+      "nombre": "Roger Craig Smith",
+      "personaje": "Jody Smelt",
+      "imagen_actor": "https://i.pinimg.com/564x/9a/50/2a/9a502a5dd322a81d9b3eee43657d7a7a.jpg"
+    },
+    {
+      "nombre": "Josh Brener",
+      "personaje": "Ol' Chum",
+      "imagen_actor": "https://i.pinimg.com/736x/44/65/ca/4465ca2f26ffeee69a1a30105389f0cc.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd41411"
+  },
+  "id": 14,
+  "titulo": "Abigail",
+  "genero": "Fantástico / Aventura",
+  "duracion": "2h 10m",
+  "estado": "En cartelera",
+  "sinopsis": "Unos delincuentes secuestran a una bailarina de 12 años, hija de una poderosa figura del inframundo. Lo único que deben hacer para recibir un rescate de 50 millones de dólares es cuidarla durante una noche en una mansión aislada. Los miembros de la banda comienzan a desaparecer uno por uno.",
+  "estreno": "2024-07-25",
+  "director": "Alexander Boguslavsky",
+  "imagen_pelicula": "https://i.pinimg.com/564x/7e/4d/bc/7e4dbc009e4bfcb9a400578e75439f74.jpg",
+  "trailer": "https://www.youtube.com/watch?v=E8KysONydqc",
+  "actores": [
+    {
+      "nombre": "Angus Cloud",
+      "personaje": "Dean",
+      "imagen_actor": "https://i.pinimg.com/564x/d5/66/99/d56699aaf6c24fe2b9066e8d88d79c02.jpg"
+    },
+    {
+      "nombre": "Melissa Barrera",
+      "personaje": "Joey",
+      "imagen_actor": "https://i.pinimg.com/564x/03/a0/81/03a081ceaf9817f5efe275e1be715587.jpg"
+    },
+    {
+      "nombre": "Alisha Weir",
+      "personaje": "Abigail",
+      "imagen_actor": "https://i.pinimg.com/736x/9a/b3/3b/9ab33b76720a5833ec8622092b81828d.jpg"
+    },
+    {
+      "nombre": "Kathryn Newton",
+      "personaje": "Sammy",
+      "imagen_actor": "https://i.pinimg.com/564x/3b/85/dd/3b85ddfabda1940e32caf8a7cff80777.jpg"
+    },
+    {
+      "nombre": "Kevin Durand",
+      "personaje": "Peter",
+      "imagen_actor": "https://i.pinimg.com/564x/aa/26/2b/aa262b9f98422063528b090d951820f6.jpg"
+    },
+    {
+      "nombre": "Dan Stevens",
+      "personaje": "Frank",
+      "imagen_actor": "https://i.pinimg.com/564x/da/91/ea/da91eaf853d612dda0eb1de19e0637bf.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd41412"
+  },
+  "id": 15,
+  "titulo": "Aguas Siniestras",
+  "genero": "Horror / Suspenso",
+  "duracion": "1h 55m",
+  "estado": "Próximo estreno",
+  "sinopsis": "Ray, un exjugador de béisbol retirado por una enfermedad degenerativa, se muda a una nueva casa con su mujer Eve, su hija adolescente y su hijo pequeño. Ray, que espera volver al béisbol profesional, convence a Eve de que la piscina del patio de la nueva casa divertirá a los niños. Pero un oscuro secreto del pasado de la casa desatará una fuerza que arrastrará a la familia al terror más profundo.",
+  "estreno": "2024-10-05",
+  "director": "Scott Derrickson",
+  "imagen_pelicula": "https://i.pinimg.com/736x/d3/0a/35/d30a357c6b2229ac6e9a4639d6ec14fb.jpg",
+  "trailer": "https://www.youtube.com/watch?v=f8iu9VUc_lo",
+  "actores": [
+    {
+      "nombre": "Wyatt Russell",
+      "personaje": "Ray Weller",
+      "imagen_actor": "https://i.pinimg.com/564x/9b/f4/f8/9bf4f886ef0d4cd51897ed83d71f278e.jpg"
+    },
+    {
+      "nombre": "Amélie Hoeferle",
+      "personaje": "Izzy Waller",
+      "imagen_actor": "https://i.pinimg.com/736x/2d/77/0c/2d770c9c3d1a73dbb6dbe8acb4b25e8b.jpg"
+    },
+    {
+      "nombre": "Kerry Condon",
+      "personaje": "Eve Waller",
+      "imagen_actor": "https://i.pinimg.com/564x/cf/4a/a1/cf4aa13a26f9187974a9d4e099fc98ff.jpg"
+    },
+    {
+      "nombre": "Gavin Warren",
+      "personaje": "Elliot Waller",
+      "imagen_actor": "https://i.pinimg.com/736x/f9/bc/51/f9bc51e5053cbc1c9eaf132d0c0916bf.jpg"
+    },
+    {
+      "nombre": "Nancy Lenehan",
+      "personaje": "Kay",
+      "imagen_actor": "https://i.pinimg.com/564x/05/fc/b8/05fcb85b55e10a129d5dfd06ca5ab9d3.jpg"
+    },
+    {
+      "nombre": "Jodi Long",
+      "personaje": "Lucy Summers",
+      "imagen_actor": "https://i.pinimg.com/564x/d3/10/9c/d3109c1e67a9b044d1f392d43ff33a3e.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd41413"
+  },
+  "id": 16,
+  "titulo": "El astronauta",
+  "genero": "Ciencia Ficción / Drama",
+  "duracion": "2h 20m",
+  "estado": "En cartelera",
+  "sinopsis": "Jakub Procházka fue criado por sus abuelos en la campiña checa tras ser abandonado de pequeño. Trabaja como científico antes de intentar convertirse en el primer astronauta de la República Checa.",
+  "estreno": "2024-06-20",
+  "director": "Denis Villeneuve",
+  "imagen_pelicula": "https://i.pinimg.com/564x/63/db/97/63db9748eb1ba5d0835dd28cdd0f0e21.jpg",
+  "trailer": "https://www.youtube.com/watch?v=9Mo3FL6GmxE",
+  "actores": [
+    {
+      "nombre": "Adam Sandler",
+      "personaje": "Jakub Prochazka",
+      "imagen_actor": "https://i.pinimg.com/736x/81/65/f2/8165f2c90d6fbf1e6810290582b34594.jpg"
+    },
+    {
+      "nombre": "Paul Dano",
+      "personaje": "Hanus",
+      "imagen_actor": "https://i.pinimg.com/564x/e0/e8/42/e0e842d83860eaecc6dae831a2aee634.jpg"
+    },
+    {
+      "nombre": "Carey Mulligan",
+      "personaje": "Lenka",
+      "imagen_actor": "https://i.pinimg.com/736x/2d/5f/2d/2d5f2d075769fa728dc42ca644cb4053.jpg"
+    },
+    {
+      "nombre": "Kunal Nayyar",
+      "personaje": "Peter",
+      "imagen_actor": "https://i.pinimg.com/736x/85/dd/70/85dd70cedc171f54e10cafb1c3a5ba2d.jpg"
+    },
+    {
+      "nombre": "Isabella Rossellini",
+      "personaje": "Comissioner Tuma",
+      "imagen_actor": "https://i.pinimg.com/736x/59/85/06/598506707fdc0f8be74231602f81726f.jpg"
+    },
+    {
+      "nombre": "Lena Olin",
+      "personaje": "Zdena",
+      "imagen_actor": "https://i.pinimg.com/564x/6d/28/75/6d28759fd23e2a543bf7650d17af98f4.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd41414"
+  },
+  "id": 17,
+  "titulo": "El salario del miedo",
+  "genero": "Thriller / Drama",
+  "duracion": "2h 5m",
+  "estado": "Próximo estreno",
+  "sinopsis": "En medio del desierto, un equipo debe transportar 200 kg de nitroglicerina en dos camiones para cerrar un pozo de petróleo que se ha incendiado. El equipo tiene menos de 20 horas para esperar llegar al pozo a tiempo.",
+  "estreno": "2024-09-30",
+  "director": "Henri-Georges Clouzot",
+  "imagen_pelicula": "https://i.pinimg.com/736x/57/4f/84/574f84f051963933ab20609ef7f0e750.jpg",
+  "trailer": "https://www.youtube.com/watch?v=cjwiOdApx_E",
+  "actores": [
+    {
+      "nombre": "Ana Girardot",
+      "personaje": "Clara",
+      "imagen_actor": "https://i.pinimg.com/736x/1d/aa/73/1daa7377482fbf0ce153aff27c9c922a.jpg"
+    },
+    {
+      "nombre": "Franck Gastambide",
+      "personaje": "Fred",
+      "imagen_actor": "https://i.pinimg.com/564x/15/14/67/1514674e39f5d7953ed97ef40af7b536.jpg"
+    },
+    {
+      "nombre": "Alban Lenoir",
+      "personaje": "Alex",
+      "imagen_actor": "https://i.pinimg.com/564x/26/59/3a/26593a567c4277c7cac7a70b2203f4b9.jpg"
+    },
+    {
+      "nombre": "Sofiane Zermani",
+      "personaje": "Gauthier",
+      "imagen_actor": "https://i.pinimg.com/736x/1f/59/3d/1f593d1cf4cf4244992372d10f1d159d.jpg"
+    },
+    {
+      "nombre": "Bakary Diombera",
+      "personaje": "Djibril",
+      "imagen_actor": "https://i.pinimg.com/736x/16/59/39/1659393777820cd305fedcf914b091f1.jpg"
+    },
+    {
+      "nombre": "Sarah Afchain",
+      "personaje": "Assia",
+      "imagen_actor": "https://i.pinimg.com/736x/77/36/a3/7736a3c64ecdd1b4cb0ea51aec9005b9.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd41415"
+  },
+  "id": 18,
+  "titulo": "Damsel",
+  "genero": "Aventura / Fantasía",
+  "duracion": "2h 0m",
+  "estado": "En cartelera",
+  "sinopsis": "Una joven acepta casarse con un apuesto príncipe, pero descubre que todo es una trampa. Es arrojada a una cueva con un dragón que escupe fuego y debe confiar únicamente en su ingenio y voluntad para sobrevivir.",
+  "estreno": "2024-07-12",
+  "director": "Matt Stone & Trey Parker",
+  "imagen_pelicula": "https://i.pinimg.com/564x/b0/ac/b9/b0acb9dc4a10922d8510673560cfbcf2.jpg",
+  "trailer": "https://www.youtube.com/watch?v=tzRisTkuLWA",
+  "actores": [
+    {
+      "nombre": "Millie Bobby Brown",
+      "personaje": "Princess Elodie",
+      "imagen_actor": "https://i.pinimg.com/736x/76/14/c9/7614c97ef6d096caf7d2b6b19f4327d3.jpg"
+    },
+    {
+      "nombre": "Nick Robinson",
+      "personaje": "Prince Henry",
+      "imagen_actor": "https://i.pinimg.com/564x/c2/21/89/c22189f7e47a766ca94b94d055e60f8a.jpg"
+    },
+    {
+      "nombre": "Shohreh Aghdashloo",
+      "personaje": "Dragon",
+      "imagen_actor": "https://i.pinimg.com/736x/77/91/d7/7791d725718fcedb86cf96a9e22be212.jpg"
+    },
+    {
+      "nombre": "Angela Bassett",
+      "personaje": "Lady Batford",
+      "imagen_actor": "https://i.pinimg.com/564x/e1/13/7c/e1137ca59462822ee15e682a7b2c286d.jpg"
+    },
+    {
+      "nombre": "Robin Wright",
+      "personaje": "Queen Isabelle",
+      "imagen_actor": "https://i.pinimg.com/736x/d1/95/4d/d1954df5ebb65153f632b2a93d6fec8d.jpg"
+    },
+    {
+      "nombre": "Brooke Carter",
+      "personaje": "Floria",
+      "imagen_actor": "https://i.pinimg.com/736x/42/18/5f/42185fa3aa4792afbfef8d92602da9b2.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd41416"
+  },
+  "id": 19,
+  "titulo": "Ascenso",
+  "genero": "Acción / Drama",
+  "duracion": "2h 15m",
+  "estado": "Próximo estreno",
+  "sinopsis": "Ana, aspirante a becaria de arte, es ascendida inesperadamente cuando su jefa la manda a un viaje de trabajo de último momento a Londres. Allá, conoce al apuesto y adinerado William y decide vivir su fantasía más tiempo del que debería.",
+  "estreno": "2024-11-20",
+  "director": "J.J. Abrams",
+  "imagen_pelicula": "https://i.pinimg.com/736x/95/87/78/9587786bf1e294dddcbe5115cdc2b2f2.jpg",
+  "trailer": "https://www.youtube.com/watch?v=diWyWDSsyDs",
+  "actores": [
+    {
+      "nombre": "Camila Mendes",
+      "personaje": "Ana",
+      "imagen_actor": "https://i.pinimg.com/564x/70/9c/97/709c97dad12251db8c8ef556398dac03.jpg"
+    },
+    {
+      "nombre": "Archie Renaux",
+      "personaje": "William",
+      "imagen_actor": "https://i.pinimg.com/564x/8d/e7/79/8de779d22ac49fe8ac6047e46a991bf1.jpg"
+    },
+    {
+      "nombre": "Marisa Tomei",
+      "personaje": "Claire Dupont",
+      "imagen_actor": "https://i.pinimg.com/736x/4d/44/b1/4d44b1e850323d25f8ba2ad1456538d2.jpg"
+    },
+    {
+      "nombre": "Lena Olin",
+      "personaje": "Catherine Laroche",
+      "imagen_actor": "https://i.pinimg.com/564x/45/d9/7e/45d97eb5feb86c355edd2f557ee6227c.jpg"
+    },
+    {
+      "nombre": "Rachel Matthews",
+      "personaje": "Suzette",
+      "imagen_actor": "https://i.pinimg.com/564x/df/fa/39/dffa3979662034036f65d79ebcd0e924.jpg"
+    },
+    {
+      "nombre": "Aimee Carrero",
+      "personaje": "Vivian",
+      "imagen_actor": "https://i.pinimg.com/564x/df/fa/39/dffa3979662034036f65d79ebcd0e924.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d56a280e8d342dd41417"
+  },
+  "id": 20,
+  "titulo": "Fabricante de lágrimas",
+  "genero": "Drama / Thriller",
+  "duracion": "1h 50m",
+  "estado": "En cartelera",
+  "sinopsis": "A veces, el mayor temor de uno es aceptar que alguien pueda amarlo honestamente por lo que es. Nica y Rigel están listos para descubrirlo juntos.",
+  "estreno": "2024-06-15",
+  "director": "Bong Joon-ho",
+  "imagen_pelicula": "https://i.pinimg.com/736x/88/8d/67/888d673959d91763d128e183aca681d3.jpg",
+  "trailer": "https://www.youtube.com/watch?v=IsyN8eTyTcI",
+  "actores": [
+    {
+      "nombre": "Biondo",
+      "personaje": "Rigel Wilde",
+      "imagen_actor": "https://i.pinimg.com/564x/3a/89/68/3a896860e5b96c589cbd823153ecd2d1.jpg"
+    },
+    {
+      "nombre": "Caterina Ferioli",
+      "personaje": "Nica",
+      "imagen_actor": "https://i.pinimg.com/736x/87/9f/21/879f21825da02a98d7fa4628ab12b211.jpg"
+    },
+    {
+      "nombre": "Eco Andriolo Ranzi",
+      "personaje": "Adeline",
+      "imagen_actor": "https://i.pinimg.com/736x/a8/0a/12/a80a126074722648c5397fbe8536d4f8.jpg"
+    },
+    {
+      "nombre": "Sabrina Paravicini",
+      "personaje": "Margaret Stoker",
+      "imagen_actor": "https://i.pinimg.com/564x/75/6c/0d/756c0d7cfd05e3c3a8e5631232410a19.jpg"
+    },
+    {
+      "nombre": "Juju Di Domenico",
+      "personaje": "Asia",
+      "imagen_actor": "https://i.pinimg.com/564x/e7/1d/eb/e71deb3007b4449b9d07f25814546c38.jpg"
+    },
+    {
+      "nombre": "Simone Baldasseroni",
+      "personaje": "Rigel Wilde",
+      "imagen_actor": "https://i.pinimg.com/736x/7f/ab/cf/7fabcf119faa6686274ecc13389e573d.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "66a3d82c280e8d342dd4141a"
+  },
+  "id": 21,
+  "titulo": "Mi villano favorito 4",
+  "genero": "Animación / Comedia",
+  "duracion": "1h 40m",
+  "estado": "Próximo estreno",
+  "sinopsis": "Gru, Lucy y las niñas -Margo, Edith y Agnes- dan la bienvenida a un nuevo miembro en la familia: Gru Junior, que parece llegar con el propósito de ser un suplicio para su padre. Gru tendrá que enfrentarse en esta ocasión a su nueva némesis Maxime Le Mal y su sofisticada y malévola novia Valentina, lo que obligará a la familia a tener que darse a la fuga. ",
+  "estreno": "2024-08-30",
+  "director": "Chris Renaud",
+  "imagen_pelicula": "https://i.pinimg.com/564x/b7/2e/87/b72e87cf45c1ee343ec21616537bac89.jpg",
+  "trailer": "https://www.youtube.com/watch?v=I0_qFoptZ4Y",
+  "actores": [
+    {
+      "nombre": "Joey King",
+      "personaje": "Poppy Prescott",
+      "imagen_actor": "https://i.pinimg.com/564x/ec/83/1f/ec831f9e11e27e5d9c9ed6e3787325ae.jpg"
+    },
+    {
+      "nombre": "Will Ferrell",
+      "personaje": "Maxime Le Mal",
+      "imagen_actor": "https://i.pinimg.com/736x/eb/bc/75/ebbc7557e2ec1caebb9371ca17071635.jpg"
+    },
+    {
+      "nombre": "Sofía Vergara",
+      "personaje": "Valentina",
+      "imagen_actor": "https://i.pinimg.com/564x/f7/a5/cc/f7a5cc65633f9899f3110ec5f0928d1f.jpg"
+    },
+    {
+      "nombre": "Steve Carell",
+      "personaje": "Gru",
+      "imagen_actor": "https://i.pinimg.com/564x/e2/6d/23/e26d2349389b83f12b90a37c16fab5f9.jpg"
+    },
+    {
+      "nombre": "Madison Polan",
+      "personaje": "Agnes",
+      "imagen_actor": "https://i.pinimg.com/736x/02/8f/d5/028fd5ec18fdd88c439579b4193ef6b6.jpg"
+    },
+    {
+      "nombre": "Miranda Cosgrove",
+      "personaje": "Margo",
+      "imagen_actor": "https://i.pinimg.com/564x/d7/3b/d2/d73bd237bfacd6ab598e061ff3c1e358.jpg"
+    }
+  ]
+}]
