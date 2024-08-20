@@ -4,7 +4,7 @@
   },
   "id": 1,
   "titulo": "Bad Boys 4",
-  "genero": "Acción / Comedia",
+  "genero": "Accion",
   "duracion": "2h 15m",
   "estado": "Próximo estreno",
   "sinopsis": "La película sigue a estos dos intrépidos policías de Miami mientras se enfrentan a una nueva amenaza en la ciudad. Una peligrosa red de narcotraficantes se está infiltrando el mercado con una letal droga de diseño, desatando una ola de crímenes violentos.",
@@ -44,13 +44,14 @@
       "imagen_actor": "https://i.pinimg.com/564x/b1/1b/9a/b11b9a8e0e40d8065cf930db5f4cfd47.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41405"
   },
   "id": 2,
   "titulo": "Observados",
-  "genero": "Thriller / Suspenso",
+  "genero": "Thriller",
   "duracion": "1h 50m",
   "estado": "En cartelera",
   "sinopsis": "El bosque no aparece en ningún mapa. Todos los coches que llegan hasta allí se averían y el de Mina no es una excepción. En medio de ese percance, se ve obligada a adentrarse en la oscuridad de la arboleda, donde encuentra a una mujer que le advierte de que corra hacia un búnker. Cuando cierra la puerta, los gritos invaden el lugar. Mina se encuentra en una habitación con una pared de cristal y una luz que se activa al anochecer, cuando los vigilantes salen a la superficie.",
@@ -90,13 +91,14 @@
       "imagen_actor": "blob:https://co.pinterest.com/f2624f43-81c2-4ffd-81ef-46b5ac838f76"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41406"
   },
   "id": 3,
   "titulo": "Rescate imposible",
-  "genero": "Acción / Drama",
+  "genero": "Accion",
   "duracion": "2h 5m",
   "estado": "Próximo estreno",
   "sinopsis": "Protagonizada por Russell Crowe y Liam Hemsworth. Una operación encubierta de las Fuerzas Especiales al sur de Filipinas se torna en una brutal lucha de supervivencia de 48 horas. Cuando a un grupo élite de rescate lo emboscan en territorio enemigo, el oficial novato Kinney (Hemsworth) intentará proteger a sus hombres. Habrá un ataque aéreo y la esperanza de Kinney es el piloto de drones de la Fuerza Aérea Reaper (Crowe), mientras atraviesan peligros desconocidos: cada paso puede ser el último.",
@@ -136,19 +138,20 @@
       "imagen_actor": "https://i.pinimg.com/564x/f0/a7/a1/f0a7a10a810b384fc87c3f6ad5abda83.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41407"
   },
   "id": 4,
-  "titulo": "En las profundidades del rio Sena  ",
-  "genero": "Ciencia Ficción / Suspenso",
+  "titulo": "En las profundidades",
+  "genero": "Ciencia Ficcion",
   "duracion": "2h 30m",
   "estado": "En cartelera",
   "sinopsis": "La científica Sophie se ve obligada a enfrentarse a su trágico pasado para salvar París de un baño de sangre cuando un tiburón gigante aparece en el Sena.",
   "estreno": "2024-06-25",
   "director": "James Cameron",
-  "imagen_pelicula": "https://i.pinimg.com/564x/84/08/96/840896c81b7a009d87523e2c9742ca59.jpg",
+  "imagen_pelicula": "https://i.pinimg.com/736x/b1/8b/1f/b18b1f87d52a7ed183250111eefbb642.jpg",
   "trailer": "https://www.youtube.com/watch?v=PoTdomOgHkI",
   "actores": [
     {
@@ -182,13 +185,14 @@
       "imagen_actor": "https://i.pinimg.com/736x/93/58/83/9358838c111095251fd632f263268f3e.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41408"
   },
   "id": 5,
   "titulo": "Tarot de la muerte",
-  "genero": "Horror / Misterio",
+  "genero": "Horror",
   "duracion": "1h 40m",
   "estado": "Próximo estreno",
   "sinopsis": "Un grupo de amigos infringe de manera imprudente la regla sagrada de la lectura de las cartas del tarot. Se tendrán que enfrentar a la muerte para escapar del futuro que las cartas predicen.",
@@ -228,13 +232,14 @@
       "imagen_actor": "https://i.pinimg.com/564x/35/dc/c7/35dcc78dedc209692694f1bad3cb3537.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41409"
   },
   "id": 6,
-  "titulo": "Godzilla y Kong: El nuevo Imperio",
-  "genero": "Acción / Fantasía",
+  "titulo": "Godzilla y Kong",
+  "genero": "Accion",
   "duracion": "2h 45m",
   "estado": "En cartelera",
   "sinopsis": "Godzilla y Kong se enfrentan a una amenaza colosal escondida en lo profundo del planeta, desafiando su propia existencia y la supervivencia de la raza humana.",
@@ -274,13 +279,14 @@
       "imagen_actor": "https://i.pinimg.com/564x/92/f1/43/92f143a10b6814a58986c20727b607aa.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd4140a"
   },
   "id": 7,
-  "titulo": "El ministerio de la guerra sucia",
-  "genero": "Acción / Histórico",
+  "titulo": "El ministerio",
+  "genero": "Accion",
   "duracion": "2h 10m",
   "estado": "Próximo estreno",
   "sinopsis": "Formada por un variopinto grupo de pícaros e inconformistas, una unidad de combate ultrasecreta utiliza técnicas poco convencionales para neutralizar la flota de submarinos alemanes de Hitler durante la Segunda Guerra Mundial.",
@@ -320,13 +326,14 @@
       "imagen_actor": "https://i.pinimg.com/564x/9b/3c/dd/9b3cdd0f31bee6fcba7b64851042abb8.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd4140b"
   },
   "id": 8,
   "titulo": "Guerra civil",
-  "genero": "Drama / Bélico",
+  "genero": "Belico",
   "duracion": "2h 20m",
   "estado": "En cartelera",
   "sinopsis": "En un futuro próximo, un equipo de periodistas viajará por los Estados Unidos durante una guerra civil que se intensifica rápidamente y que se ha apoderado de toda la nación.",
@@ -366,13 +373,14 @@
       "imagen_actor": "https://i.pinimg.com/564x/dd/13/63/dd1363331e5bc12b2770483bfa1d3e9b.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd4140c"
   },
   "id": 9,
   "titulo": "Intensamente 2",
-  "genero": "Animación / Aventura",
+  "genero": "Animacion",
   "duracion": "1h 45m",
   "estado": "Próximo estreno",
   "sinopsis": "Intensamente 2, de Disney y Pixar, regresa a la mente de una Riley recién entrada en la adolescencia justo en el momento en que el Cuartel General está sufriendo una repentina reforma para hacerle hueco a algo totalmente inesperado: ¡Nuevas emociones! Alegría, Tristeza, Ira, Miedo y Asco, con años de impecable gestión a sus espaldas (según ellos...) no saben muy bien qué sentir cuando aparece Ansiedad.",
@@ -412,13 +420,14 @@
       "imagen_actor": "https://i.pinimg.com/564x/a7/78/9e/a7789ec619a58a264c3bf1a2aa7084e1.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd4140d"
   },
   "id": 10,
-  "titulo": "Monkey Man: El despertar de la bestia",
-  "genero": "Acción / Aventura",
+  "titulo": "Monkey Man",
+  "genero": "Accion",
   "duracion": "2h 0m",
   "estado": "En cartelera",
   "sinopsis": "Tras años de rabia reprimida, un luchador clandestino descubre una forma de infiltrarse en el enclave de la siniestra élite de la ciudad. Pronto se embarca en una campaña de venganza para ajustar cuentas con los hombres que se lo arrebataron todo.",
@@ -458,13 +467,14 @@
       "imagen_actor": "https://i.pinimg.com/564x/56/9d/e2/569de240694329ee6b309b222a200d4e.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd4140e"
   },
   "id": 11,
   "titulo": "Garfield: Fuera de casa",
-  "genero": "Animación / Comedia",
+  "genero": "Animacion",
   "duracion": "1h 30m",
   "estado": "Próximo estreno",
   "sinopsis": "El mundialmente famoso Garfield, el gato casero que odia los lunes y adora la lasaña, está a punto de vivir una aventura ¡en el salvaje mundo exterior! Tras una inesperada reunión con su largamente perdido padre - el desaliñado gato callejero Vic - Garfield y su amigo canino Odie se ven forzados a abandonar sus perfectas y consentidas vidas al unirse a Vic en un hilarante y muy arriesgado atraco.",
@@ -504,13 +514,14 @@
       "imagen_actor": "https://i.pinimg.com/736x/57/c1/af/57c1afdd69cb0a9bd19b4a45e6fc2311.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd4140f"
   },
   "id": 12,
   "titulo": "Kung Fu Panda 4",
-  "genero": "Animación / Acción",
+  "genero": "Animacion",
   "duracion": "1h 50m",
   "estado": "Próximo estreno",
   "sinopsis": "Tras varias aventuras desafiando a la muerte, Po, el Guerrero del Dragón, recibe una llamada del destino para tomarse un respiro. En concreto, para convertirse en el Líder Espiritual del Valle de la Paz.",
@@ -550,13 +561,14 @@
       "imagen_actor": "https://i.pinimg.com/564x/c9/99/69/c99969640d571365cd4445ce3d56e4a3.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41410"
   },
   "id": 13,
-  "titulo": "Megamente contra el Sindicato de la Perdición",
-  "genero": "Animación / Comedia",
+  "titulo": "Megamente",
+  "genero": "Animacion",
   "duracion": "1h 45m",
   "estado": "En cartelera",
   "sinopsis": "El antiguo equipo de villanos de Megamind, El sindicato del mal, han regresado. Nuestro héroe cabezon azul recién coronado, ahora debe mantener apariencias malvadas hasta que pueda reunir a sus amigos para evitar que sus antiguos compañeros malvados lancen Metro City a la Luna.",
@@ -596,13 +608,14 @@
       "imagen_actor": "https://i.pinimg.com/736x/44/65/ca/4465ca2f26ffeee69a1a30105389f0cc.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41411"
   },
   "id": 14,
   "titulo": "Abigail",
-  "genero": "Fantástico / Aventura",
+  "genero": "Aventura",
   "duracion": "2h 10m",
   "estado": "En cartelera",
   "sinopsis": "Unos delincuentes secuestran a una bailarina de 12 años, hija de una poderosa figura del inframundo. Lo único que deben hacer para recibir un rescate de 50 millones de dólares es cuidarla durante una noche en una mansión aislada. Los miembros de la banda comienzan a desaparecer uno por uno.",
@@ -642,13 +655,14 @@
       "imagen_actor": "https://i.pinimg.com/564x/da/91/ea/da91eaf853d612dda0eb1de19e0637bf.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41412"
   },
   "id": 15,
   "titulo": "Aguas Siniestras",
-  "genero": "Horror / Suspenso",
+  "genero": "Horror",
   "duracion": "1h 55m",
   "estado": "Próximo estreno",
   "sinopsis": "Ray, un exjugador de béisbol retirado por una enfermedad degenerativa, se muda a una nueva casa con su mujer Eve, su hija adolescente y su hijo pequeño. Ray, que espera volver al béisbol profesional, convence a Eve de que la piscina del patio de la nueva casa divertirá a los niños. Pero un oscuro secreto del pasado de la casa desatará una fuerza que arrastrará a la familia al terror más profundo.",
@@ -688,13 +702,14 @@
       "imagen_actor": "https://i.pinimg.com/564x/d3/10/9c/d3109c1e67a9b044d1f392d43ff33a3e.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41413"
   },
   "id": 16,
   "titulo": "El astronauta",
-  "genero": "Ciencia Ficción / Drama",
+  "genero": "Ciencia Ficcion",
   "duracion": "2h 20m",
   "estado": "En cartelera",
   "sinopsis": "Jakub Procházka fue criado por sus abuelos en la campiña checa tras ser abandonado de pequeño. Trabaja como científico antes de intentar convertirse en el primer astronauta de la República Checa.",
@@ -734,13 +749,14 @@
       "imagen_actor": "https://i.pinimg.com/564x/6d/28/75/6d28759fd23e2a543bf7650d17af98f4.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41414"
   },
   "id": 17,
   "titulo": "El salario del miedo",
-  "genero": "Thriller / Drama",
+  "genero": "Thriller",
   "duracion": "2h 5m",
   "estado": "Próximo estreno",
   "sinopsis": "En medio del desierto, un equipo debe transportar 200 kg de nitroglicerina en dos camiones para cerrar un pozo de petróleo que se ha incendiado. El equipo tiene menos de 20 horas para esperar llegar al pozo a tiempo.",
@@ -780,19 +796,20 @@
       "imagen_actor": "https://i.pinimg.com/736x/77/36/a3/7736a3c64ecdd1b4cb0ea51aec9005b9.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41415"
   },
   "id": 18,
   "titulo": "Damsel",
-  "genero": "Aventura / Fantasía",
+  "genero": "Aventura",
   "duracion": "2h 0m",
   "estado": "En cartelera",
   "sinopsis": "Una joven acepta casarse con un apuesto príncipe, pero descubre que todo es una trampa. Es arrojada a una cueva con un dragón que escupe fuego y debe confiar únicamente en su ingenio y voluntad para sobrevivir.",
   "estreno": "2024-07-12",
   "director": "Matt Stone & Trey Parker",
-  "imagen_pelicula": "https://i.pinimg.com/564x/b0/ac/b9/b0acb9dc4a10922d8510673560cfbcf2.jpg",
+  "imagen_pelicula": "https://i.pinimg.com/736x/86/17/59/8617598f3371825aae4c5a7980cc8a20.jpg",
   "trailer": "https://www.youtube.com/watch?v=tzRisTkuLWA",
   "actores": [
     {
@@ -826,13 +843,14 @@
       "imagen_actor": "https://i.pinimg.com/736x/42/18/5f/42185fa3aa4792afbfef8d92602da9b2.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41416"
   },
   "id": 19,
   "titulo": "Ascenso",
-  "genero": "Acción / Drama",
+  "genero": "Accion",
   "duracion": "2h 15m",
   "estado": "Próximo estreno",
   "sinopsis": "Ana, aspirante a becaria de arte, es ascendida inesperadamente cuando su jefa la manda a un viaje de trabajo de último momento a Londres. Allá, conoce al apuesto y adinerado William y decide vivir su fantasía más tiempo del que debería.",
@@ -872,13 +890,14 @@
       "imagen_actor": "https://i.pinimg.com/564x/df/fa/39/dffa3979662034036f65d79ebcd0e924.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41417"
   },
   "id": 20,
   "titulo": "Fabricante de lágrimas",
-  "genero": "Drama / Thriller",
+  "genero": "Thriller",
   "duracion": "1h 50m",
   "estado": "En cartelera",
   "sinopsis": "A veces, el mayor temor de uno es aceptar que alguien pueda amarlo honestamente por lo que es. Nica y Rigel están listos para descubrirlo juntos.",
@@ -918,16 +937,17 @@
       "imagen_actor": "https://i.pinimg.com/736x/7f/ab/cf/7fabcf119faa6686274ecc13389e573d.jpg"
     }
   ]
-},{
+},
+{
   "_id": {
     "$oid": "66a3d82c280e8d342dd4141a"
   },
   "id": 21,
   "titulo": "Mi villano favorito 4",
-  "genero": "Animación / Comedia",
+  "genero": "Animacion",
   "duracion": "1h 40m",
   "estado": "Próximo estreno",
-  "sinopsis": "Gru, Lucy y las niñas -Margo, Edith y Agnes- dan la bienvenida a un nuevo miembro en la familia: Gru Junior, que parece llegar con el propósito de ser un suplicio para su padre. Gru tendrá que enfrentarse en esta ocasión a su nueva némesis Maxime Le Mal y su sofisticada y malévola novia Valentina, lo que obligará a la familia a tener que darse a la fuga.",
+  "sinopsis": "Gru, Lucy y las niñas -Margo, Edith y Agnes- dan la bienvenida a un nuevo miembro en la familia: Gru Junior, que parece llegar con el propósito de ser un suplicio para su padre. Gru tendrá que enfrentarse en esta ocasión a su nueva némesis Maxime Le Mal y su sofisticada y malévola novia Valentina, lo que obligará a la familia a tener que darse a la fuga. ",
   "estreno": "2024-08-30",
   "director": "Chris Renaud",
   "imagen_pelicula": "https://i.pinimg.com/564x/b7/2e/87/b72e87cf45c1ee343ec21616537bac89.jpg",
