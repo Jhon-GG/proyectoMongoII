@@ -64,7 +64,7 @@ body {
 .header_content h1{
     display: flex;
     /* border: 1px solid rgb(0, 255, 128); */
-    font-size: 140%;
+    font-size: 120%;
 } 
 
 .first_box{
@@ -80,7 +80,7 @@ body {
 .first_box_movie{
     display: flex;
     /* border: 1px solid blue; */
-    width: 95vw;
+    width: 91vw;
     height: 25vh;
     justify-content: center;
     align-items: center;
@@ -89,7 +89,7 @@ body {
 
 .first_box_movie img{
     display: flex;
-    width: 95vw;
+    width: 91vw;
     height: 25vh;
     border-radius: 20px;
 }
@@ -168,6 +168,7 @@ body {
     /* border: 1px solid green; */
     width: 100vw;
     align-items: center;
+    margin-top: 2%;
 }
 
 .third_box_content{
@@ -182,3 +183,100 @@ body {
     font-size: 90%;
     font-weight: 500;
 }
+
+.box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7%;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+}
+
+.boxt_title{
+    display: flex;
+    /* border: 1px solid blue; */
+    width: 86vw;
+    height: 100%;
+}
+
+.boxt_title h1{
+    font-size: 130%;
+}
+
+.actors{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    /* border: 1px solid green; */
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+}
+
+.actors_box{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid violet; */
+    width: 86vw;
+    height: 100%; 
+    align-items: center;
+    overflow-x: auto;
+    gap: 15px;
+    scrollbar-width: none;
+}
+
+.actors_main{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid yellow; */
+    justify-content: center;
+    align-items: center;
+    width: auto; 
+    height: 7vh;
+}
+
+.actors_img{
+    display: flex;
+    /* border: 1px solid blue; */
+    width: 16vw;
+    height: 6vh;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.actors_img img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50px; */
+    object-fit: cover;
+}
+
+.actors_content{
+    display: inline-block;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 4%;
+    width: 100%;
+    height: 5vh; 
+}
+
+.actors_content h1{
+    display: flex;
+    /* border: 1px solid orange; */
+    font-size: 80%;
+    width: 35vw;
+    margin: 0;
+}
+
+.actors_content p{
+    width: auto;
+    font-size: 70%;
+    margin: 0;
+}
+
