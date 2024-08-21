@@ -264,7 +264,7 @@ body {
     display: flex;
     flex-direction: column;
     /* border: 1px solid blue; */
-    /* width: 12vw; */
+    width: 10.5vw;
     height: 100%;
     color: black;
     justify-content: center;
@@ -316,7 +316,7 @@ body {
     display: flex;
     flex-direction: column;
     /* border: 1px solid blue; */
-    /* width: 12vw; */
+    width: 24vw;
     height: 100%;
     color: black;
     justify-content: center;
