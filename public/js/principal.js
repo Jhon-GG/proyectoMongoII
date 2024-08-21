@@ -40,7 +40,7 @@ function updateUserInfo() {
 
 async function loadComingSoonMovies() {
     try {
-        const response = await fetch('http://localhost:5001/api/peliculas/estado/Próximo%20estreno');
+        const response = await fetch('/api/peliculas/estado/Próximo%20estreno');
         const movies = await response.json();
         const container = document.getElementById('coming-soon-container');
         container.innerHTML = '';
@@ -74,7 +74,7 @@ function createComingSoonMovieElement(movie) {
 
 async function loadNowPlayingMovies() {
     try {
-        const res = await fetch('http://localhost:5001/api/peliculas/estado/En%20cartelera');
+        const res = await fetch('/api/peliculas/estado/En%20cartelera');
         const peliculas = await res.json();
         const contenedorPeliculas = document.getElementById('now-playing-container');
         contenedorPeliculas.innerHTML = '';

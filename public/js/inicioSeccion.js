@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.querySelector('#password-input').value;
         
         try {
-            const url = 'http://localhost:5001/api/usuarios/todos';
+            const url = '/api/usuarios/todos';
             const response = await fetch(url, {
                 method: 'GET',
                 headers: {
