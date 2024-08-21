@@ -15,14 +15,14 @@ function updateUserInfo() {
 
         if (avatarImg) {
             avatarImg.src = userInfo.imagen_usuario;
-            avatarImg.alt = `${userInfo.nombre}'s Avatar`;
+            avatarImg.alt = `${userInfo.nombre}'${userInfo.apellido}'s Avatar`;
             console.log('Avatar src:', avatarImg.src);
         } else {
             console.log('No se encontró el elemento de la imagen del avatar');
         }
 
         if (userGreeting) {
-            userGreeting.textContent = `Hi, ${userInfo.nombre}!`;
+            userGreeting.textContent = `Hola, ${userInfo.nombre} ${userInfo.apellido} !`;
         } else {
             console.log('No se encontró el elemento del saludo');
         }
