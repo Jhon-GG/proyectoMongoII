@@ -9,7 +9,7 @@
     "alias": "carlitos",
     "rol": "estandar",
     "email": "carlos.gonzalez@example.com",
-    "imagen_usuario": "https://freeimage.host/i/d0UbmEg",
+    "imagen_usuario": "https://i.pinimg.com/564x/b7/b4/74/b7b474c2c02c9a40df285ee5aa051a99.jpg",
     "celular": {
       "$numberLong": "3111234567"
     }
@@ -24,7 +24,7 @@
     "alias": "mari",
     "rol": "VIP",
     "email": "maria.martinez@example.com",
-    "imagen_usuario": "https://freeimage.host/i/d0UplVt",
+    "imagen_usuario": "https://i.pinimg.com/564x/89/ff/1a/89ff1a5fdc3734cc90c7eba167f95ab6.jpg",
     "celular": {
       "$numberLong": "3109876543"
     }
@@ -39,7 +39,7 @@
     "alias": "juancho",
     "rol": "estandar",
     "email": "juan.perez@example.com",
-    "imagen_usuario": "https://freeimage.host/i/d0UyzI2",
+    "imagen_usuario": "https://i.pinimg.com/564x/67/e1/b2/67e1b2775c79fbac72297912eedf08b8.jpg",
     "celular": {
       "$numberLong": "3201122334"
     }
@@ -54,7 +54,7 @@
     "alias": "anita",
     "rol": "VIP",
     "email": "ana.lopez@example.com",
-    "imagen_usuario": "https://freeimage.host/i/d0UpNxS",
+    "imagen_usuario": "https://i.pinimg.com/564x/25/9b/9d/259b9d5d61b2d4a62b4ad1cb73bce5a4.jpg",
     "celular": {
       "$numberLong": "3115566778"
     }
@@ -69,7 +69,7 @@
     "alias": "luisito",
     "rol": "estandar",
     "email": "luis.rodriguez@example.com",
-    "imagen_usuario": "https://freeimage.host/i/d0g9Lcg",
+    "imagen_usuario": "https://i.pinimg.com/564x/b3/cb/eb/b3cbebddb67e05c1104bd4bee316c913.jpg",
     "celular": {
       "$numberLong": "3152233445"
     }
@@ -84,7 +84,7 @@
     "alias": "sofi",
     "rol": "VIP",
     "email": "sofia.hernandez@example.com",
-    "imagen_usuario": "https://freeimage.host/i/d0gH4ef",
+    "imagen_usuario": "https://i.pinimg.com/564x/d4/48/18/d448186864f7e9c0ff5a2c550f7ca27d.jpg",
     "celular": {
       "$numberLong": "3106677889"
     }
@@ -99,7 +99,7 @@
     "alias": "mike",
     "rol": "estandar",
     "email": "miguel.torres@example.com",
-    "imagen_usuario": "https://freeimage.host/i/d0gdwPI",
+    "imagen_usuario": "https://i.pinimg.com/564x/68/ae/da/68aeda24f7a2ac81adcb7870c5c962ae.jpg",
     "celular": {
       "$numberLong": "3123344556"
     }
@@ -114,7 +114,7 @@
     "alias": "lau",
     "rol": "VIP",
     "email": "laura.ramirez@example.com",
-    "imagen_usuario": "https://freeimage.host/i/d0gdDAb",
+    "imagen_usuario": "https://i.pinimg.com/564x/92/5e/5e/925e5eb5188e057e14766998b8611540.jpg",
     "celular": {
       "$numberLong": "3137788990"
     }
@@ -129,7 +129,7 @@
     "alias": "dave",
     "rol": "estandar",
     "email": "david.flores@example.com",
-    "imagen_usuario": "https://freeimage.host/i/d0g280P",
+    "imagen_usuario": "https://i.pinimg.com/564x/2e/fc/d7/2efcd71b28110a83b166f4a8e1dafe47.jpg",
     "celular": {
       "$numberLong": "3204455667"
     }
@@ -144,7 +144,7 @@
     "alias": "isa",
     "rol": "VIP",
     "email": "isabel.rios@example.com",
-    "imagen_usuario": "https://freeimage.host/i/d0g2yes",
+    "imagen_usuario": "https://i.pinimg.com/736x/a0/f5/d1/a0f5d1a9c90e447b4f2703a6b088850a.jpg",
     "celular": {
       "$numberLong": "3108899001"
     }
@@ -159,7 +159,7 @@
     "alias": "josem",
     "rol": "estandar",
     "email": "jose.morales@example.com",
-    "imagen_usuario": "https://freeimage.host/i/d0g32Ll",
+    "imagen_usuario": "https://i.pinimg.com/564x/28/84/b4/2884b448e2898599729c6d25c7c53a1f.jpg",
     "celular": {
       "$numberLong": "3115566778"
     }
@@ -174,7 +174,7 @@
     "alias": "pati",
     "rol": "VIP",
     "email": "patricia.gomez@example.com",
-    "imagen_usuario": "https://freeimage.host/i/d0g3zIj",
+    "imagen_usuario": "https://i.pinimg.com/736x/c7/0e/16/c70e16b48dab527292fcd3cb981e1919.jpg",
     "celular": {
       "$numberLong": "3126677889"
     }
@@ -189,7 +189,7 @@
     "alias": "andy",
     "rol": "estandar",
     "email": "andres.vargas@example.com",
-    "imagen_usuario": "https://freeimage.host/i/d0g3ckg",
+    "imagen_usuario": "https://i.pinimg.com/564x/72/84/fc/7284fce8a878edd27fece0b6c9e198f0.jpg",
     "celular": {
       "$numberLong": "3137788990"
     }
@@ -204,7 +204,7 @@
     "alias": "fer",
     "rol": "VIP",
     "email": "fernanda.suarez@example.com",
-    "imagen_usuario": "https://freeimage.host/i/d0gFdyg",
+    "imagen_usuario": "https://i.pinimg.com/736x/73/8c/90/738c90f184de3e6b97580ef2c9a3cd8f.jpg",
     "celular": {
       "$numberLong": "3148899001"
     }
@@ -219,7 +219,7 @@
     "alias": "richy",
     "rol": "estandar",
     "email": "ricardo.diaz@example.com",
-    "imagen_usuario": "https://freeimage.host/i/d0g3637",
+    "imagen_usuario": "https://i.pinimg.com/564x/31/0e/05/310e05e6827ac2f6853c22d96ee6caec.jpg",
     "celular": {
       "$numberLong": "3151122334"
     }

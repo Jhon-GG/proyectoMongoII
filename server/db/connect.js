@@ -11,7 +11,7 @@ module.exports = class connect {
     #pass;
     #dbName;
 
-    //    mongodb://mongo:ujslroLxcoFBlLCNvrAKXKBnknxJuCZH@roundhouse.proxy.rlwy.net:58497
+    //   mongodb://mongo:NJghhfSjnGDhwGKonUMvHSOOXlrfkdiP@junction.proxy.rlwy.net:49480
     
     constructor() {
         if (connect.instanceConnect) {
