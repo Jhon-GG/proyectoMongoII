@@ -11,6 +11,8 @@ seatBoxes.forEach((seatBox) => {
   seatBox.addEventListener("click", toggleSeatSelection);
 });
 
+footerButton.addEventListener("click", handleFooterButtonClick);
+
 function toggleSeatSelection(event) {
   const selectedSeat = event.currentTarget;
 
@@ -32,5 +34,11 @@ function updateFooterButton() {
   } else {
     footerButton.disabled = true;
     footerButton.classList.add("disabled");
+  }
+}
+
+function handleFooterButtonClick() {
+  if (!footerButton.disabled) {
+    window.location.href = "../views/ticket.html";
   }
 }
