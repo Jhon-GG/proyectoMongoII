@@ -3,8 +3,8 @@ const Pelicula = require('../modules/pelicula');
 const listarPeliculas = async (req, res) => {
     let obj = new Pelicula();
     const resultado = await obj.listarPeliculas();
-    obj.destructor();
     console.log("si estoy funcionando");
+    obj.destructor();
     res.status(200).json(resultado);
 };
 
@@ -24,10 +24,17 @@ const obtenerPeliculasPorEstado = async (req, res) => {
     res.status(200).json(resultado);
 };
 
-
+const buscarPeliculas = async (req, res) => {
+    let obj = new Pelicula();
+    const { query } = req.query;
+    const resultado = await obj.buscarPeliculas(query);
+    obj.destructor();
+    res.status(200).json(resultado);
+};
 
 module.exports = {
     listarPeliculas,
     obtenerDetallesPelicula,
-    obtenerPeliculasPorEstado
+    obtenerPeliculasPorEstado,
+    buscarPeliculas
 }

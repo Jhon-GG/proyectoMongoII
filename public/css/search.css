@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    /* border: 1px solid green; */
+    margin-top: 16px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 99.5vw;
+    height: 8vh;
+
+}
+
+.header_section{
+    display: flex;
+    /* border: 1px solid white; */
+    margin: 12px 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85vw;
+    height: 8vh;
+}
+
+.header_perfil{
+    display: flex;
+    width: 16vw;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    background-color: black;
+}
+
+.header_perfil img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+.header_content{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid yellow; */
+    width:55vw;
+    height: 5vh;
+    font-size: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header_content_p{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid red; */
+    align-items: center;
+    font-size: 130%;
+}
+
+.header_content_h2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid red; */
+    align-items: center;
+}
+
+.header_noti{
+    display: flex;
+    padding: 1.5%; 
+    border: 1px solid rgb(128, 127, 127);
+    width: 8vw;
+    height: 4vh;
+    border-radius: 17%;
+}
+
+.header_noti img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.search{
+    display: flex;
+    /* border: 1px solid red; */
+    margin-top: 0;
+    width: 99.5vw;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_bus{
+    display: flex;
+    /* border: 1px solid white; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85vw;
+    height: 8vh;
+}
+
+.search_wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.search_icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px; 
+}
+
+.search_input{
+    display: flex;
+    border: 1px solid white;
+    background: #222222;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    padding-left: 40px; 
+    box-sizing: border-box;
+    color: #ffff;
+}
+
+.search_input:placeholder {
+    color: #888; 
+}
+
+.search_input focus {
+    outline: none; 
+
+}
+
+.search_input -ms-clear {
+    display: none; 
+}
+
+.box{
+   display: flex;
+   border: 1px solid blue;
+   margin-top: 2%;
+   width: 100vw;
+   height: 77vh;
+   justify-content: center;
+   align-items: center; 
+}
+
+.box_slide{
+    
+}
+
+.box_card{
+    display: flex;
+    /* border: 1px solid yellow; */
+    border-radius: 10px;
+    background-color: #272727;
+    width: 85vw;
+    height: 26vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box_img{
+    display: flex;
+    /* border: 1px solid green; */
+    width: 28vw;
+    height: 20vh;
+    margin-left: 4.5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_img img{
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.box_content{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    margin-right: 3.5%;
+    height: 16vh;
+    gap: 5%;
+}
+
+.box_content h1{
+    font-size: 120%;
+}
+
+.box_content p{
+    font-size: 90%;
+    color: #C3C3C3;
+}

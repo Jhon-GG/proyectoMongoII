@@ -1,3 +1,4 @@
+// archivo: module/pelicula.js
 const connect = require("../db/connect");
 
 module.exports = class Pelicula extends connect {
@@ -164,6 +165,37 @@ module.exports = class Pelicula extends connect {
         } catch (error) {
             console.error(`Error al obtener las películas por estado: ${error.message}`);
             return { error: `Error al obtener las películas por estado: ${error.message}` };
+        }
+    }
+
+    async buscarPeliculas(query) {
+        try {
+            if (!query) {
+                return { error: "Se requiere un término de búsqueda" };
+            }
+    
+            const cleanQuery = query.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+            const regexQuery = new RegExp(cleanQuery, 'i');
+    
+            const peliculas = await this.collection.find({
+                $or: [
+                    { titulo: { $regex: regexQuery } },
+                    { genero: regexQuery },
+                    { pais_origen: regexQuery },
+                    { estado: regexQuery },
+                    { "actores.nombre": regexQuery },
+                    { "actores.personaje": regexQuery }
+                ]
+            }).toArray();
+    
+            if (peliculas.length === 0) {
+                return { message: "No se encontraron películas que coincidan con la búsqueda" };
+            }
+    
+            return peliculas;
+        } catch (error) {
+            return { error: `Error al buscar películas: ${error.message}` };
         }
     }
 };

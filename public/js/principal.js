@@ -36,8 +36,6 @@ function updateUserInfo() {
     }
 }
 
-
-
 async function loadComingSoonMovies() {
     try {
         const response = await fetch('/api/peliculas/estado/Próximo%20estreno');
@@ -52,8 +50,6 @@ async function loadComingSoonMovies() {
         console.error('Error al cargar próximas películas:', error);
     }
 }
-
-
 
 function createComingSoonMovieElement(movie) {
     const estrenoDate = new Date(movie.estreno);
@@ -77,9 +73,6 @@ function createComingSoonMovieElement(movie) {
     return div;
 }
 
-
-
-
 async function loadNowPlayingMovies() {
     try {
         const res = await fetch('/api/peliculas/estado/En%20cartelera');
@@ -92,7 +85,8 @@ async function loadNowPlayingMovies() {
             contenedorPeliculas.appendChild(elementoPelicula);
         });
 
-        initializeCarousel(); // Inicializar el carrusel después de cargar las películas
+        // Llamar a initializeCarousel solo después de que se hayan cargado todas las películas
+        initializeCarousel();
     } catch (error) {
         console.error('Error al cargar películas en cartelera:', error);
     }
@@ -103,7 +97,7 @@ function createMovieElement(pelicula) {
     cardDiv.className = 'cards_eachOne';
     
     cardDiv.onclick = () => {
-        window.location.href = `../views/cinemaSelection.html?peliculaId=${pelicula.id}`;
+        displayMovieDetails(pelicula.id);
     };
     
     cardDiv.innerHTML = `
@@ -119,7 +113,6 @@ function createMovieElement(pelicula) {
     return cardDiv;
 }
 
-
 function initializeCarousel() {
     const carouselContainer = document.querySelector('.cards_container');
     const indicadorCarousel = document.createElement('div');
@@ -128,7 +121,6 @@ function initializeCarousel() {
 
     const peliculasCards = document.querySelectorAll('.cards_eachOne');
 
-    // Clonar las tarjetas para crear un efecto infinito
     const cantidadClones = 3;
     for (let i = 0; i < cantidadClones; i++) {
         peliculasCards.forEach(card => {
@@ -145,11 +137,9 @@ function initializeCarousel() {
     const pasoScroll = anchoTarjeta * tarjetasVisibles;
     const anchoTotal = anchoTarjeta * peliculasCards.length;
 
-    // Posicionar el scroll en el centro
     const indiceInicial = Math.floor(peliculasCards.length / 2);
     carouselContainer.scrollLeft = anchoTarjeta * indiceInicial;
 
-    // Crear 5 indicadores fijos
     for (let i = 0; i < 5; i++) {
         const botonIndicador = document.createElement('button');
         botonIndicador.dataset.index = i;
@@ -221,4 +211,577 @@ function initializeCarousel() {
 
     actualizarIndicadorActivo();
     actualizarVisibilidadTarjetas();
+}
+
+async function displayMovieDetails(movieId) {
+        try {
+            const response = await fetch(`/api/peliculas/${movieId}`);
+            const movie = await response.json();
+            
+            if (movie.error) {
+                console.error(movie.error);
+                return;
+            }
+        document.body.innerHTML = `
+            <div class="movie-details-container">
+                <header class="header">
+                    <div class="header_box">
+                        <div class="header_content">
+                            <img src="../storage/flecha.svg" alt="go back" onclick="goToHome()">
+                            <h1>Seleccion de Cine</h1>
+                            <img src="../storage/dots.svg" alt="dots">
+                        </div>
+                    </div>
+                </header>
+                <section class="first_box">
+                    <div class="first_box_movie">
+                        <img src="${movie.imagen_pelicula}" alt="${movie.titulo}">
+                    </div>
+                </section>
+                <section class="second_box">
+                    <div class="second_box_content">
+                        <div class="second_box_left">
+                            <h1>${movie.titulo}</h1>
+                            <p>${movie.genero}</p>
+                        </div>
+                        <div class="second_box_right">
+                            <button id="myButton" onclick="showTrailerPopup('${movie.trailer}')">
+                                <span class="button_icon">▶</span> Ver Trailer
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="third-box">
+                    <div class="third_box_content">
+                        <p>${movie.sinopsis}</p>
+                    </div>
+                </section>
+                <section class="box">
+                    <div class="boxt_title">
+                        <h1>Reparto</h1>
+                    </div>
+                </section>
+                <section class="actors">
+                <div class="actors_box">
+                    ${movie.actores && movie.actores.length > 0 ? movie.actores.map(actor => `
+                        <div class="actors_main">
+                            <div class="actors_img">
+                                <img src="${actor.imagen_actor}" alt="${actor.nombre}">
+                            </div>
+                            <div class="actors_content">
+                                <h1>${actor.nombre}</h1>
+                                <p>${actor.personaje}</p>
+                            </div>
+                        </div>
+                    `).join('') : '<p>No hay información de actores disponible.</p>'}
+                </div>
+            </section>
+                <section class="box2">
+                    <div class="box2_title">
+                        <h1>Cinema</h1>
+                    </div>
+                </section>
+                <section class="box_cinema">
+                    <a class="box_a">
+                        <div class="box_base">
+                            <div class="box_left">
+                                <h1>CineCampus</h1>
+                                <p>Zona Franca, Floridablanca</p>
+                            </div>
+                            <div class="box_right">
+                                <img src="../storage/cineCampus.png" alt="campus">
+                            </div>
+                        </div>
+                    </a>
+                </section>
+                <footer class="footer">
+                    <div class="footer_button">
+                        <button onclick="displaySeatSelection(${movieId})">Comprar Ahora</button>
+                    </div>
+                </footer>
+            </div>
+        `;
+
+        const styleElement = document.createElement('style');
+        styleElement.textContent = `
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            /* position: fixed; */
+            top: 0;
+            left: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header{
+            display: flex;
+            /* border: 1px solid green; */
+            flex-direction: row;
+            width: 100vw;
+            height: 6vh;
+            margin-top: 3%;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .header_box{
+            display: flex;
+            /* border: 1px solid blue; */
+            flex-direction: row;
+            width: 86vw;
+            height: 6vh;    
+        }
+        
+        .header_content{
+            display: flex;
+            /* border: 1px solid red; */
+            width: 86vw;
+            height: 6vh;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header_content img{
+            display: flex;
+            /* border: 1px solid rgb(255, 230, 0); */
+            width: 7vw;
+            height: 6vh;
+        }
+        
+        .header_content a{
+            text-decoration: none;
+        }
+        
+        .header_content h1{
+            display: flex;
+            /* border: 1px solid rgb(0, 255, 128); */
+            font-size: 120%;
+        } 
+        
+        .first_box{
+            display: flex;
+            /* border: 1px solid pink; */
+            margin-top: 4%;
+            width: 100vw;
+            height: 25vh;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .first_box_movie{
+            display: flex;
+            /* border: 1px solid blue; */
+            width: 91vw;
+            height: 25vh;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+        
+        .first_box_movie img{
+            display: flex;
+            width: 91vw;
+            height: 25vh;
+            border-radius: 20px;
+        }
+        
+        .second_box{
+            display: flex;
+            /* border: 1px solid yellow; */
+            flex-direction: row;
+            margin-top: 4%;
+            width: 100vw;
+            height: 5vh;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .second_box_content{
+            display: flex;
+            /* border: 1px solid blue; */
+            width: 86vw;
+            height: 5vh;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: start;
+        }
+        
+        .second_box_left{
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid red; */
+            width: 50vw;
+            height: 6vh;
+        }
+        
+        .second_box_left h1{
+            font-size: 100%;
+            white-space: nowrap;
+            overflow: hidden; 
+            text-overflow: ellipsis;
+        }
+        
+        .second_box_left p{
+            font-size: 80%;
+        }
+        
+        .second_box_right{
+            display: flex;
+            /* border: 1px solid purple; */
+            width: 29vw;
+            height: 3vh;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .second_box_right button{
+            display: flex;
+            width:100%;
+            height:100%;
+            border: none;
+            justify-content: center;
+            align-items: center;
+            background-color: #ff0000;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 70%;
+            font-weight: bold;
+        }
+        
+        .button_icon {
+            margin-right: 10%; /* Ajusta el valor para el espaciado deseado */
+            font-size: 100%; /* Ajusta el tamaño del símbolo si es necesario */
+        }
+        
+        
+        .third-box{
+            display: flex;
+            /* border: 1px solid green; */
+            width: 100vw;
+            align-items: center;
+            margin-top: 2%;
+        }
+        
+        .third_box_content{
+            display: flex;
+            /* border: 1px solid blue; */
+            width: 83vw;
+            height: 100%;
+            margin-left: 6.8%;
+        }
+        
+        .third_box_content p{
+            font-size: 90%;
+            font-weight: 500;
+        }
+        
+        .box{
+            display: flex;
+            flex-direction: row;
+            margin-top: 7%;
+            /* border: 1px solid red; */
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .boxt_title{
+            display: flex;
+            /* border: 1px solid blue; */
+            width: 86vw;
+            height: 100%;
+        }
+        
+        .boxt_title h1{
+            font-size: 130%;
+        }
+        
+        .actors{
+            display: flex;
+            flex-direction: row;
+            margin-top: 2%;
+            /* border: 1px solid green; */
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 10vh;
+        }
+        
+        .actors_box{
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid violet; */
+            width: 86vw;
+            height: 100%; 
+            align-items: center;
+            overflow-x: auto;
+            gap: 15px;
+            scrollbar-width: none;
+        }
+        
+        .actors_main{
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid yellow; */
+            justify-content: center;
+            align-items: center;
+            width: auto; 
+            height: 7vh;
+        }
+        
+        .actors_img{
+            display: flex;
+            /* border: 1px solid blue; */
+            width: 16vw;
+            height: 6vh;
+            border-radius: 50px;
+            justify-content: center;
+            align-items: center;
+            overflow-y: hidden;
+        }
+        
+        .actors_img img{
+            width: 100%;
+            height: 100%;
+            /* border-radius: 50px; */
+            object-fit: cover;
+        }
+        
+        .actors_content{
+            display: inline-block;
+            flex-direction: column;
+            /* border: 1px solid red; */
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 4%;
+            width: 100%;
+            height: 5vh; 
+        }
+        
+        .actors_content h1{
+            display: flex;
+            /* border: 1px solid orange; */
+            font-size: 80%;
+            width: 35vw;
+            margin: 0;
+        }
+        
+        .actors_content p{
+            width: auto;
+            font-size: 70%;
+            margin: 0;
+        }
+        
+        .box2{
+            display: flex;
+            flex-direction: row;
+            margin-top: 4%;
+            /* border: 1px solid red; */
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box2_title{
+            display: flex;
+            /* border: 1px solid blue; */
+            width: 86vw;
+            height: 100%;
+        }
+        
+        .box2_title h1{
+            font-size: 130%;
+        }
+        
+        .box_cinema{
+            display: flex;
+            flex-direction: row;
+            margin-top: 5%;
+            /* border: 1px solid yellow; */
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 10vh;
+        }
+        
+        .box_a{
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid green; */
+            width: 86vw;
+            height: 100%;
+            justify-content: space-between;
+            align-items: center;
+            background: #272727;
+            border-radius: 12px;
+            border: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+        
+        .box_a:active {
+            border-color: red;
+        }
+        
+        .box_base{
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid green; */
+            width: 86vw;
+            height: 100%;
+            justify-content: space-between;
+            align-items: center;
+            background: #272727;
+            border-radius: 12px;
+        }
+        
+        .box_left{
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid red; */
+            gap: 4px;
+            margin-left: 5%;
+        }
+        
+        .box_left h1{
+            font-size: 120%;
+            color: #fff;
+        }
+        
+        .box_left p{
+            font-size: 85%;
+            color: #fff;
+        }
+        
+        .box_right{
+            display: flex;
+            /* border: 1px solid orange; */
+            width: 20vw;
+            height: 8vh;
+            margin-right: 5%;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .box_right img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        .footer{
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid red; */
+            margin-top: 9%;
+            width: 100vw;
+            height: 7vh;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .footer_button{
+            display: flex;
+            /* border: 1px solid green; */
+            border-radius: 10px;
+            width: 86vw;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .footer_button button{
+            display: flex;
+            border: none;
+            border-radius: 10px;
+            width: 86vw;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            background: #ff0000;
+            color: #fff;
+            font-weight: bold;
+            font-size: 120%;
+        }
+        `;
+        document.head.appendChild(styleElement);
+
+        loadYouTubeAPI();
+
+    } catch (error) {
+        console.error('Error al obtener los detalles de la película:', error);
+    }
+}
+
+function loadYouTubeAPI() {
+    if (!window.YT) {
+        const tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        const firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    }
+}
+
+function showTrailerPopup(trailerUrl) {
+    document.getElementById('trailer-popup').style.display = 'flex';
+}
+
+function closeTrailerPopup() {
+    document.getElementById('trailer-popup').style.display = 'none';
+}
+
+function playTrailer(trailerUrl) {
+    closeTrailerPopup();
+    const videoPlayer = document.getElementById('video-player');
+    videoPlayer.style.display = 'flex';
+    
+    const videoId = trailerUrl.split('v=')[1];
+    
+    if (window.YT && window.YT.Player) {
+        new YT.Player('youtube-player', {
+            height: '100%',
+            width: '100%',
+            videoId: videoId,
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    } else {
+        console.error('YouTube API no está cargada');
+    }
+}
+
+function onPlayerReady(event) {
+    event.target.playVideo();
+}
+
+function closeVideoPlayer() {
+    const videoPlayer = document.getElementById('video-player');
+    videoPlayer.style.display = 'none';
+    const playerDiv = document.getElementById('youtube-player');
+    playerDiv.innerHTML = '';
+}
+
+function goToHome() {
+    window.location.href = 'index.html'; // Ajusta esto a la ruta correcta de tu página principal
+}
+
+function displaySeatSelection(movieId) {
+    // Implementa esta función para mostrar la selección de asientos
+    console.log('Mostrar selección de asientos para la película:', movieId);
 }
