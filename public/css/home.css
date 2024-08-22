@@ -217,6 +217,7 @@ body {
 .section_title a{ 
     text-decoration: none;
 } 
+
 .cards {
     width: 100vw; 
     height: 49vh;  
@@ -230,28 +231,33 @@ body {
     flex-direction: row;
     /* border: 1px solid yellow; */
     width: 100vw; 
-    height: 55vh;
-    overflow-x: auto;
+    height: 50vh;
+    margin-top: -3%;
+    overflow-x: auto;   /* Permite el scroll horizontal */
+    overflow-y: hidden; /* Deshabilita el scroll vertical */
     scroll-snap-type: x mandatory;
     padding: 0 15%;
     gap: 1rem;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    -ms-overflow-style: none; /* Oculta el scroll en IE 10+ */
+    scrollbar-width: none;   /* Oculta el scroll en Firefox */
 }
 
 .cards_container::-webkit-scrollbar {
-    display: none;
+    display: none; /* Oculta el scroll en WebKit browsers (Chrome, Safari) */
 }
+
 
 .cards_eachOne {
     display: flex;
     flex-direction: column;
+    /* border: 1px solid blue; */
     flex: 0 0 70%;
     scroll-snap-align: center;
     transition: transform 0.3s ease;
     width: 55vw;
-    height: 49vh;
+    height: 52vh;
     padding: 0;
+    overflow-y: none;
 }
 
 .cards_img {
@@ -280,6 +286,12 @@ body {
     margin: 0;
     padding: 15px 0;
     text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cards_content.visible {
+    opacity: 1;
 }
 
 .cards_content h1 {
@@ -290,7 +302,7 @@ body {
     font-size: 110%;
     width: 100%;
     padding: 0;
-    margin: 12% 0 0 0;
+    margin-top: -3%;
 }
 
 .cards_content p {
@@ -315,8 +327,8 @@ body {
     justify-content: center;
     align-items: center;
     background: transparent;
-    margin-top: 7%;
-    margin-bottom: 10px;
+    margin-top: -3%;
+    /* margin-bottom: 10px; */
     /* border: 1px solid white; */
 }
 
@@ -325,7 +337,8 @@ body {
     border: none;
     border-radius: 100%;
     height: 8px;
-    margin: 5% 5px;
+    width: 8px;
+    margin: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -339,11 +352,12 @@ body {
 .section2 {
     display: flex;
     flex-direction: row;
+    /* border: 1px solid green; */
     width: 99.5vw;
     height: 50vh;
     justify-content: center;
     align-items: center;
-    margin-top: -10px;
+    margin-top: 11%;
 }
 
 .section2_title {

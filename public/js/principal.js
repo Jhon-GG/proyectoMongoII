@@ -187,8 +187,10 @@ function initializeCarousel() {
             
             if (distanciaDesdeElCentro < card.offsetWidth / 2) {
                 card.classList.add('active');
+                card.querySelector('.cards_content').classList.add('visible');
             } else {
                 card.classList.remove('active');
+                card.querySelector('.cards_content').classList.remove('visible');
             }
         });
     }
