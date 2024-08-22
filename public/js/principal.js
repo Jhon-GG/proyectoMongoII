@@ -56,7 +56,15 @@ async function loadComingSoonMovies() {
 
 
 function createComingSoonMovieElement(movie) {
-    const releaseYear = new Date(movie.estreno).getFullYear();
+    // Parsear la fecha de estreno
+    const estrenoDate = new Date(movie.estreno);
+    
+    // Formatear la fecha en un formato más amigable
+    const formattedEstreno = estrenoDate.toLocaleDateString('es-ES', {
+        year: 'numeric',
+        month: 'long'
+    });
+
     const div = document.createElement('div');
     div.className = 'card2';
     div.innerHTML = `
@@ -64,7 +72,7 @@ function createComingSoonMovieElement(movie) {
             <img src="${movie.imagen_pelicula}" alt="${movie.titulo}">
         </div>
         <div class="card2_title">
-            <p>${movie.titulo} (${releaseYear})</p>
+            <p>${movie.titulo} (${formattedEstreno})</p>
             <p1>${movie.genero}</p1>
         </div>
     `;
