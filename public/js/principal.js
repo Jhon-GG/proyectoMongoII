@@ -1305,7 +1305,10 @@ function displaySeatSelection(movieId) {
 }
 
 
-// Añade esto al final de tu archivo principal.js
+
+
+// FILTRAR PELICULAS 
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.querySelector('.search_input');
@@ -1334,7 +1337,7 @@ function mostrarResultadosBusqueda(peliculas, query) {
         <div class="search-results-container">
             <header class="search-header">
                 <img src="../storage/flecha.svg" alt="Volver" onclick="goToHome()" class="back-icon">
-                <h1>Resultados de búsqueda para: "${query}"</h1>
+                <h1 style="font-size: 1.5rem; margin-top: 20px ">Resultados de búsqueda para: "${query}"</h1>
             </header>
             <div class="search-results">
                 ${peliculas.length > 0 ? peliculas.map(pelicula => `
