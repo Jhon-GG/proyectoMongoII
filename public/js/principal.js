@@ -1571,7 +1571,7 @@ async function showSeatPicker(movieId) {
                 margin-bottom: 25px;
             }
 
-            .date-option, .time-option {
+            .date-btn, .time-option {
                 background-color: #424242;
                 border: none;
                 color: #ffffff;
@@ -1583,15 +1583,15 @@ async function showSeatPicker(movieId) {
                 text-align: center;
             }
 
-            .date-option.active, .time-option.active {
+            .date-btn.selected, .time-option.active {
                 background-color: #1976D2;
             }
 
-            .weekday {
+            .day {
                 font-size: 14px;
             }
 
-            .date {
+            .date-number {
                 font-size: 20px;
                 font-weight: bold;
             }
@@ -1679,13 +1679,13 @@ async function showSeatPicker(movieId) {
         setupEventHandlers(movieData);
 
         function getActiveDate() {
-            const activeDateBtn = document.querySelector('.date-option.active');
+            const activeDateBtn = document.querySelector('.date-btn.selected');
             return activeDateBtn ? activeDateBtn.dataset.date : initialDate;
         }
 
         function getActiveProjection() {
             const activeTimeBtn = document.querySelector('.time-option.active');
-            const activeDateBtn = document.querySelector('.date-option.active');
+            const activeDateBtn = document.querySelector('.date-btn.selected');
             return movieData.proyecciones.find(p => 
                 p.horario.fecha_proyeccion === activeDateBtn.dataset.date && 
                 p.horario.hora_finalizacion === activeTimeBtn.dataset.time
@@ -1722,17 +1722,14 @@ async function showSeatPicker(movieId) {
 
         function createDateOptions(proyecciones) {
             const uniqueDates = [...new Set(proyecciones.map(p => p.horario.fecha_proyeccion))];
-
             return uniqueDates.map((date, index) => {
                 const dateObj = new Date(date.split('/').reverse().join('-'));
-                const dayName = dateObj.toLocaleDateString('es-ES', { weekday: 'short' });
-                const dayNumber = dateObj.getDate();
-
+                dateObj.setDate(dateObj.getDate() + 1);  // Ajuste en la fecha
                 return `
-                    <button class="date-option ${index === 0 ? 'active' : ''}" data-date="${date}">
-                        <div class="weekday">${dayName}</div>
+                    <button class="date-btn ${index === 0 ? 'selected' : ''}" data-date="${date}">
+                        <div class="day">${dateObj.toLocaleDateString('es-ES', { weekday: 'short' })}</div>
                         <div class="date">
-                            <span class="date-number">${dayNumber}</span>
+                            <span class="date-number">${dateObj.getDate()}</span>
                         </div>
                     </button>
                 `;
@@ -1771,10 +1768,10 @@ async function showSeatPicker(movieId) {
                 });
             });
 
-            document.querySelectorAll('.date-option').forEach(dateBtn => {
+            document.querySelectorAll('.date-btn').forEach(dateBtn => {
                 dateBtn.addEventListener('click', (e) => {
-                    document.querySelectorAll('.date-option').forEach(btn => btn.classList.remove('active'));
-                    e.currentTarget.classList.add('active');
+                    document.querySelectorAll('.date-btn').forEach(btn => btn.classList.remove('selected'));
+                    e.currentTarget.classList.add('selected');
                     updateAvailableTimes();
                 });
             });
