@@ -137,7 +137,7 @@ async function displayComingSoonMovieDetails(movieId) {
                     </div>
                 </header>
                 <section class="first_box">
-                    <div class="first_box_movie">
+                    <div id="media-container" class="first_box_movie">
                         <img src="${movie.imagen_pelicula}" alt="${movie.titulo}">
                     </div>
                 </section>
@@ -148,7 +148,7 @@ async function displayComingSoonMovieDetails(movieId) {
                             <p>${movie.genero}</p>
                         </div>
                         <div class="second_box_right">
-                            <button id="myButton" onclick="window.location.href='${movie.trailer}'">
+                            <button id="trailerButton" onclick="toggleTrailer('${movie.trailer}', '${movie.imagen_pelicula}')">
                                 <span class="button_icon">▶</span> Ver Trailer
                             </button>
                         </div>
@@ -599,6 +599,22 @@ async function displayComingSoonMovieDetails(movieId) {
             font-weight: bold;
             font-size: 120%;
         }
+
+                    #media-container {
+                width: 100%;
+                height: 0;
+                padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+                position: relative;
+                overflow: hidden;
+            }
+            #media-container img, #media-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         `;
         document.head.appendChild(styleElement);
 
@@ -606,6 +622,29 @@ async function displayComingSoonMovieDetails(movieId) {
         console.error('Error al obtener los detalles de la película:', error);
     }
 }
+
+function toggleTrailer(trailerUrl, imageUrl) {
+    const mediaContainer = document.getElementById('media-container');
+    const trailerButton = document.getElementById('trailerButton');
+
+    if (mediaContainer.querySelector('iframe')) {
+        // Si hay un iframe (trailer), lo quitamos y volvemos a la imagen
+        mediaContainer.innerHTML = `<img src="${imageUrl}" alt="Movie Poster">`;
+        trailerButton.innerHTML = '<span class="button_icon">▶</span> Ver Trailer';
+    } else {
+        // Si no hay iframe, añadimos el trailer
+        const youtubeId = extractYoutubeId(trailerUrl);
+        mediaContainer.innerHTML = `<iframe src="https://www.youtube.com/embed/${youtubeId}?autoplay=1" frameborder="0" allowfullscreen></iframe>`;
+        trailerButton.innerHTML = '<span class="button_icon">⏸</span> Pausar Trailer';
+    }
+}
+
+function extractYoutubeId(url) {
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[2].length === 11) ? match[2] : null;
+}
+
 
 function goToHome() {
     window.location.href = '../views/movieHome.html';
@@ -734,7 +773,7 @@ async function showMovieInfo(movieId) {
                     </div>
                 </header>
                 <section class="first_box">
-                    <div class="first_box_movie">
+                    <div id="media-container" class="first_box_movie">
                         <img src="${movie.imagen_pelicula}" alt="${movie.titulo}">
                     </div>
                 </section>
@@ -745,7 +784,7 @@ async function showMovieInfo(movieId) {
                             <p>${movie.genero}</p>
                         </div>
                         <div class="second_box_right">
-                            <button id="myButton" onclick="window.location.href='${movie.trailer}'">
+                            <button id="trailerButton" onclick="toggleTrailer('${movie.trailer}', '${movie.imagen_pelicula}')">
                                 <span class="button_icon">▶</span> Ver Trailer
                             </button>
                         </div>
@@ -1218,6 +1257,22 @@ async function showMovieInfo(movieId) {
             font-weight: bold;
             font-size: 120%;
         }
+
+                    #media-container {
+                width: 100%;
+                height: 0;
+                padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+                position: relative;
+                overflow: hidden;
+            }
+            #media-container img, #media-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         `;
         document.head.appendChild(styleElement);
 
