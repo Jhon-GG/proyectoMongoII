@@ -835,7 +835,7 @@ async function showMovieInfo(movieId) {
                 </section>
                 <footer class="footer">
                     <div class="footer_button">
-                        <button id="bookingButton" onclick="displaySeatSelection(${movieId})" disabled>Comprar Ahora</button>
+                    <button id="bookingButton" onclick="showSeatPicker(${movieId})" disabled>Comprar Ahora</button>
                     </div>
                 </footer>
             </div>
@@ -1285,14 +1285,8 @@ async function showMovieInfo(movieId) {
 function goToHome() {
     window.location.href = '../views/movieHome.html'; 
 }
-
 function activateBookingButton() {
-    const bookingButton = document.getElementById('bookingButton');
-    if (bookingButton) {
-        bookingButton.disabled = false;
-        bookingButton.style.opacity = '1';
-        bookingButton.style.cursor = 'pointer';
-    }
+    document.getElementById('bookingButton').disabled = false;
 }
 
 function displaySeatSelection(movieId) {
@@ -1421,4 +1415,413 @@ function mostrarResultadosBusqueda(peliculas, query) {
 
 function goToHome() {
     window.location.href = '../views/movieHome.html';
+}
+
+
+
+
+
+// CREAR 3 VIEW 
+
+
+async function showSeatPicker(movieId) {
+    try {
+        const response = await fetch(`/api/boletos/horarios/${movieId}`);
+        const movieData = await response.json();
+
+        console.log('Datos recibidos de la API:', movieData);
+
+        if (movieData.error) {
+            console.error(movieData.error);
+            return;
+        }
+
+        const styleElement = document.createElement('style');
+        styleElement.textContent = `
+            body {
+                font-family: 'Roboto', sans-serif;
+                background-color: #121212;
+                color: #ffffff;
+                margin: 0;
+                padding: 0;
+            }
+
+            .cinema-container {
+                max-width: 450px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .movie-title-bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 25px;
+            }
+
+            .nav-icon, .menu-icon {
+                width: 28px;
+                height: 28px;
+                cursor: pointer;
+            }
+
+            .movie-title-bar h2 {
+                font-size: 22px;
+                margin: 0;
+            }
+
+            .cinema-screen {
+                text-align: center;
+                font-size: 16px;
+                margin-bottom: 30px;
+                position: relative;
+                margin-top: 35px;
+            }
+
+            .seat-grid {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 25px;
+            }
+
+            .seat-row {
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+            }
+
+            .row-id {
+                width: 25px;
+                text-align: right;
+                margin-right: 12px;
+                font-weight: bold;
+            }
+
+            .seat-unit {
+                width: 35px;
+                height: 35px;
+                margin: 0 6px;
+                border-radius: 6px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                font-size: 14px;
+                color: #ffffff;
+            }
+
+            .seat-unit.disponible {
+                background-color: #424242;
+            }
+
+            .seat-unit.reservado {
+                background-color: #E0E0E0;
+                color: #000000;
+                cursor: not-allowed;
+            }
+
+            .seat-unit.ocupado {
+                background-color: #7B1FA2;
+                cursor: not-allowed;
+            }
+
+            .seat-unit.chosen {
+                background-color: #4CAF50;
+            }
+
+            .seat-status {
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 25px;
+            }
+
+            .status-item {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+            }
+
+            .status-icon {
+                width: 18px;
+                height: 18px;
+                border-radius: 4px;
+                margin-right: 6px;
+            }
+
+            .status-icon.disponible {
+                background-color: #424242;
+            }
+
+            .status-icon.reservado {
+                background-color: #E0E0E0;
+            }
+
+            .status-icon.ocupado {
+                background-color: #7B1FA2;
+            }
+
+            .status-icon.chosen {
+                background-color: #4CAF50;
+            }
+
+            .date-picker, .time-picker {
+                display: flex;
+                overflow-x: auto;
+                margin-bottom: 25px;
+            }
+
+            .date-option, .time-option {
+                background-color: #424242;
+                border: none;
+                color: #ffffff;
+                padding: 12px;
+                margin-right: 12px;
+                border-radius: 6px;
+                cursor: pointer;
+                min-width: 70px;
+                text-align: center;
+            }
+
+            .date-option.active, .time-option.active {
+                background-color: #1976D2;
+            }
+
+            .weekday {
+                font-size: 14px;
+            }
+
+            .date {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .showtime {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .room-type {
+                font-size: 14px;
+            }
+
+            .price-summary {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .total-cost {
+                font-size: 26px;
+                font-weight: bold;
+            }
+
+            .purchase-btn {
+                background-color: #1976D2;
+                color: #ffffff;
+                border: none;
+                padding: 16px 32px;
+                border-radius: 6px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        `;
+
+        document.head.appendChild(styleElement);
+
+        let totalCost = 0;
+
+        const initialDate = movieData.proyecciones[0].horario.fecha_proyeccion;
+        const initialProjections = movieData.proyecciones.filter(p => p.horario.fecha_proyeccion === initialDate);
+
+        const seatPickerHTML = `
+            <div class="cinema-container">
+                <div class="movie-title-bar">
+                    <img src="../storage/img/back-arrow.png" alt="Back" class="nav-icon" onclick="returnToMovie(${movieId}, '${movieData.pelicula.estado}')">
+                    <h2>Select Seats</h2>
+                    <img src="../storage/img/menu-dots.png" alt="Menu" class="menu-icon">
+                </div>
+                
+                <div class="cinema-screen">
+                    <img src="../storage/img/screen.png" alt="screen">
+                </div>
+                
+                <div class="seat-grid">
+                    ${createSeatLayout(initialProjections[0].asientos)}
+                </div>
+                
+                <div class="seat-status">
+                    <span class="status-item"><span class="status-icon disponible"></span> Available</span>
+                    <span class="status-item"><span class="status-icon ocupado"></span> Taken</span>
+                    <span class="status-item"><span class="status-icon reservado"></span> Reserved</span>
+                    <span class="status-item"><span class="status-icon chosen"></span> Selected</span>
+                </div>
+                
+                <div class="date-picker">
+                    ${createDateOptions(movieData.proyecciones)}
+                </div>
+                
+                <div class="time-picker">
+                    ${createTimeOptions(initialProjections)}
+                </div>
+                
+                <div class="price-summary">
+                    <div>
+                        <span>Total Price</span>
+                        <span class="total-cost">$${totalCost.toFixed(2)}</span>
+                    </div>
+                    <button class="purchase-btn">Buy Ticket</button>
+                </div>
+            </div>
+        `;
+        
+        document.body.innerHTML = seatPickerHTML;
+        setupEventHandlers(movieData);
+
+        function getActiveDate() {
+            const activeDateBtn = document.querySelector('.date-option.active');
+            return activeDateBtn ? activeDateBtn.dataset.date : initialDate;
+        }
+
+        function getActiveProjection() {
+            const activeTimeBtn = document.querySelector('.time-option.active');
+            const activeDateBtn = document.querySelector('.date-option.active');
+            return movieData.proyecciones.find(p => 
+                p.horario.fecha_proyeccion === activeDateBtn.dataset.date && 
+                p.horario.hora_finalizacion === activeTimeBtn.dataset.time
+            ) || initialProjections[0];
+        }
+
+        function createSeatLayout(asientos) {
+            const rows = ['A', 'B', 'C', 'D', 'E', 'F'];
+            let seatHTML = '';
+
+            rows.forEach(row => {
+                const rowSeats = asientos.filter(seat => seat.fila === row);
+                if (rowSeats.length > 0) {
+                    seatHTML += `
+                        <div class="seat-row">
+                            <span class="row-id">${row}</span>
+                            ${rowSeats.map(seat => `
+                                <div class="seat-unit ${seat.estado}" 
+                                     data-id="${seat.id}"
+                                     data-row="${seat.fila}" 
+                                     data-number="${seat.numero}" 
+                                     data-estado="${seat.estado}" 
+                                     data-price="${seat.Precio}">
+                                    ${seat.numero}
+                                </div>
+                            `).join('')}
+                        </div>
+                    `;
+                }
+            });
+
+            return seatHTML;
+        }
+
+        function createDateOptions(proyecciones) {
+            const uniqueDates = [...new Set(proyecciones.map(p => p.horario.fecha_proyeccion))];
+
+            return uniqueDates.map((date, index) => {
+                const dateObj = new Date(date.split('/').reverse().join('-'));
+                const dayName = dateObj.toLocaleDateString('es-ES', { weekday: 'short' });
+                const dayNumber = dateObj.getDate();
+
+                return `
+                    <button class="date-option ${index === 0 ? 'active' : ''}" data-date="${date}">
+                        <div class="weekday">${dayName}</div>
+                        <div class="date">
+                            <span class="date-number">${dayNumber}</span>
+                        </div>
+                    </button>
+                `;
+            }).join('');
+        }
+
+        function createTimeOptions(proyecciones) {
+            return proyecciones.map((proyeccion, index) => `
+                <button class="time-option ${index === 0 ? 'active' : ''}" 
+                        data-date="${proyeccion.horario.fecha_proyeccion}" 
+                        data-time="${proyeccion.horario.hora_finalizacion}"
+                        data-sala="${proyeccion.sala.id}">
+                    <div class="showtime">${proyeccion.horario.hora_finalizacion}</div>
+                    <div class="room-type">$${proyeccion.horario.precio_pelicula.toFixed(2)} - ${proyeccion.sala.tipo}</div>
+                </button>
+            `).join('');
+        }
+
+        function setupEventHandlers(movieData) {
+            document.querySelectorAll('.seat-unit').forEach(seat => {
+                seat.addEventListener('click', (e) => {
+                    const seatElement = e.currentTarget;
+                    if (seatElement.classList.contains('disponible')) {
+                        seatElement.classList.toggle('chosen');
+                        const seatPrice = parseFloat(seatElement.dataset.price);
+                        const moviePrice = parseFloat(getActiveProjection().horario.precio_pelicula);
+
+                        if (seatElement.classList.contains('chosen')) {
+                            totalCost += (seatPrice + moviePrice);
+                        } else {
+                            totalCost -= (seatPrice + moviePrice);
+                        }
+
+                        document.querySelector('.total-cost').textContent = `$${totalCost.toFixed(2)}`;
+                    }
+                });
+            });
+
+            document.querySelectorAll('.date-option').forEach(dateBtn => {
+                dateBtn.addEventListener('click', (e) => {
+                    document.querySelectorAll('.date-option').forEach(btn => btn.classList.remove('active'));
+                    e.currentTarget.classList.add('active');
+                    updateAvailableTimes();
+                });
+            });
+
+            document.querySelectorAll('.time-option').forEach(timeBtn => {
+                timeBtn.addEventListener('click', (e) => {
+                    document.querySelectorAll('.time-option').forEach(btn => btn.classList.remove('active'));
+                    e.currentTarget.classList.add('active');
+                    updateSeats();
+                });
+            });
+        }
+
+        function updateAvailableTimes() {
+            const selectedDate = getActiveDate();
+            const filteredProjections = movieData.proyecciones.filter(p => p.horario.fecha_proyeccion === selectedDate);
+            
+            document.querySelector('.time-picker').innerHTML = createTimeOptions(filteredProjections);
+            
+            document.querySelectorAll('.time-option').forEach(timeBtn => {
+                timeBtn.addEventListener('click', (e) => {
+                    document.querySelectorAll('.time-option').forEach(btn => btn.classList.remove('active'));
+                    e.currentTarget.classList.add('active');
+                    updateSeats();
+                });
+            });
+    
+            updateSeats();
+        }
+
+        function updateSeats() {
+            const selectedProjection = getActiveProjection();
+            document.querySelector('.seat-grid').innerHTML = createSeatLayout(selectedProjection.asientos);
+            
+            totalCost = 0;
+            document.querySelector('.total-cost').textContent = `$${totalCost.toFixed(2)}`;
+            
+            setupEventHandlers(movieData);
+        }
+
+    } catch (error) {
+        console.error('Error loading movie data:', error);
+    }
+}
+
+function returnToMovie(movieId, movieState) {
+    console.log('Returning to movie details with ID:', movieId, 'and state:', movieState);
+    // Aquí deberías llamar a la función que muestra los detalles de la película
+    // Por ejemplo: displayMovieInfo(movieId, movieState);
 }

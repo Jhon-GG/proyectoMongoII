@@ -3,6 +3,7 @@ const path = require('path');
 const app = express();
 const peliculaRoutes = require("./server/router/pelicula.routes");
 const rolRoutes = require('./server/router/rol.routes');
+const boletoRoutes = require('./server/router/boleto.routes');
 require('dotenv').config();
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -16,6 +17,7 @@ app.get("/", function (req, res) {
 
 app.use('/api', peliculaRoutes);
 app.use('/api', rolRoutes);
+app.use('/api', boletoRoutes);
 
 // Manejador de errores global
 app.use((err, req, res, next) => {

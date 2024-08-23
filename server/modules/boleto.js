@@ -206,4 +206,92 @@ module.exports = class boleto extends connect {
             return [`Horario de funcion erroneo`];
         }
     }            
+
+////////////////////
+
+    async informacionhorarios(idPelicula) {
+        try {
+            await this.conexion.connect();
+
+            const idPeliculaNum = parseInt(idPelicula);
+            const pelicula = await this.db.collection('pelicula').findOne({ id: idPeliculaNum });
+            if (!pelicula) {
+                throw new Error('Película no encontrada.');
+            }
+
+            const horariosProyeccion = await this.db.collection('horario_funcion')
+                .find({ id_pelicula: idPeliculaNum }).toArray();
+
+            const infoCompleta = await Promise.all(horariosProyeccion.map(async (horario) => {
+                const sala = await this.db.collection('sala').findOne({ id: horario.id_sala });
+                if (!sala) {
+                    throw new Error(`Sala no encontrada para el horario ${horario.id}.`);
+                }
+
+                const asientos = await this.db.collection('asiento')
+                    .find({ id: { $in: sala.asientos } }).toArray();
+
+                const boletosVendidos = await this.db.collection('boletos')
+                    .find({ id_horario_funcion: horario.id }).toArray();
+                const asientosOcupados = boletosVendidos.flatMap(boleto => boleto.asientos_comprados);
+
+                const asientosConEstado = asientos.map(asiento => {
+                    if (asiento.estado === 'reservado') {
+                        // Si el asiento ya está reservado, mantenemos ese estado.
+                        return asiento;
+                    } else if (asientosOcupados.includes(asiento.id)) {
+                        // Si no está reservado pero está en la lista de ocupados, lo marcamos como "ocupado".
+                        return {
+                            ...asiento,
+                            estado: 'ocupado'
+                        };
+                    }
+                    // Si no está ni ocupado ni reservado, se deja su estado como está (normalmente "disponible").
+                    return asiento;
+                });
+
+                return {
+                    horario: {
+                        id: horario.id,
+                        fecha_proyeccion: horario.fecha_proyeccion,
+                        id_horario_funcion: horario.id_horario_funcion,
+                        hora_finalizacion: horario.hora_finalizacion,
+                        precio_pelicula: horario.precio_pelicula
+                    },
+                    sala: {
+                        id: sala.id,
+                        nombre: sala.nombre,
+                        tipo: sala.tipo,
+                        descripcion: sala.descripcion,
+                        capacidad: sala.capacidad
+                    },
+                    asientos: asientosConEstado
+                };
+            }));
+
+            await this.conexion.close();
+
+            return {
+                pelicula: {
+                    id: pelicula.id,
+                    titulo: pelicula.titulo,
+                    sinopsis: pelicula.sinopsis,
+                    fecha_estreno: pelicula.fecha_estreno,
+                    genero: pelicula.genero,
+                    duracion: pelicula.duracion,
+                    estado: pelicula.estado,
+                    pais_origen: pelicula.pais_origen,
+                    imagen_pelicula: pelicula.imagen_pelicula,
+                    imagen_banner: pelicula.imagen_banner,
+                    reparto: pelicula.reparto,
+                    trailer: pelicula.trailer
+                },
+                proyecciones: infoCompleta
+            };
+
+        } catch (error) {
+            await this.conexion.close();
+            throw error;
+        }
+    }
 }
