@@ -29,11 +29,11 @@
             </div>
         </section>
     </header>
-    <section class="search">
+    <section class="search" id="search-browse">
         <div class="search_bus">
             <div class="search_wrapper">
                 <img src="../storage/search.svg" alt="Search" class="search_icon">
-                <input class="search_input" type="text" placeholder="Search movie, cinema, genre...">
+                <input class="search_input" id="search-input" type="text" placeholder="Search movie, cinema, genre...">
             </div>
         </div>
     </section>
@@ -72,7 +72,7 @@
             <img src="../storage/Home.svg" alt="">
             <span>Home</span>
         </a>
-        <a href="#" class="nav-item">
+        <a href="#search-browse" class="nav-item" id="browse-link">
             <i class="icon-browse"></i>
             <img src="../storage/search.svg" alt="">
             <span>Buscar</span>
@@ -88,5 +88,17 @@
             <span>Perfil</span>
         </a>
     </footer>
+
+    <script>
+
+        document.getElementById('browse-link').addEventListener('click', function(event) {
+
+            event.preventDefault();
+
+            document.getElementById('search-browse').scrollIntoView({ behavior: 'smooth' });
+
+            document.getElementById('search-input').focus();
+        });
+    </script>
 </body>
 </html>
