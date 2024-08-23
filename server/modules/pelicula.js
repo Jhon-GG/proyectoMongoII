@@ -55,6 +55,7 @@ module.exports = class Pelicula extends connect {
                     imagen_pelicula: pelicula.imagen_pelicula,
                     actores: pelicula.actores,
                     trailer: pelicula.trailer,
+                    portada: pelicula.portada,
                     horarios_funcion: horarios
                 };
             }));
@@ -107,6 +108,7 @@ module.exports = class Pelicula extends connect {
                 imagen_pelicula: pelicula.imagen_pelicula,
                 actores: pelicula.actores,
                 trailer: pelicula.trailer,
+                portada: pelicula.portada,
                 horarios_funcion: horarios
             };
         } catch (error) {
