@@ -1,4 +1,4 @@
-// archivo: module/pelicula.js
+
 const connect = require("../db/connect");
 
 module.exports = class Pelicula extends connect {
@@ -29,13 +29,13 @@ module.exports = class Pelicula extends connect {
             }).toArray();
 
             const peliculasConHorarios = await Promise.all(peliculas.map(async (pelicula) => {
-                const horarios = await this.db.collection('horario_proyeccion').find(
+                const horarios = await this.db.collection('horario_funcion').find(
                     { id_pelicula: pelicula.id },
                     {
                         projection: {
                             _id: 0,
-                            fecha_proyeccion: 1,
-                            horario_proyeccion: 1,
+                            fecha_funcion: 1,
+                            horario_funcion: 1,
                             hora_finalizacion: 1,
                             id_sala: 1,
                             precio_pelicula: 1
@@ -47,15 +47,15 @@ module.exports = class Pelicula extends connect {
                     id: pelicula.id,
                     titulo: pelicula.titulo,
                     sinopsis: pelicula.sinopsis,
-                    fecha_estreno: pelicula.fecha_estreno,
+                    estreno: pelicula.estreno,
                     genero: pelicula.genero,
                     duracion: pelicula.duracion,
                     estado: pelicula.estado,
-                    pais_origen: pelicula.pais_origen,
+                    director: pelicula.director,
                     imagen_pelicula: pelicula.imagen_pelicula,
-                    reparto: pelicula.reparto,
+                    actores: pelicula.actores,
                     trailer: pelicula.trailer,
-                    horarios_proyeccion: horarios
+                    horarios_funcion: horarios
                 };
             }));
 
@@ -81,13 +81,13 @@ module.exports = class Pelicula extends connect {
                 return { error: `No se encontró una película con el ID o título ${idOTitulo}` };
             }
 
-            const horarios = await this.db.collection('horario_proyeccion').find(
+            const horarios = await this.db.collection('horario_funcion').find(
                 { id_pelicula: pelicula.id },
                 {
                     projection: {
                         _id: 0,
-                        fecha_proyeccion: 1,
-                        horario_proyeccion: 1,
+                        fecha_funcion: 1,
+                        horario_funcion: 1,
                         hora_finalizacion: 1,
                         id_sala: 1,
                         precio_pelicula: 1
@@ -99,16 +99,15 @@ module.exports = class Pelicula extends connect {
                 id: pelicula.id,
                 titulo: pelicula.titulo,
                 sinopsis: pelicula.sinopsis,
-                fecha_estreno: pelicula.fecha_estreno,
+                estreno: pelicula.estreno,
                 genero: pelicula.genero,
                 duracion: pelicula.duracion,
                 estado: pelicula.estado,
-                pais_origen: pelicula.pais_origen,
+                director: pelicula.director,
                 imagen_pelicula: pelicula.imagen_pelicula,
-                reparto: pelicula.reparto,
+                actores: pelicula.actores,
                 trailer: pelicula.trailer,
-                imagen_banner: pelicula.imagen_banner,
-                horarios_proyeccion: horarios
+                horarios_funcion: horarios
             };
         } catch (error) {
             return { error: `Error al obtener los detalles de la película: ${error.message}` };
@@ -125,14 +124,13 @@ module.exports = class Pelicula extends connect {
                         id: 1,
                         titulo: 1,
                         sinopsis: 1,
-                        fecha_estreno: 1,
+                        estreno: 1,
                         genero: 1,
                         duracion: 1,
                         estado: 1,
-                        pais_origen: 1,
+                        director: 1,
                         imagen_pelicula: 1,
-                        imagen_banner: 1,
-                        reparto: 1,
+                        actores: 1,
                         trailer: 1
                     }
                 }
@@ -143,22 +141,21 @@ module.exports = class Pelicula extends connect {
             }
     
             const peliculasConHorarios = await Promise.all(peliculas.map(async (pelicula) => {
-                const horarios = await this.db.collection('horario_proyeccion').find(
+                const horarios = await this.db.collection('horario_funcion').find(
                     { id_pelicula: pelicula.id },
                     {
                         projection: {
                             _id: 0,
-                            fecha_proyeccion: 1,
-                            horario_proyeccion: 1,
+                            fecha_funcion: 1,
+                            horario_funcion: 1,
                             hora_finalizacion: 1,
                             id_sala: 1,
-                            imagen_banner:1,
                             precio_pelicula: 1
                         }
                     }
                 ).toArray();
     
-                return { ...pelicula, horarios_proyeccion: horarios };
+                return { ...pelicula, horarios_funcion: horarios };
             }));
     
             return peliculasConHorarios;
@@ -182,7 +179,7 @@ module.exports = class Pelicula extends connect {
                 $or: [
                     { titulo: { $regex: regexQuery } },
                     { genero: regexQuery },
-                    { pais_origen: regexQuery },
+                    { director: regexQuery },
                     { estado: regexQuery },
                     { "actores.nombre": regexQuery },
                     { "actores.personaje": regexQuery }
