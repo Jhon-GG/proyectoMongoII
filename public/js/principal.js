@@ -1303,3 +1303,119 @@ function displaySeatSelection(movieId) {
 
     console.log('Mostrar selección de asientos para la película:', movieId);
 }
+
+
+// Añade esto al final de tu archivo principal.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.querySelector('.search_input');
+    searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = searchInput.value.trim();
+            if (searchTerm) {
+                buscarPeliculas(searchTerm);
+            }
+        }
+    });
+});
+
+async function buscarPeliculas(query) {
+    try {
+        const response = await fetch(`/api/peliculas/buscar?query=${encodeURIComponent(query)}`);
+        const peliculas = await response.json();
+        mostrarResultadosBusqueda(peliculas, query);
+    } catch (error) {
+        console.error('Error al buscar películas:', error);
+    }
+}
+
+function mostrarResultadosBusqueda(peliculas, query) {
+    document.body.innerHTML = `
+        <div class="search-results-container">
+            <header class="search-header">
+                <img src="../storage/flecha.svg" alt="Volver" onclick="goToHome()" class="back-icon">
+                <h1>Resultados de búsqueda para: "${query}"</h1>
+            </header>
+            <div class="search-results">
+                ${peliculas.length > 0 ? peliculas.map(pelicula => `
+                    <div class="movie-card" onclick="showMovieInfo(${pelicula.id})">
+                        <img src="${pelicula.imagen_pelicula}" alt="${pelicula.titulo}">
+                        <div class="movie-info">
+                            <h2>${pelicula.titulo}</h2>
+                            <p>${pelicula.genero}</p>
+                            <p>${pelicula.director}</p>
+                            <p>${pelicula.duracion}</p>
+                        </div>
+                    </div>
+                `).join('') : '<p>No se encontraron resultados.</p>'}
+            </div>
+        </div>
+    `;
+
+    // Añadir estilos inline para la página de resultados
+    const style = document.createElement('style');
+    style.textContent = `
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .search-results-container {
+            padding: 20px;
+        }
+        .search-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .back-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .search-results {
+            display: grid;
+            grid-template-columns: 1;
+            gap: 20px;
+        }
+        .movie-card {
+            background-color: #222;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .movie-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .movie-info {
+            padding: 10px;
+        }
+        .movie-info h2 {
+            margin: 0;
+            font-size: 16px;
+        }
+        .movie-info p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #aaa;
+        }
+        
+        .movie-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+function goToHome() {
+    window.location.href = '../views/movieHome.html';
+}
