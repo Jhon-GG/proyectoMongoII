@@ -831,8 +831,8 @@ async function showMovieInfo(movieId) {
                         </div>
                     </a>
                 </section>
-                <footer class="footer">
-                    <div class="footer_button">
+                <footer class="footer1">
+                    <div class="footer1_button">
                     <button id="bookingButton" onclick="showSeatPicker(${movieId})" disabled>Comprar Ahora</button>
                     </div>
                 </footer>
@@ -1226,7 +1226,7 @@ body {
     border-radius: 10px;
 }
 
-.footer{
+.footer1{
     display: flex;
     flex-direction: row;
     /* border: 1px solid red; */
@@ -1237,7 +1237,7 @@ body {
     align-items: center;
 }
 
-.footer_button{
+.footer1_button{
     display: flex;
     /* border: 1px solid green; */
     border-radius: 10px;
@@ -1247,7 +1247,7 @@ body {
     align-items: center;
 }
 
-.footer_button button{
+.footer1_button button{
     display: flex;
     border: none;
     border-radius: 10px;
