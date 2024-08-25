@@ -17,26 +17,29 @@
     <h1>Cine Campus</h1>
     <div class="toggle">
       <div class="toggle_box">
-        <a class="toggle_left">
+        <a href="/index.html" class="toggle_left">
           <h1>Iniciar Sesión</h1>
         </a>
-        <a class="toggle_right">
+        <a href="/views/signUp.html" class="toggle_right">
           <h1>Registrar</h1>
         </a>
       </div>
     </div>
     <p id="error-message"></p>
-    
+
     <form id="form">
       <div>
-        <label for="email-input">
+        <label class="email-input" for="email-input">
           <span>@</span>
         </label>
         <input type="alias" name="alias" id="alias-input" placeholder="Alias">
       </div>
       <div>
-        <label for="password-input">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z"/></svg>
+        <label  class="password-input" for="password-input">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path fill="white" d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z"/>
+          </svg>
+          
         </label>
         <input type="password" name="password" id="password-input" placeholder="Password">
       </div>

@@ -48,7 +48,7 @@ body {
 .toggle{
   display: flex;
   margin-top: 6%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 100vw;
   height: 6vh;
   font-family: 'Inter';
@@ -58,24 +58,27 @@ body {
 
 .toggle_box{
   display: flex;
-  border: 1px solid blue ;
+  /* border: 1px solid blue ; */
   background: #4b4b4b;
   width: 85vw;
   height: 100%;
   align-items: center;
   justify-content: space-between;
+  border-radius: 10px;
 }
 
 .toggle_left{
   display: flex;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   margin-left: 2%;
   width: 40vw;
   height: 80%;
   align-items: center;
   justify-content: center;
   border-radius: 7px;
-  background: #fff;
+  color: #fff;
+  /* background: #fff; */
+  text-decoration: none;
 }
 
 .toggle_left h1{
@@ -84,13 +87,15 @@ body {
 
 .toggle_right{
   display: flex;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   margin-right: 2%;
   width: 40vw;
   height: 80%;
   justify-content: center;
   align-items: center;
   border-radius: 7px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .toggle_right h1{
@@ -197,4 +202,27 @@ form div.incorrect input{
 }
 #error-message{
   color:#f06272;
+}
+
+.email-input, 
+.password-input {
+  background: #4b4b4b;
+  color: #fff;
+}
+
+/* Para asegurarte de que el fondo no cambie cuando el input está enfocado */
+form input:focus {
+  outline: none;
+  border-color: var(--text-color);
+  background-color: #4b4b4b; /* Asegura que el fondo se mantenga */
+}
+
+/* También puedes aplicar el color de fondo a los divs que contienen los inputs, si lo prefieres */
+form div {
+  background-color: #4b4b4b; /* Fondo del contenedor */
+}
+
+/* Mantén el color de fondo del div cuando el input está enfocado */
+form div:has(input:focus) {
+  background-color: #4b4b4b;
 }
