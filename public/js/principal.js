@@ -66,7 +66,7 @@ function createComingSoonMovieElement(movie) {
             <img src="${movie.imagen_pelicula}" alt="${movie.titulo}">
         </div>
         <div class="card2_title">
-            <p>${movie.titulo} (${estrenoDate.getFullYear()})</p>
+            <p>${movie.titulo} (2024)</p>
             <p1>${movie.genero}</p1>
         </div>
     `;
@@ -1035,7 +1035,7 @@ body {
 .box{
     display: flex;
     flex-direction: row;
-    margin-top: 7%;
+    margin-top: 4%;
     /* border: 1px solid red; */
     justify-content: center;
     align-items: center;
@@ -1151,7 +1151,7 @@ body {
 .box_cinema{
     display: flex;
     flex-direction: row;
-    margin-top: 5%;
+    margin-top: 2%;
     /* border: 1px solid yellow; */
     justify-content: center;
     align-items: center;
