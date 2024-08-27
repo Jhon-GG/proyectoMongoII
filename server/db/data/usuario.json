@@ -1,226 +1,301 @@
 [{
-    "_id": {
-      "$oid": "66a46a3e280e8d342dd414d0"
-    },
-    "id": 1,
-    "nombre": "Carlos",
-    "apellido": "González",
-    "cc": 123456789,
-    "alias": "carlitos",
-    "rol": "estandar",
-    "email": "carlos.gonzalez@example.com",
-    "imagen_usuario": "https://i.pinimg.com/564x/b7/b4/74/b7b474c2c02c9a40df285ee5aa051a99.jpg",
-    "celular": {
-      "$numberLong": "3111234567"
-    }
-  },{
-    "_id": {
-      "$oid": "66a46a3e280e8d342dd414d1"
-    },
-    "id": 2,
-    "nombre": "María",
-    "apellido": "Martínez",
-    "cc": 987654321,
-    "alias": "mari",
-    "rol": "VIP",
-    "email": "maria.martinez@example.com",
-    "imagen_usuario": "https://i.pinimg.com/564x/89/ff/1a/89ff1a5fdc3734cc90c7eba167f95ab6.jpg",
-    "celular": {
-      "$numberLong": "3109876543"
-    }
-  },{
-    "_id": {
-      "$oid": "66a46a3e280e8d342dd414d2"
-    },
-    "id": 3,
-    "nombre": "Juan",
-    "apellido": "Pérez",
-    "cc": 112233445,
-    "alias": "juancho",
-    "rol": "estandar",
-    "email": "juan.perez@example.com",
-    "imagen_usuario": "https://i.pinimg.com/564x/67/e1/b2/67e1b2775c79fbac72297912eedf08b8.jpg",
-    "celular": {
-      "$numberLong": "3201122334"
-    }
-  },{
-    "_id": {
-      "$oid": "66a46a3e280e8d342dd414d3"
-    },
-    "id": 4,
-    "nombre": "Ana",
-    "apellido": "López",
-    "cc": 556677889,
-    "alias": "anita",
-    "rol": "VIP",
-    "email": "ana.lopez@example.com",
-    "imagen_usuario": "https://i.pinimg.com/564x/25/9b/9d/259b9d5d61b2d4a62b4ad1cb73bce5a4.jpg",
-    "celular": {
-      "$numberLong": "3115566778"
-    }
-  },{
-    "_id": {
-      "$oid": "66a46a3e280e8d342dd414d4"
-    },
-    "id": 5,
-    "nombre": "Luis",
-    "apellido": "Rodríguez",
-    "cc": 223344556,
-    "alias": "luisito",
-    "rol": "estandar",
-    "email": "luis.rodriguez@example.com",
-    "imagen_usuario": "https://i.pinimg.com/564x/b3/cb/eb/b3cbebddb67e05c1104bd4bee316c913.jpg",
-    "celular": {
-      "$numberLong": "3152233445"
-    }
-  },{
-    "_id": {
-      "$oid": "66a46a3e280e8d342dd414d5"
-    },
-    "id": 6,
-    "nombre": "Sofía",
-    "apellido": "Hernández",
-    "cc": 667788990,
-    "alias": "sofi",
-    "rol": "VIP",
-    "email": "sofia.hernandez@example.com",
-    "imagen_usuario": "https://i.pinimg.com/564x/d4/48/18/d448186864f7e9c0ff5a2c550f7ca27d.jpg",
-    "celular": {
-      "$numberLong": "3106677889"
-    }
-  },{
-    "_id": {
-      "$oid": "66a46a3e280e8d342dd414d6"
-    },
-    "id": 7,
-    "nombre": "Miguel",
-    "apellido": "Torres",
-    "cc": 334455667,
-    "alias": "mike",
-    "rol": "estandar",
-    "email": "miguel.torres@example.com",
-    "imagen_usuario": "https://i.pinimg.com/564x/68/ae/da/68aeda24f7a2ac81adcb7870c5c962ae.jpg",
-    "celular": {
-      "$numberLong": "3123344556"
-    }
-  },{
-    "_id": {
-      "$oid": "66a46a3e280e8d342dd414d7"
-    },
-    "id": 8,
-    "nombre": "Laura",
-    "apellido": "Ramírez",
-    "cc": 778899001,
-    "alias": "lau",
-    "rol": "VIP",
-    "email": "laura.ramirez@example.com",
-    "imagen_usuario": "https://i.pinimg.com/564x/92/5e/5e/925e5eb5188e057e14766998b8611540.jpg",
-    "celular": {
-      "$numberLong": "3137788990"
-    }
-  },{
-    "_id": {
-      "$oid": "66a46a3e280e8d342dd414d8"
-    },
-    "id": 9,
-    "nombre": "David",
-    "apellido": "Flores",
-    "cc": 445566778,
-    "alias": "dave",
-    "rol": "estandar",
-    "email": "david.flores@example.com",
-    "imagen_usuario": "https://i.pinimg.com/564x/2e/fc/d7/2efcd71b28110a83b166f4a8e1dafe47.jpg",
-    "celular": {
-      "$numberLong": "3204455667"
-    }
-  },{
-    "_id": {
-      "$oid": "66a46a3e280e8d342dd414d9"
-    },
-    "id": 10,
-    "nombre": "Isabel",
-    "apellido": "Ríos",
-    "cc": 889900112,
-    "alias": "isa",
-    "rol": "VIP",
-    "email": "isabel.rios@example.com",
-    "imagen_usuario": "https://i.pinimg.com/736x/a0/f5/d1/a0f5d1a9c90e447b4f2703a6b088850a.jpg",
-    "celular": {
-      "$numberLong": "3108899001"
-    }
-  },{
-    "_id": {
-      "$oid": "66a46a3e280e8d342dd414da"
-    },
-    "id": 11,
-    "nombre": "José",
-    "apellido": "Morales",
-    "cc": 556677889,
-    "alias": "josem",
-    "rol": "estandar",
-    "email": "jose.morales@example.com",
-    "imagen_usuario": "https://i.pinimg.com/564x/28/84/b4/2884b448e2898599729c6d25c7c53a1f.jpg",
-    "celular": {
-      "$numberLong": "3115566778"
-    }
-  },{
-    "_id": {
-      "$oid": "66a46a3e280e8d342dd414db"
-    },
-    "id": 12,
-    "nombre": "Patricia",
-    "apellido": "Gómez",
-    "cc": 667788990,
-    "alias": "pati",
-    "rol": "VIP",
-    "email": "patricia.gomez@example.com",
-    "imagen_usuario": "https://i.pinimg.com/736x/c7/0e/16/c70e16b48dab527292fcd3cb981e1919.jpg",
-    "celular": {
-      "$numberLong": "3126677889"
-    }
-  },{
-    "_id": {
-      "$oid": "66a46a3e280e8d342dd414dc"
-    },
-    "id": 13,
-    "nombre": "Andrés",
-    "apellido": "Vargas",
-    "cc": 778899001,
-    "alias": "andy",
-    "rol": "estandar",
-    "email": "andres.vargas@example.com",
-    "imagen_usuario": "https://i.pinimg.com/564x/72/84/fc/7284fce8a878edd27fece0b6c9e198f0.jpg",
-    "celular": {
-      "$numberLong": "3137788990"
-    }
-  },{
-    "_id": {
-      "$oid": "66a46a3e280e8d342dd414dd"
-    },
-    "id": 14,
-    "nombre": "Fernanda",
-    "apellido": "Suárez",
-    "cc": 889900112,
-    "alias": "fer",
-    "rol": "VIP",
-    "email": "fernanda.suarez@example.com",
-    "imagen_usuario": "https://i.pinimg.com/736x/73/8c/90/738c90f184de3e6b97580ef2c9a3cd8f.jpg",
-    "celular": {
-      "$numberLong": "3148899001"
-    }
-  },{
-    "_id": {
-      "$oid": "66a537ce280e8d342dd414e9"
-    },
-    "id": 15,
-    "nombre": "Ricardo",
-    "apellido": "Díaz",
-    "cc": 112233445,
-    "alias": "richy",
-    "rol": "estandar",
-    "email": "ricardo.diaz@example.com",
-    "imagen_usuario": "https://i.pinimg.com/564x/31/0e/05/310e05e6827ac2f6853c22d96ee6caec.jpg",
-    "celular": {
-      "$numberLong": "3151122334"
-    }
-  }]
+  "_id": {
+    "$oid": "66cbffe29b0c718c3623603b"
+  },
+  "id": 1,
+  "nombre": "Carlos",
+  "apellido": "González",
+  "cc": 123456789,
+  "alias": "carlitos",
+  "rol": "estandar",
+  "email": "carlos.gonzalez@example.com",
+  "imagen_usuario": "https://i.pinimg.com/564x/b7/b4/74/b7b474c2c02c9a40df285ee5aa051a99.jpg",
+  "celular": {
+    "numberLong": "3111234567"
+  },
+  "metodo_pago": {
+    "nombreBanco": "Banco de Bogotá",
+    "imagenBanco": "https://upload.wikimedia.org/wikipedia/commons/3/36/Logo_Banco_de_Bogot%C3%A1.svg",
+    "numeroBanco": "1234567890"
+  }
+},{
+  "_id": {
+    "$oid": "66cbffe29b0c718c3623603c"
+  },
+  "id": 2,
+  "nombre": "María",
+  "apellido": "Martínez",
+  "cc": 987654321,
+  "alias": "mari",
+  "rol": "VIP",
+  "email": "maria.martinez@example.com",
+  "imagen_usuario": "https://i.pinimg.com/564x/89/ff/1a/89ff1a5fdc3734cc90c7eba167f95ab6.jpg",
+  "celular": {
+    "numberLong": "3109876543"
+  },
+  "metodo_pago": {
+    "nombreBanco": "Bancolombia",
+    "imagenBanco": "https://upload.wikimedia.org/wikipedia/commons/4/44/Bancolombia_Logo.svg",
+    "numeroBanco": "0987654321"
+  }
+},{
+  "_id": {
+    "$oid": "66cbffe29b0c718c3623603d"
+  },
+  "id": 3,
+  "nombre": "Juan",
+  "apellido": "Pérez",
+  "cc": 112233445,
+  "alias": "juancho",
+  "rol": "estandar",
+  "email": "juan.perez@example.com",
+  "imagen_usuario": "https://i.pinimg.com/564x/67/e1/b2/67e1b2775c79fbac72297912eedf08b8.jpg",
+  "celular": {
+    "numberLong": "3201122334"
+  },
+  "metodo_pago": {
+    "nombreBanco": "Davivienda",
+    "imagenBanco": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Davivienda_logo.svg",
+    "numeroBanco": "1122334455"
+  }
+},{
+  "_id": {
+    "$oid": "66cbffe29b0c718c3623603e"
+  },
+  "id": 4,
+  "nombre": "Ana",
+  "apellido": "López",
+  "cc": 556677889,
+  "alias": "anita",
+  "rol": "VIP",
+  "email": "ana.lopez@example.com",
+  "imagen_usuario": "https://i.pinimg.com/564x/25/9b/9d/259b9d5d61b2d4a62b4ad1cb73bce5a4.jpg",
+  "celular": {
+    "numberLong": "3115566778"
+  },
+  "metodo_pago": {
+    "nombreBanco": "Banco de Occidente",
+    "imagenBanco": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Banco_de_Occidente_logo.svg",
+    "numeroBanco": "5566778890"
+  }
+},{
+  "_id": {
+    "$oid": "66cbffe29b0c718c3623603f"
+  },
+  "id": 5,
+  "nombre": "Luis",
+  "apellido": "Rodríguez",
+  "cc": 223344556,
+  "alias": "luisito",
+  "rol": "estandar",
+  "email": "luis.rodriguez@example.com",
+  "imagen_usuario": "https://i.pinimg.com/564x/b3/cb/eb/b3cbebddb67e05c1104bd4bee316c913.jpg",
+  "celular": {
+    "numberLong": "3152233445"
+  },
+  "metodo_pago": {
+    "nombreBanco": "Banco Popular",
+    "imagenBanco": "https://upload.wikimedia.org/wikipedia/commons/4/46/Banco_Popular_Colombia_Logo.svg",
+    "numeroBanco": "2233445566"
+  }
+},{
+  "_id": {
+    "$oid": "66cbffe29b0c718c36236040"
+  },
+  "id": 6,
+  "nombre": "Sofía",
+  "apellido": "Hernández",
+  "cc": 667788990,
+  "alias": "sofi",
+  "rol": "VIP",
+  "email": "sofia.hernandez@example.com",
+  "imagen_usuario": "https://i.pinimg.com/564x/d4/48/18/d448186864f7e9c0ff5a2c550f7ca27d.jpg",
+  "celular": {
+    "numberLong": "3106677889"
+  },
+  "metodo_pago": {
+    "nombreBanco": "Banco AV Villas",
+    "imagenBanco": "https://upload.wikimedia.org/wikipedia/commons/7/76/Banco_AV_Villas_Logo.svg",
+    "numeroBanco": "6677889901"
+  }
+},{
+  "_id": {
+    "$oid": "66cbffe29b0c718c36236041"
+  },
+  "id": 7,
+  "nombre": "Miguel",
+  "apellido": "Torres",
+  "cc": 334455667,
+  "alias": "mike",
+  "rol": "estandar",
+  "email": "miguel.torres@example.com",
+  "imagen_usuario": "https://i.pinimg.com/564x/68/ae/da/68aeda24f7a2ac81adcb7870c5c962ae.jpg",
+  "celular": {
+    "numberLong": "3123344556"
+  },
+  "metodo_pago": {
+    "nombreBanco": "BBVA Colombia",
+    "imagenBanco": "https://upload.wikimedia.org/wikipedia/commons/4/4b/BBVA_Colombia_logo.svg",
+    "numeroBanco": "3344556678"
+  }
+},{
+  "_id": {
+    "$oid": "66cbffe29b0c718c36236042"
+  },
+  "id": 8,
+  "nombre": "Laura",
+  "apellido": "Ramírez",
+  "cc": 778899001,
+  "alias": "lau",
+  "rol": "VIP",
+  "email": "laura.ramirez@example.com",
+  "imagen_usuario": "https://i.pinimg.com/564x/92/5e/5e/925e5eb5188e057e14766998b8611540.jpg",
+  "celular": {
+    "numberLong": "3137788990"
+  },
+  "metodo_pago": {
+    "nombreBanco": "Scotiabank Colpatria",
+    "imagenBanco": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Scotiabank_Colpatria_Logo.svg",
+    "numeroBanco": "7788990012"
+  }
+},{
+  "_id": {
+    "$oid": "66cbffe29b0c718c36236043"
+  },
+  "id": 9,
+  "nombre": "David",
+  "apellido": "Flores",
+  "cc": 445566778,
+  "alias": "dave",
+  "rol": "estandar",
+  "email": "david.flores@example.com",
+  "imagen_usuario": "https://i.pinimg.com/564x/2e/fc/d7/2efcd71b28110a83b166f4a8e1dafe47.jpg",
+  "celular": {
+    "numberLong": "3204455667"
+  },
+  "metodo_pago": {
+    "nombreBanco": "Banco Agrario",
+    "imagenBanco": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Banco_Agrario_Logo.svg",
+    "numeroBanco": "4455667789"
+  }
+},{
+  "_id": {
+    "$oid": "66cbffe29b0c718c36236044"
+  },
+  "id": 10,
+  "nombre": "Isabel",
+  "apellido": "Ríos",
+  "cc": 889900112,
+  "alias": "isa",
+  "rol": "VIP",
+  "email": "isabel.rios@example.com",
+  "imagen_usuario": "https://i.pinimg.com/736x/a0/f5/d1/a0f5d1a9c90e447b4f2703a6b088850a.jpg",
+  "celular": {
+    "numberLong": "3108899001"
+  },
+  "metodo_pago": {
+    "nombreBanco": "Banco Itaú",
+    "imagenBanco": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Ita%C3%BA_logo.svg",
+    "numeroBanco": "8899001122"
+  }
+},{
+  "_id": {
+    "$oid": "66cbffe29b0c718c36236045"
+  },
+  "id": 11,
+  "nombre": "José",
+  "apellido": "Morales",
+  "cc": 556677889,
+  "alias": "josem",
+  "rol": "estandar",
+  "email": "jose.morales@example.com",
+  "imagen_usuario": "https://i.pinimg.com/564x/28/84/b4/2884b448e2898599729c6d25c7c53a1f.jpg",
+  "celular": {
+    "numberLong": "3115566778"
+  },
+  "metodo_pago": {
+    "nombreBanco": "Banco Pichincha",
+    "imagenBanco": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Logo_Banco_Pichincha.svg",
+    "numeroBanco": "5566778891"
+  }
+},{
+  "_id": {
+    "$oid": "66cbffe29b0c718c36236046"
+  },
+  "id": 12,
+  "nombre": "Patricia",
+  "apellido": "Gómez",
+  "cc": 667788990,
+  "alias": "pati",
+  "rol": "VIP",
+  "email": "patricia.gomez@example.com",
+  "imagen_usuario": "https://i.pinimg.com/736x/c7/0e/16/c70e16b48dab527292fcd3cb981e1919.jpg",
+  "celular": {
+    "numberLong": "3126677889"
+  },
+  "metodo_pago": {
+    "nombreBanco": "Banco Caja Social",
+    "imagenBanco": "https://upload.wikimedia.org/wikipedia/commons/3/32/Logo_Banco_Caja_Social.svg",
+    "numeroBanco": "6677889902"
+  }
+},{
+  "_id": {
+    "$oid": "66cbffe29b0c718c36236047"
+  },
+  "id": 13,
+  "nombre": "Andrés",
+  "apellido": "Vargas",
+  "cc": 778899001,
+  "alias": "andy",
+  "rol": "estandar",
+  "email": "andres.vargas@example.com",
+  "imagen_usuario": "https://i.pinimg.com/564x/72/84/fc/7284fce8a878edd27fece0b6c9e198f0.jpg",
+  "celular": {
+    "numberLong": "3137788990"
+  },
+  "metodo_pago": {
+    "nombreBanco": "GNB Sudameris",
+    "imagenBanco": "https://upload.wikimedia.org/wikipedia/commons/8/89/Logo_GNB_Sudameris.svg",
+    "numeroBanco": "7788990013"
+  }
+},{
+  "_id": {
+    "$oid": "66cbffe29b0c718c36236048"
+  },
+  "id": 14,
+  "nombre": "Fernanda",
+  "apellido": "Suárez",
+  "cc": 123,
+  "alias": "fer",
+  "rol": "estandar",
+  "email": "fernanda.suarez@example.com",
+  "imagen_usuario": "https://i.pinimg.com/736x/73/8c/90/738c90f184de3e6b97580ef2c9a3cd8f.jpg",
+  "celular": {
+    "numberLong": "3148899001"
+  },
+  "metodo_pago": {
+    "nombreBanco": "Banco Falabella",
+    "imagenBanco": "https://i.pinimg.com/564x/d5/51/0d/d5510d5d16b953b094a37f81b5d68290.jpg",
+    "numeroBanco": "1234567891"
+  }
+},{
+  "_id": {
+    "$oid": "66cbffe29b0c718c36236049"
+  },
+  "id": 15,
+  "nombre": "Ricardo",
+  "apellido": "Díaz",
+  "cc": 112233445,
+  "alias": "richy",
+  "rol": "estandar",
+  "email": "ricardo.diaz@example.com",
+  "imagen_usuario": "https://i.pinimg.com/564x/31/0e/05/310e05e6827ac2f6853c22d96ee6caec.jpg",
+  "celular": {
+    "numberLong": "3151122334"
+  },
+  "metodo_pago": {
+    "nombreBanco": "Colpatria",
+    "imagenBanco": "https://upload.wikimedia.org/wikipedia/commons/3/36/Logo_Colpatria.svg",
+    "numeroBanco": "1122334456"
+  }
+}]

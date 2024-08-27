@@ -1,9 +1,9 @@
 [{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a01"
+    "$oid": "66cdb40279c4a3a680cd9d00"
   },
   "id": 1,
-  "nombre": "Sala Eclipse",
+  "nombre": "Sala Titán",
   "tipo": "2D",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
@@ -59,10 +59,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a02"
+    "$oid": "66cdb40279c4a3a680cd9d01"
   },
   "id": 2,
-  "nombre": "Sala Galáctica",
+  "nombre": "Sala Japeto",
   "tipo": "3D",
   "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
   "capacidad": 48,
@@ -118,11 +118,11 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a03"
+    "$oid": "66cdb40279c4a3a680cd9d02"
   },
   "id": 3,
-  "nombre": "Sala Nebular",
-  "tipo": "2D",
+  "nombre": "Sala Dione",
+  "tipo": "XD",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
   "asientos": [
@@ -177,10 +177,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a04"
+    "$oid": "66cdb40279c4a3a680cd9d03"
   },
   "id": 4,
-  "nombre": "Sala Estelar",
+  "nombre": "Sala Tetis",
   "tipo": "3D",
   "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
   "capacidad": 48,
@@ -236,10 +236,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a05"
+    "$oid": "66cdb40279c4a3a680cd9d04"
   },
   "id": 5,
-  "nombre": "Sala Nova",
+  "nombre": "Sala Encélado",
   "tipo": "2D",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
@@ -295,11 +295,11 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a06"
+    "$oid": "66cdb40279c4a3a680cd9d05"
   },
   "id": 6,
   "nombre": "Sala Aurora",
-  "tipo": "3D",
+  "tipo": "XD",
   "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
   "capacidad": 48,
   "asientos": [
@@ -354,7 +354,7 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a07"
+    "$oid": "66cdb40279c4a3a680cd9d06"
   },
   "id": 7,
   "nombre": "Sala Cometa",
@@ -413,11 +413,11 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a08"
+    "$oid": "66cdb40279c4a3a680cd9d07"
   },
   "id": 8,
-  "nombre": "Sala Andrómeda",
-  "tipo": "3D",
+  "nombre": "Sala Mimas",
+  "tipo": "XD",
   "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
   "capacidad": 48,
   "asientos": [
@@ -472,10 +472,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a09"
+    "$oid": "66cdb40279c4a3a680cd9d08"
   },
   "id": 9,
-  "nombre": "Sala Celestial",
+  "nombre": "Sala Jano",
   "tipo": "2D",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
@@ -531,10 +531,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a0a"
+    "$oid": "66cdb40279c4a3a680cd9d09"
   },
   "id": 10,
-  "nombre": "Sala Horizonte",
+  "nombre": "Sala Telesto",
   "tipo": "3D",
   "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
   "capacidad": 48,
@@ -590,11 +590,11 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a0b"
+    "$oid": "66cdb40279c4a3a680cd9d0a"
   },
   "id": 11,
   "nombre": "Sala Estrella",
-  "tipo": "2D",
+  "tipo": "XD",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
   "asientos": [
@@ -649,7 +649,7 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a0c"
+    "$oid": "66cdb40279c4a3a680cd9d0b"
   },
   "id": 12,
   "nombre": "Sala Quasar",
@@ -708,10 +708,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a0d"
+    "$oid": "66cdb40279c4a3a680cd9d0c"
   },
   "id": 13,
-  "nombre": "Sala Cosmos",
+  "nombre": "Sala Prometeo",
   "tipo": "2D",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
@@ -767,7 +767,7 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a0e"
+    "$oid": "66cdb40279c4a3a680cd9d0d"
   },
   "id": 14,
   "nombre": "Sala Vortex",
@@ -826,7 +826,7 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a0f"
+    "$oid": "66cdb40279c4a3a680cd9d0e"
   },
   "id": 15,
   "nombre": "Sala Polaris",
@@ -885,10 +885,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a10"
+    "$oid": "66cdb40279c4a3a680cd9d0f"
   },
   "id": 16,
-  "nombre": "Sala Interstellar",
+  "nombre": "Sala Helena",
   "tipo": "3D",
   "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
   "capacidad": 48,
@@ -944,11 +944,11 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a11"
+    "$oid": "66cdb40279c4a3a680cd9d10"
   },
   "id": 17,
   "nombre": "Sala Astro",
-  "tipo": "2D",
+  "tipo": "XD",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
   "asientos": [
@@ -1003,10 +1003,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a12"
+    "$oid": "66cdb40279c4a3a680cd9d11"
   },
   "id": 18,
-  "nombre": "Sala Orion",
+  "nombre": "Sala Erriapo",
   "tipo": "3D",
   "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
   "capacidad": 48,
@@ -1062,7 +1062,7 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a13"
+    "$oid": "66cdb40279c4a3a680cd9d12"
   },
   "id": 19,
   "nombre": "Sala Supernova",
@@ -1121,11 +1121,11 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a14"
+    "$oid": "66cdb40279c4a3a680cd9d13"
   },
   "id": 20,
-  "nombre": "Sala Meteorito",
-  "tipo": "3D",
+  "nombre": "Sala Antíope",
+  "tipo": "XD",
   "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
   "capacidad": 48,
   "asientos": [
@@ -1180,10 +1180,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a15"
+    "$oid": "66cdb40279c4a3a680cd9d14"
   },
   "id": 21,
-  "nombre": "Sala Zenith",
+  "nombre": "Sala Erriapo",
   "tipo": "2D",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
@@ -1239,10 +1239,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a16"
+    "$oid": "66cdb40279c4a3a680cd9d15"
   },
   "id": 22,
-  "nombre": "Sala Luna",
+  "nombre": "Sala Narvi",
   "tipo": "3D",
   "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
   "capacidad": 48,
@@ -1298,11 +1298,11 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a17"
+    "$oid": "66cdb40279c4a3a680cd9d16"
   },
   "id": 23,
   "nombre": "Sala Nebulosa",
-  "tipo": "2D",
+  "tipo": "XD",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
   "asientos": [
@@ -1357,7 +1357,7 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a18"
+    "$oid": "66cdb40279c4a3a680cd9d17"
   },
   "id": 24,
   "nombre": "Sala Stardust",
@@ -1416,10 +1416,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a19"
+    "$oid": "66cdb40279c4a3a680cd9d18"
   },
   "id": 25,
-  "nombre": "Sala Galaxy",
+  "nombre": "Sala Surtur",
   "tipo": "2D",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
@@ -1475,12 +1475,12 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a1a"
+    "$oid": "66cdb40279c4a3a680cd9d19"
   },
   "id": 26,
-  "nombre": "Sala Vega",
-  "tipo": "3D",
-  "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
+  "nombre": "Sala Surtur",
+  "tipo": "XD",
+  "descripcion": "Sala avanzada con tecnología de proyección XD inmersiva",
   "capacidad": 48,
   "asientos": [
     1201,
@@ -1534,7 +1534,7 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a1b"
+    "$oid": "66cdb40279c4a3a680cd9d1a"
   },
   "id": 27,
   "nombre": "Sala Pulsar",
@@ -1593,10 +1593,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a1c"
+    "$oid": "66cdb40279c4a3a680cd9d1b"
   },
   "id": 28,
-  "nombre": "Sala Eclipse",
+  "nombre": "Sala Skoll",
   "tipo": "3D",
   "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
   "capacidad": 48,
@@ -1652,7 +1652,7 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a1d"
+    "$oid": "66cdb40279c4a3a680cd9d1c"
   },
   "id": 29,
   "nombre": "Sala Titan",
@@ -1711,7 +1711,7 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a1e"
+    "$oid": "66cdb40279c4a3a680cd9d1d"
   },
   "id": 30,
   "nombre": "Sala Nebula",
@@ -1770,11 +1770,11 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a1f"
+    "$oid": "66cdb40279c4a3a680cd9d1e"
   },
   "id": 31,
   "nombre": "Sala Aurora Boreal",
-  "tipo": "2D",
+  "tipo": "XD",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
   "asientos": [
@@ -1829,7 +1829,7 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a20"
+    "$oid": "66cdb40279c4a3a680cd9d1f"
   },
   "id": 32,
   "nombre": "Sala Nova Prime",
@@ -1888,7 +1888,7 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a21"
+    "$oid": "66cdb40279c4a3a680cd9d20"
   },
   "id": 33,
   "nombre": "Sala Quantum",
@@ -1947,7 +1947,7 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a22"
+    "$oid": "66cdb40279c4a3a680cd9d21"
   },
   "id": 34,
   "nombre": "Sala Infinity",
@@ -2006,11 +2006,11 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a23"
+    "$oid": "66cdb40279c4a3a680cd9d22"
   },
   "id": 35,
   "nombre": "Sala Aurora Prime",
-  "tipo": "2D",
+  "tipo": "XD",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
   "asientos": [
@@ -2065,7 +2065,7 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a24"
+    "$oid": "66cdb40279c4a3a680cd9d23"
   },
   "id": 36,
   "nombre": "Sala Astral",
@@ -2124,10 +2124,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a25"
+    "$oid": "66cdb40279c4a3a680cd9d24"
   },
   "id": 37,
-  "nombre": "Sala Helios",
+  "nombre": "Sala Azul",
   "tipo": "2D",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
@@ -2183,11 +2183,11 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a26"
+    "$oid": "66cdb40279c4a3a680cd9d25"
   },
   "id": 38,
-  "nombre": "Sala Eclipse",
-  "tipo": "3D",
+  "nombre": "Sala Lunar",
+  "tipo": "XD",
   "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
   "capacidad": 48,
   "asientos": [
@@ -2242,10 +2242,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a27"
+    "$oid": "66cdb40279c4a3a680cd9d26"
   },
   "id": 39,
-  "nombre": "Sala Aries",
+  "nombre": "Sala Narvi",
   "tipo": "2D",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
@@ -2301,10 +2301,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a28"
+    "$oid": "66cdb40279c4a3a680cd9d27"
   },
   "id": 40,
-  "nombre": "Sala Sirius",
+  "nombre": "Sala Negra",
   "tipo": "3D",
   "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
   "capacidad": 48,
@@ -2360,10 +2360,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a29"
+    "$oid": "66cdb40279c4a3a680cd9d28"
   },
   "id": 41,
-  "nombre": "Sala Lyra",
+  "nombre": "Sala Lila",
   "tipo": "2D",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
@@ -2419,10 +2419,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a2a"
+    "$oid": "66cdb40279c4a3a680cd9d29"
   },
   "id": 42,
-  "nombre": "Sala Orionis",
+  "nombre": "Sala Bestla",
   "tipo": "3D",
   "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
   "capacidad": 48,
@@ -2478,10 +2478,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a2b"
+    "$oid": "66cdb40279c4a3a680cd9d2a"
   },
   "id": 43,
-  "nombre": "Sala Helix",
+  "nombre": "Sala Loge",
   "tipo": "2D",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
@@ -2537,10 +2537,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a2c"
+    "$oid": "66cdb40279c4a3a680cd9d2b"
   },
   "id": 44,
-  "nombre": "Sala Cassiopeia",
+  "nombre": "Sala Fenrir",
   "tipo": "3D",
   "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
   "capacidad": 48,
@@ -2596,10 +2596,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a2d"
+    "$oid": "66cdb40279c4a3a680cd9d2c"
   },
   "id": 45,
-  "nombre": "Sala Draco",
+  "nombre": "Sala Harry",
   "tipo": "2D",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
@@ -2655,7 +2655,7 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a2e"
+    "$oid": "66cdb40279c4a3a680cd9d2d"
   },
   "id": 46,
   "nombre": "Sala Sagittarius",
@@ -2714,10 +2714,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a2f"
+    "$oid": "66cdb40279c4a3a680cd9d2e"
   },
   "id": 47,
-  "nombre": "Sala Phoenix",
+  "nombre": "Sala Fenix",
   "tipo": "2D",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
@@ -2773,10 +2773,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a30"
+    "$oid": "66cdb40279c4a3a680cd9d2f"
   },
   "id": 48,
-  "nombre": "Sala Pegasus",
+  "nombre": "Sala Angel",
   "tipo": "3D",
   "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
   "capacidad": 48,
@@ -2832,10 +2832,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a31"
+    "$oid": "66cdb40279c4a3a680cd9d30"
   },
   "id": 49,
-  "nombre": "Sala 49",
+  "nombre": "Sala Erriapo",
   "tipo": "2D",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
@@ -2891,12 +2891,12 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a32"
+    "$oid": "66cdb40279c4a3a680cd9d31"
   },
   "id": 50,
-  "nombre": "Sala Infinix",
-  "tipo": "3D",
-  "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
+  "nombre": "Sala Infinito",
+  "tipo": "XD",
+  "descripcion": "Sala avanzada con tecnología de proyección XD inmersiva",
   "capacidad": 48,
   "asientos": [
     2353,
@@ -2950,7 +2950,7 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a33"
+    "$oid": "66cdb40279c4a3a680cd9d32"
   },
   "id": 51,
   "nombre": "Sala Altair",
@@ -3009,7 +3009,7 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a34"
+    "$oid": "66cdb40279c4a3a680cd9d33"
   },
   "id": 52,
   "nombre": "Sala Nebul",
@@ -3068,10 +3068,10 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a35"
+    "$oid": "66cdb40279c4a3a680cd9d34"
   },
   "id": 53,
-  "nombre": "Sala Celestia",
+  "nombre": "Cielin",
   "tipo": "2D",
   "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
   "capacidad": 48,
@@ -3127,7 +3127,7 @@
   ]
 },{
   "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a36"
+    "$oid": "66cdb40279c4a3a680cd9d35"
   },
   "id": 54,
   "nombre": "Sala Kepler",
@@ -3183,713 +3183,5 @@
     2590,
     2591,
     2592
-  ]
-},{
-  "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a37"
-  },
-  "id": 55,
-  "nombre": "Sala Lite",
-  "tipo": "2D",
-  "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
-  "capacidad": 48,
-  "asientos": [
-    2593,
-    2594,
-    2595,
-    2596,
-    2597,
-    2598,
-    2599,
-    2600,
-    2601,
-    2602,
-    2603,
-    2604,
-    2605,
-    2606,
-    2607,
-    2608,
-    2609,
-    2610,
-    2611,
-    2612,
-    2613,
-    2614,
-    2615,
-    2616,
-    2617,
-    2618,
-    2619,
-    2620,
-    2621,
-    2622,
-    2623,
-    2624,
-    2625,
-    2626,
-    2627,
-    2628,
-    2629,
-    2630,
-    2631,
-    2632,
-    2633,
-    2634,
-    2635,
-    2636,
-    2637,
-    2638,
-    2639,
-    2640
-  ]
-},{
-  "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a38"
-  },
-  "id": 56,
-  "nombre": "Sala Horizon",
-  "tipo": "3D",
-  "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
-  "capacidad": 48,
-  "asientos": [
-    2641,
-    2642,
-    2643,
-    2644,
-    2645,
-    2646,
-    2647,
-    2648,
-    2649,
-    2650,
-    2651,
-    2652,
-    2653,
-    2654,
-    2655,
-    2656,
-    2657,
-    2658,
-    2659,
-    2660,
-    2661,
-    2662,
-    2663,
-    2664,
-    2665,
-    2666,
-    2667,
-    2668,
-    2669,
-    2670,
-    2671,
-    2672,
-    2673,
-    2674,
-    2675,
-    2676,
-    2677,
-    2678,
-    2679,
-    2680,
-    2681,
-    2682,
-    2683,
-    2684,
-    2685,
-    2686,
-    2687,
-    2688
-  ]
-},{
-  "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a39"
-  },
-  "id": 57,
-  "nombre": "Sala Intergalactic",
-  "tipo": "2D",
-  "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
-  "capacidad": 48,
-  "asientos": [
-    2689,
-    2690,
-    2691,
-    2692,
-    2693,
-    2694,
-    2695,
-    2696,
-    2697,
-    2698,
-    2699,
-    2700,
-    2701,
-    2702,
-    2703,
-    2704,
-    2705,
-    2706,
-    2707,
-    2708,
-    2709,
-    2710,
-    2711,
-    2712,
-    2713,
-    2714,
-    2715,
-    2716,
-    2717,
-    2718,
-    2719,
-    2720,
-    2721,
-    2722,
-    2723,
-    2724,
-    2725,
-    2726,
-    2727,
-    2728,
-    2729,
-    2730,
-    2731,
-    2732,
-    2733,
-    2734,
-    2735,
-    2736
-  ]
-},{
-  "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a3a"
-  },
-  "id": 58,
-  "nombre": "Sala Solar",
-  "tipo": "3D",
-  "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
-  "capacidad": 48,
-  "asientos": [
-    2737,
-    2738,
-    2739,
-    2740,
-    2741,
-    2742,
-    2743,
-    2744,
-    2745,
-    2746,
-    2747,
-    2748,
-    2749,
-    2750,
-    2751,
-    2752,
-    2753,
-    2754,
-    2755,
-    2756,
-    2757,
-    2758,
-    2759,
-    2760,
-    2761,
-    2762,
-    2763,
-    2764,
-    2765,
-    2766,
-    2767,
-    2768,
-    2769,
-    2770,
-    2771,
-    2772,
-    2773,
-    2774,
-    2775,
-    2776,
-    2777,
-    2778,
-    2779,
-    2780,
-    2781,
-    2782,
-    2783,
-    2784
-  ]
-},{
-  "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a3b"
-  },
-  "id": 59,
-  "nombre": "Sala Astronomica",
-  "tipo": "2D",
-  "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
-  "capacidad": 48,
-  "asientos": [
-    2785,
-    2786,
-    2787,
-    2788,
-    2789,
-    2790,
-    2791,
-    2792,
-    2793,
-    2794,
-    2795,
-    2796,
-    2797,
-    2798,
-    2799,
-    2800,
-    2801,
-    2802,
-    2803,
-    2804,
-    2805,
-    2806,
-    2807,
-    2808,
-    2809,
-    2810,
-    2811,
-    2812,
-    2813,
-    2814,
-    2815,
-    2816,
-    2817,
-    2818,
-    2819,
-    2820,
-    2821,
-    2822,
-    2823,
-    2824,
-    2825,
-    2826,
-    2827,
-    2828,
-    2829,
-    2830,
-    2831,
-    2832
-  ]
-},{
-  "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a3c"
-  },
-  "id": 60,
-  "nombre": "Sala Novita",
-  "tipo": "3D",
-  "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
-  "capacidad": 48,
-  "asientos": [
-    2833,
-    2834,
-    2835,
-    2836,
-    2837,
-    2838,
-    2839,
-    2840,
-    2841,
-    2842,
-    2843,
-    2844,
-    2845,
-    2846,
-    2847,
-    2848,
-    2849,
-    2850,
-    2851,
-    2852,
-    2853,
-    2854,
-    2855,
-    2856,
-    2857,
-    2858,
-    2859,
-    2860,
-    2861,
-    2862,
-    2863,
-    2864,
-    2865,
-    2866,
-    2867,
-    2868,
-    2869,
-    2870,
-    2871,
-    2872,
-    2873,
-    2874,
-    2875,
-    2876,
-    2877,
-    2878,
-    2879,
-    2880
-  ]
-},{
-  "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a3d"
-  },
-  "id": 61,
-  "nombre": "Sala 61",
-  "tipo": "2D",
-  "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
-  "capacidad": 48,
-  "asientos": [
-    2881,
-    2882,
-    2883,
-    2884,
-    2885,
-    2886,
-    2887,
-    2888,
-    2889,
-    2890,
-    2891,
-    2892,
-    2893,
-    2894,
-    2895,
-    2896,
-    2897,
-    2898,
-    2899,
-    2900,
-    2901,
-    2902,
-    2903,
-    2904,
-    2905,
-    2906,
-    2907,
-    2908,
-    2909,
-    2910,
-    2911,
-    2912,
-    2913,
-    2914,
-    2915,
-    2916,
-    2917,
-    2918,
-    2919,
-    2920,
-    2921,
-    2922,
-    2923,
-    2924,
-    2925,
-    2926,
-    2927,
-    2928
-  ]
-},{
-  "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a3e"
-  },
-  "id": 62,
-  "nombre": "Sala 62",
-  "tipo": "3D",
-  "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
-  "capacidad": 48,
-  "asientos": [
-    2929,
-    2930,
-    2931,
-    2932,
-    2933,
-    2934,
-    2935,
-    2936,
-    2937,
-    2938,
-    2939,
-    2940,
-    2941,
-    2942,
-    2943,
-    2944,
-    2945,
-    2946,
-    2947,
-    2948,
-    2949,
-    2950,
-    2951,
-    2952,
-    2953,
-    2954,
-    2955,
-    2956,
-    2957,
-    2958,
-    2959,
-    2960,
-    2961,
-    2962,
-    2963,
-    2964,
-    2965,
-    2966,
-    2967,
-    2968,
-    2969,
-    2970,
-    2971,
-    2972,
-    2973,
-    2974,
-    2975,
-    2976
-  ]
-},{
-  "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a3f"
-  },
-  "id": 63,
-  "nombre": "Sala 63",
-  "tipo": "2D",
-  "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
-  "capacidad": 48,
-  "asientos": [
-    2977,
-    2978,
-    2979,
-    2980,
-    2981,
-    2982,
-    2983,
-    2984,
-    2985,
-    2986,
-    2987,
-    2988,
-    2989,
-    2990,
-    2991,
-    2992,
-    2993,
-    2994,
-    2995,
-    2996,
-    2997,
-    2998,
-    2999,
-    3000,
-    3001,
-    3002,
-    3003,
-    3004,
-    3005,
-    3006,
-    3007,
-    3008,
-    3009,
-    3010,
-    3011,
-    3012,
-    3013,
-    3014,
-    3015,
-    3016,
-    3017,
-    3018,
-    3019,
-    3020,
-    3021,
-    3022,
-    3023,
-    3024
-  ]
-},{
-  "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a40"
-  },
-  "id": 64,
-  "nombre": "Sala 64",
-  "tipo": "3D",
-  "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
-  "capacidad": 48,
-  "asientos": [
-    3025,
-    3026,
-    3027,
-    3028,
-    3029,
-    3030,
-    3031,
-    3032,
-    3033,
-    3034,
-    3035,
-    3036,
-    3037,
-    3038,
-    3039,
-    3040,
-    3041,
-    3042,
-    3043,
-    3044,
-    3045,
-    3046,
-    3047,
-    3048,
-    3049,
-    3050,
-    3051,
-    3052,
-    3053,
-    3054,
-    3055,
-    3056,
-    3057,
-    3058,
-    3059,
-    3060,
-    3061,
-    3062,
-    3063,
-    3064,
-    3065,
-    3066,
-    3067,
-    3068,
-    3069,
-    3070,
-    3071,
-    3072
-  ]
-},{
-  "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a41"
-  },
-  "id": 65,
-  "nombre": "Sala 65",
-  "tipo": "2D",
-  "descripcion": "Sala estándar equipada con tecnología de proyección holográfica",
-  "capacidad": 48,
-  "asientos": [
-    3073,
-    3074,
-    3075,
-    3076,
-    3077,
-    3078,
-    3079,
-    3080,
-    3081,
-    3082,
-    3083,
-    3084,
-    3085,
-    3086,
-    3087,
-    3088,
-    3089,
-    3090,
-    3091,
-    3092,
-    3093,
-    3094,
-    3095,
-    3096,
-    3097,
-    3098,
-    3099,
-    3100,
-    3101,
-    3102,
-    3103,
-    3104,
-    3105,
-    3106,
-    3107,
-    3108,
-    3109,
-    3110,
-    3111,
-    3112,
-    3113,
-    3114,
-    3115,
-    3116,
-    3117,
-    3118,
-    3119,
-    3120
-  ]
-},{
-  "_id": {
-    "$oid": "66c7fdefd8ca0d06e9959a42"
-  },
-  "id": 66,
-  "nombre": "Sala 66",
-  "tipo": "3D",
-  "descripcion": "Sala avanzada con tecnología de proyección 3D inmersiva",
-  "capacidad": 48,
-  "asientos": [
-    3121,
-    3122,
-    3123,
-    3124,
-    3125,
-    3126,
-    3127,
-    3128,
-    3129,
-    3130,
-    3131,
-    3132,
-    3133,
-    3134,
-    3135,
-    3136,
-    3137,
-    3138,
-    3139,
-    3140,
-    3141,
-    3142,
-    3143,
-    3144,
-    3145,
-    3146,
-    3147,
-    3148,
-    3149,
-    3150,
-    3151,
-    3152,
-    3153,
-    3154,
-    3155,
-    3156,
-    3157,
-    3158,
-    3159,
-    3160,
-    3161,
-    3162,
-    3163,
-    3164,
-    3165,
-    3166,
-    3167,
-    3168
   ]
 }]

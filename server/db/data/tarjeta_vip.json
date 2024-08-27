@@ -1,61 +1,61 @@
 [{
-    "_id": {
-      "$oid": "66a559de280e8d342dd414f0"
-    },
-    "id": 1,
-    "id_usuario": 2,
-    "numero_tarjeta": 1002003001,
-    "descuento": 20,
-    "fecha_expiracion": "2025-12-31",
-    "estado": "activa"
-  },{
-    "_id": {
-      "$oid": "66a559de280e8d342dd414f1"
-    },
-    "id": 2,
-    "id_usuario": 4,
-    "numero_tarjeta": 1002003002,
-    "descuento": 15,
-    "fecha_expiracion": "2024-11-30",
-    "estado": "activa"
-  },{
-    "_id": {
-      "$oid": "66a559de280e8d342dd414f2"
-    },
-    "id": 3,
-    "id_usuario": 6,
-    "numero_tarjeta": 1002003003,
-    "descuento": 10,
-    "fecha_expiracion": "2024-07-31",
-    "estado": "inactiva"
-  },{
-    "_id": {
-      "$oid": "66a559de280e8d342dd414f3"
-    },
-    "id": 4,
-    "id_usuario": 8,
-    "numero_tarjeta": 1002003004,
-    "descuento": 25,
-    "fecha_expiracion": "2026-05-15",
-    "estado": "activa"
-  },{
-    "_id": {
-      "$oid": "66a559de280e8d342dd414f4"
-    },
-    "id": 5,
-    "id_usuario": 10,
-    "numero_tarjeta": 1002003005,
-    "descuento": 30,
-    "fecha_expiracion": "2025-08-25",
-    "estado": "activa"
-  },{
-    "_id": {
-      "$oid": "66a5b885280e8d342dd414f7"
-    },
-    "id": 6,
-    "id_usuario": 12,
-    "numero_tarjeta": 1002003006,
-    "descuento": 5,
-    "fecha_expiracion": "2024-10-10",
-    "estado": "inactiva"
-  }]
+  "_id": {
+    "$oid": "66a559de280e8d342dd414f0"
+  },
+  "id": 1,
+  "id_usuario": 2,
+  "numero_tarjeta": 1002003001,
+  "descuento": 20,
+  "fecha_expiracion": "2025-12-31",
+  "estado": "activa"
+},{
+  "_id": {
+    "$oid": "66a559de280e8d342dd414f1"
+  },
+  "id": 2,
+  "id_usuario": 4,
+  "numero_tarjeta": 1002003002,
+  "descuento": 15,
+  "fecha_expiracion": "2024-11-30",
+  "estado": "activa"
+},{
+  "_id": {
+    "$oid": "66a559de280e8d342dd414f2"
+  },
+  "id": 3,
+  "id_usuario": 6,
+  "numero_tarjeta": 1002003003,
+  "descuento": 10,
+  "fecha_expiracion": "2024-07-31",
+  "estado": "inactiva"
+},{
+  "_id": {
+    "$oid": "66a559de280e8d342dd414f3"
+  },
+  "id": 4,
+  "id_usuario": 8,
+  "numero_tarjeta": 1002003004,
+  "descuento": 25,
+  "fecha_expiracion": "2026-05-15",
+  "estado": "activa"
+},{
+  "_id": {
+    "$oid": "66a559de280e8d342dd414f4"
+  },
+  "id": 5,
+  "id_usuario": 10,
+  "numero_tarjeta": 1002003005,
+  "descuento": 30,
+  "fecha_expiracion": "2025-08-25",
+  "estado": "activa"
+},{
+  "_id": {
+    "$oid": "66a5b885280e8d342dd414f7"
+  },
+  "id": 6,
+  "id_usuario": 12,
+  "numero_tarjeta": 1002003006,
+  "descuento": 5,
+  "fecha_expiracion": "2024-10-10",
+  "estado": "inactiva"
+}]

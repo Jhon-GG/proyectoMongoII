@@ -6,7 +6,7 @@
   "titulo": "Bad Boys 4",
   "genero": "Accion",
   "duracion": "2h 15m",
-  "estado": "En cartelera",
+  "estado": "NO",
   "sinopsis": "La película sigue a estos dos intrépidos policías de Miami mientras se enfrentan a una nueva amenaza en la ciudad. Una peligrosa red de narcotraficantes se está infiltrando el mercado con una letal droga de diseño, desatando una ola de crímenes violentos.",
   "estreno": "15/08/24",
   "director": "Adil & Bilall",
@@ -45,8 +45,7 @@
       "imagen_actor": "https://i.pinimg.com/564x/b1/1b/9a/b11b9a8e0e40d8065cf930db5f4cfd47.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41405"
   },
@@ -93,8 +92,7 @@
       "imagen_actor": "blob:https://co.pinterest.com/f2624f43-81c2-4ffd-81ef-46b5ac838f76"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41406"
   },
@@ -141,8 +139,7 @@
       "imagen_actor": "https://i.pinimg.com/564x/f0/a7/a1/f0a7a10a810b384fc87c3f6ad5abda83.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41407"
   },
@@ -189,8 +186,7 @@
       "imagen_actor": "https://i.pinimg.com/736x/93/58/83/9358838c111095251fd632f263268f3e.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41408"
   },
@@ -237,8 +233,7 @@
       "imagen_actor": "https://i.pinimg.com/564x/35/dc/c7/35dcc78dedc209692694f1bad3cb3537.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41409"
   },
@@ -246,7 +241,7 @@
   "titulo": "Godzilla y Kong",
   "genero": "Accion",
   "duracion": "2h 45m",
-  "estado": "En cartelera",
+  "estado": "NO",
   "sinopsis": "Godzilla y Kong se enfrentan a una amenaza colosal escondida en lo profundo del planeta, desafiando su propia existencia y la supervivencia de la raza humana.",
   "estreno": "07/05/24",
   "director": "Adam Wingard",
@@ -285,8 +280,7 @@
       "imagen_actor": "https://i.pinimg.com/564x/92/f1/43/92f143a10b6814a58986c20727b607aa.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd4140a"
   },
@@ -333,8 +327,7 @@
       "imagen_actor": "https://i.pinimg.com/564x/9b/3c/dd/9b3cdd0f31bee6fcba7b64851042abb8.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd4140b"
   },
@@ -342,7 +335,7 @@
   "titulo": "Guerra civil",
   "genero": "Belico",
   "duracion": "2h 20m",
-  "estado": "En cartelera",
+  "estado": "No",
   "sinopsis": "En un futuro próximo, un equipo de periodistas viajará por los Estados Unidos durante una guerra civil que se intensifica rápidamente y que se ha apoderado de toda la nación.",
   "estreno": "18/07/24",
   "director": "Steven Spielberg",
@@ -381,8 +374,7 @@
       "imagen_actor": "https://i.pinimg.com/564x/dd/13/63/dd1363331e5bc12b2770483bfa1d3e9b.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd4140c"
   },
@@ -390,7 +382,7 @@
   "titulo": "Intensamente 2",
   "genero": "Animacion",
   "duracion": "1h 45m",
-  "estado": "Próximo estreno",
+  "estado": "NO",
   "sinopsis": "Intensamente 2, de Disney y Pixar, regresa a la mente de una Riley recién entrada en la adolescencia justo en el momento en que el Cuartel General está sufriendo una repentina reforma para hacerle hueco a algo totalmente inesperado: ¡Nuevas emociones! Alegría, Tristeza, Ira, Miedo y Asco, con años de impecable gestión a sus espaldas (según ellos...) no saben muy bien qué sentir cuando aparece Ansiedad.",
   "estreno": "15/12/24",
   "director": "Pete Docter",
@@ -429,8 +421,7 @@
       "imagen_actor": "https://i.pinimg.com/564x/a7/78/9e/a7789ec619a58a264c3bf1a2aa7084e1.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd4140d"
   },
@@ -477,8 +468,7 @@
       "imagen_actor": "https://i.pinimg.com/564x/56/9d/e2/569de240694329ee6b309b222a200d4e.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd4140e"
   },
@@ -486,7 +476,7 @@
   "titulo": "Garfield: Fuera de casa",
   "genero": "Animacion",
   "duracion": "1h 30m",
-  "estado": "En cartelera",
+  "estado": "NO",
   "sinopsis": "El mundialmente famoso Garfield, el gato casero que odia los lunes y adora la lasaña, está a punto de vivir una aventura ¡en el salvaje mundo exterior! Tras una inesperada reunión con su largamente perdido padre - el desaliñado gato callejero Vic - Garfield y su amigo canino Odie se ven forzados a abandonar sus perfectas y consentidas vidas al unirse a Vic en un hilarante y muy arriesgado atraco.",
   "estreno": "25/08/24",
   "director": "Mark Dindal",
@@ -525,8 +515,7 @@
       "imagen_actor": "https://i.pinimg.com/736x/57/c1/af/57c1afdd69cb0a9bd19b4a45e6fc2311.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd4140f"
   },
@@ -573,8 +562,7 @@
       "imagen_actor": "https://i.pinimg.com/564x/c9/99/69/c99969640d571365cd4445ce3d56e4a3.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41410"
   },
@@ -621,8 +609,7 @@
       "imagen_actor": "https://i.pinimg.com/736x/44/65/ca/4465ca2f26ffeee69a1a30105389f0cc.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41411"
   },
@@ -630,7 +617,7 @@
   "titulo": "Abigail",
   "genero": "Aventura",
   "duracion": "2h 10m",
-  "estado": "En cartelera",
+  "estado": "No",
   "sinopsis": "Unos delincuentes secuestran a una bailarina de 12 años, hija de una poderosa figura del inframundo. Lo único que deben hacer para recibir un rescate de 50 millones de dólares es cuidarla durante una noche en una mansión aislada. Los miembros de la banda comienzan a desaparecer uno por uno.",
   "estreno": "25/07/24",
   "director": "Alexander Boguslavsky",
@@ -669,8 +656,7 @@
       "imagen_actor": "https://i.pinimg.com/564x/da/91/ea/da91eaf853d612dda0eb1de19e0637bf.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41412"
   },
@@ -717,8 +703,7 @@
       "imagen_actor": "https://i.pinimg.com/564x/d3/10/9c/d3109c1e67a9b044d1f392d43ff33a3e.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41413"
   },
@@ -726,7 +711,7 @@
   "titulo": "El astronauta",
   "genero": "Ciencia Ficcion",
   "duracion": "2h 20m",
-  "estado": "En cartelera",
+  "estado": "NO",
   "sinopsis": "Jakub Procházka fue criado por sus abuelos en la campiña checa tras ser abandonado de pequeño. Trabaja como científico antes de intentar convertirse en el primer astronauta de la República Checa.",
   "estreno": "20/06/24",
   "director": "Denis Villeneuve",
@@ -765,8 +750,7 @@
       "imagen_actor": "https://i.pinimg.com/564x/6d/28/75/6d28759fd23e2a543bf7650d17af98f4.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41414"
   },
@@ -813,8 +797,7 @@
       "imagen_actor": "https://i.pinimg.com/736x/77/36/a3/7736a3c64ecdd1b4cb0ea51aec9005b9.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41415"
   },
@@ -822,7 +805,7 @@
   "titulo": "Damsel",
   "genero": "Aventura",
   "duracion": "2h 0m",
-  "estado": "En cartelera",
+  "estado": "NO",
   "sinopsis": "Una joven acepta casarse con un apuesto príncipe, pero descubre que todo es una trampa. Es arrojada a una cueva con un dragón que escupe fuego y debe confiar únicamente en su ingenio y voluntad para sobrevivir.",
   "estreno": "12/07/24",
   "director": "Matt Stone & Trey Parker",
@@ -861,8 +844,7 @@
       "imagen_actor": "https://i.pinimg.com/736x/42/18/5f/42185fa3aa4792afbfef8d92602da9b2.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41416"
   },
@@ -909,8 +891,7 @@
       "imagen_actor": "https://i.pinimg.com/564x/df/fa/39/dffa3979662034036f65d79ebcd0e924.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d56a280e8d342dd41417"
   },
@@ -957,8 +938,7 @@
       "imagen_actor": "https://i.pinimg.com/736x/7f/ab/cf/7fabcf119faa6686274ecc13389e573d.jpg"
     }
   ]
-},
-{
+},{
   "_id": {
     "$oid": "66a3d82c280e8d342dd4141a"
   },
