@@ -17,9 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
             if (response.ok && result && result.length > 0) {
                 const usuarioEncontrado = result.find(u => u.alias === alias && u.cc.toString() === password);
                 if (usuarioEncontrado) {
-                    // Guardar la información completa del usuario en localStorage
-                    localStorage.setItem('usuarioActual', JSON.stringify(usuarioEncontrado));
-                    console.log('Usuario guardado:', usuarioEncontrado); // Para depuración
+                    // Asegúrate de que toda la información del usuario se guarde
+                    const usuarioParaGuardar = {
+                        ...usuarioEncontrado,
+                        metodo_pago: usuarioEncontrado.metodo_pago || {} // Asegúrate de que metodo_pago exista
+                    };
+                    localStorage.setItem('usuarioActual', JSON.stringify(usuarioParaGuardar));
+                    console.log('Usuario guardado:', usuarioParaGuardar); // Para depuración
                     window.location.href = './views/movieHome.html';
                 } else {
                     mostrarError('Usuario o contraseña incorrectos');

@@ -24,8 +24,17 @@ const informacionHorarios = async (req, res) => {
     res.status(200).json(resultado);
 };
 
+const compraRealizacion = async (req, res) => {
+    let obj = new Boleto();
+    const detallesBoletoUser = req.body;
+    const resultado = await obj.compraRealizacion(detallesBoletoUser);
+    obj.destructor();
+    res.status(200).json(resultado);
+};
+
 module.exports = {
     crearBoleto,
     buscarAsientosDisponibles,
-    informacionHorarios
+    informacionHorarios,
+    compraRealizacion
 }
