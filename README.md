@@ -2,9 +2,12 @@
 
 ```js
 npm i mongodb
+npm i express
+npm i express-validator
+npm i dotenv
 ```
 
-# Comando de ejecucion del archivo main.js
+# Comando de ejecucion del archivo app.js
 
 ```js
 npm run dev
@@ -19,6 +22,96 @@ CineCampus es una empresa de entretenimiento que se especializa en ofrecer una e
 #### Objetivo
 
 Desarrollar una serie de APIs para la aplicación web de CineCampus utilizando MongoDB como base de datos. Las APIs deberán gestionar la selección de películas, la compra de boletos, la asignación de asientos, y la implementación de descuentos para tarjetas VIP, con soporte para diferentes roles de usuario.
+
+
+# Documentacion API
+# Crear reserva de asientos
+
+
+Método: POST
+URL: /crear
+Auth requerida: No especificada
+
+
+## Cuerpo de solicitud:
+
+```js
+{
+  "id": "string",
+  "id_pelicula": "string",
+  "id_horario_funcion": "string",
+  "id_usuario": "string",
+  "asientos": "array",
+  "fecha_reserva": "string" (opcional),
+  "estado": "string" (opcional),
+  "expiracion": "string" (opcional)
+}
+```
+
+
+# Respuesta exitosa
+
+```js
+{
+  "resultado": "Objeto con el resultado de la creación de la reserva"
+}
+```
+
+# Respuesta de error
+
+```js
+{
+  "errors": [
+    {
+      "msg": "Mensaje de error",
+      "param": "Parámetro que causó el error",
+      "location": "body"
+    }
+  ]
+}
+```
+
+# Cancelar reserva de asientos
+
+Método: PUT
+URL: /cancelar/:idReserva
+Auth requerida: No especificada
+
+## Parámetros de ruta:
+
+idReserva: ID de la reserva a cancelar
+
+
+## Cuerpo de la solicitud
+
+```js
+{
+  "id_usuario": "string"
+}
+```
+
+## Respuesta exitosa
+
+```js
+{
+  "resultado": "Objeto con el resultado de la cancelación de la reserva"
+}
+```
+
+
+## Respuesta de error
+
+```js
+{
+  "errors": [
+    {
+      "msg": "Mensaje de error",
+      "param": "Parámetro que causó el error",
+      "location": "body"
+    }
+  ]
+}
+```
 
 #### Requisitos Funcionales
 
